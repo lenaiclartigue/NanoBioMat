@@ -7,9 +7,15 @@ body {
 }
 
 header {
-  background: #16324f;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("banner.png");
+  background-size: cover;
+  background-position: center;
   color: white;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
 }
 
