@@ -74,3 +74,12 @@ header p {
   font-size: 1.3rem;
   margin: 0;
 }
+
+.site-logo-large {
+  width: 320px;
+  max-width: 85%;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.90);
+  padding: 1rem;
+}
