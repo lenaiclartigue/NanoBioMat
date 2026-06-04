@@ -165,3 +165,38 @@ margin: 0.4rem 0;
 .publication-card p {
   margin: 0.4rem 0;
 }
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.highlight-card {
+  background: #f7f9fb;
+  border-left: 4px solid #2b7a78;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.highlight-card h3 {
+  margin-top: 0;
+  color: #16324f;
+}
+
+.button-link {
+  display: inline-block;
+  margin: 0.3rem 0.4rem 0.3rem 0;
+  padding: 0.6rem 1rem;
+  background: #16324f;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.button-link:hover {
+  background: #2b7a78;
+  text-decoration: none;
+}
