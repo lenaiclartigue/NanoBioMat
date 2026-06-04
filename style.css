@@ -275,3 +275,28 @@ margin: 0.4rem 0;
   color: #2b7a78;
   margin-bottom: 0.2rem;
 }
+
+.news-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.news-text {
+  flex: 1 1 300px;
+}
+
+.news-figure {
+  flex: 0 1 320px;
+  margin: 0;
+  text-align: center;
+}
+
+.news-image {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
