@@ -76,11 +76,12 @@ header p {
 }
 
 .site-logo {
-  width: 90px;
-  max-width: 20%;
+  width: 130px;
+  max-width: 130px;
   height: auto;
-  margin-bottom: 1rem;
+  display: block;
+  margin: 0 auto 1rem auto;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.90);
+  background: rgba(255, 255, 255, 0.92);
   padding: 0.4rem;
 }
