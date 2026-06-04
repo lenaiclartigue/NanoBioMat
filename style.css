@@ -86,24 +86,36 @@ header p {
   padding: 0.4rem;
 }
 
-.research-image {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  display: block;
-  margin: 1.2rem auto 0.5rem auto;
-  border-radius: 8px;
+.research-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-figure {
+.research-text {
+  flex: 1 1 420px;
+}
+
+.research-figure {
+  flex: 0 0 220px;
+  max-width: 220px;
   margin: 0;
   text-align: center;
 }
 
-figcaption {
-  font-size: 0.9rem;
+.research-image {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.research-figure figcaption {
+  font-size: 0.85rem;
   color: #666;
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
 }
 
 .project-card {
