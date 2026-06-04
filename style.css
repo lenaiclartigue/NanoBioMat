@@ -120,3 +120,18 @@ color: #16324f;
 .project-card p {
 margin: 0.4rem 0;
 }
+
+.team-card {
+  border-left: 4px solid #2b7a78;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+.team-card h3 {
+  margin-bottom: 0.3rem;
+  color: #16324f;
+}
+
+.team-card p {
+  margin: 0.4rem 0;
+}
