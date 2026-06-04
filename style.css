@@ -248,3 +248,30 @@ margin: 0.4rem 0;
   width: auto;
   display: block;
 }
+
+.collaboration-card,
+.facility-card,
+.news-item {
+  border-left: 4px solid #2b7a78;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+.collaboration-card h3,
+.facility-card h3,
+.news-item h3 {
+  margin-bottom: 0.3rem;
+  color: #16324f;
+}
+
+.collaboration-card p,
+.facility-card p,
+.news-item p {
+  margin: 0.4rem 0;
+}
+
+.news-date {
+  font-weight: bold;
+  color: #2b7a78;
+  margin-bottom: 0.2rem;
+}
