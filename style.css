@@ -15,7 +15,7 @@ header {
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
@@ -75,11 +75,12 @@ header p {
   margin: 0;
 }
 
-.site-logo-large {
-  width: 320px;
-  max-width: 85%;
+.site-logo {
+  width: 90px;
+  max-width: 35%;
+  height: auto;
   margin-bottom: 1rem;
-  border-radius: 12px;
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.90);
-  padding: 1rem;
+  padding: 0.4rem;
 }
