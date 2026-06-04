@@ -200,3 +200,17 @@ margin: 0.4rem 0;
   background: #2b7a78;
   text-decoration: none;
 }
+
+.funding-logos {
+  margin: 0.6rem 0 0.8rem 0;
+}
+
+.funding-logos img {
+  max-height: 45px;
+  max-width: 170px;
+  height: auto;
+  width: auto;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  vertical-align: middle;
+}
