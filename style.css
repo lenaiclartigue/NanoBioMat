@@ -37,3 +37,9 @@
 @media(max-width:360px){.brand span{font-size:.75rem}.brand{gap:9px}.brand img{width:70px;height:auto}.brand-row{gap:8px}}
 
 @media(forced-colors:active){a:focus-visible,button:focus-visible{outline:3px solid Highlight;box-shadow:none}}
+
+/* V2.3: identical controls for equivalent content roles. */
+.actions>a:not(.button){font-size:.94rem}
+.research-actions{margin-top:26px}.related-publication{display:inline-block;min-height:28px}
+.research-resources{border-top:1px solid var(--line);padding-top:26px;margin-bottom:40px}
+.equipment-card{display:flex;flex-direction:column}.equipment-copy{display:flex;flex-direction:column;flex:1}.equipment-copy>a{margin-top:auto;padding-top:8px}
