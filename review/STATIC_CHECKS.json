@@ -1,0 +1,206 @@
+{
+  "scope": "Static checks, not browser tests",
+  "page_count": 10,
+  "pages": {
+    "collaborations.html": {
+      "images": 1,
+      "links": 23,
+      "ids": 2
+    },
+    "contact.html": {
+      "images": 1,
+      "links": 23,
+      "ids": 3
+    },
+    "facilities.html": {
+      "images": 1,
+      "links": 16,
+      "ids": 2
+    },
+    "index.html": {
+      "images": 2,
+      "links": 33,
+      "ids": 5
+    },
+    "news.html": {
+      "images": 1,
+      "links": 22,
+      "ids": 6
+    },
+    "projects.html": {
+      "images": 8,
+      "links": 17,
+      "ids": 9
+    },
+    "publications.html": {
+      "images": 1,
+      "links": 26,
+      "ids": 8
+    },
+    "research.html": {
+      "images": 2,
+      "links": 23,
+      "ids": 5
+    },
+    "teaching.html": {
+      "images": 1,
+      "links": 16,
+      "ids": 2
+    },
+    "team.html": {
+      "images": 6,
+      "links": 16,
+      "ids": 6
+    }
+  },
+  "errors": [],
+  "orphan_files": [],
+  "images": {
+    "logo-campus-france.png": {
+      "bytes": 37222,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "logo-region-pdl.png": {
+      "bytes": 35178,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "team-jean-michel-bouler.png": {
+      "bytes": 37576,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "logo-anr.png": {
+      "bytes": 37187,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "nanoassemblies-sem.png": {
+      "bytes": 524038,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "team-lenaic-lartigue.png": {
+      "bytes": 32721,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "logo-nanobiomat.png": {
+      "bytes": 324516,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "logo-canceropole-go.png": {
+      "bytes": 30242,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "team-marie-lea-lalanne.png": {
+      "bytes": 34161,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "ionp-synthesis.png": {
+      "bytes": 875067,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "logo-ouest-valorisation.png": {
+      "bytes": 32021,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "team-lea-ponroy.png": {
+      "bytes": 42183,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "logo-lumomat.png": {
+      "bytes": 1005,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR",
+        "PLTE"
+      ]
+    },
+    "team-anna-hlukhaniuk.png": {
+      "bytes": 34862,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    },
+    "logo-cnrs.png": {
+      "bytes": 30506,
+      "chunks": [
+        "IDAT",
+        "IEND",
+        "IHDR"
+      ]
+    }
+  },
+  "external_links": [
+    "https://cr2ti.univ-nantes.fr/research/team-4",
+    "https://cv.hal.science/lenaic-lartigue",
+    "https://docs.simpleanalytics.com/what-we-collect",
+    "https://doi.org/10.1021/acsami.7b01737",
+    "https://doi.org/10.1021/nn304477s",
+    "https://doi.org/10.1021/nn305719y",
+    "https://doi.org/10.3390/nano10010028",
+    "https://evenement.univ-angers.fr/congres-femmes-sciences-she-sciences-heritage-emergence",
+    "https://iscr.univ-rennes.fr/fr/olivier-mongin",
+    "https://nabi.u-paris-sciences.fr/people/",
+    "https://nanostr.uni-koeln.de/team/sabrina-disch",
+    "https://orcid.org/0000-0002-4662-4789",
+    "https://photonano26.sciencesconf.org/",
+    "https://pubmed.ncbi.nlm.nih.gov/23167525/",
+    "https://pubmed.ncbi.nlm.nih.gov/23634880/",
+    "https://pubmed.ncbi.nlm.nih.gov/28379690/",
+    "https://scholar.google.com/citations?user=SEodKjIAAAAJ&hl=fr",
+    "https://www.fz-juelich.de/profile/petracic_o",
+    "https://www.idref.fr/149350368",
+    "https://www.imc.cas.cz/en/research/research-departments/biomacromolecular-and-bioanalogous-systems/polymer-particles/staff",
+    "https://www.irset.org/fr/interlocuteurs/sophie-langouet",
+    "https://www.webofscience.com/wos/author/record/R-3629-2017"
+  ],
+  "total_bytes": 2180946
+}

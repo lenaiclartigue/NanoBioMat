@@ -1,0 +1,9 @@
+[
+  {"name":"MAGNETIMA","funder":"ANR — French National Research Agency","period":"","logo":"logo-anr.png","description":"MAGNETIMA is an ANR-funded research project in magnetic nanomedicine."},
+  {"name":"SEMAPHORE","funder":"EUR LUMOMAT","period":"2024–2027","logo":"logo-lumomat.png","description":"Development of magnetic and photoactive nanoassemblies for combined phototherapy."},
+  {"name":"NAMASTHEP","funder":"Cancéropôle Grand Ouest · Emergence Inter-réseaux","period":"2024–2025","logo":"logo-canceropole-go.png","description":"Magnetic nanomedicine research for liver cancer, with a focus on nanoassemblies and their interactions with hepatic cells."},
+  {"name":"NanoCURQMAG","funder":"Ouest Valorisation · pre-maturation programme","period":"2023–2024","logo":"logo-ouest-valorisation.png","description":"Development and transfer of curcumin-based magnetic nanoassemblies prepared by flash nanoprecipitation."},
+  {"name":"NanoSuperSpin3D","funder":"CNRS · EMERGENCE@INC2022","period":"2022–2023","logo":"logo-cnrs.png","description":"Study of magnetic coupling in three-dimensional nanoparticle assemblies for magnetic fluid hyperthermia."},
+  {"name":"SUPERFERATITE","funder":"Région Pays de la Loire · Etoiles Montantes","period":"2019–2023","logo":"logo-region-pdl.png","description":"Iron oxide nanoassemblies and collective magnetic behaviour for biomedical research."},
+  {"name":"PHC Barrande / PHC Proteus","funder":"Campus France","period":"2021–2022 · 2023–2024 · 2025–2026","logo":"logo-campus-france.png","description":"International collaborations on magnetic nanocarriers and polymer-stabilized nanoassemblies."}
+]

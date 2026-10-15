@@ -1,0 +1,7 @@
+{
+  "scope": "Byte comparison with V2; CSS brace balance only, not a CSS parser or browser",
+  "images_identical_to_v2": 15,
+  "unchanged_content_files": 7,
+  "css_braces_balanced": true,
+  "css_parser": "Unavailable: tinycss2 not installed; no dependency added."
+}
