@@ -24,7 +24,7 @@
 .page-contact main>.contact-card{max-width:var(--max);display:grid;grid-template-columns:1.1fr 1fr;border:1px solid var(--line);background:var(--white);margin-bottom:54px}
 .contact-identity{background:var(--tint);padding:42px}.page-contact .contact-identity h2{font-size:clamp(2rem,4vw,3rem)}.contact-degrees{color:var(--teal);letter-spacing:.08em;font-size:.85rem}.contact-email{display:block;margin-top:20px;font-size:.92rem;overflow-wrap:anywhere}
 .contact-details{padding:42px;display:grid;gap:28px}.contact-details h3{font-size:1rem}.contact-details address{font-style:normal}.contact-details .eyebrow{margin-bottom:9px}.contact-details .small{margin-top:10px;margin-bottom:0}
-.page-contact #privacy,.page-contact #license{border-top:1px solid var(--line);padding-top:30px}
+
 @media(max-width:760px){.page-contact main>.contact-card{grid-template-columns:1fr;margin-bottom:38px}.contact-identity,.contact-details{padding:26px}.page-contact .contact-identity h2{font-size:2.2rem}}
 @media print{.contact-card{break-inside:avoid}}
 
@@ -43,3 +43,17 @@
 .research-actions{margin-top:26px}.related-publication{display:inline-block;min-height:28px}
 .research-resources{border-top:1px solid var(--line);padding-top:26px;margin-bottom:40px}
 .equipment-card{display:flex;flex-direction:column}.equipment-copy{display:flex;flex-direction:column;flex:1}.equipment-copy>a{margin-top:auto;padding-top:8px}
+
+/* V2.4: native disclosures, closed initially and usable without JavaScript. */
+.footer-notices{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:flex-start;gap:12px 20px}
+.footer-notice{flex:1 1 280px;min-width:0;max-width:650px;color:var(--ink)}
+.footer-notice summary{display:list-item;list-style-position:inside;width:fit-content;max-width:100%;cursor:pointer;border:1px solid var(--line);border-radius:3px;background:var(--white);padding:10px 14px;min-height:44px;font-size:.82rem;color:var(--dark)}
+.footer-notice summary:hover{background:var(--tint)}.footer-notice[open] summary{background:var(--tint)}
+.notice-content{padding:24px;margin-top:12px;border:1px solid var(--line);background:var(--white);overflow-wrap:anywhere;font-size:.94rem;line-height:1.65}
+.notice-content h2{font-size:1.5rem}.notice-content p:last-child{margin-bottom:0}.notice-content .small{font-size:.85rem}
+.news-illustration img{max-height:520px}.news-document img{max-height:650px;width:auto;max-width:100%;margin:auto;background:var(--white)}
+@media(max-width:760px){.footer-notice{flex-basis:100%;max-width:none}.notice-content{padding:20px}}
+
+/* Four doctoral profiles, using the same cards and portrait dimensions. */
+.doctoral-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.team-photo-celia{object-position:center 35%}
+@media(max-width:760px){.doctoral-grid{grid-template-columns:1fr}}
