@@ -12,7 +12,7 @@
 .micrograph-grid,.equipment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
 .micrograph-frame{height:330px;background:var(--tint);padding:20px;display:flex;align-items:center;justify-content:center}
 .micrograph-frame img{width:100%;height:100%;object-fit:contain}
-.news-photo{margin:26px 0}.news-photo img{width:100%;max-height:500px;object-fit:contain;background:var(--tint)}
+.news-photo{margin:22px 0;max-width:340px}.news-photo img{width:100%;height:220px;object-fit:contain;background:var(--tint)}
 .page-facilities main>.equipment-section{max-width:var(--max);padding:8px 0 24px}
 .equipment-section h2{margin-bottom:28px}.equipment-card{background:var(--white);border:1px solid var(--line);min-width:0}
 .equipment-card>img{width:100%;aspect-ratio:4/3;object-fit:contain;background:var(--tint)}
@@ -57,3 +57,11 @@
 /* Four doctoral profiles, using the same cards and portrait dimensions. */
 .doctoral-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.team-photo-celia{object-position:center 35%}
 @media(max-width:760px){.doctoral-grid{grid-template-columns:1fr}}
+
+/* V2.5: compact editorial images and progressively enhanced publication filters. */
+.news-thumbnail{display:block;margin-bottom:22px}.news-thumbnail img{width:100%;height:230px;object-fit:contain;background:var(--tint)}
+.news-image-link{display:block}.news-photo figcaption a{display:inline-block;min-height:28px;margin-top:6px}
+.publication-controls{padding:24px;background:var(--tint);margin:24px 0}.publication-filters{display:grid;grid-template-columns:2fr 1fr 1.3fr auto;gap:16px;align-items:end}.publication-filters label{font-size:.88rem;font-weight:600}.publication-filters input,.publication-filters select{display:block;width:100%;min-width:0;min-height:46px;margin-top:7px;padding:8px;border:1px solid var(--muted);border-radius:0;background:var(--white);color:var(--ink)}.publication-controls #pub-count{margin:18px 0 0;font-size:.88rem}.publication-controls #pub-empty{margin:12px 0 0}.publication-filters .button{gap:0}
+@media(max-width:1000px){.publication-filters{grid-template-columns:1fr 1fr}}
+@media(max-width:760px){.publication-controls{padding:18px}.publication-filters{grid-template-columns:1fr}.news-thumbnail img{height:200px}.news-photo{max-width:300px}.news-photo img{height:200px}}
+@media print{.publication-controls{display:none!important}.publication-card[hidden]{display:grid!important}}
