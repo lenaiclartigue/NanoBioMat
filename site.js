@@ -51,7 +51,7 @@
       card.hidden = !match;
       shown += Number(match);
     });
-    count.textContent = `${shown} of ${cards.length} selected entries shown.`;
+    count.textContent = document.documentElement.lang === 'fr' ? `${shown} référence(s) affichée(s) sur ${cards.length}.` : `${shown} of ${cards.length} selected entries shown.`;
     empty.hidden = shown !== 0;
   };
   const clear = () => { search.value = ''; type.value = ''; topic.value = ''; filter(); };
@@ -69,3 +69,8 @@
   controls.hidden = false;
   filter();
 })();
+
+// Preserve a section anchor when switching between matching pages.
+document.querySelectorAll('.language-switch a').forEach(link => {
+  if (window.location.hash) link.href += window.location.hash;
+});
