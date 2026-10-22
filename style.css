@@ -258,3 +258,16 @@ section,[id]{scroll-margin-top:calc(var(--header-height) + 16px)}
 
 .contact-profiles ul{list-style:none;padding:0;margin:8px 0 0;font-size:.85rem;line-height:1.6}
 .contact-profiles li{margin:3px 0;overflow-wrap:anywhere}
+
+/* Science outreach */
+.outreach-intro{max-width:780px;margin-bottom:36px}
+.outreach-workshop{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:36px;background:var(--white)}
+.outreach-workshop-heading{padding:28px 32px;background:var(--tint)}
+.outreach-workshop-heading p:last-child{margin-bottom:0}
+.outreach-workshop-content{padding:28px 32px}
+.outreach-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:24px 0}
+.outreach-steps>div{border-top:2px solid var(--teal);padding-top:15px}
+.outreach-steps .eyebrow{display:block;margin-bottom:10px}
+.outreach-steps h3{font-size:1.05rem}.outreach-steps p{font-size:.9rem}
+.outreach-contact{margin-bottom:32px}
+@media(max-width:760px){.outreach-steps{grid-template-columns:1fr;gap:12px}.outreach-workshop-heading,.outreach-workshop-content{padding:22px}}
