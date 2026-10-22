@@ -84,3 +84,16 @@
 .notice-dialog-close:hover{background:#dfecec}
 .notice-dialog-close:focus-visible{outline:3px solid #237688;outline-offset:3px}
 @media(max-width:480px){.notice-dialog{padding:20px;max-height:calc(100dvh - 32px)}}
+
+/* V3.3: understated, stacked footer links and a linked CC licence badge. */
+.site-footer .footer-home{display:inline;padding:0;margin:0;color:inherit;text-decoration:none}
+.site-footer .footer-home:hover{text-decoration:underline}
+.site-footer .cc-license-badge{grid-column:1/-1;display:flex;align-items:center;gap:10px;width:fit-content;padding:0;margin:0;font-size:.8rem;color:inherit;text-decoration:underline;text-underline-offset:3px}
+.cc-license-badge img{display:block;width:88px;height:31px;object-fit:contain}
+.site-footer .footer-notices{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.site-footer .footer-notice{flex:0 0 auto;width:100%;max-width:650px}
+.site-footer .footer-notice summary{display:block;list-style:none;width:fit-content;min-height:0;padding:0;border:0;border-radius:0;background:transparent;color:inherit;text-decoration:underline;text-underline-offset:3px;font-size:.82rem;line-height:1.6}
+.site-footer .footer-notice summary::-webkit-details-marker{display:none}
+.site-footer .footer-notice summary::marker{content:""}
+.site-footer .footer-notice summary:hover,.site-footer .footer-notice[open] summary{background:transparent;text-decoration-thickness:2px}
+.site-footer .footer-notice summary:focus-visible{outline:2px solid currentColor;outline-offset:4px}
