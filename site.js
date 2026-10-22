@@ -74,3 +74,52 @@
 document.querySelectorAll('.language-switch a').forEach(link => {
   if (window.location.hash) link.href += window.location.hash;
 });
+
+// Footer information opens above the page; details remain usable without JS.
+(() => {
+  if (typeof HTMLDialogElement === 'undefined') return;
+  const french = document.documentElement.lang === 'fr';
+  document.querySelectorAll('.footer-notice').forEach(details => {
+    const summary = details.querySelector('summary');
+    const content = details.querySelector('.notice-content');
+    if (!summary || !content) return;
+    const dialog = document.createElement('dialog');
+    dialog.className = 'notice-dialog';
+    const heading = content.querySelector('h2');
+    if (heading) {
+      heading.id = `${details.id}-dialog-title`;
+      dialog.setAttribute('aria-labelledby', heading.id);
+    } else {
+      dialog.setAttribute('aria-label', summary.textContent.trim());
+    }
+    const close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'notice-dialog-close';
+    close.textContent = french ? 'Fermer ×' : 'Close ×';
+    close.setAttribute('aria-label', french ? 'Fermer la fenêtre' : 'Close dialog');
+    dialog.append(close, content);
+    document.body.append(dialog);
+    summary.setAttribute('aria-haspopup', 'dialog');
+    const open = () => {
+      if (dialog.open) return;
+      dialog.showModal();
+      document.documentElement.classList.add('notice-modal-open');
+      close.focus();
+    };
+    summary.addEventListener('click', event => { event.preventDefault(); open(); });
+    close.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => {
+      const rect = dialog.getBoundingClientRect();
+      if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right ||
+          event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
+    });
+    dialog.addEventListener('close', () => {
+      document.documentElement.classList.remove('notice-modal-open');
+      summary.focus({preventScroll: true});
+    });
+    // Retain direct links to the existing footer information anchors.
+    const reveal = () => { if (window.location.hash === `#${details.id}`) open(); };
+    window.addEventListener('hashchange', reveal);
+    reveal();
+  });
+})();
