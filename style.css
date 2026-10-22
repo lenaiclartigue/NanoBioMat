@@ -271,3 +271,30 @@ section,[id]{scroll-margin-top:calc(var(--header-height) + 16px)}
 .outreach-steps h3{font-size:1.05rem}.outreach-steps p{font-size:.9rem}
 .outreach-contact{margin-bottom:32px}
 @media(max-width:760px){.outreach-steps{grid-template-columns:1fr;gap:12px}.outreach-workshop-heading,.outreach-workshop-content{padding:22px}}
+
+/* V3.15: full-size identity in the footer, compact text brand above. */
+.site-header .brand .brand-name{display:block;font-size:17px;line-height:1.2;font-weight:700;letter-spacing:-.025em;white-space:nowrap;color:#172d3e}
+.site-footer>.footer-identity{display:flex;align-items:center;gap:15px;min-width:0}
+.site-footer .footer-brand-logo{display:block;flex:0 0 auto;padding:0;margin:0;line-height:0}
+.site-footer .footer-brand-logo img{display:block;width:100px;height:auto;max-height:78px;object-fit:contain}
+.site-footer .footer-identity-copy{min-width:0}
+.site-footer .footer-identity-copy>strong{display:block;font-size:12px;font-weight:700;line-height:1.4}
+.site-footer .footer-identity-copy>p{margin:2px 0 0;font-size:10px;line-height:1.35}
+.site-footer .footer-identity-copy>.copyright{margin-top:3px;text-align:left;font-size:10px}
+@media(max-width:1150px){.site-header .brand .brand-name{display:block;font-size:16px}}
+@media(max-width:760px){
+ .site-header .brand .brand-name{display:block;font-size:13px}
+ .site-footer>.footer-identity{gap:8px}
+ .site-footer .footer-brand-logo img{width:62px;max-height:60px}
+ .site-footer .footer-identity-copy>strong{font-size:10px}
+ .site-footer .footer-identity-copy>p,.site-footer .footer-identity-copy>.copyright{font-size:8px}
+}
+@media(max-width:440px){
+ .site-footer{grid-template-columns:minmax(0,1fr) auto;gap:6px 10px}
+ .site-footer>.footer-identity{grid-column:1;grid-row:1;gap:6px}
+ .site-footer .footer-brand-logo img{width:53px}
+ .site-footer .footer-right{grid-column:2;grid-row:1}
+ .site-footer .footer-institutions{grid-column:1/-1;grid-row:2;flex-direction:row;gap:12px}
+ .site-footer .footer-institutions .nantes-mark img{width:65px}
+ .site-footer .footer-institutions .ceisam-mark img{width:50px}
+}
