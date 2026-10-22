@@ -107,3 +107,103 @@
 .site-footer .footer-right .footer-notice summary{margin-left:auto}
 .site-footer .cc-license-badge{margin-top:14px}
 @media(max-width:760px){.site-footer .footer-right{justify-self:end}}
+
+/* Funder logos retain their original grid placement and proportions. */
+.project-card>.funder-link{display:flex;align-items:center;justify-content:center;justify-self:end;width:180px;max-width:100%;padding:8px;border-radius:6px}
+.project-card>.funder-link img{width:auto;max-width:100%;height:auto;max-height:95px;object-fit:contain}
+.project-card>.funder-link:hover{background:var(--tint)}
+@media(max-width:760px){.project-card>.funder-link{justify-self:start;width:156px}.project-card>.funder-link img{max-height:55px}}
+
+/* V3.6: compact fixed page chrome; heights are measured by site.js. */
+:root{--header-height:110px;--footer-height:114px}
+html{scroll-padding-top:calc(var(--header-height) + 16px);scroll-padding-bottom:calc(var(--footer-height) + 16px)}
+body{padding-top:var(--header-height);padding-bottom:calc(var(--footer-height) + 20px)}
+.site-header{position:fixed;z-index:50;top:0;left:0;right:0;width:100%;max-width:none;margin:0;padding:8px max(20px,calc((100% - var(--max))/2)) 0;background:var(--paper);box-shadow:0 2px 10px #17384012}
+.site-header .brand-row{gap:16px;padding-bottom:7px}
+.site-header .brand{gap:10px}
+.site-header .brand img{width:62px;height:45px}
+.site-header .brand span{font-size:.85rem;line-height:1.2}
+.site-header .institution-logos{gap:14px}
+.site-header .institution-logos a{padding:0}
+.site-header .institution-logos .nantes-mark img{width:115px}
+.site-header .institution-logos .ceisam-mark img{width:105px}
+.site-header nav{gap:4px 22px;padding:5px 0}
+.site-header nav a{font-size:.8rem;padding:2px 0}
+.site-header .language-switch{font-size:.78rem}
+.site-footer{position:fixed;z-index:50;bottom:0;left:0;right:0;width:100%;max-width:none;margin:0;padding:9px max(20px,calc((100% - var(--max))/2)) calc(9px + env(safe-area-inset-bottom));display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;background:var(--paper);box-shadow:0 -2px 10px #17384012;font-size:.72rem;line-height:1.35}
+.site-footer strong{font-size:.95rem}
+.site-footer p{margin:3px 0 0;font-size:.72rem;line-height:1.35}
+.site-footer .cc-license-badge{margin-top:5px}
+.site-footer .cc-license-badge img{width:71px;height:25px}
+.site-footer .mobile-affiliations{display:none}
+.site-footer .footer-right{gap:3px;align-items:flex-end;justify-content:flex-start}
+.site-footer .footer-navigation{gap:5px 14px;line-height:1.35}
+.site-footer .footer-navigation a{padding:0;font-size:.75rem}
+.site-footer .footer-right .footer-notices{gap:2px}
+.site-footer .footer-notice summary{font-size:.72rem;line-height:1.35}
+.site-footer .footer-right .copyright{margin:2px 0 0;text-align:right;font-size:.69rem;line-height:1.35}
+.skip-link{z-index:100}
+section,[id]{scroll-margin-top:calc(var(--header-height) + 16px)}
+@media(max-width:760px){
+ .site-header{padding:6px 16px 0}.site-header .brand-row{flex-wrap:nowrap;gap:9px;padding-bottom:6px}
+ .site-header .brand img{width:46px;height:34px}.site-header .brand span{font-size:.7rem}
+ .site-header .institution-logos{display:none}.site-header .language-switch{margin-left:auto;gap:1px}
+ .site-header .language-switch a{padding:4px}.site-header .menu-toggle{margin-left:0;padding:5px 7px;min-height:34px;font-size:.75rem}
+ .site-header nav.open{max-height:40dvh;overflow-y:auto}.site-header nav a{font-size:.8rem}
+ .site-footer{padding:7px 16px calc(7px + env(safe-area-inset-bottom));gap:10px;grid-template-columns:minmax(0,1fr) auto}
+ .site-footer p{font-size:.64rem}.site-footer strong{font-size:.85rem}
+ .site-footer .footer-navigation{gap:4px 9px}.site-footer .footer-navigation a{font-size:.67rem}
+ .site-footer .footer-notice summary{font-size:.65rem}.site-footer .footer-right .copyright{font-size:.62rem}
+}
+@media print{
+ body{padding:0}.site-header,.site-footer{position:static;width:auto;padding:10px 0;box-shadow:none}
+ .site-footer .footer-notices,.site-header .language-switch{display:none}
+}
+
+/* V3.7: shared visual language with the thermochemistry site. */
+.site-header{background:#fff;border-bottom:1px solid #dce4eb;padding:8px 30px 5px;box-shadow:none}
+.site-header .brand-row{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px 24px;position:relative;padding-bottom:5px}
+.site-header .brand{grid-column:1;grid-row:1;justify-self:start;gap:10px}
+.site-header .brand img{width:57px;height:41px}
+.site-header .brand span{font-size:.85rem;color:#172d3e;line-height:1.25}
+.site-header .institution-logos{grid-column:2;grid-row:1;justify-self:center;margin:0;display:flex;flex-wrap:nowrap;gap:16px}
+.site-header .institution-logos .nantes-mark img{width:135px}
+.site-header .institution-logos .ceisam-mark img{width:100px}
+.site-header .language-switch{grid-column:3;grid-row:1;justify-self:end;margin:0;font-size:13px;gap:4px;color:#183c53}
+.site-header .language-switch a{display:grid;place-items:center;min-width:36px;min-height:36px;padding:4px;border-radius:6px;font-weight:600;color:#183c53}
+.site-header .language-switch a[aria-current]{background:#183c53;color:#fff}
+.site-header nav{display:flex;justify-content:center;gap:2px 5px;padding:3px 0 0;border:0}
+.site-header nav a{white-space:nowrap;padding:6px 10px;font-size:13px;font-weight:400;border:0;border-radius:6px;color:#526576;line-height:1.35;text-decoration:none}
+.site-header nav a:hover{background:#e9f3f1;color:#0b726b}
+.site-header nav a[aria-current=page]{background:#eaf5f2;color:#0b726b;font-weight:700}
+.site-footer{background:#f5f7fa;border-top:1px solid #dce4eb;box-shadow:none;padding:8px 30px calc(8px + env(safe-area-inset-bottom));gap:18px;align-items:center;color:#526576}
+.site-footer>div:first-child{display:grid;grid-template-columns:auto auto;column-gap:16px;align-items:center;justify-content:start}
+.site-footer>div:first-child>strong{grid-column:1;grid-row:1;font-size:12px;font-weight:700;line-height:1.4}
+.site-footer>div:first-child>p{grid-column:1;grid-row:2;margin:0;font-size:11px;line-height:1.4}
+.site-footer>div:first-child>.cc-license-badge{grid-column:2;grid-row:1/3;margin:0}
+.site-footer .cc-license-badge img{width:88px;height:31px}
+.site-footer .footer-right{gap:2px;line-height:1.4}
+.site-footer .footer-navigation{gap:4px 14px}
+.site-footer .footer-navigation a{font-size:12px;color:#172d3e}
+.site-footer .footer-notice summary{font-size:12px;line-height:1.5;color:#172d3e}
+.site-footer .footer-right .copyright{font-size:10px;line-height:1.4;margin:0;color:#526576}
+@media(max-width:1000px){.site-header nav{gap:2px}.site-header nav a{padding:6px 7px;font-size:12px}}
+@media(max-width:760px){
+ .site-header{padding:7px 16px 5px}.site-header .brand-row{grid-template-columns:minmax(0,1fr) auto auto;gap:6px 10px;padding-bottom:4px}
+ .site-header .brand{gap:6px}.site-header .brand img{width:44px;height:32px}.site-header .brand span{font-size:.68rem}
+ .site-header .institution-logos{grid-column:2;display:flex;gap:8px}.site-header .institution-logos .nantes-mark img{width:96px}.site-header .institution-logos .ceisam-mark img{width:62px}
+ .site-header .language-switch{grid-column:3;font-size:12px;gap:0}.site-header .language-switch a{min-width:28px;min-height:32px}
+ .site-header .menu-toggle{display:none}
+ .site-header.nav-ready nav,.site-header nav{display:flex;flex-wrap:wrap;justify-content:center;gap:2px;border:0;padding:2px 0 0;max-height:none;overflow:visible}
+ .site-header nav a{display:block;font-size:11px;padding:5px 6px}
+ .site-footer{padding:7px 16px calc(7px + env(safe-area-inset-bottom));gap:10px}
+ .site-footer>div:first-child{column-gap:9px}.site-footer>div:first-child>strong{font-size:11px}.site-footer>div:first-child>p{font-size:9px}
+ .site-footer .cc-license-badge img{width:66px;height:auto}.site-footer .footer-navigation{gap:4px 9px}.site-footer .footer-navigation a,.site-footer .footer-notice summary{font-size:10px}.site-footer .footer-right .copyright{font-size:9px}
+}
+@media(max-width:440px){
+ .site-header{padding-left:10px;padding-right:10px}.site-header .brand-row{gap:5px}.site-header .brand span{font-size:.61rem}.site-header .brand img{width:35px;height:26px}
+ .site-header .institution-logos{gap:5px}.site-header .institution-logos .nantes-mark img{width:78px}.site-header .institution-logos .ceisam-mark img{width:48px}
+ .site-header nav a{font-size:10px;padding:5px}
+ .site-footer{padding-left:10px;padding-right:10px}.site-footer .cc-license-badge img{width:56px}.site-footer>div:first-child{column-gap:6px}.site-footer>div:first-child>p{max-width:150px;font-size:8px}
+}
+@media print{.site-header,.site-footer{position:static;padding:10px 0}.site-header nav{display:none!important}}

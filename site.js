@@ -123,3 +123,22 @@ document.querySelectorAll('.language-switch a').forEach(link => {
     reveal();
   });
 })();
+
+
+// Match content clearances to the actual fixed bars, including mobile menus.
+(() => {
+ const header = document.querySelector('.site-header');
+ const footer = document.querySelector('.site-footer');
+ const measure = () => {
+  if (header) document.documentElement.style.setProperty('--header-height', `${header.getBoundingClientRect().height}px`);
+  if (footer) document.documentElement.style.setProperty('--footer-height', `${footer.getBoundingClientRect().height}px`);
+ };
+ measure();
+ if (typeof ResizeObserver !== 'undefined') {
+  const observer = new ResizeObserver(measure);
+  if (header) observer.observe(header);
+  if (footer) observer.observe(footer);
+ }
+ window.addEventListener('resize', measure);
+ window.addEventListener('load', measure);
+})();
