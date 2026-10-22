@@ -250,3 +250,11 @@ section,[id]{scroll-margin-top:calc(var(--header-height) + 16px)}
 }
 @media(max-width:420px){.site-footer{gap:7px}.site-footer .footer-institutions .nantes-mark img{width:65px}.site-footer .footer-institutions .ceisam-mark img{width:50px}.site-footer .footer-right .footer-notice summary{font-size:8px}}
 @media print{.site-header,.site-footer{position:static}.site-header nav{display:none!important}}
+
+/* V3.9: footer actions without duplicate navigation. */
+.site-footer .footer-right>.cc-license-badge{display:block;align-self:flex-end;margin:5px 0 0;padding:0}
+.site-footer .footer-right>.cc-license-badge img{width:70px;height:auto}
+@media(max-width:760px){.site-footer .footer-right>.cc-license-badge img{width:56px}}
+
+.contact-profiles ul{list-style:none;padding:0;margin:8px 0 0;font-size:.85rem;line-height:1.6}
+.contact-profiles li{margin:3px 0;overflow-wrap:anywhere}
