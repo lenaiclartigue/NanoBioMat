@@ -51,6 +51,9 @@
       card.hidden = !match;
       shown += Number(match);
     });
+    document.querySelectorAll('.publication-group').forEach(group => {
+      group.hidden = !group.querySelector('.publication-card:not([hidden])');
+    });
     count.textContent = document.documentElement.lang === 'fr' ? `${shown} référence(s) affichée(s) sur ${cards.length}.` : `${shown} of ${cards.length} selected entries shown.`;
     empty.hidden = shown !== 0;
   };
