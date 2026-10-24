@@ -27,6 +27,10 @@ def page(template,main,title,description):
  s=re.sub(r'<title>.*?</title>',lambda m:'<title>'+escape(title)+' | NanoBioMat</title>',s)
  s=re.sub(r'<meta name="description" content="[^"]*">',lambda m:'<meta name="description" content="'+escape(description,quote=True)+'">',s)
  return s
+def credit_overlay(d):
+ credit=d.get('image_credit','')
+ return '<span class="photo-credit photo-credit-overlay">'+escape(credit)+'</span>' if credit else ''
+
 for lang in ['en','fr']:
  folder=ROOT/'fr' if lang=='fr' else ROOT
  prefix='fr/' if lang=='fr' else '';L=labels[lang]
@@ -39,8 +43,10 @@ for lang in ['en','fr']:
   image=d.get('thumbnail',d.get('image',''));image_html='<img src="'+escape(image,quote=True)+'" alt="'+escape(d.get('image_alt',''),quote=True)+'" loading="lazy">' if image else ''
   zoom_label='Agrandir' if lang=='fr' else 'Enlarge'
   attrs=' data-image-caption="'+escape(d['image_caption'],quote=True)+'" data-image-credit="'+escape(d.get('image_credit',''),quote=True)+'"'
-  zoom='<figure class="update-figure"><a class="update-image image-zoom" href="'+escape(d['image'],quote=True)+'"'+attrs+' aria-label="'+zoom_label+' : '+escape(d['image_caption'],quote=True)+'">'+image_html+'</a><figcaption><a class="image-zoom zoom-hint" href="'+escape(d['image'],quote=True)+'"'+attrs+' aria-label="'+zoom_label+' : '+escape(d['image_caption'],quote=True)+'">'+zoom_label+'</a></figcaption></figure>'
+  zoom='<figure class="update-figure"><a class="update-image image-zoom" href="'+escape(d['image'],quote=True)+'"'+attrs+' aria-label="'+zoom_label+' : '+escape(d['image_caption'],quote=True)+'">'+image_html+credit_overlay(d)+'</a><figcaption><a class="image-zoom zoom-hint" href="'+escape(d['image'],quote=True)+'"'+attrs+' aria-label="'+zoom_label+' : '+escape(d['image_caption'],quote=True)+'">'+zoom_label+'</a></figcaption></figure>'
   cards.append('<article class="update-card" id="'+p['id']+'" data-category="'+p['category']+'">'+zoom+'<div class="update-copy"><p class="eyebrow">'+escape(d['category_label'])+'</p><time datetime="'+p['date']+'">'+d['date_label']+'</time><h2><a href="'+filename+'">'+escape(d['title'])+'</a></h2><p>'+escape(d['summary'])+'</p><a href="'+filename+'">'+L['read']+'<span class="sr-only"> : '+escape(d['title'])+'</span> →</a></div></article>')
+  if p['id']=='patent':
+   cards[-1]=cards[-1].replace('</div></article>', '<a class="news-patent-link" href="https://patents.google.com/patent/EP4525838A1/en" target="_blank" rel="noopener noreferrer">EP4525838A1 — Google Patents</a></div></article>')
   main='<main id="main-content" tabindex="-1" class="update-detail"><header class="page-heading"><p class="eyebrow"><a href="news.html">'+L['back']+'</a> / '+escape(d['category_label'])+'</p><h1>'+escape(d['title'])+'</h1><p class="update-date"><time datetime="'+p['date']+'">'+d['date_label']+'</time></p></header><article class="update-body">'+d['body_html']+'</article><div class="actions update-sharing"><a href="news.html">← '+L['back']+'</a><button type="button" class="text-copy" data-copy-url="'+url+'" data-copied="'+L['copied']+'">'+L['share']+'</button><span class="copy-status" role="status"></span></div></main>'
   out=page(template,main,d['title'],d['summary'])
   # Language switch and alternate URLs point to the same article in each language.
@@ -64,7 +70,7 @@ for lang in ['en','fr']:
   d=p['languages'][lang];filename='news-'+p['slug']+'.html'
   zl='Agrandir' if lang=='fr' else 'Enlarge'
   attrs=' data-image-caption="'+escape(d['image_caption'],quote=True)+'" data-image-credit="'+escape(d.get('image_credit',''),quote=True)+'"'
-  briefs.append('<article class="news-brief"><a class="news-thumbnail image-zoom" href="'+escape(d['image'],quote=True)+'"'+attrs+' aria-label="'+zl+' : '+escape(d['image_caption'],quote=True)+'"><img src="'+escape(d.get('thumbnail',d['image']),quote=True)+'" alt="'+escape(d['image_alt'],quote=True)+'" loading="lazy"></a><time datetime="'+p['date']+'">'+d['date_label']+'</time><h3><a href="'+filename+'">'+escape(d['title'])+'</a></h3><p>'+escape(d['summary'])+'</p></article>')
+  briefs.append('<article class="news-brief"><a class="news-thumbnail image-zoom" href="'+escape(d['image'],quote=True)+'"'+attrs+' aria-label="'+zl+' : '+escape(d['image_caption'],quote=True)+'"><img src="'+escape(d.get('thumbnail',d['image']),quote=True)+'" alt="'+escape(d['image_alt'],quote=True)+'" loading="lazy">'+credit_overlay(d)+'</a><time datetime="'+p['date']+'">'+d['date_label']+'</time><h3><a href="'+filename+'">'+escape(d['title'])+'</a></h3><p>'+escape(d['summary'])+'</p></article>')
  hs=re.sub(r'(<section class="section-block" aria-labelledby="news-title">.*?<div class="two-columns">).*?(</div>\s*<a class="text-link")',lambda m:m[1]+''.join(briefs)+m[2],hs,flags=re.S)
  home.write_text(hs)
 # Standard metadata for every public page, including bilingual alternatives.
@@ -101,8 +107,8 @@ for p in ROOT.rglob('*.html'):
   return tag+body+marker+'</a>'
  s=re.sub(r'(<a\b[^>]*>)(.*?)</a>',external_link,s,flags=re.S)
 
- s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.25',s)
- s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.25',s)
+ s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.26',s)
+ s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.26',s)
 
  # Keep intrinsic dimensions consistent with optimized local assets.
  def image_dimensions(match):
