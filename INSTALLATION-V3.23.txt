@@ -1,0 +1,5 @@
+NanoBioMat V3.23 — correctif cumulatif depuis V3.21 (inclut V3.22).
+Compatible également avec V3.22.
+Décompresser puis copier le contenu dans la racine du dépôt GitHub, en conservant les dossiers et en remplaçant les fichiers existants.
+Aucun fichier à supprimer.
+INSTALLATION-V3.23.txt est une notice : inutile de la publier.

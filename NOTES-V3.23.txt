@@ -1,0 +1,7 @@
+NanoBioMat V3.23 — pied de page compact et conception du site de recherche.
+Conception déplacée à droite sous Réutilisation et Audience ; trois liens
+alignés à droite, espacements réduits ; badge CC placé à côté de ces liens.
+Fenêtre : Conception et principes éditoriaux. Références recentrées sur
+Nielsen Norman Group, W3C WAI et les guides institutionnels de Nantes Université.
+Les références pédagogiques et de progression ont été retirées de cette fenêtre.
+Crédits des photographies inchangés. Aucun fichier à supprimer.
