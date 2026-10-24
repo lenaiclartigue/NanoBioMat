@@ -1,0 +1,114 @@
+[
+  {
+    "id": "magnetima",
+    "slug": "magnetima-anr",
+    "date": "2026-07",
+    "category": "projects",
+    "languages": {
+      "en": {
+        "title": "MAGNETIMA funded by ANR",
+        "summary": "MAGNETIMA is an ANR-funded research project in magnetic nanomedicine.",
+        "date_label": "July 2026",
+        "category_label": "Funding",
+        "image": "magnetima-nanoassembly.png",
+        "image_alt": "Conceptual illustration of the MAGNETIMA project, labelled in French",
+        "body_html": "<p class=\"eyebrow\">Funding</p><h2>MAGNETIMA funded by ANR</h2><p>MAGNETIMA is an ANR-funded research project in magnetic nanomedicine.</p><figure class=\"news-photo news-illustration\"><a class=\"news-image-link\" href=\"magnetima-nanoassembly.png\" aria-label=\"Enlarge image\"><img width=\"1448\" height=\"1086\" src=\"magnetima-nanoassembly.png\" alt=\"Conceptual illustration of the MAGNETIMA project, labelled in French\" loading=\"lazy\"></a><figcaption>MAGNETIMA project illustration. Conceptual image; not experimental data. <a href=\"magnetima-nanoassembly.png\">Enlarge image</a></figcaption></figure><div class=\"actions\"><a href=\"projects.html#magnetima\">Project information <span aria-hidden=\"true\">→</span></a></div>",
+        "thumbnail": "magnetima-nanoassembly-thumb.webp"
+      },
+      "fr": {
+        "title": "MAGNETIMA financé par l’ANR",
+        "summary": "MAGNETIMA est un projet de recherche en nanomédecine magnétique financé par l’ANR.",
+        "date_label": "Juillet 2026",
+        "category_label": "Financement",
+        "image": "../magnetima-nanoassembly.png",
+        "image_alt": "Illustration conceptuelle du projet MAGNETIMA, légendée en français",
+        "body_html": "<p class=\"eyebrow\">Financement</p><h2>MAGNETIMA financé par l’ANR</h2><p>MAGNETIMA est un projet de recherche en nanomédecine magnétique financé par l’ANR.</p><figure class=\"news-photo news-illustration\"><a class=\"news-image-link\" href=\"../magnetima-nanoassembly.png\" aria-label=\"Agrandir l’image\"><img width=\"1448\" height=\"1086\" src=\"../magnetima-nanoassembly.png\" alt=\"Illustration conceptuelle du projet MAGNETIMA, légendée en français\" loading=\"lazy\"></a><figcaption>Illustration du projet MAGNETIMA. Image conceptuelle, ne représentant pas des données expérimentales.<a href=\"../magnetima-nanoassembly.png\">Agrandir l’image</a></figcaption></figure><div class=\"actions\"><a href=\"projects.html#magnetima\">Informations sur le projet<span aria-hidden=\"true\">→</span></a></div>",
+        "thumbnail": "../magnetima-nanoassembly-thumb.webp"
+      }
+    }
+  },
+  {
+    "id": "photonano",
+    "slug": "lea-ponroy-photonano26",
+    "date": "2026-05-13",
+    "category": "group",
+    "languages": {
+      "en": {
+        "title": "Léa Ponroy presents her work at PHOTONANO26",
+        "summary": "Léa Ponroy presented her doctoral research on magnetic and photoactive nanoassemblies at PHOTONANO26 in Paris.",
+        "date_label": "13 May 2026",
+        "category_label": "Conference",
+        "image": "news-photonano26.jpg",
+        "image_alt": "Léa Ponroy presenting at PHOTONANO26 in a lecture theatre",
+        "body_html": "<p class=\"eyebrow\">Conference</p><h2>Léa Ponroy presents her work at PHOTONANO26</h2><p>Léa Ponroy presented her doctoral research on magnetic and photoactive nanoassemblies at PHOTONANO26 in Paris.</p><figure class=\"news-photo\"><a class=\"news-image-link\" href=\"news-photonano26.jpg\" aria-label=\"Enlarge image\"><img width=\"4032\" height=\"3024\" src=\"news-photonano26.jpg\" alt=\"Léa Ponroy presenting at PHOTONANO26 in a lecture theatre\" loading=\"lazy\"></a><figcaption>Léa Ponroy at PHOTONANO26, Paris, May 2026. <a href=\"news-photonano26.jpg\">Enlarge image</a> <span class=\"photo-credit\">Photo supplied by Léa Ponroy.</span></figcaption></figure><div class=\"actions\"><a href=\"https://photonano26.sciencesconf.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Event website <span aria-hidden=\"true\">↗</span></a><a href=\"team.html#lea-ponroy\">Researcher profile <span aria-hidden=\"true\">→</span></a></div>",
+        "thumbnail": "news-photonano26-thumb.webp"
+      },
+      "fr": {
+        "title": "Léa Ponroy présente ses travaux à PHOTONANO26",
+        "summary": "Léa Ponroy a présenté ses travaux de thèse sur les nanoassemblages magnétiques et photoactifs à PHOTONANO26, à Paris.",
+        "date_label": "13 mai 2026",
+        "category_label": "Conférence",
+        "image": "../news-photonano26.jpg",
+        "image_alt": "Léa Ponroy présentant ses travaux à PHOTONANO26 in a lecture theatre",
+        "body_html": "<p class=\"eyebrow\">Conférence</p><h2>Léa Ponroy présente ses travaux à PHOTONANO26</h2><p>Léa Ponroy a présenté ses travaux de thèse sur les nanoassemblages magnétiques et photoactifs à PHOTONANO26, à Paris.</p><figure class=\"news-photo\"><a class=\"news-image-link\" href=\"../news-photonano26.jpg\" aria-label=\"Agrandir l’image\"><img width=\"4032\" height=\"3024\" src=\"../news-photonano26.jpg\" alt=\"Léa Ponroy présentant ses travaux à PHOTONANO26 in a lecture theatre\" loading=\"lazy\"></a><figcaption>Léa Ponroy à PHOTONANO26, Paris, mai 2026.<a href=\"../news-photonano26.jpg\">Agrandir l’image</a> <span class=\"photo-credit\">Photo transmise par Léa Ponroy.</span></figcaption></figure><div class=\"actions\"><a href=\"https://photonano26.sciencesconf.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Site de l’événement<span aria-hidden=\"true\">↗</span></a><a href=\"team.html#lea-ponroy\">Profil de la chercheuse<span aria-hidden=\"true\">→</span></a></div>",
+        "thumbnail": "../news-photonano26-thumb.webp"
+      }
+    }
+  },
+  {
+    "id": "she",
+    "slug": "marie-lea-lalanne-she",
+    "date": "2026-04-02",
+    "category": "group",
+    "languages": {
+      "en": {
+        "title": "Marie-Léa Lalanne at the Women & Science – SHE meeting",
+        "summary": "Marie-Léa Lalanne presented her doctoral research on magnetic hyperthermia and magnetic nanoparticles for biomedical applications at the University of Angers.",
+        "date_label": "2 April 2026",
+        "category_label": "Conference",
+        "image": "news-she-sciences.jpg",
+        "image_alt": "Marie-Léa Lalanne presenting at the Women and Science SHE meeting",
+        "body_html": "<p class=\"eyebrow\">Conference</p><h2>Marie-Léa Lalanne at the Women &amp; Science – SHE meeting</h2><p>Marie-Léa Lalanne presented her doctoral research on magnetic hyperthermia and magnetic nanoparticles for biomedical applications at the University of Angers.</p><figure class=\"news-photo\"><a class=\"news-image-link\" href=\"news-she-sciences.jpg\" aria-label=\"Enlarge image\"><img width=\"4000\" height=\"2252\" src=\"news-she-sciences.jpg\" alt=\"Marie-Léa Lalanne presenting at the Women and Science SHE meeting\" loading=\"lazy\"></a><figcaption>Marie-Léa Lalanne at the Women &amp; Science – SHE meeting, Angers, April 2026. <a href=\"news-she-sciences.jpg\">Enlarge image</a> <span class=\"photo-credit\">Photo supplied by Marie-Léa Lalanne.</span></figcaption></figure><div class=\"actions\"><a href=\"https://evenement.univ-angers.fr/congres-femmes-sciences-she-sciences-heritage-emergence\" target=\"_blank\" rel=\"noopener noreferrer\">Event website <span aria-hidden=\"true\">↗</span></a><a href=\"team.html#marie-lea-lalanne\">Researcher profile <span aria-hidden=\"true\">→</span></a></div>",
+        "thumbnail": "news-she-sciences-thumb.webp"
+      },
+      "fr": {
+        "title": "Marie-Léa Lalanne à la journée Femmes et Sciences – SHE",
+        "summary": "Marie-Léa Lalanne a présenté ses travaux de thèse sur l’hyperthermie magnétique et les nanoparticules magnétiques pour des applications biomédicales à l’Université d’Angers.",
+        "date_label": "2 avril 2026",
+        "category_label": "Conférence",
+        "image": "../news-she-sciences.jpg",
+        "image_alt": "Marie-Léa Lalanne présentant ses travaux à la journée Femmes et Sciences – SHE",
+        "body_html": "<p class=\"eyebrow\">Conférence</p><h2>Marie-Léa Lalanne à la journée Femmes et Sciences – SHE</h2><p>Marie-Léa Lalanne a présenté ses travaux de thèse sur l’hyperthermie magnétique et les nanoparticules magnétiques pour des applications biomédicales à l’Université d’Angers.</p><figure class=\"news-photo\"><a class=\"news-image-link\" href=\"../news-she-sciences.jpg\" aria-label=\"Agrandir l’image\"><img width=\"4000\" height=\"2252\" src=\"../news-she-sciences.jpg\" alt=\"Marie-Léa Lalanne présentant ses travaux à la journée Femmes et Sciences – SHE\" loading=\"lazy\"></a><figcaption>Marie-Léa Lalanne à la journée Femmes et Sciences – SHE, Angers, avril 2026.<a href=\"../news-she-sciences.jpg\">Agrandir l’image</a> <span class=\"photo-credit\">Photo transmise par Marie-Léa Lalanne.</span></figcaption></figure><div class=\"actions\"><a href=\"https://evenement.univ-angers.fr/congres-femmes-sciences-she-sciences-heritage-emergence\" target=\"_blank\" rel=\"noopener noreferrer\">Site de l’événement<span aria-hidden=\"true\">↗</span></a><a href=\"team.html#marie-lea-lalanne\">Profil de la chercheuse<span aria-hidden=\"true\">→</span></a></div>",
+        "thumbnail": "../news-she-sciences-thumb.webp"
+      }
+    }
+  },
+  {
+    "id": "patent",
+    "slug": "brevet-curcumine",
+    "date": "2025-05",
+    "category": "publications",
+    "languages": {
+      "en": {
+        "title": "French patent granted for curcumin-based nanoassemblies",
+        "summary": "French patent FR 3 135 617 B1 was granted in May 2025.",
+        "date_label": "May 2025",
+        "category_label": "Intellectual property",
+        "image": "patent-curcumin-inpi.png",
+        "image_alt": "First page of French patent FR 3 135 617 B1, concerning curcumin-based nanoassemblies",
+        "body_html": "<p class=\"eyebrow\">Intellectual property</p><h2>French patent granted for curcumin-based nanoassemblies</h2><p>French patent FR 3 135 617 B1 was granted in May 2025.</p><figure class=\"news-photo news-document\"><a class=\"news-image-link\" href=\"patent-curcumin-inpi.png\" aria-label=\"Enlarge image\"><img width=\"480\" height=\"525\" src=\"patent-curcumin-inpi.png\" alt=\"First page of French patent FR 3 135 617 B1, concerning curcumin-based nanoassemblies\" loading=\"lazy\"></a><figcaption>French patent FR 3 135 617 B1 · first page of the INPI document. <a href=\"patent-curcumin-inpi.png\">Enlarge image</a></figcaption></figure><div class=\"actions\"><a href=\"publications.html#patent-2025\">View the patent entry <span aria-hidden=\"true\">→</span></a></div>",
+        "thumbnail": "patent-curcumin-inpi-thumb.webp"
+      },
+      "fr": {
+        "title": "Délivrance d’un brevet français sur des nanoassemblages à base de curcumine",
+        "summary": "Le brevet français FR 3 135 617 B1 a été délivré en mai 2025.",
+        "date_label": "Mai 2025",
+        "category_label": "Propriété intellectuelle",
+        "image": "../patent-curcumin-inpi.png",
+        "image_alt": "Première page du brevet français FR 3 135 617 B1 sur les nanoassemblages à base de curcumine",
+        "body_html": "<p class=\"eyebrow\">Propriété intellectuelle</p><h2>Délivrance d’un brevet français sur des nanoassemblages à base de curcumine</h2><p>Le brevet français FR 3 135 617 B1 a été délivré en mai 2025.</p><figure class=\"news-photo news-document\"><a class=\"news-image-link\" href=\"../patent-curcumin-inpi.png\" aria-label=\"Agrandir l’image\"><img width=\"480\" height=\"525\" src=\"../patent-curcumin-inpi.png\" alt=\"Première page du brevet français FR 3 135 617 B1 sur les nanoassemblages à base de curcumine\" loading=\"lazy\"></a><figcaption>Brevet français FR 3 135 617 B1 · première page du document de l’INPI.<a href=\"../patent-curcumin-inpi.png\">Agrandir l’image</a></figcaption></figure><div class=\"actions\"><a href=\"publications.html#patent-2025\">Voir la fiche du brevet<span aria-hidden=\"true\">→</span></a></div>",
+        "thumbnail": "../patent-curcumin-inpi-thumb.webp"
+      }
+    }
+  }
+]

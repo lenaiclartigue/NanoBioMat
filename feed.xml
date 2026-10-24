@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>NanoBioMat — News &amp; scientific updates</title>
+    <link>https://lenaiclartigue.github.io/NanoBioMat/news.html</link>
+    <description>Group news, research highlights and new resources.</description>
+    <language>en</language>
+    <item>
+      <title>MAGNETIMA funded by ANR</title>
+      <link>https://lenaiclartigue.github.io/NanoBioMat/news-magnetima-anr.html</link>
+      <description>MAGNETIMA is an ANR-funded research project in magnetic nanomedicine.</description>
+      <category>Projects</category>
+      <guid isPermaLink="true">https://lenaiclartigue.github.io/NanoBioMat/news-magnetima-anr.html</guid>
+    </item>
+    <item>
+      <title>Léa Ponroy presents her work at PHOTONANO26</title>
+      <link>https://lenaiclartigue.github.io/NanoBioMat/news-lea-ponroy-photonano26.html</link>
+      <description>Léa Ponroy presented her doctoral research on magnetic and photoactive nanoassemblies at PHOTONANO26 in Paris.</description>
+      <category>Group life</category>
+      <guid isPermaLink="true">https://lenaiclartigue.github.io/NanoBioMat/news-lea-ponroy-photonano26.html</guid>
+      <pubDate>Wed, 13 May 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Marie-Léa Lalanne at the Women &amp; Science – SHE meeting</title>
+      <link>https://lenaiclartigue.github.io/NanoBioMat/news-marie-lea-lalanne-she.html</link>
+      <description>Marie-Léa Lalanne presented her doctoral research on magnetic hyperthermia and magnetic nanoparticles for biomedical applications at the University of Angers.</description>
+      <category>Group life</category>
+      <guid isPermaLink="true">https://lenaiclartigue.github.io/NanoBioMat/news-marie-lea-lalanne-she.html</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>French patent granted for curcumin-based nanoassemblies</title>
+      <link>https://lenaiclartigue.github.io/NanoBioMat/news-brevet-curcumine.html</link>
+      <description>French patent FR 3 135 617 B1 was granted in May 2025.</description>
+      <category>Publications</category>
+      <guid isPermaLink="true">https://lenaiclartigue.github.io/NanoBioMat/news-brevet-curcumine.html</guid>
+    </item>
+  </channel>
+</rss>

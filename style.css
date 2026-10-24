@@ -326,3 +326,49 @@ section,[id]{scroll-margin-top:calc(var(--header-height) + 16px)}
  .site-footer .footer-institutions .ceisam-mark img{width:45px}
  .site-footer .footer-right{grid-column:3;grid-row:1}
 }
+
+/* V3.17: news feed and dedicated articles. */
+.rss-subscription{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding:20px 24px;margin-bottom:24px;border:1px solid var(--line);border-radius:12px;background:var(--tint)}
+.rss-subscription>div{flex:1 1 360px}.rss-subscription p{font-size:.85rem;margin:5px 0 0}.rss-link{font-weight:700}
+.text-copy{border:1px solid var(--line);border-radius:7px;background:var(--white);color:var(--dark);padding:8px 12px;font-size:.82rem;cursor:pointer}
+.copy-status{font-size:.8rem;overflow-wrap:anywhere}.copy-status:empty{display:none}
+.update-controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:25px;font-size:.9rem}
+.update-controls select{padding:8px 12px;border:1px solid var(--line);border-radius:7px;background:var(--white);color:var(--dark);max-width:100%}
+.updates-list{display:grid;gap:24px;margin-bottom:35px}
+.update-card{display:grid;grid-template-columns:240px minmax(0,1fr);gap:28px;padding:24px;border:1px solid var(--line);border-radius:12px;background:var(--white)}
+.update-image{display:block;align-self:start;border-radius:8px;overflow:hidden;background:var(--tint)}
+.update-image img{width:100%;height:175px;object-fit:contain}.update-copy h2{font-size:1.6rem;margin:8px 0 12px}.update-copy h2 a{text-decoration:none}.update-copy h2 a:hover{text-decoration:underline}
+.update-copy .eyebrow{margin-bottom:5px}.update-copy time,.update-date{font-size:.85rem;color:var(--muted)}.update-copy p{font-size:.95rem}
+.update-detail{max-width:min(var(--max),920px)}.update-body>h2:first-of-type{display:none}.update-body>.eyebrow:first-child{display:none}
+.update-body .news-photo{margin:25px 0}.update-body .news-photo img{max-height:650px;width:auto;max-width:100%;margin:auto}.update-body .actions{margin:24px 0}
+.update-sharing{padding:24px 0;border-top:1px solid var(--line);margin:30px 0}
+@media(max-width:760px){.update-card{grid-template-columns:1fr;padding:18px;gap:18px}.update-image img{height:210px}.update-copy h2{font-size:1.4rem}.rss-subscription{padding:18px}.update-detail{margin-left:20px;margin-right:20px}}
+
+/* V3.18: accessible link names and readable compact footer. */
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.external-symbol{font-size:.75em;margin-left:.2em;vertical-align:super}
+.external-announcement{display:inline}.photo-credit{font-size:.8rem;color:var(--muted);line-height:1.5}
+.cc-license-badge .external-announcement,.funder-link .external-announcement,.footer-institutions .external-announcement{position:absolute;right:0;top:0}
+.cc-license-badge,.funder-link,.footer-institutions a{position:relative}
+.site-footer .footer-identity-copy>p,.site-footer .footer-identity-copy>.copyright{font-size:11px;line-height:1.4}
+.site-footer .footer-right .footer-notice summary{font-size:12px;line-height:1.5}
+@media(max-width:760px){
+ .site-footer .footer-identity-copy>strong{font-size:11px}
+ .site-footer .footer-identity-copy>p,.site-footer .footer-identity-copy>.copyright{font-size:10px;line-height:1.35}
+ .site-footer .footer-right .footer-notice summary{font-size:11px;line-height:1.5}
+ .site-footer>div.footer-identity:first-child>.footer-brand-logo{flex-basis:45px;width:45px}
+ .site-footer>div.footer-identity:first-child>.footer-brand-logo img{width:45px;height:auto;max-height:43px}
+ .site-footer .footer-institutions .nantes-mark img{width:75px}
+ .site-footer .footer-institutions .ceisam-mark img{width:60px}
+}
+@media(max-width:500px){
+ .site-footer{grid-template-columns:minmax(0,1fr) auto;gap:8px 14px;padding:9px 12px calc(9px + env(safe-area-inset-bottom))}
+ .site-footer>div.footer-identity:first-child{grid-column:1;grid-row:1;gap:7px}
+ .site-footer .footer-right{grid-column:2;grid-row:1}
+ .site-footer .footer-institutions{display:none}
+}
+@media(max-width:500px){
+ .site-footer .footer-institutions{display:flex;grid-column:1/-1;grid-row:2;flex-direction:row;gap:12px}
+ .site-footer .footer-institutions .nantes-mark img{width:65px}
+ .site-footer .footer-institutions .ceisam-mark img{width:50px}
+}

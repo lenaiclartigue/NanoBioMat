@@ -142,3 +142,32 @@ document.querySelectorAll('.language-switch a').forEach(link => {
  window.addEventListener('resize', measure);
  window.addEventListener('load', measure);
 })();
+
+// News categories and copying subscription/article addresses.
+(() => {
+ const filter = document.querySelector('#update-category');
+ const cards = [...document.querySelectorAll('.update-card')];
+ const empty = document.querySelector('#updates-empty');
+ const apply = () => {
+  let shown = 0;
+  cards.forEach(card => { card.hidden = !!filter.value && card.dataset.category !== filter.value; if (!card.hidden) shown++; });
+  if (empty) empty.hidden = shown !== 0;
+ };
+ if (filter) {
+  document.querySelector('.update-controls').hidden = false;
+  filter.addEventListener('change', apply);
+  window.addEventListener('hashchange', () => { filter.value = ''; apply(); });
+ }
+ document.querySelectorAll('[data-copy-url]').forEach(button => {
+  button.addEventListener('click', async () => {
+   const status = button.parentElement.querySelector('.copy-status');
+   try {
+    if (!navigator.clipboard) throw new Error('Clipboard unavailable');
+    await navigator.clipboard.writeText(button.dataset.copyUrl);
+    if (status) status.textContent = button.dataset.copied;
+   } catch {
+    if (status) status.textContent = button.dataset.copyUrl;
+   }
+  });
+ });
+})();

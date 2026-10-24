@@ -6,10 +6,38 @@
   const publicOrigin = 'https://lenaiclartigue.github.io';
   const publicPath = '/NanoBioMat/';
   const publicPages = new Set([
-    '', 'index.html', 'research.html', 'projects.html', 'team.html',
-    'collaborations.html', 'facilities.html', 'publications.html',
-    'teaching.html', 'news.html', 'contact.html'
-  ]);
+  "",
+  "collaborations.html",
+  "contact.html",
+  "facilities.html",
+  "fr/collaborations.html",
+  "fr/contact.html",
+  "fr/facilities.html",
+  "fr/index.html",
+  "fr/news-brevet-curcumine.html",
+  "fr/news-lea-ponroy-photonano26.html",
+  "fr/news-magnetima-anr.html",
+  "fr/news-marie-lea-lalanne-she.html",
+  "fr/news.html",
+  "fr/outreach.html",
+  "fr/projects.html",
+  "fr/publications.html",
+  "fr/research.html",
+  "fr/teaching.html",
+  "fr/team.html",
+  "index.html",
+  "news-brevet-curcumine.html",
+  "news-lea-ponroy-photonano26.html",
+  "news-magnetima-anr.html",
+  "news-marie-lea-lalanne-she.html",
+  "news.html",
+  "outreach.html",
+  "projects.html",
+  "publications.html",
+  "research.html",
+  "teaching.html",
+  "team.html"
+]);
   const location = window.location;
   if (location.origin !== publicOrigin || !location.pathname.startsWith(publicPath)) return;
   if (!publicPages.has(location.pathname.slice(publicPath.length))) return;
