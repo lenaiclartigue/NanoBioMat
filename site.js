@@ -171,3 +171,40 @@ document.querySelectorAll('.language-switch a').forEach(link => {
   });
  });
 })();
+
+// Enlarge equipment photographs without leaving the current page.
+(() => {
+ if (typeof HTMLDialogElement === 'undefined') return;
+ const links = [...document.querySelectorAll('.equipment-zoom')];
+ if (!links.length) return;
+ const french = document.documentElement.lang === 'fr';
+ const dialog = document.createElement('dialog');
+ dialog.className = 'image-dialog';
+ dialog.setAttribute('aria-label', french ? 'Photographie de l’appareil' : 'Equipment photograph');
+ const close = document.createElement('button');
+ close.type = 'button'; close.className = 'notice-dialog-close';
+ close.textContent = french ? 'Fermer ×' : 'Close ×';
+ const img = document.createElement('img');
+ const credit = document.createElement('p');credit.className = 'image-credit';
+ credit.textContent = 'Photo : Lénaïc Lartigue';
+ const stage = document.createElement('div'); stage.className = 'image-dialog-stage';
+ stage.append(img, credit); dialog.append(close, stage);document.body.append(dialog);
+ let trigger = null;
+ links.forEach(link => {
+  link.setAttribute('aria-haspopup','dialog');
+  link.addEventListener('click', event => {
+   event.preventDefault();trigger = link;
+   img.src = link.href;img.alt = link.querySelector('img').alt;
+   dialog.showModal();document.documentElement.classList.add('notice-modal-open');close.focus();
+  });
+ });
+ close.addEventListener('click', () => dialog.close());
+ dialog.addEventListener('click', event => {
+  const r = dialog.getBoundingClientRect();
+  if (event.target === dialog && (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom)) dialog.close();
+ });
+ dialog.addEventListener('close', () => {
+  document.documentElement.classList.remove('notice-modal-open');
+  if (trigger) trigger.focus({preventScroll:true});
+ });
+})();
