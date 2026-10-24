@@ -1,0 +1,2 @@
+Correctif cumulatif V3.26 vers V3.29, incluant V3.27 et V3.28. Compatible avec ces versions.
+Copier à la racine du dépôt en conservant les dossiers et en remplaçant les fichiers existants. Aucun fichier à supprimer.
