@@ -5,7 +5,7 @@
   const one = selector => document.querySelector(selector);
   const menu = one('#nav-menu');
   const toggle = one('.menu-toggle');
-  const mobile = window.matchMedia('(max-width: 760px)');
+  const mobile = window.matchMedia('(max-width: 1050px)');
   if (menu && toggle) {
     const closeMenu = () => {
       toggle.setAttribute('aria-expanded', 'false');
@@ -131,7 +131,7 @@ document.querySelectorAll('.language-switch a').forEach(link => {
  const footer = document.querySelector('.site-footer');
  const measure = () => {
   if (header) document.documentElement.style.setProperty('--header-height', `${header.getBoundingClientRect().height}px`);
-  if (footer) document.documentElement.style.setProperty('--footer-height', `${footer.getBoundingClientRect().height}px`);
+  if (footer) document.documentElement.style.setProperty('--footer-height', `${getComputedStyle(footer).position === 'fixed' ? footer.getBoundingClientRect().height : 0}px`);
  };
  measure();
  if (typeof ResizeObserver !== 'undefined') {
@@ -172,29 +172,36 @@ document.querySelectorAll('.language-switch a').forEach(link => {
  });
 })();
 
-// Enlarge equipment photographs without leaving the current page.
+// Shared image viewer for equipment, news lists, articles and home-page news.
 (() => {
  if (typeof HTMLDialogElement === 'undefined') return;
- const links = [...document.querySelectorAll('.equipment-zoom')];
+ const links = [...document.querySelectorAll('.image-zoom')];
  if (!links.length) return;
  const french = document.documentElement.lang === 'fr';
  const dialog = document.createElement('dialog');
  dialog.className = 'image-dialog';
- dialog.setAttribute('aria-label', french ? 'Photographie de l’appareil' : 'Equipment photograph');
+ dialog.setAttribute('aria-label', french ? 'Image agrandie' : 'Enlarged image');
+ dialog.setAttribute('aria-describedby', 'image-dialog-caption');
  const close = document.createElement('button');
  close.type = 'button'; close.className = 'notice-dialog-close';
  close.textContent = french ? 'Fermer ×' : 'Close ×';
+ close.setAttribute('aria-label', french ? 'Fermer la fenêtre' : 'Close dialog');
  const img = document.createElement('img');
  const credit = document.createElement('p');credit.className = 'image-credit';
- credit.textContent = 'Photo : Lénaïc Lartigue';
  const stage = document.createElement('div'); stage.className = 'image-dialog-stage';
- stage.append(img, credit); dialog.append(close, stage);document.body.append(dialog);
+ const caption = document.createElement('p'); caption.className = 'image-dialog-caption';
+ caption.id = 'image-dialog-caption';
+ stage.append(img, credit); dialog.append(close, stage, caption);document.body.append(dialog);
  let trigger = null;
  links.forEach(link => {
   link.setAttribute('aria-haspopup','dialog');
   link.addEventListener('click', event => {
    event.preventDefault();trigger = link;
-   img.src = link.href;img.alt = link.querySelector('img').alt;
+   img.src = link.href;
+   img.alt = link.querySelector('img')?.alt || link.dataset.imageCaption || '';
+   caption.textContent = link.dataset.imageCaption || img.alt;
+   credit.textContent = link.dataset.imageCredit || '';
+   credit.hidden = !credit.textContent;
    dialog.showModal();document.documentElement.classList.add('notice-modal-open');close.focus();
   });
  });

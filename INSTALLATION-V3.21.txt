@@ -1,0 +1,49 @@
+NanoBioMat — Correctif V3.20 vers V3.21 — FR/EN
+
+Base : V3.20, constatée sur le site public avant préparation.
+1. Extraire cette archive.
+2. Déposer son contenu à la racine du dépôt NanoBioMat en conservant les
+   sous-dossiers fr/ et tools/. Remplacer les fichiers de même nom.
+3. Attendre la publication GitHub Pages, puis actualiser le navigateur.
+
+Aucun fichier à supprimer.
+Les fichiers image existants sont conservés. Aucune installation nécessaire.
+Le détail des changements et des sources se trouve dans NOTES-V3.21.txt.
+
+Fichiers ajoutés ou remplacés :
+- IMAGE-CREDITS.txt
+- NOTES-V3.21.txt
+- collaborations.html
+- contact.html
+- facilities.html
+- fr/collaborations.html
+- fr/contact.html
+- fr/facilities.html
+- fr/index.html
+- fr/news-brevet-curcumine.html
+- fr/news-lea-ponroy-photonano26.html
+- fr/news-magnetima-anr.html
+- fr/news-marie-lea-lalanne-she.html
+- fr/news.html
+- fr/outreach.html
+- fr/projects.html
+- fr/publications.html
+- fr/research.html
+- fr/teaching.html
+- fr/team.html
+- index.html
+- news-brevet-curcumine.html
+- news-data.json
+- news-lea-ponroy-photonano26.html
+- news-magnetima-anr.html
+- news-marie-lea-lalanne-she.html
+- news.html
+- outreach.html
+- projects.html
+- publications.html
+- research.html
+- site.js
+- style.css
+- teaching.html
+- team.html
+- tools/build_news.py

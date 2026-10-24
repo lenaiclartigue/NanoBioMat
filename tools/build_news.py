@@ -37,7 +37,10 @@ for lang in ['en','fr']:
  for p in posts:
   d=p['languages'][lang];filename='news-'+p['slug']+'.html';url=BASE+prefix+filename
   image=d.get('thumbnail',d.get('image',''));image_html='<img src="'+escape(image,quote=True)+'" alt="'+escape(d.get('image_alt',''),quote=True)+'" loading="lazy">' if image else ''
-  cards.append('<article class="update-card" id="'+p['id']+'" data-category="'+p['category']+'"><a class="update-image" href="'+filename+'">'+image_html+'</a><div class="update-copy"><p class="eyebrow">'+escape(d['category_label'])+'</p><time datetime="'+p['date']+'">'+d['date_label']+'</time><h2><a href="'+filename+'">'+escape(d['title'])+'</a></h2><p>'+escape(d['summary'])+'</p><a href="'+filename+'">'+L['read']+'<span class="sr-only"> : '+escape(d['title'])+'</span> →</a></div></article>')
+  zoom_label='Agrandir' if lang=='fr' else 'Enlarge'
+  attrs=' data-image-caption="'+escape(d['image_caption'],quote=True)+'" data-image-credit="'+escape(d.get('image_credit',''),quote=True)+'"'
+  zoom='<figure class="update-figure"><a class="update-image image-zoom" href="'+escape(d['image'],quote=True)+'"'+attrs+' aria-label="'+zoom_label+' : '+escape(d['image_caption'],quote=True)+'">'+image_html+'</a><figcaption><a class="image-zoom zoom-hint" href="'+escape(d['image'],quote=True)+'"'+attrs+' aria-label="'+zoom_label+' : '+escape(d['image_caption'],quote=True)+'">'+zoom_label+'</a></figcaption></figure>'
+  cards.append('<article class="update-card" id="'+p['id']+'" data-category="'+p['category']+'">'+zoom+'<div class="update-copy"><p class="eyebrow">'+escape(d['category_label'])+'</p><time datetime="'+p['date']+'">'+d['date_label']+'</time><h2><a href="'+filename+'">'+escape(d['title'])+'</a></h2><p>'+escape(d['summary'])+'</p><a href="'+filename+'">'+L['read']+'<span class="sr-only"> : '+escape(d['title'])+'</span> →</a></div></article>')
   main='<main id="main-content" tabindex="-1" class="update-detail"><header class="page-heading"><p class="eyebrow"><a href="news.html">'+L['back']+'</a> / '+escape(d['category_label'])+'</p><h1>'+escape(d['title'])+'</h1><p class="update-date"><time datetime="'+p['date']+'">'+d['date_label']+'</time></p></header><article class="update-body">'+d['body_html']+'</article><div class="actions update-sharing"><a href="news.html">← '+L['back']+'</a><button type="button" class="text-copy" data-copy-url="'+url+'" data-copied="'+L['copied']+'">'+L['share']+'</button><span class="copy-status" role="status"></span></div></main>'
   out=page(template,main,d['title'],d['summary'])
   # Language switch and alternate URLs point to the same article in each language.
@@ -52,9 +55,18 @@ for lang in ['en','fr']:
   # Avoid inventing a publication day for month-only historical announcements.
   if len(p['date'])==10:ET.SubElement(item,'pubDate').text=format_datetime(datetime.strptime(p['date'],'%Y-%m-%d').replace(tzinfo=timezone.utc),usegmt=True)
  ET.indent(rss);ET.ElementTree(rss).write(folder/'feed.xml',encoding='utf-8',xml_declaration=True)
- options=''.join('<option value="'+k+'">'+L[k]+'</option>' for k in ['group','projects','publications','resources','science'])
+ options=''.join('<option value="'+k+'">'+L[k]+'</option>' for k in ['group','projects','publications','resources','science'] if any(p['category']==k for p in posts))
  main='<main id="main-content" tabindex="-1"><header class="page-heading"><p class="eyebrow">NanoBioMat / '+('Actualités' if lang=='fr' else 'News')+'</p><h1>'+L['title']+'</h1><p class="lead">'+L['lead']+'</p></header><aside class="rss-subscription"><div><a href="feed.xml" class="rss-link">'+L['rss']+' ↗</a><p>'+L['hint']+'</p></div><button class="text-copy" type="button" data-copy-url="'+BASE+prefix+'feed.xml" data-copied="'+L['copied']+'">'+L['copy']+'</button><span class="copy-status" role="status"></span></aside><div class="update-controls" hidden><label for="update-category">'+L['filter']+'</label><select id="update-category"><option value="">'+L['all']+'</option>'+options+'</select></div><section class="updates-list" aria-label="'+L['title']+'">'+''.join(cards)+'</section><p id="updates-empty" hidden role="status">'+L['empty']+'</p></main>'
  (folder/'news.html').write_text(page(template,main,L['title'],L['lead']))
+ # Keep the home-page news in sync with the two latest published entries.
+ home=folder/'index.html';hs=home.read_text();briefs=[]
+ for p in posts[:2]:
+  d=p['languages'][lang];filename='news-'+p['slug']+'.html'
+  zl='Agrandir' if lang=='fr' else 'Enlarge'
+  attrs=' data-image-caption="'+escape(d['image_caption'],quote=True)+'" data-image-credit="'+escape(d.get('image_credit',''),quote=True)+'"'
+  briefs.append('<article class="news-brief"><a class="news-thumbnail image-zoom" href="'+escape(d['image'],quote=True)+'"'+attrs+' aria-label="'+zl+' : '+escape(d['image_caption'],quote=True)+'"><img src="'+escape(d.get('thumbnail',d['image']),quote=True)+'" alt="'+escape(d['image_alt'],quote=True)+'" loading="lazy"></a><time datetime="'+p['date']+'">'+d['date_label']+'</time><h3><a href="'+filename+'">'+escape(d['title'])+'</a></h3><p>'+escape(d['summary'])+'</p></article>')
+ hs=re.sub(r'(<section class="section-block" aria-labelledby="news-title">.*?<div class="two-columns">).*?(</div>\s*<a class="text-link")',lambda m:m[1]+''.join(briefs)+m[2],hs,flags=re.S)
+ home.write_text(hs)
 # Standard metadata for every public page, including bilingual alternatives.
 for p in ROOT.rglob('*.html'):
  rel=p.relative_to(ROOT).as_posix();s=p.read_text();lang='fr' if rel.startswith('fr/') else 'en'
@@ -82,14 +94,15 @@ for p in ROOT.rglob('*.html'):
   if aria:tag=tag.replace(aria[0],'aria-label="'+aria[1]+suffix+'"')
   tag=re.sub(r'\s+title="[^"]*"','',tag)
   tag=tag[:-1]+' title="'+('Ouvre un nouvel onglet' if lang=='fr' else 'Opens a new tab')+'">'
+  body=re.sub(r'<span aria-hidden="true">↗</span>','',body).replace('↗','')
   marker='<span class="external-announcement"><span aria-hidden="true" class="external-symbol">↗</span>'
   if not aria:marker+='<span class="sr-only">'+suffix+'</span>'
   marker+='</span>'
   return tag+body+marker+'</a>'
  s=re.sub(r'(<a\b[^>]*>)(.*?)</a>',external_link,s,flags=re.S)
 
- s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.20',s)
- s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.20',s)
+ s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.21',s)
+ s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.21',s)
 
  # Keep intrinsic dimensions consistent with optimized local assets.
  def image_dimensions(match):
@@ -103,6 +116,7 @@ for p in ROOT.rglob('*.html'):
   tag=re.sub(r'\s+(?:width|height)="[^"]*"','',tag)
   return tag[:-1]+f' width="{w}" height="{h}">'
  s=re.sub(r'<img\b[^>]*>',image_dimensions,s)
+
  p.write_text(s)
 ns='http://www.sitemaps.org/schemas/sitemap/0.9';ET.register_namespace('',ns)
 sm=ET.Element('{'+ns+'}urlset')
