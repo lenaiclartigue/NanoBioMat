@@ -1,0 +1,4 @@
+Correctif cumulatif V3.30 vers V3.32, incluant V3.31.
+Copier à la racine du dépôt en conservant les dossiers et en remplaçant les fichiers existants.
+Le fichier googlef4aba441b3f24c9e.html doit être à la racine, sans extension .txt. Conserver ce fichier après validation Google.
+Aucun fichier à supprimer.

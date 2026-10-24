@@ -74,13 +74,19 @@ for lang in ['en','fr']:
  hs=re.sub(r'(<section class="section-block" aria-labelledby="news-title">.*?<div class="two-columns">).*?(</div>\s*<a class="text-link")',lambda m:m[1]+''.join(briefs)+m[2],hs,flags=re.S)
  home.write_text(hs)
 # Standard metadata for every public page, including bilingual alternatives.
+page_metadata=json.loads((ROOT/'page-metadata.json').read_text())
 for p in ROOT.rglob('*.html'):
  rel=p.relative_to(ROOT).as_posix();s=p.read_text();lang='fr' if rel.startswith('fr/') else 'en'
+ if s.strip().startswith('google-site-verification:'):continue
  s=re.sub(r'<meta name="robots"[^>]*>','',s)
  s=re.sub(r'<link rel="canonical"[^>]*>','',s)
  s=re.sub(r'<meta (?:property="og:[^"]+"|name="twitter:[^"]+")[^>]*>','',s)
  s=re.sub(r'<link rel="alternate"[^>]*type="application/rss\+xml"[^>]*>','',s)
  s=re.sub(r'<link rel="alternate" hreflang="[^"]+"[^>]*>','',s)
+ metadata=page_metadata.get(p.name,{}).get(lang)
+ if metadata:
+  s=re.sub(r'<title>.*?</title>',lambda m:'<title>'+escape(metadata['title'])+'</title>',s,flags=re.S)
+  s=re.sub(r'<meta name="description" content="[^"]*">',lambda m:'<meta name="description" content="'+escape(metadata['description'],quote=True)+'">',s)
  title=re.search(r'<title>(.*?)</title>',s,re.S)[1]
  desc=re.search(r'<meta name="description" content="([^"]*)"',s)[1]
  filename=p.name
@@ -107,8 +113,8 @@ for p in ROOT.rglob('*.html'):
   return tag+body+marker+'</a>'
  s=re.sub(r'(<a\b[^>]*>)(.*?)</a>',external_link,s,flags=re.S)
 
- s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.30',s)
- s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.30',s)
+ s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.32',s)
+ s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.32',s)
 
  # Keep intrinsic dimensions consistent with optimized local assets.
  def image_dimensions(match):
@@ -127,6 +133,7 @@ for p in ROOT.rglob('*.html'):
 ns='http://www.sitemaps.org/schemas/sitemap/0.9';ET.register_namespace('',ns)
 sm=ET.Element('{'+ns+'}urlset')
 for p in sorted(ROOT.rglob('*.html')):
+ if p.read_text().strip().startswith('google-site-verification:'):continue
  u=ET.SubElement(sm,'{'+ns+'}url');ET.SubElement(u,'{'+ns+'}loc').text=BASE+p.relative_to(ROOT).as_posix()
 ET.indent(sm);ET.ElementTree(sm).write(ROOT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
-print(f'Built {len(posts)} bilingual updates, 2 RSS feeds and sitemap for {len(list(ROOT.rglob("*.html")))} pages.')
+print(f'Built {len(posts)} bilingual updates, 2 RSS feeds and sitemap for {len(sm)} pages.')

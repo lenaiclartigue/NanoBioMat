@@ -1,0 +1,4 @@
+NanoBioMat V3.31
+Titres et descriptions spécifiques des 11 pages principales en français et en anglais. Identité, implantation et thèmes scientifiques précisés. Métadonnées de partage synchronisées. Présentation et textes visibles inchangés. Titres spécifiques des actualités conservés.
+Édition centralisée dans page-metadata.json, utilisée par tools/build_news.py.
+Aucun fichier à supprimer.

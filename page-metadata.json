@@ -1,0 +1,112 @@
+{
+  "index.html": {
+    "fr": {
+      "title": "NanoBioMat — Nanoparticules magnétiques | Lénaïc Lartigue",
+      "description": "Recherches de Lénaïc Lartigue au CEISAM, Nantes Université : nanoparticules d’oxyde de fer, nanoassemblages magnétiques et nanomédecine."
+    },
+    "en": {
+      "title": "NanoBioMat — Magnetic nanoparticles | Lénaïc Lartigue",
+      "description": "Research led by Lénaïc Lartigue at CEISAM, Nantes Université: iron oxide nanoparticles, magnetic nanoassemblies and nanomedicine."
+    }
+  },
+  "research.html": {
+    "fr": {
+      "title": "Nanomagnétisme et nanomédecine | NanoBioMat, Nantes",
+      "description": "Découvrez les recherches de NanoBioMat au CEISAM : propriétés des nanoparticules magnétiques, organisation en nanoassemblages et interfaces biologiques."
+    },
+    "en": {
+      "title": "Nanomagnetism and nanomedicine | NanoBioMat, Nantes",
+      "description": "Explore NanoBioMat research at CEISAM: magnetic nanoparticle properties, nanoassembly organisation, magnetic hyperthermia and biological interfaces."
+    }
+  },
+  "projects.html": {
+    "fr": {
+      "title": "Projets de recherche en nanomédecine | NanoBioMat",
+      "description": "MAGNETIMA, SEMAPHORE, NAMASTHEP et autres projets de Lénaïc Lartigue au CEISAM : nanoassemblages magnétiques et applications biomédicales."
+    },
+    "en": {
+      "title": "Nanomedicine research projects | NanoBioMat",
+      "description": "MAGNETIMA, SEMAPHORE, NAMASTHEP and other projects led by Lénaïc Lartigue at CEISAM: magnetic nanoassemblies and biomedical applications."
+    }
+  },
+  "publications.html": {
+    "fr": {
+      "title": "Publications — Nanoparticules et nanoassemblages | NanoBioMat",
+      "description": "Publications de Lénaïc Lartigue et de ses collaborateurs : particules, nanoassemblages et interfaces biologiques. Références, DOI et brevet."
+    },
+    "en": {
+      "title": "Publications — Nanoparticles and nanoassemblies | NanoBioMat",
+      "description": "Selected publications by Lénaïc Lartigue and collaborators: particles, nanoassemblies and biological interfaces. References, DOI links and patent."
+    }
+  },
+  "team.html": {
+    "fr": {
+      "title": "Équipe et anciens membres | NanoBioMat, CEISAM Nantes",
+      "description": "Découvrez les membres et anciens membres de NanoBioMat autour de Lénaïc Lartigue au CEISAM, Nantes Université, et leurs sujets de recherche."
+    },
+    "en": {
+      "title": "Team and alumni | NanoBioMat, CEISAM Nantes",
+      "description": "Meet NanoBioMat members and alumni working with Lénaïc Lartigue at CEISAM, Nantes Université, and discover their research topics."
+    }
+  },
+  "facilities.html": {
+    "fr": {
+      "title": "Équipements — Nanoparticules magnétiques | NanoBioMat",
+      "description": "Équipements de NanoBioMat au CEISAM pour étudier et manipuler les nanoparticules : hyperthermie, séparation magnétique et préparation d’échantillons."
+    },
+    "en": {
+      "title": "Facilities — Magnetic nanoparticles | NanoBioMat",
+      "description": "NanoBioMat equipment at CEISAM for studying and handling nanoparticles: magnetic hyperthermia, magnetic separation and sample preparation."
+    }
+  },
+  "collaborations.html": {
+    "fr": {
+      "title": "Collaborations scientifiques | NanoBioMat, Nantes",
+      "description": "Réseau de collaborations de NanoBioMat en chimie des nanomatériaux, nanomagnétisme, imagerie et biologie pour la nanomédecine."
+    },
+    "en": {
+      "title": "Research collaborations | NanoBioMat, Nantes",
+      "description": "NanoBioMat collaborations in nanomaterials chemistry, nanomagnetism, imaging and biology for nanomedicine research."
+    }
+  },
+  "teaching.html": {
+    "fr": {
+      "title": "Enseignement — Thermochimie et Python | Lénaïc Lartigue",
+      "description": "Ressources d’enseignement de Lénaïc Lartigue à Nantes Université : cours de thermochimie et programmation Python pour la chimie."
+    },
+    "en": {
+      "title": "Teaching — Thermochemistry and Python | Lénaïc Lartigue",
+      "description": "Teaching resources by Lénaïc Lartigue at Nantes Université: thermochemistry courses and Python programming for chemistry."
+    }
+  },
+  "outreach.html": {
+    "fr": {
+      "title": "Médiation scientifique — Nanomédecine | NanoBioMat",
+      "description": "Découvrez la nanomédecine et les nanoparticules magnétiques à travers les ressources de médiation scientifique de NanoBioMat, au CEISAM à Nantes."
+    },
+    "en": {
+      "title": "Science outreach — Nanomedicine | NanoBioMat",
+      "description": "Discover nanomedicine and magnetic nanoparticles through NanoBioMat science outreach resources from CEISAM, Nantes Université."
+    }
+  },
+  "news.html": {
+    "fr": {
+      "title": "Actualités — Recherche et vie du groupe | NanoBioMat",
+      "description": "Actualités de NanoBioMat au CEISAM : projets financés, conférences, travaux de doctorat et valorisation des nanoassemblages magnétiques."
+    },
+    "en": {
+      "title": "News — Research and group activities | NanoBioMat",
+      "description": "News from NanoBioMat at CEISAM: funded projects, conferences, doctoral research and technology transfer involving magnetic nanoassemblies."
+    }
+  },
+  "contact.html": {
+    "fr": {
+      "title": "Contact — Lénaïc Lartigue | NanoBioMat, Nantes",
+      "description": "Contacter Lénaïc Lartigue au CEISAM, Nantes Université, pour les recherches et collaborations en nanoparticules magnétiques et nanomédecine."
+    },
+    "en": {
+      "title": "Contact — Lénaïc Lartigue | NanoBioMat, Nantes",
+      "description": "Contact Lénaïc Lartigue at CEISAM, Nantes Université, for research and collaborations in magnetic nanoparticles and nanomedicine."
+    }
+  }
+}
