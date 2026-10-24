@@ -62,7 +62,7 @@ for lang in ['en','fr']:
   if len(p['date'])==10:ET.SubElement(item,'pubDate').text=format_datetime(datetime.strptime(p['date'],'%Y-%m-%d').replace(tzinfo=timezone.utc),usegmt=True)
  ET.indent(rss);ET.ElementTree(rss).write(folder/'feed.xml',encoding='utf-8',xml_declaration=True)
  options=''.join('<option value="'+k+'">'+L[k]+'</option>' for k in ['group','projects','publications','resources','science'] if any(p['category']==k for p in posts))
- main='<main id="main-content" tabindex="-1"><header class="page-heading"><p class="eyebrow">NanoBioMat / '+('Actualités' if lang=='fr' else 'News')+'</p><h1>'+L['title']+'</h1><p class="lead">'+L['lead']+'</p></header><aside class="rss-subscription"><div><a href="feed.xml" class="rss-link">'+L['rss']+' ↗</a><p>'+L['hint']+'</p></div><button class="text-copy" type="button" data-copy-url="'+BASE+prefix+'feed.xml" data-copied="'+L['copied']+'">'+L['copy']+'</button><span class="copy-status" role="status"></span></aside><div class="update-controls" hidden><label for="update-category">'+L['filter']+'</label><select id="update-category"><option value="">'+L['all']+'</option>'+options+'</select></div><section class="updates-list" aria-label="'+L['title']+'">'+''.join(cards)+'</section><p id="updates-empty" hidden role="status">'+L['empty']+'</p></main>'
+ main='<main id="main-content" tabindex="-1"><header class="page-heading"><p class="eyebrow">NanoBioMat / '+('Actualités' if lang=='fr' else 'News')+'</p><h1>'+L['title']+'</h1><p class="lead">'+L['lead']+'</p></header><aside class="rss-subscription"><div><a href="feed.xml" class="rss-link">'+L['rss']+'</a><p>'+L['hint']+'</p></div><button class="text-copy" type="button" data-copy-url="'+BASE+prefix+'feed.xml" data-copied="'+L['copied']+'">'+L['copy']+'</button><span class="copy-status" role="status"></span></aside><div class="update-controls" hidden><label for="update-category">'+L['filter']+'</label><select id="update-category"><option value="">'+L['all']+'</option>'+options+'</select></div><section class="updates-list" aria-label="'+L['title']+'">'+''.join(cards)+'</section><p id="updates-empty" hidden role="status">'+L['empty']+'</p></main>'
  (folder/'news.html').write_text(page(template,main,L['title'],L['lead']))
  # Keep the home-page news in sync with the two latest published entries.
  home=folder/'index.html';hs=home.read_text();briefs=[]
@@ -90,7 +90,7 @@ for p in ROOT.rglob('*.html'):
  for prop,value in [('og:type','article' if filename.startswith('news-') else 'website'),('og:title',title),('og:description',desc),('og:url',BASE+rel),('og:image',BASE+'nanoassemblies-sem.png'),('og:site_name','NanoBioMat')]:tags+='<meta property="'+prop+'" content="'+value+'">'
  tags+='<meta name="twitter:card" content="summary_large_image">'
  s=s.replace('</head>',tags+'</head>')
- # Announce new tabs visually and to assistive technology, preserving link names.
+ # Announce new tabs to assistive technology, preserving link names.
  def external_link(match):
   tag,body=match.group(1),match.group(2)
   if 'target="_blank"' not in tag:return match.group(0)
@@ -101,14 +101,14 @@ for p in ROOT.rglob('*.html'):
   tag=re.sub(r'\s+title="[^"]*"','',tag)
   tag=tag[:-1]+' title="'+('Ouvre un nouvel onglet' if lang=='fr' else 'Opens a new tab')+'">'
   body=re.sub(r'<span aria-hidden="true">↗</span>','',body).replace('↗','')
-  marker='<span class="external-announcement"><span aria-hidden="true" class="external-symbol">↗</span>'
+  marker='<span class="external-announcement">'
   if not aria:marker+='<span class="sr-only">'+suffix+'</span>'
   marker+='</span>'
   return tag+body+marker+'</a>'
  s=re.sub(r'(<a\b[^>]*>)(.*?)</a>',external_link,s,flags=re.S)
 
- s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.29',s)
- s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.29',s)
+ s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.30',s)
+ s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.30',s)
 
  # Keep intrinsic dimensions consistent with optimized local assets.
  def image_dimensions(match):
