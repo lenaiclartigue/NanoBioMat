@@ -1,1 +1,0 @@
-Correctif cumulatif V3.18 vers V3.20. Inclut V3.19 : photos compactes et agrandissement ; V3.20 : crédits incrustés. Déposer les fichiers extraits en conservant les sous-dossiers. Aucun fichier à supprimer.
