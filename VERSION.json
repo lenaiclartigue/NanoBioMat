@@ -1,8 +1,8 @@
 {
-  "delivery": "V4.3-preview",
+  "delivery": "V4.5",
   "date": "2026-10-25",
   "public_site_base": "V4.0",
-  "changes": "Research FR/EN and theoretical-background editorial revision",
-  "theory_status": "review-draft",
+  "changes": "Couleurs des 11 rubriques sur 30 pages FR/EN",
+  "theory_status": "integrated",
   "deletions_from_V4_0": []
 }

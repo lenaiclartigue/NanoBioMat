@@ -529,3 +529,73 @@ a.method-citation{text-decoration-line:underline;text-decoration-style:dotted;te
 .axis-micrograph{margin:24px 0 0}.axis-micrograph img{width:100%;height:auto;max-width:360px}.axis-micrograph figcaption{font-size:.82rem;line-height:1.5;margin-top:8px;max-width:360px}
 
 .direction-grid{gap:16px}
+
+/* Research navigation, inspired by Thermochimie's full-card targets. */
+.research-axis-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:28px 0 42px}
+.research-axis-card{--axis:#31579c;display:flex;flex-direction:column;gap:12px;padding:24px;border:1px solid #d7e0e4;border-top:3px solid var(--axis);border-radius:14px;background:white;color:var(--ink);text-decoration:none;box-shadow:0 3px 12px #18364d06;transition:box-shadow .15s,border-color .15s,transform .15s}
+.research-axis-card:nth-child(2){--axis:#7552a0}.research-axis-card:nth-child(3){--axis:#22786b}
+.research-axis-card:hover{color:var(--ink);border-color:var(--axis);box-shadow:0 8px 22px #18364d16;transform:translateY(-2px)}
+.research-axis-card .axis-number{font-size:26px;font-weight:700;color:var(--axis)}
+.research-axis-card strong{font-size:22px;line-height:1.25}.research-axis-card .axis-description{font-size:15px;line-height:1.5;color:var(--muted)}
+.research-axis-card .axis-cta{align-self:flex-start;margin-top:auto;padding:9px 15px;border-radius:8px;background:var(--axis);color:white;font-size:14px;font-weight:700;min-height:44px}
+.research-actions{gap:12px!important;align-items:center;flex-wrap:wrap}
+.research-actions a{min-height:48px;text-decoration:none}
+.research-actions .theory-button{display:flex;flex-direction:column;justify-content:center;gap:2px;padding:12px 20px;border-radius:10px;background:#166879;color:white;border:1px solid #166879;box-shadow:0 2px 5px #18364d12;font-weight:700;font-size:16px;line-height:1.4}
+.theory-button span{font-weight:400;font-size:12px;color:#edf8fa}
+.research-actions .theory-button:hover{background:#124957;border-color:#124957;color:white}
+.research-actions .research-secondary{display:inline-flex;align-items:center;padding:11px 17px;border:1px solid #acbec5;border-radius:10px;background:white;color:#204b58;font-weight:600;font-size:14px}
+.research-actions .research-secondary:hover{background:#edf5f5;border-color:#166879}
+.research-actions .research-tertiary{display:inline-flex;align-items:center;font-size:14px;text-decoration:underline;text-underline-offset:4px}
+.research-axis-card:focus-visible,.research-actions a:focus-visible{outline:3px solid #bc6e2f;outline-offset:4px}
+@media(max-width:700px){.research-axis-cards{grid-template-columns:1fr;gap:12px}.research-axis-card{padding:18px;gap:8px}.research-axis-card .axis-number{font-size:21px}.research-axis-card strong{font-size:21px}.research-actions .theory-button{width:100%;align-items:center}}
+@media(prefers-reduced-motion:reduce){.research-axis-card{transition:none}.research-axis-card:hover{transform:none}}
+
+/* Persistent axis identity: blue, violet, teal; numbers and names also identify axes. */
+.direction-card:nth-child(1),#particles{--axis:#31579c;--axis-tint:#eef3fc}
+.direction-card:nth-child(2),#assemblies{--axis:#7552a0;--axis-tint:#f4effa}
+.direction-card:nth-child(3),#biointerfaces{--axis:#22786b;--axis-tint:#edf7f4}
+.axis-menu-card{color:var(--ink);text-decoration:none;border-top:6px solid var(--axis);background:var(--axis-tint);transition:box-shadow .15s}
+.axis-menu-card:hover{color:var(--ink);box-shadow:0 5px 18px #18364d20;border-color:var(--axis)}
+.axis-menu-card .index,.axis-menu-card h3{color:var(--axis)}
+.axis-menu-card .axis-button{display:inline-flex;align-items:center;min-height:44px;background:var(--axis);color:white;border-radius:8px;padding:10px 16px;font-weight:700}
+.axis-menu-card:focus-visible{outline:3px solid var(--axis);outline-offset:4px}
+.research-axis-card{border-top-width:6px;background:#eef3fc}
+.research-axis-card:nth-child(2){background:#f4effa}.research-axis-card:nth-child(3){background:#edf7f4}
+#particles,#assemblies,#biointerfaces{border-top:4px solid var(--axis)}
+#particles h2,#assemblies h2,#biointerfaces h2{color:var(--axis)}
+.research-actions .theory-button,.research-actions .theory-button:hover{background:var(--axis);border-color:var(--axis)}
+
+/* V4.5: section identity, paired with labels and an underlined current item. */
+body[data-section="index"],#nav-menu [data-destination="index"]{--section-color:#40576b;--section-tint:#eff3f6}
+body[data-section="research"],#nav-menu [data-destination="research"]{--section-color:#234767;--section-tint:#edf3f9}
+body[data-section="projects"],#nav-menu [data-destination="projects"]{--section-color:#85501b;--section-tint:#faf3e9}
+body[data-section="team"],#nav-menu [data-destination="team"]{--section-color:#93455d;--section-tint:#fbf0f3}
+body[data-section="collaborations"],#nav-menu [data-destination="collaborations"]{--section-color:#65529a;--section-tint:#f4f1fa}
+body[data-section="facilities"],#nav-menu [data-destination="facilities"]{--section-color:#326473;--section-tint:#edf6f8}
+body[data-section="publications"],#nav-menu [data-destination="publications"]{--section-color:#4b568b;--section-tint:#f0f2f9}
+body[data-section="teaching"],#nav-menu [data-destination="teaching"]{--section-color:#846400;--section-tint:#faf6e6}
+body[data-section="outreach"],#nav-menu [data-destination="outreach"]{--section-color:#a04730;--section-tint:#fcf1ec}
+body[data-section="news"],#nav-menu [data-destination="news"]{--section-color:#526c32;--section-tint:#f3f7ed}
+body[data-section="contact"],#nav-menu [data-destination="contact"]{--section-color:#41665e;--section-tint:#eff6f3}
+
+body[data-section] .site-header{border-bottom:3px solid var(--section-color)}
+#nav-menu a[data-destination]{border-radius:7px;color:var(--ink)}
+#nav-menu a[data-destination]:hover{background:var(--section-tint);color:var(--section-color);text-decoration:underline;text-underline-offset:5px}
+#nav-menu a[aria-current="page"]{background:var(--section-tint);color:var(--section-color);font-weight:700;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+body[data-section] main>.page-heading{border-bottom:3px solid var(--section-color);margin-bottom:32px}
+body[data-section] main>.page-heading h1,body[data-section] main>.page-heading .eyebrow{color:var(--section-color)}
+body[data-section] main .button{background:var(--section-color);border-color:var(--section-color);color:white;min-height:44px;border-radius:9px;padding:10px 16px}
+body[data-section] main .button:hover{box-shadow:0 0 0 2px var(--section-color);text-decoration:underline}
+body[data-section] main .text-copy{color:var(--section-color);border-color:var(--section-color)}
+body[data-section] main :is(.project-card,.team-card,.collaboration-card,.equipment-card,.teaching-card,.news-entry){border-top:3px solid var(--section-color)}
+body[data-section] main :is(.project-card,.team-card,.collaboration-card,.equipment-copy,.news-entry) h2{color:var(--section-color)}
+body[data-section="contact"] .contact-identity{background:var(--section-tint)}
+body[data-section="contact"] .contact-identity h2{color:var(--section-color)}
+body[data-section="publications"] .publication-group{padding-top:20px}
+body[data-section="publications"] .publication-group h2 a{color:var(--axis);text-decoration:underline;text-underline-offset:5px}
+body[data-section] :is(a,button,input,select,summary):focus-visible{outline:3px solid #173840;outline-offset:4px}
+@media(forced-colors:active){#nav-menu a[aria-current="page"]{border:2px solid CanvasText}.research-axis-card,.axis-menu-card{border:2px solid CanvasText}}
+@media print{body[data-section] .site-header{border-color:#333}}
+body[data-section] .teaching-resources,body[data-section] .notice{background:var(--section-tint)}
+body[data-section="index"] #selected-title{color:#4b568b}
+body[data-section="index"] #news-title{color:#526c32}
