@@ -1,11 +1,13 @@
 {
-  "delivery": "V4.9",
+  "delivery": "V4.10",
   "date": "2026-10-25",
   "patch_base": "V4.8",
   "live_version_verified": "V4.8",
-  "changes": "Macrospin sequence, Langevin and high-field saturation, MathML equations, endolysosomal maturation",
+  "changes": "Facilities simplified; small-animal hyperthermia photo moved to research axis 3; includes V4.9",
   "obsolete_tracking_files": [
     "INSTALLATION-V4.8.txt",
-    "MANIFEST-V4.8.json"
+    "MANIFEST-V4.8.json",
+    "INSTALLATION-V4.9.txt",
+    "MANIFEST-V4.9.json"
   ]
 }

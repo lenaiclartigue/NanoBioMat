@@ -1,8 +1,20 @@
-# NanoBioMat — V4.9
+# NanoBioMat — V4.10
 
-Base du correctif : V4.8, vérifiée sur le site public le 25 octobre 2026.
+## Équipements et recherche
 
-## Corrections scientifiques et visuelles
+Schéma de nanoprécipitation retiré de Facilities / Équipements, ainsi que le texte descriptif associé au schéma. La photographie du montage, les vidéos et les références sont conservées.
+Hyperthermie : seule la première photo, celle du module adiabatique en solution, reste dans Facilities. La seconde photo, montrant le module pour petit animal, est placée sous le titre de l’axe 3, Interfaces biologiques. Crédit, légende et agrandissement en fenêtre conservés. Changements en français et en anglais.
+
+## Installation
+
+La version publique vérifiée le 25 octobre 2026 est V4.8. Le correctif est cumulatif V4.8 vers V4.10 : il inclut les corrections V4.9 décrites ci-dessous. Il convient aussi si V4.9 vient d’être installée.
+Copier le contenu du correctif à la racine du dépôt en conservant les sous-dossiers et en remplaçant les fichiers homonymes.
+Aucun fichier fonctionnel à supprimer. Les images déplacées restent nécessaires.
+Nettoyage facultatif : INSTALLATION-V4.8.txt, MANIFEST-V4.8.json et, s’ils existent, INSTALLATION-V4.9.txt et MANIFEST-V4.9.json.
+Aucun déploiement effectué.
+Les quatre pages ont été contrôlées : présence des images attendues, retrait du schéma, conservation des crédits et liens d’agrandissement, validité des chemins locaux.
+
+## Corrections scientifiques de V4.9 conservées
 
 - Progression : moments atomiques internes, somme vectorielle, puis approximation du spin géant. Les schémas de Néel et Brown ne montrent ensuite qu’un moment par nanoparticule.
 - Néel : corps fixe, moment mobile. Brown : corps et moment tournent ensemble. La vitesse d’animation reste illustrative.
@@ -13,25 +25,3 @@ Base du correctif : V4.8, vérifiée sur le site public le 25 octobre 2026.
 - La marginalisation concerne ici la périphérie lysosomale. La proximité de ferritine chargée en fer s’appuie sur les figures 5–7 de Lartigue et al., ACS Nano 2013, 7, 3939–3952, DOI 10.1021/nn305719y. Le transfert local est une proposition mécanistique, représentée en pointillé. Aucun mécanisme d’arrivée de l’apoferritine n’est inventé.
 - Versions française et anglaise actualisées. Schémas SVG régénérés.
 
-## Installation
-
-Décompresser le correctif V4.8 vers V4.9. Copier son contenu à la racine du dépôt GitHub en conservant les sous-dossiers et en remplaçant les fichiers homonymes.
-Aucun fichier fonctionnel à supprimer.
-Nettoyage facultatif : INSTALLATION-V4.8.txt et MANIFEST-V4.8.json.
-Le correctif contient uniquement les fichiers ajoutés ou modifiés. L’archive complète sert à l’archivage.
-Aucun déploiement effectué par l’assistant.
-
-## Vérifications
-
-Depuis theory-preview/source/ :
-python3 theory-v05/work/build.py
-node theory-v05/work/test.js
-node theory-v05/work/test-playback.js
-node magnetisme-v03/work/test.js
-node magnetisme-v03/work/test-saturation.js
-
-140 états graphiques FR/EN ; 40 cas lecture/pause/remise à zéro ; régression sur la progression macrospin et le confinement des 12 particules ; limites de Langevin, saturation SW, symétrie en champ et pondération en volume.
-Contrôles navigateur : Néel/Brown et équations, invagination, marginalisation et ferritine, première aimantation en anglais (500 mT, M/Ms = 0,998 aux paramètres par défaut).
-Les schémas sont des illustrations de mécanismes. Ils ne constituent ni des trajectoires calculées ni des reconstructions atomistiques.
-
-Pour publier après reconstruction : copier theory-v05/dist/index.html vers theory-preview/index.html. Le modèle numérique intégré est aussi fourni dans theory-preview/measurements.html et source/magnetisme-v03/dist/index.html.
