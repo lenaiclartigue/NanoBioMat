@@ -1,64 +1,37 @@
-# NanoBioMat — V4.8
+# NanoBioMat — V4.9
 
-## Lecture et représentations
+Base du correctif : V4.8, vérifiée sur le site public le 25 octobre 2026.
 
-Le premier module restait graphiquement immobile pendant environ 65 % de sa
-séquence, bien que la progression avance. Les schémas de surface et du montage
-CIJ étaient statiques malgré leur commande de lecture. Ces cas sont corrigés.
-Une première image évoluée est produite dès le clic. Lecture, pause et remise
-à zéro sont testées pour les 20 modules dans les deux langues.
-Les commandes sont au-dessus des figures pour que le clic ne masque pas le dessin.
+## Corrections scientifiques et visuelles
 
-La représentation du macrospin est organisée en trois panneaux : nanoparticule,
-ordre ferrimagnétique et somme vectorielle. La rotation collective est visible
-dès le début. Les sous-réseaux restent opposés ; les positions ne décrivent pas
-une maille cristallographique.
-La surface fonctionnalisée remplace les pièces de puzzle par un cœur, des groupes
-d’ancrage et des chaînes. Les formes protéiques PDB existantes sont conservées.
-Le dessin CIJ est conservé : l’animation montre l’ordre du procédé, pas un calcul
-d’écoulement. Les lignes de champ dipolaire se construisent progressivement,
-sans déplacer les moments imposés par les curseurs.
-Le schéma MPI utilise une section de champ et une zone de champ faible mobile.
-Les schémas cellulaires conservent leurs organites et leur trajet annoté, avec
-une palette plus sobre et des particules retravaillées.
-Les courbes de LaMer, d’anisotropie et d’IRM ont des graduations plus explicites.
-La lecture IRM emploie une progression logarithmique du temps pour rendre
-visibles à la fois T2 et T1 ; les axes des courbes restent linéaires et le temps
-physique est affiché. Le cycle d’hyperthermie montre l’aire et un tracé progressif.
-Les six protocoles magnétiques conservent leurs modèles numériques ; leur
-lecture démarre immédiatement, avec un rendu graphique harmonisé.
-
-Les dessins restent des schémas de mécanismes, pas des reconstructions atomistiques.
-Les références et limites accompagnent les modules. Les schémas existants issus
-des sources HDR et PDB ont été réutilisés ; cette livraison ne revendique pas
-une nouvelle vérification des planches originales de l’HDR.
+- Progression : moments atomiques internes, somme vectorielle, puis approximation du spin géant. Les schémas de Néel et Brown ne montrent ensuite qu’un moment par nanoparticule.
+- Néel : corps fixe, moment mobile. Brown : corps et moment tournent ensemble. La vitesse d’animation reste illustrative.
+- Première aimantation : champ porté jusqu’à 6 HK. Au-delà de la table initiale (1,2 HK), le minimum d’énergie SW est calculé, sans écrêtage du champ. Pour les paramètres par défaut, M/Ms passe de 0,942 à 1,2 HK à 0,998 à 6 HK.
+- Référence de Langevin explicitée et tracée séparément. Elle décrit l’équilibre sans anisotropie ni interactions. La distribution de taille est pondérée par le volume. Le modèle SW à deux états n’est pas une solution thermique exacte, notamment à faible barrière.
+- Équations composées en LaTeX avec KaTeX 0.16.22 puis incorporées en MathML. Aucun CDN ni connexion requis. Sources LaTeX : theory-preview/source/theory-v05/work/equations.tex.json. Les chaînes MathML sont intégrées aux fichiers JS/HTML.
+- Cellule : invagination, fermeture, maturation du compartiment porteur, fusion lysosomale. Douze particules restent dans la lumière du compartiment. Elles se dispersent ensuite vers la périphérie avant leur érosion.
+- La marginalisation concerne ici la périphérie lysosomale. La proximité de ferritine chargée en fer s’appuie sur les figures 5–7 de Lartigue et al., ACS Nano 2013, 7, 3939–3952, DOI 10.1021/nn305719y. Le transfert local est une proposition mécanistique, représentée en pointillé. Aucun mécanisme d’arrivée de l’apoferritine n’est inventé.
+- Versions française et anglaise actualisées. Schémas SVG régénérés.
 
 ## Installation
 
-Base V4.7 confirmée sur le site le 25 octobre 2026.
-Décompresser le correctif puis copier son contenu à la racine du dépôt.
-Conserver les sous-dossiers. Seuls les fichiers ajoutés ou modifiés sont fournis.
-Aucun fichier fonctionnel à supprimer. Nettoyage facultatif :
-INSTALLATION-V4.7.txt et MANIFEST-V4.7.json.
-Le correctif et ce nettoyage reconstituent exactement l’archive complète V4.8
-à partir de l’archive complète V4.7. Aucun déploiement effectué par l’assistant.
+Décompresser le correctif V4.8 vers V4.9. Copier son contenu à la racine du dépôt GitHub en conservant les sous-dossiers et en remplaçant les fichiers homonymes.
+Aucun fichier fonctionnel à supprimer.
+Nettoyage facultatif : INSTALLATION-V4.8.txt et MANIFEST-V4.8.json.
+Le correctif contient uniquement les fichiers ajoutés ou modifiés. L’archive complète sert à l’archivage.
+Aucun déploiement effectué par l’assistant.
 
-## Vérification
+## Vérifications
 
 Depuis theory-preview/source/ :
-- python3 theory-v05/work/build.py
-- node theory-v05/work/test.js : 140 états graphiques ; identités physiques.
-- node theory-v05/work/test-playback.js : 40 cas lecture/pause/remise à zéro,
-  couvrant 20 modules FR/EN ; événement de clic et ordonnanceur testés avec un
-  double de DOM, y compris vérification d’un changement de la première image.
-- node magnetisme-v03/work/test.js : rémanence SW aléatoire 0,5 ; ZFC/FC ;
-  relation de Wohlfarth ; FORC ; première aimantation et effet thermique.
-Contrôles de navigateur : macrospin, cycle M(H), devenir intracellulaire.
-28 exports SVG FR/EN sont régénérés dans theory-preview/svg/.
-Pour publier une reconstruction, copier theory-v05/dist/index.html vers
- theory-preview/index.html.
+python3 theory-v05/work/build.py
+node theory-v05/work/test.js
+node theory-v05/work/test-playback.js
+node magnetisme-v03/work/test.js
+node magnetisme-v03/work/test-saturation.js
 
-## Source en ligne vérifiée pendant cette révision
+140 états graphiques FR/EN ; 40 cas lecture/pause/remise à zéro ; régression sur la progression macrospin et le confinement des 12 particules ; limites de Langevin, saturation SW, symétrie en champ et pondération en volume.
+Contrôles navigateur : Néel/Brown et équations, invagination, marginalisation et ferritine, première aimantation en anglais (500 mT, M/Ms = 0,998 aux paramètres par défaut).
+Les schémas sont des illustrations de mécanismes. Ils ne constituent ni des trajectoires calculées ni des reconstructions atomistiques.
 
-RCSB PDB, albumine humaine 1AO6 : https://www.rcsb.org/structure/1AO6
-Les autres identifiants PDB et les publications sont documentés dans les modules.
+Pour publier après reconstruction : copier theory-v05/dist/index.html vers theory-preview/index.html. Le modèle numérique intégré est aussi fourni dans theory-preview/measurements.html et source/magnetisme-v03/dist/index.html.

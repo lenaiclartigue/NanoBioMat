@@ -1,7 +1,15 @@
 /* NanoBioMat: pedagogical SW / Néel two-state approximation. SI throughout. */
 const KB=1.380649e-23, MS=480000, TAU0=1e-9;
 function sizes(d,sigma){let a=[],sum=0;for(let j=0;j<25;j++){let z=-3.5+7*j/24,n=Math.exp(-z*z/2),v=Math.PI/6*Math.pow(d*1e-9*Math.exp(sigma*z),3);a.push({v,n,w:n*v});sum+=n*v;}a.forEach(x=>x.w/=sum);return a;}
-function landscape(h,i){return LAND.table[Math.max(0,Math.min(240,Math.round((h+1.2)*100)))][i];}
+const highFieldCache=new Map();
+function landscape(h,i){if(Math.abs(h)<=1.2)return LAND.table[Math.max(0,Math.min(240,Math.round((h+1.2)*100)))][i];
+const key=h+':'+i;if(highFieldCache.has(key))return highFieldCache.get(key);
+const theta=LAND.theta[i],b=Math.abs(h);let lo=-Math.PI/2,hi=Math.PI/2;
+const E=q=>Math.sin(q-theta)**2-2*b*Math.cos(q);
+for(let j=0;j<60;j++){const x=lo+(hi-lo)/3,y=hi-(hi-lo)/3;if(E(x)<E(y))hi=y;else lo=x;}
+const phi=(lo+hi)/2+(h<0?Math.PI:0),r=[1,h<0?0:1,Math.cos(phi),phi,0,0,0];highFieldCache.set(key,r);return r;}
+function langevin(x){if(Math.abs(x)<1e-4)return x/3-x**3/45+2*x**5/945;return 1/Math.tanh(x)-1/x;}
+function langevinEnsemble(B,d,sigma,T){return sizes(d,sigma).reduce((s,q)=>s+q.w*langevin(MS*q.v*B/(KB*T)),0);}
 function advance(r,p,K,v,T,dt){if(r[0]===1)return r[1];if(T===0)return p;let a=.5/TAU0*Math.exp(-K*v*r[5]/(KB*T)),b=.5/TAU0*Math.exp(-K*v*r[6]/(KB*T)),rate=a+b;if(rate<1e-100)return p;return b/rate+(p-b/rate)*Math.exp(-rate*dt);}
 function equilibrium(r,K,v,T){if(r[0]===1)return r[1];return 1/(1+Math.exp(Math.max(-700,Math.min(700,K*v*(r[6]-r[5])/(KB*T)))));}
 function moment(r,p){return r[0]===1?r[2]:p*r[1]+(1-p)*r[2];}

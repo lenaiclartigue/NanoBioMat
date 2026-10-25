@@ -1,11 +1,11 @@
 {
-  "delivery": "V4.8",
+  "delivery": "V4.9",
   "date": "2026-10-25",
-  "patch_base": "V4.7",
-  "live_version_verified": "V4.7",
-  "changes": "Animation playback and scientific schematic revision FR/EN",
+  "patch_base": "V4.8",
+  "live_version_verified": "V4.8",
+  "changes": "Macrospin sequence, Langevin and high-field saturation, MathML equations, endolysosomal maturation",
   "obsolete_tracking_files": [
-    "INSTALLATION-V4.7.txt",
-    "MANIFEST-V4.7.json"
+    "INSTALLATION-V4.8.txt",
+    "MANIFEST-V4.8.json"
   ]
 }

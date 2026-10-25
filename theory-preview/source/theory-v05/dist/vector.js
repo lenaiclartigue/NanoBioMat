@@ -30,23 +30,7 @@ s+=np(center,260,58,true);for(let i=0;i<16;i++){let a=i*Math.PI/8+.13,approach=M
 for(let i=0;i<8;i++){let x=280+25*Math.sin(i*2.9+t*4),y=120+i*40;s+=prot(x,y,.32,i%5,i*31+t*15);}
 if(values.medium==='plasma')s+=prot(center-15,339,.31,5,0);s+=V.p('M226 260L256 260M246 254L256 260L246 266','none','#899ba0',2)+V.txt(300,480,T('Biomolécules du milieu','Biomolecules in the medium'),15)+V.txt(505,425,T('Adsorption et échanges','Adsorption and exchange'),16)+V.txt(783,533,T('Membrane plasmique','Plasma membrane'),15);
 s+=V.txt(450,520,T('Formes PDB : albumine · ApoE · IgG · ApoA-I · PF4','PDB shapes: albumin · ApoE · IgG · ApoA-I · PF4'),15)+V.txt(450,565,T('Exemples de formes moléculaires ; composition et proportions non mesurées.','Illustrative molecular shapes; composition and proportions are not measured.'),13);return vsvg(s,900,590);}
-function fateScene(t){const cell='M145 108C230 45 600 40 716 94C690 125 706 169 754 171C790 167 820 128 840 154C915 224 896 390 800 478C650 590 230 565 115 455C30 340 55 195 145 108Z';let s=V.p(cell,'url(#vCyto)','#7d8865',12)+V.p(cell,'none','#d5d2ac',7);const segs=[[[145,108],[230,45],[600,40],[716,94]],[[716,94],[690,125],[706,169],[754,171]],[[754,171],[790,167],[820,128],[840,154]],[[840,154],[915,224],[896,390],[800,478]],[[800,478],[650,590],[230,565],[115,455]],[[115,455],[30,340],[55,195],[145,108]]];s+=leaflets(segs.flatMap(p=>bez(...p,45)),'#919775',2);
-// Cytoplasm granularity; restrained contrast so the itinerary remains primary.
-for(let i=0;i<55;i++){let a=i*2.399,r=100+90*(i%7)/7,x=340+r*Math.cos(a),y=310+r*.73*Math.sin(a);s+=V.c(x,y,1.1,'#d5cdc0');}
-s+=V.p('M203 237C219 186 312 177 353 223C383 254 360 292 382 325C402 365 351 406 287 401C225 403 176 363 180 312C183 284 185 264 203 237Z','url(#vNucleus)','#9c86ae',3)+V.p('M210 242C230 200 303 192 343 229C369 256 348 292 369 330C383 360 343 393 289 390C233 394 188 358 191 314C193 282 198 262 210 242Z','none','#ded0e5',2);
-for(let i=0;i<15;i++){let a=i*2.4,x=282+50*Math.cos(a),y=293+62*Math.sin(a);s+=V.p(`M${x} ${y}q15-14 28 2t-5 24`,'none','#b6a2c3',2.4);}s+=V.c(275,303,26,'#8d739e')+V.c(265,294,9,'#a891b8');
-for(let i=0;i<5;i++){s+=V.p(`M${155-i*4} ${206+i*30}q-40 5-20 27t32 9`,'none','#c2a8af',8)+V.p(`M${155-i*4} ${206+i*30}q-40 5-20 27t32 9`,'none','#eadad9',3);for(let j=0;j<4;j++)s+=V.c(124+j*5,221+i*30,1.7,'#977986');}
-for(let i=0;i<4;i++)s+=V.p(`M${365+i*8} ${430+i*12}q45 28 83 0`,'none','#c0aa94',7-i)+V.c(457+i*7,441+i*13,4,'#dcc9ac','#b99f84',1);
-s+=mitochondrion(210,461,20,.7)+mitochondrion(473,155,-15,.65)+mitochondrion(715,465,-25,.7);
-s+=V.txt(274,346,T('Noyau','Nucleus'),14)+V.txt(152,390,T('Réticulum','ER'),12)+V.txt(408,494,'Golgi',12);
-const step=Math.min(4,Math.floor(t*5));s+=vesicle(665,235,39,0,step===0?1:.65)+vesicle(600,330,47,1,step===1?1:.65)+vesicle(526,430,60,2,step>=2?1:.65)+vesicle(483,341,24,2,.65);
-s+=V.p('M707 194Q702 213 692 220M686 212L692 220L700 219M642 264L624 284M625 276L624 284L632 282M577 369L557 385M558 378L557 385L565 383','none','#77876f',1.7)+V.p('M487 371L499 382M493 374L499 382L500 374','none','#77876f',1.7);
-s+=V.txt(759,220,T('Endosome précoce','Early endosome'),15,'start')+V.p('M707 235L753 224','none','#a3aa97',1)+V.txt(697,320,T('Endosome tardif','Late endosome'),15,'start')+V.p('M648 330L690 323','none','#a3aa97',1)+V.txt(635,402,T('Compartiment lysosomal','Lysosomal compartment'),15,'start')+V.p('M586 428L627 407','none','#a3aa97',1)+V.txt(460,308,T('Lysosome','Lysosome'),13);
-let x,y;if(t<.2){let a=t/.2;x=754+(665-754)*a;y=104+(235-104)*a;}else if(t<.4){let a=(t-.2)/.2;x=665-65*a;y=235+95*a;}else if(t<.6){let a=(t-.4)/.2;x=600-74*a;y=330+100*a;}else{x=526;y=430;}
-if(t>.09&&t<.58)s+=vesicle(x,y,21,0,1);let rr=t<.6?10:10+Math.min(1,(t-.6)/.17)*35;let size=t>.8?4.5*(1-(t-.8)*3.5):4.5;for(let i=0;i<8;i++){let a=i*Math.PI/4;s+=np(x+rr*Math.cos(a),y+rr*Math.sin(a),size,false);}
-if(t<.2){s+=prot(x+13,y-8,.12,0,40)+prot(x-9,y+13,.12,1,0);}
-if(t>.72){let f=Math.max(0,(t-.8)/.2);s+=ferritin(640,480,18,f)+V.txt(635,519,T('Ferritine','Ferritin'),14,'middle');if(f>0){s+=V.p('M572 450Q603 443 623 474','none','#b68558',1.4);for(let i=0;i<5;i++){let a=(f+i/5)%1;s+=V.c(574+a*52,450+24*a-12*Math.sin(a*Math.PI),1.8,'#b36f40');}s+=V.txt(607,441,T('Fer','Iron'),12);}}
-s+=V.txt(752,55,T('Milieu extracellulaire','Extracellular medium'),16)+V.txt(450,590,T('Maturation et acidification · schéma non à l’échelle','Maturation and acidification · not to scale'),14);return vsvg(s,930,615);}
+
 function water(x,y,k=.8,a=0){return `<g transform="translate(${x} ${y}) rotate(${a}) scale(${k})">${V.p('M0 0L-11 8M0 0L11 8','none','#809aa7',3)}${V.c(0,0,7,'#b94f42','#87392e',.7)}${V.c(-11,8,4.5,'#dceaf0','#91aab7',.7)}${V.c(11,8,4.5,'#dceaf0','#91aab7',.7)}</g>`;}
 function cube(x,y,r=50){return V.p(`M${x-r} ${y-r*.6}L${x+r*.35} ${y-r*.6}L${x+r*.75} ${y-r}L${x-r*.6} ${y-r}Z`,'#b8dc85','#68964d',1)+V.p(`M${x+r*.35} ${y-r*.6}L${x+r*.75} ${y-r}L${x+r*.75} ${y+r*.35}L${x+r*.35} ${y+r*.75}Z`,'#91c561','#68964d',1)+V.p(`M${x-r} ${y-r*.6}L${x+r*.35} ${y-r*.6}L${x+r*.35} ${y+r*.75}L${x-r} ${y+r*.75}Z`,'#d1e8b5','#68964d',1).replace('<path ', '<path fill-opacity=".35" ');}
 function field(x,y,r=25){let s='';for(let d of [25,40,55])s+=V.p(`M${x} ${y-r}C${x-d} ${y-r-50} ${x-d} ${y+r+50} ${x} ${y+r}C${x+d} ${y+r+50} ${x+d} ${y-r-50} ${x} ${y-r}`,'none','#718988',1);return s;}
@@ -71,12 +55,7 @@ const vectorBank=document.createElementNS("http://www.w3.org/2000/svg","svg");ve
 // V4.8: scientific figure conventions; time is illustrative unless a curve has physical units.
 function panel(x,y,w,h,title){return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="#fff" stroke="#d4dde2"/><text x="${x+16}" y="${y+25}" style="font:600 16px Arial;fill:#273f4b">${title}</text>`;}
 function np(x,y,r=25,coated=true){let s=`<g><circle cx="${x}" cy="${y}" r="${r}" fill="url(#vCore)" stroke="#243944" stroke-width="1"/>`;for(let j=0;j<6;j++){let a=j*Math.PI/3;s+=V.p(`M${x} ${y}L${x+r*.92*Math.cos(a)} ${y+r*.92*Math.sin(a)}`,'none','#c2cccc',.45);}if(coated)for(let i=0;i<24;i++){let a=i*Math.PI/12,dx=Math.cos(a),dy=Math.sin(a),q=r*.16;s+=V.p(`M${x+dx*r} ${y+dy*r}q${dx*q-dy*q*.5} ${dy*q+dx*q*.5} ${dx*q*1.5} ${dy*q*1.5}t${dx*q} ${dy*q}`,'none','#688a96',1.1);}return s+'</g>';}
-function macroScene(t){const a=-.45+Math.PI*2*t;let s=panel(20,20,260,370,T('A · Nanoparticule','A · Nanoparticle'))+panel(298,20,290,370,T('B · Ordre ferrimagnétique','B · Ferrimagnetic order'))+panel(606,20,274,370,T('C · Somme vectorielle','C · Vector sum'));
-s+=np(150,192,76,true)+arrow(150,192,a,58,'#eaf3f8',4)+V.txt(150,326,T('Moment collectif m','Collective moment m'),17);
-s+=V.c(442,195,96,'#f1f5f7','#a5b8c1',1);for(let i=0;i<30;i++){const rr=78*Math.sqrt((i+.5)/30),ang=i*2.399,x=442+rr*Math.cos(ang),y=195+rr*Math.sin(ang);s+=arrow(x,y,a+(i%2?Math.PI:0),i%2?12:19,i%2?'#a66b49':'#315b78',1.8);}
-s+=V.txt(442,327,T('Deux contributions opposées','Two opposing contributions'),15)+V.txt(442,351,T('Positions non cristallographiques','Not crystallographic positions'),12);
-s+=arrow(710,210,a,75,'#315b78',5)+arrow(763,210,a+Math.PI,47,'#a66b49',5)+arrow(817,210,a,28,'#243944',5)+V.txt(742,325,'m = Σ μᵢ',20)+V.txt(742,352,T('Ordre interne conservé','Internal order preserved'),14);
-s+=V.txt(450,425,T('Rotation collective imposée pour illustrer le macrospin ; pas une trajectoire calculée.','Prescribed collective rotation illustrates the macrospin; not a computed trajectory.'),14);return vsvg(s,900,450);}
+
 function coatingScene(t){let s=panel(20,20,405,430,T('A · Surface fonctionnalisée','A · Functionalized surface'))+panel(445,20,435,430,T('B · Fonctions distinctes','B · Distinct functions'));s+=np(215,230,83,false);
 for(let i=0;i<32;i++){let a=i*2*Math.PI/32,q=.06*Math.sin(t*8+i),dx=Math.cos(a),dy=Math.sin(a);let sx=215+84*dx,sy=230+84*dy,ex=215+128*Math.cos(a+q),ey=230+128*Math.sin(a+q);s+=V.c(sx,sy,3,'#a66b49')+V.p(`M${sx} ${sy}Q${215+105*Math.cos(a-.06)} ${230+105*Math.sin(a-.06)} ${ex} ${ey}`,'none','#5d8193',1.8);if(i%8===0)s+=prot(ex,ey,.13,2,a*180/Math.PI);}
 const labels=[[125,'#a66b49',T('Ancrage au cœur','Core anchoring')],[225,'#5d8193',T('Couche hydrophile','Hydrophilic layer')],[325,'#775b8c',T('Ligand / composé associé','Ligand / associated compound')]];labels.forEach(([y,c,label],i)=>{s+=V.c(480,y,7,c)+V.txt(505,y+6,label,18,'start');if(i===Math.min(2,Math.floor(t*3)))s+=V.p(`M468 ${y+20}H845`,'none',c,2);});s+=V.txt(215,404,T('Fluctuations de chaînes illustratives','Illustrative chain fluctuations'),14)+V.txt(450,485,T('La fonctionnalisation seule ne démontre ni ciblage ni libération.','Functionalization alone demonstrates neither targeting nor release.'),15);return vsvg(s,900,510);}
@@ -95,3 +74,38 @@ s+=V.txt(450,390,T('La région de champ faible traverse les traceurs.','The low-
 // One visual policy for all modules, while retaining the established source geometries.
 const establishedVectorScene=vectorScene;
 function refinedScene(id,t){if(id==='mpi')return mpiScene(t);return establishedVectorScene(id,t);}
+
+// V4.9: introduce internal moments before the single-particle approximation.
+function macroScene(t){const stage=Math.min(2,Math.floor(t*3)),a=stage===2?.3+1.1*Math.sin((t-2/3)*Math.PI*3):.3;let s='';
+s+=panel(24,20,852,435,T('Des moments atomiques au spin géant','From atomic moments to a giant spin'));
+s+=V.c(285,225,132,'#edf2f5','#728c9a',2);
+if(stage<2){for(let i=0;i<44;i++){const r=112*Math.sqrt((i+.5)/44),q=i*2.399;s+=`<g data-internal-spin="${i}" opacity="${Math.min(1,.4+t*2)}">`+arrow(285+r*Math.cos(q),225+r*Math.sin(q),a+(i%2?Math.PI:0),i%2?12:20,i%2?'#ad7151':'#315b78',2)+'</g>';}
+s+=V.txt(285,390,T('Moments atomiques ordonnés','Ordered atomic moments'),18);
+}else{s+=`<g data-macrospin="single">`+arrow(285,225,a,100,'#315b78',7)+'</g>'+V.txt(285,390,T('Un seul moment par nanoparticule','One moment per nanoparticle'),18);}
+if(stage===0){s+=V.txt(625,175,T('IONP ferrimagnétique','Ferrimagnetic IONP'),23)+V.txt(625,224,T('Deux sous-réseaux opposés','Two opposing sublattices'),18)+V.txt(625,263,T('Contributions inégales','Unequal contributions'),18)+V.txt(625,318,T('Le moment total est non nul.','The total moment is nonzero.'),18);}
+if(stage===1){s+=arrow(525,210,.3,90,'#315b78',5)+arrow(630,210,.3+Math.PI,55,'#ad7151',5)+arrow(755,210,.3,35,'#243944',5)+V.txt(630,315,T('Somme vectorielle des moments','Vector sum of the moments'),18)+V.txt(630,354,T('Moment résultant de la particule','Net particle moment'),18);}
+if(stage===2){s+=V.txt(625,160,T('Approximation monodomaine','Single-domain approximation'),21)+V.txt(625,220,T('La direction du moment varie.','The moment direction changes.'),18)+V.txt(625,260,T('Sa norme reste constante ici.','Its magnitude stays constant here.'),18)+V.txt(625,320,T('Ce moment sera utilisé ensuite.','This moment is used from now on.'),18);}
+s+=V.txt(450,493,T('Positions schématiques : ni maille cristalline ni rapport stœchiométrique.','Schematic positions: neither a crystal lattice nor a stoichiometric ratio.'),14);return vsvg(s,900,520);}
+function fateGeometry(t){const clamp=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=clamp(x);return x*x*(3-2*x)};const close=ease((t-1/6)*6),travel=ease((t-1/3)*6),fusion=ease((t-.5)*6),redistribution=ease((t-2/3)*6),erosion=ease((t-5/6)*6);return {close,travel,fusion,redistribution,erosion,x:690-150*travel,y:210+82*travel,r:48+13*travel+8*fusion};}
+function fateScene(t){const g=fateGeometry(t),stage=Math.min(5,Math.floor(t*6));let s=V.p('M80 130Q55 140 55 200L55 460Q55 500 110 500H815Q850 500 850 460V130Z','url(#vCyto)','none');
+s+=V.txt(180,65,T('Milieu extracellulaire','Extracellular medium'),16)+V.txt(150,475,T('Cytoplasme','Cytoplasm'),16);
+// A section of cell with nucleus, ER and mitochondria; the upper contour is its plasma membrane.
+s+=V.p('M114 271C135 222 230 225 256 277C283 321 250 390 194 403C132 412 100 365 114 271Z','url(#vNucleus)','#9cabc0',3)+V.p('M128 277C149 238 224 238 244 282C264 325 239 377 192 389C141 397 114 361 128 277Z','none','#e0e6ef',2);
+s+=V.c(181,315,24,'#879ab2')+V.txt(185,365,T('Noyau','Nucleus'),14);
+for(let i=0;i<5;i++)s+=V.p(`M${280+i*6} ${248+i*27}q35-14 50 2t21 15`,'none','#b5a0aa',6)+V.p(`M${280+i*6} ${248+i*27}q35-14 50 2t21 15`,'none','#eddee3',2);
+s+=mitochondrion(345,429,-18,.7)+mitochondrion(125,190,20,.55);
+// Continuous invagination contour. The neck narrows before fission.
+let membrane='M55 130H850';if(stage<2){const q=stage===0?Math.min(1,t*6):1,depth=80*q,neck=42*(1-g.close)+2;membrane=`M55 130H${690-neck}C${690-neck} ${145+depth*.2} ${636} ${130+depth*.7} 645 ${130+depth}C645 ${130+depth+48*q} 735 ${130+depth+48*q} 735 ${130+depth}C744 ${130+depth*.7} ${690+neck} ${145+depth*.2} ${690+neck} 130H850`;}
+s+=V.p(membrane,'none','#899779',10)+V.p(membrane,'none','#e1dfc6',5);
+let x=g.x,y=g.y,r=g.r;if(stage===0){y=99+111*Math.min(1,t*6);}
+if(stage>=2)s+=`<g data-compartment="particle-bearing">`+vesicle(x,y,r,stage>=3?2:1)+'</g>';
+if(stage===1&&g.close>.75)s+=vesicle(x,y,r,0,Math.min(1,(g.close-.75)*4));
+// A lysosome approaches the same late endosome and merges with it.
+if(stage===2||stage===3){const lx=705-115*g.fusion,ly=370-65*g.fusion;const opacity=1-g.fusion;s+=vesicle(lx,ly,29,2,opacity);if(stage===3&&g.fusion>.1&&g.fusion<.9)s+=V.p(`M${x+40} ${y+15}Q${lx-15} ${ly-35} ${lx} ${ly-20}L${lx-15} ${ly+15}Q${x+48} ${y+45} ${x+30} ${y+30}Z`,'url(#vLumen)','#879779',2);if(opacity>.4)s+=V.txt(lx,ly+49,T('Lysosome','Lysosome'),15);}
+// Multiple cargo particles stay inside the moving, maturing compartment.
+for(let i=0;i<12;i++){const a=i*2.399,rr=18*Math.sqrt((i+.5)/12),target=r-12,rad=rr*(1-g.redistribution)+target*g.redistribution,sz=4.8*(1-.55*g.erosion);s+=`<g data-cargo="${i}" data-radius="${rad}">`+np(x+rad*Math.cos(a),y+rad*Math.sin(a),sz,false)+'</g>';}
+const labels=[T('Invagination','Invagination'),T('Fermeture de la vésicule','Vesicle closure'),T('Endosome précoce → tardif','Early → late endosome'),T('Fusion avec un lysosome','Fusion with a lysosome'),T('Redistribution périphérique','Peripheral redistribution'),T('Érosion des IONPs','IONP erosion')];s+=V.txt(460,35,labels[stage],23);
+if(stage>=2)s+=V.txt(x,y-r-22,stage===2?T('Compartiment en maturation','Maturing compartment'):T('Compartiment endolysosomal','Endolysosomal compartment'),16);
+if(stage>=4){s+=V.p(`M${x+r-4} ${y+25}L720 405`,'none','#839177',1)+V.txt(720,426,T('Membrane lysosomale','Lysosomal membrane'),15);}
+if(stage===5){for(let i=0;i<3;i++)s+=ferritin(650+i*48,235-i%2*25,13,g.erosion);s+=V.txt(704,180,T('Ferritine · stockage du fer','Ferritin · iron storage'),16)+`<path d="M${x+r-5} ${y-20}Q627 244 647 240" stroke="#a66b49" fill="none" stroke-dasharray="4 4" stroke-width="1.5"/>`+V.txt(705,284,T('Transfert local proposé','Proposed local transfer'),13)+V.txt(705,306,T('Mécanisme non résolu','Unresolved mechanism'),13);}
+s+=V.txt(450,540,T('Lartigue et al., ACS Nano 2013 · figures 5–7 · schéma non à l’échelle','Lartigue et al., ACS Nano 2013 · Figures 5–7 · diagram not to scale'),14);return vsvg(s,900,565);}
