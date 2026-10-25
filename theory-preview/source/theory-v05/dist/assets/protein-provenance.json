@@ -1,0 +1,80 @@
+[
+  {
+    "pdb": "1AO6",
+    "chains": "A",
+    "name": "Albumin",
+    "C_alpha_count": 578,
+    "projected_extent_nm": [
+      8.06,
+      6.75,
+      5.27
+    ],
+    "model": 1,
+    "projection": "PCA, orthographic; same angstrom scale; no unresolved segments invented"
+  },
+  {
+    "pdb": "2L7B",
+    "chains": "A",
+    "name": "ApoE",
+    "C_alpha_count": 299,
+    "projected_extent_nm": [
+      6.29,
+      3.8,
+      3.84
+    ],
+    "model": 1,
+    "projection": "PCA, orthographic; same angstrom scale; no unresolved segments invented"
+  },
+  {
+    "pdb": "1HZH",
+    "chains": "HKLM",
+    "name": "IgG",
+    "C_alpha_count": 1331,
+    "projected_extent_nm": [
+      15.81,
+      12.57,
+      6.08
+    ],
+    "model": 1,
+    "projection": "PCA, orthographic; same angstrom scale; no unresolved segments invented"
+  },
+  {
+    "pdb": "8VXJ",
+    "chains": "C",
+    "name": "ApoAI",
+    "C_alpha_count": 178,
+    "projected_extent_nm": [
+      7.31,
+      2.72,
+      2.14
+    ],
+    "model": 1,
+    "projection": "PCA, orthographic; same angstrom scale; no unresolved segments invented"
+  },
+  {
+    "pdb": "1RHP",
+    "chains": "ABCD",
+    "name": "PF4",
+    "C_alpha_count": 256,
+    "projected_extent_nm": [
+      4.71,
+      3.76,
+      3.45
+    ],
+    "model": 1,
+    "projection": "PCA, orthographic; same angstrom scale; no unresolved segments invented"
+  },
+  {
+    "pdb": "3GHG",
+    "chains": "ABCDEF",
+    "name": "Fibrinogen",
+    "C_alpha_count": 1913,
+    "projected_extent_nm": [
+      45.17,
+      6.45,
+      5.24
+    ],
+    "model": 1,
+    "projection": "PCA, orthographic; same angstrom scale; no unresolved segments invented"
+  }
+]

@@ -1,55 +1,57 @@
-# NanoBioMat — V2.1 statique, 15 octobre 2026
+# NanoBioMat — V4.3-preview
 
-Nouvelle ergonomie conservée ; modules scientifiques et filtres de publications retirés à la demande de l’utilisateur. Simple Analytics préparé. **Copie locale de travail : aucune publication ni migration effectuée.** La V2 antérieure reste séparée.
+25 octobre 2026. Base publique vérifiée : V4.0.
 
-## Ouvrir
+## Cette livraison
 
-Extraire toute l’archive, puis ouvrir `site/index.html` dans Firefox ou un autre navigateur. Ne pas ouvrir le HTML depuis l’intérieur du ZIP. Cette ouverture reste à vérifier dans un vrai navigateur.
+Les pages research.html et fr/research.html utilisent des textes courts et
+factuels. Les questions et leurs réponses deviennent des phrases déclaratives.
+Les introductions, explications et limites des bases théoriques sont simplifiées.
+Les fiches de ressources suivent la même ligne rédactionnelle.
+Les titres et les légendes courtes peuvent rester nominaux.
+Les schémas, calculs, paramètres et liens scientifiques sont conservés.
 
-Si le navigateur restreint les fichiers locaux, depuis ce dossier :
+Les textes de Recherche figurent dans TEXTES-RECHERCHE-V4.3-preview.md.
+Les nouveaux textes restent proposés à la relecture.
+Aucun déploiement n’a été effectué.
 
-```sh
-python -m http.server 8000 --bind 127.0.0.1 --directory site
-```
+## Installer
 
-Ouvrir `http://127.0.0.1:8000/`, arrêter avec Ctrl+C. Cette commande pour l’utilisateur n’a pas été lancée pendant la session.
+Le correctif inclut toutes les nouveautés depuis V4.0, dont les bases
+théoriques de V4.2. Il ne se limite pas aux différences depuis V4.2.
+Décompresser puis copier son contenu à la racine du dépôt.
+Conserver les sous-dossiers. Ne pas déposer seulement le fichier ZIP.
 
-## Contenu
+FICHIERS À SUPPRIMER DEPUIS V4.0 : AUCUN.
 
-- `site/` : dix pages et ressources déjà générées ; seul contenu candidat à une future publication.
-- `content/` : textes éditables, projets et publications en JSON.
-- `tools/` : générateur Python et contrôles locaux, sans installation npm.
-- `review/` : journal, provenance, tests, validations, notice Simple Analytics.
-- `SHA256SUMS.txt` : empreintes du paquet.
+Si V4.1-preview ou V4.2-preview ont été déposées entre-temps, leurs anciens
+fichiers INSTALLATION et MANIFEST peuvent être supprimés. L’ancien dossier
+theory-preview/source/ peut être remplacé par celui de cette archive.
+Ne pas supprimer les autres dossiers du site.
 
-**Ne pas publier le dossier complet.** Pour une mise en ligne autorisée, les fichiers à déposer sont ceux qui se trouvent **dans** `site/`, avec `index.html` à la racine du dépôt de publication. Garder le dépôt complet de travail privé, y compris son historique.
+## Consulter les bases théoriques
 
-## Simple Analytics
+Ouvrir theory-preview/index.html. La page est autonome et bilingue.
+Elle contient les animations, les ressources et les exports SVG.
+Les pages Recherche publiques ne proposent pas encore de lien vers cette
+maquette. Elle porte noindex. Ce paramètre ne protège pas son accès :
+elle reste accessible par son URL si elle est déposée sur GitHub Pages.
 
-Préparé pour les dix pages de `https://lenaiclartigue.github.io/NanoBioMat/`. Le script ne se charge pas sur les fichiers locaux, localhost, `/NanoBioMat-test/` ou une autre adresse. **Les visites locales ou de test n’apparaîtront donc pas dans le tableau de bord.** Aucun accès au compte Simple Analytics n’a été effectué. Voir `review/06_SIMPLE_ANALYTICS.md`.
+## Vérifications
 
-Le site reste consultable sans JavaScript ; `site.js` sert seulement au menu mobile. Tous les contenus et images fonctionnent sans connexion à Simple Analytics.
+Les pages index.html, research.html, fr/research.html et style.css du site
+en ligne correspondaient à la base V4.0 le 25 octobre 2026.
+Le correctif appliqué à cette base produit exactement l’archive complète.
+Les liens et identifiants des pages Recherche sont conservés.
+Les tests graphiques et numériques passent.
 
-## Entretien
+## Sources
 
-Éditer `content/*.html`, `content/projects.json` ou `content/publications.json`, puis :
-
-```sh
-python tools/build.py
-python tools/check.py
-```
-
-Python 3 est utilisé uniquement pour la maintenance locale. L’hébergement ne demande que des fichiers statiques. Éléments communs : `tools/build.py` ; styles et scripts : `site/style.css`, `site/site.js`, `site/analytics.js`.
-
-Pour les contrôles de logique (Node.js sans paquet supplémentaire) :
-
-```sh
-python tools/check.py --fixtures dom-fixtures.json
-node tools/test-navigation-analytics.cjs dom-fixtures.json
-```
-
-Ne pas publier le fichier temporaire `dom-fixtures.json`. Ces contrôles ne remplacent pas un navigateur.
-
-## À valider
-
-Rendu responsive, accessibilité réelle, ouverture locale, console, application de la CSP et collecte réelle Simple Analytics restent à vérifier. Le navigateur de test n’était pas disponible dans cette session. Les contenus sensibles MAGNETIMA restent retirés ; sa phrase générale et les droits des images restent à valider avant diffusion. `noindex` ne protège pas l’accès.
+Les sources sont dans theory-preview/source/.
+Depuis ce dossier : python3 theory-v05/work/build.py
+La page reconstruite est theory-v05/dist/index.html.
+Les contrôles sont node theory-v05/work/test.js et
+node magnetisme-v03/work/test.js.
+Le document LECTURE-SCIENTIFIQUE.md précise les hypothèses et les crédits.
+Les licences des ressources tierces restent applicables.
+La version apparaît ici et dans VERSION.json.
