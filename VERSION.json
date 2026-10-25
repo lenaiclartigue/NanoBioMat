@@ -1,8 +1,11 @@
 {
-  "delivery": "V4.5",
+  "delivery": "V4.6",
   "date": "2026-10-25",
-  "public_site_base": "V4.0",
-  "changes": "Couleurs des 11 rubriques sur 30 pages FR/EN",
-  "theory_status": "integrated",
-  "deletions_from_V4_0": []
+  "patch_base": "V4.5",
+  "live_version_verified": "V4.5",
+  "changes": "Large numbered badges and homogeneous research buttons FR/EN",
+  "obsolete_tracking_files": [
+    "INSTALLATION-V4.5.txt",
+    "MANIFEST-V4.5.json"
+  ]
 }

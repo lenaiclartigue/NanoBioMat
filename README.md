@@ -1,58 +1,44 @@
-# NanoBioMat — V4.5
+# NanoBioMat — V4.6
 
-25 octobre 2026. Correctif cumulatif depuis la base publique V4.0.
+## Modifications
 
-## Couleurs des rubriques — V4.5
+Numéros 01, 02 et 03 agrandis dans des cadres de la couleur de leur axe.
+Ils sont appliqués à l’accueil, Recherche et au menu des bases théoriques.
+Sur ordinateur, les cadres font 72 × 72 px et les chiffres 38 px.
+Sur mobile, les cadres restent visibles : 64 px sur le site et 56 px dans le menu interactif.
 
-Une couleur identifie chacune des 11 rubriques sur les 30 pages publiques
-françaises et anglaises. Elle apparaît dans l’onglet actif, le titre de page,
-le filet d’en-tête et les actions principales. Les articles héritent de leur rubrique.
-Les axes scientifiques conservent leur bleu, violet et vert dans Recherche,
-Publications et les bases théoriques.
-L’onglet actif reste souligné et identifié par aria-current.
-La charte et les références ergonomiques sont dans CHARTE-NAVIGATION-V4.5.md.
-Les nouvelles paires de couleurs de texte ont un contraste d’au moins 4,5:1.
-Le contenu et les destinations des liens des 30 pages sont préservés.
-Contrôles visuels : Enseignement sur ordinateur, Projets et menu ouvert à
-390 px. Aucun débordement horizontal observé sur cette page mobile.
-Ces vérifications ne constituent pas un audit WCAG complet.
+Les trois actions de chaque axe utilisent le même composant : fond coloré,
+largeur égale, même hauteur, même police, mêmes bordures et espacement.
+Le sous-titre du bouton Bases théoriques est retiré.
+Les libellés et la mise en page s’adaptent au français et à l’anglais.
 
-## Navigation et bases théoriques
+## Installer le correctif
 
-Les trois axes disposent de cartes entièrement cliquables sur l’accueil et
-Recherche. Un code couleur les suit dans les bases théoriques :
-01 Particules : bleu ; 02 Assemblages : violet ; 03 Interfaces biologiques : vert.
-Les numéros, noms et états sélectionnés complètent les couleurs.
-Chaque axe de Recherche ouvre directement ses explications interactives.
-Les 20 modules FR/EN, leurs sources, animations et exports SVG sont inclus.
-La navigation comporte un retour à Recherche, un choix de module et des
-boutons précédent/suivant. Sur mobile, une liste remplace le menu latéral.
-Les textes courts FR/EN de V4.3 sont conservés.
-Le dossier theory-preview est conservé pour préserver les chemins existants.
-La page principale des bases théoriques ne porte plus noindex.
+Base : V4.5, confirmée par le VERSION.json du site en ligne le 25 octobre 2026.
+Décompresser le correctif V4.5 vers V4.6 et copier son contenu à la racine du dépôt.
+Conserver les sous-dossiers. Seuls les fichiers ajoutés ou modifiés sont inclus.
+Aucun fichier fonctionnel à supprimer.
+Nettoyage facultatif des anciens documents : INSTALLATION-V4.5.txt et MANIFEST-V4.5.json.
+Le correctif appliqué à l’archive V4.5 puis ce nettoyage reconstitue exactement le complet V4.6.
+Aucun déploiement effectué par l’assistant.
 
-## Installation
+## Contrôles
 
-Décompresser le correctif puis copier son contenu à la racine du dépôt GitHub.
-Conserver les dossiers. Ne pas déposer seulement le ZIP.
-Aucun fichier du site V4.0 n’est à supprimer.
-Les anciens fichiers INSTALLATION-V4.x-preview.txt et MANIFEST-V4.x-preview.json
-peuvent être retirés si une version intermédiaire a été installée.
-Aucun déploiement n’a été effectué.
+Sur ordinateur : les trois boutons anglais mesurent chacun 218 × 80 px dans
+la fenêtre de contrôle. Sur mobile : les trois boutons français mesurent
+chacun 335 × 60 px. Les badges du menu interactif mobile font 56 × 56 px.
+Les destinations des liens de Recherche sont conservées.
+Les textes scientifiques, calculs et ressources ne sont pas modifiés.
 
-## Vérifications
+## Recommandations consultées
 
-Base publique contrôlée le 25 octobre 2026 (voir verification/live-version-check.json).
-Le correctif appliqué à V4.0 reconstitue exactement l’archive complète.
-Tests : 20 modules, 140 états graphiques, identités physiques validées.
-Navigation testée dans le navigateur : accès direct à l’axe 2, changement de
-langue, module suivant et choix d’un module sur écran de largeur 390 px.
-Aucun débordement horizontal observé dans ce contrôle mobile.
+- W3C WAI — Target Size (Minimum) : https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html
+- Nielsen Norman Group — Consistency and Standards : https://www.nngroup.com/articles/consistency-and-standards/
 
-## Sources
+Application : cibles suffisamment grandes et espacées, composants visuellement
+cohérents. Les dimensions retenues relèvent du choix de mise en page ; les recommandations
+ne prescrivent pas une taille particulière pour les numéros.
 
-Depuis theory-preview/source : python3 theory-v05/work/build.py
-Tests : node theory-v05/work/test.js
-Le résultat est theory-v05/dist/index.html, à copier vers theory-preview/index.html.
-Les références et limites scientifiques accompagnent chaque module.
-Les licences des ressources tierces restent applicables.
+La charte de couleurs V4.5 reste applicable. Les sources des bases théoriques
+sont dans theory-preview/source/ ; depuis ce dossier, reconstruire avec
+python3 theory-v05/work/build.py puis copier theory-v05/dist/index.html vers theory-preview/index.html.
