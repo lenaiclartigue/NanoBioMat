@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0">
   <channel>
-    <title>NanoBioMat — Actualités et éclairages scientifiques</title>
+    <title>NanoBioMat — En direct du laboratoire</title>
     <link>https://lenaiclartigue.github.io/NanoBioMat/fr/news.html</link>
-    <description>Vie du groupe, nouvelles scientifiques et ressources à découvrir.</description>
+    <description>Recherches, rencontres et collaborations : la vie de NanoBioMat au laboratoire et chez nos partenaires.</description>
     <language>fr</language>
     <item>
       <title>MAGNETIMA financé par l’ANR</title>
@@ -16,7 +16,7 @@
       <title>Léa Ponroy présente ses travaux à PHOTONANO26</title>
       <link>https://lenaiclartigue.github.io/NanoBioMat/fr/news-lea-ponroy-photonano26.html</link>
       <description>Léa Ponroy a présenté ses travaux de thèse sur les nanoassemblages magnétiques et photoactifs à PHOTONANO26, à Paris.</description>
-      <category>Vie du groupe</category>
+      <category>Vie du laboratoire</category>
       <guid isPermaLink="true">https://lenaiclartigue.github.io/NanoBioMat/fr/news-lea-ponroy-photonano26.html</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 GMT</pubDate>
     </item>
@@ -24,7 +24,7 @@
       <title>Marie-Léa Lalanne à la journée Femmes et Sciences – SHE</title>
       <link>https://lenaiclartigue.github.io/NanoBioMat/fr/news-marie-lea-lalanne-she.html</link>
       <description>Marie-Léa Lalanne a présenté ses travaux de thèse sur l’hyperthermie magnétique et les nanoparticules magnétiques pour des applications biomédicales à l’Université d’Angers.</description>
-      <category>Vie du groupe</category>
+      <category>Vie du laboratoire</category>
       <guid isPermaLink="true">https://lenaiclartigue.github.io/NanoBioMat/fr/news-marie-lea-lalanne-she.html</guid>
       <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
     </item>

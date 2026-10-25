@@ -1,12 +1,12 @@
 {
   "index.html": {
     "fr": {
-      "title": "NanoBioMat — Nanoparticules magnétiques | Lénaïc Lartigue",
-      "description": "Recherches de Lénaïc Lartigue au CEISAM, Nantes Université : nanoparticules d’oxyde de fer, nanoassemblages magnétiques et nanomédecine."
+      "title": "NanoBioMat — Nanomagnétisme et nanomédecine",
+      "description": "Comprendre les propriétés des nanoparticules magnétiques, maîtriser leur organisation et explorer leurs interactions avec le vivant."
     },
     "en": {
-      "title": "NanoBioMat — Magnetic nanoparticles | Lénaïc Lartigue",
-      "description": "Research led by Lénaïc Lartigue at CEISAM, Nantes Université: iron oxide nanoparticles, magnetic nanoassemblies and nanomedicine."
+      "title": "NanoBioMat — Nanomagnetism and nanomedicine",
+      "description": "Understanding magnetic nanoparticles, controlling their organization and exploring their interactions with living systems."
     }
   },
   "research.html": {
@@ -51,12 +51,12 @@
   },
   "facilities.html": {
     "fr": {
-      "title": "Équipements — Nanoparticules magnétiques | NanoBioMat",
-      "description": "Équipements de NanoBioMat au CEISAM pour étudier et manipuler les nanoparticules : hyperthermie, séparation magnétique et préparation d’échantillons."
+      "title": "Équipements | NanoBioMat",
+      "description": "Quelques équipements utilisés pour préparer les nanoassemblages et étudier leurs propriétés."
     },
     "en": {
-      "title": "Facilities — Magnetic nanoparticles | NanoBioMat",
-      "description": "NanoBioMat equipment at CEISAM for studying and handling nanoparticles: magnetic hyperthermia, magnetic separation and sample preparation."
+      "title": "Facilities | NanoBioMat",
+      "description": "Selected equipment used to prepare nanoassemblies and investigate their properties."
     }
   },
   "collaborations.html": {
@@ -91,12 +91,12 @@
   },
   "news.html": {
     "fr": {
-      "title": "Actualités — Recherche et vie du groupe | NanoBioMat",
-      "description": "Actualités de NanoBioMat au CEISAM : projets financés, conférences, travaux de doctorat et valorisation des nanoassemblages magnétiques."
+      "title": "En direct du laboratoire | NanoBioMat",
+      "description": "Recherches, rencontres et collaborations : la vie de NanoBioMat au laboratoire et chez nos partenaires."
     },
     "en": {
-      "title": "News — Research and group activities | NanoBioMat",
-      "description": "News from NanoBioMat at CEISAM: funded projects, conferences, doctoral research and technology transfer involving magnetic nanoassemblies."
+      "title": "Inside the lab | NanoBioMat",
+      "description": "Research, meetings and collaborations: life at NanoBioMat and with our partners."
     }
   },
   "contact.html": {

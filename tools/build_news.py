@@ -19,8 +19,8 @@ assert len({p['id'] for p in posts})==len(posts),'Duplicate post id'
 assert len({p['slug'] for p in posts})==len(posts),'Duplicate post slug'
 posts.sort(key=lambda p:p['date'],reverse=True)
 labels={
-'en':{'title':'News & scientific updates','lead':'Group news, research highlights and new resources.','rss':'Subscribe via RSS','hint':'Copy this feed address into your RSS reader to follow new updates.','filter':'Filter updates','all':'All updates','group':'Group life','projects':'Projects','publications':'Publications','resources':'Learning resources','science':'Scientific insights','read':'Read more','back':'All updates','copy':'Copy RSS address','copied':'Address copied','share':'Copy article link','empty':'No updates in this category yet.'},
-'fr':{'title':'Actualités et éclairages scientifiques','lead':'Vie du groupe, nouvelles scientifiques et ressources à découvrir.','rss':'S’abonner au flux RSS','hint':'Copiez l’adresse de ce flux dans votre lecteur RSS pour suivre les nouveautés.','filter':'Filtrer les actualités','all':'Toutes les actualités','group':'Vie du groupe','projects':'Projets','publications':'Publications','resources':'Ressources pédagogiques','science':'Éclairages scientifiques','read':'Lire la suite','back':'Toutes les actualités','copy':'Copier l’adresse RSS','copied':'Adresse copiée','share':'Copier le lien de l’article','empty':'Aucune actualité dans cette catégorie pour le moment.'}}
+'en':{'title':'Inside the lab','lead':'Research, meetings and collaborations: life at NanoBioMat and with our partners.','rss':'Subscribe via RSS','hint':'Copy this feed address into your RSS reader to follow new updates.','filter':'Filter updates','all':'All updates','group':'Lab life','projects':'Projects','publications':'Publications','resources':'Learning resources','science':'Scientific insights','read':'Read more','back':'Lab life','copy':'Copy RSS address','copied':'Address copied','share':'Copy article link','empty':'No updates in this category yet.'},
+'fr':{'title':'En direct du laboratoire','lead':'Recherches, rencontres et collaborations : la vie de NanoBioMat au laboratoire et chez nos partenaires.','rss':'S’abonner au flux RSS','hint':'Copiez l’adresse de ce flux dans votre lecteur RSS pour suivre les nouveautés.','filter':'Filtrer les actualités','all':'Toutes les actualités','group':'Vie du laboratoire','projects':'Projets','publications':'Publications','resources':'Ressources pédagogiques','science':'Éclairages scientifiques','read':'Lire la suite','back':'Vie du laboratoire','copy':'Copier l’adresse RSS','copied':'Adresse copiée','share':'Copier le lien de l’article','empty':'Aucune actualité dans cette catégorie pour le moment.'}}
 def text(s):return re.sub('<[^>]+>','',s)
 def page(template,main,title,description):
  s=re.sub(r'<main\b.*?</main>',lambda m:main,template,flags=re.S)
@@ -62,7 +62,7 @@ for lang in ['en','fr']:
   if len(p['date'])==10:ET.SubElement(item,'pubDate').text=format_datetime(datetime.strptime(p['date'],'%Y-%m-%d').replace(tzinfo=timezone.utc),usegmt=True)
  ET.indent(rss);ET.ElementTree(rss).write(folder/'feed.xml',encoding='utf-8',xml_declaration=True)
  options=''.join('<option value="'+k+'">'+L[k]+'</option>' for k in ['group','projects','publications','resources','science'] if any(p['category']==k for p in posts))
- main='<main id="main-content" tabindex="-1"><header class="page-heading"><p class="eyebrow">NanoBioMat / '+('Actualités' if lang=='fr' else 'News')+'</p><h1>'+L['title']+'</h1><p class="lead">'+L['lead']+'</p></header><aside class="rss-subscription"><div><a href="feed.xml" class="rss-link">'+L['rss']+'</a><p>'+L['hint']+'</p></div><button class="text-copy" type="button" data-copy-url="'+BASE+prefix+'feed.xml" data-copied="'+L['copied']+'">'+L['copy']+'</button><span class="copy-status" role="status"></span></aside><div class="update-controls" hidden><label for="update-category">'+L['filter']+'</label><select id="update-category"><option value="">'+L['all']+'</option>'+options+'</select></div><section class="updates-list" aria-label="'+L['title']+'">'+''.join(cards)+'</section><p id="updates-empty" hidden role="status">'+L['empty']+'</p></main>'
+ main='<main id="main-content" tabindex="-1"><header class="page-heading"><p class="eyebrow">NanoBioMat / '+('Vie du laboratoire' if lang=='fr' else 'Lab life')+'</p><h1>'+L['title']+'</h1><p class="lead">'+L['lead']+'</p></header><aside class="rss-subscription"><div><a href="feed.xml" class="rss-link">'+L['rss']+'</a><p>'+L['hint']+'</p></div><button class="text-copy" type="button" data-copy-url="'+BASE+prefix+'feed.xml" data-copied="'+L['copied']+'">'+L['copy']+'</button><span class="copy-status" role="status"></span></aside><div class="update-controls" hidden><label for="update-category">'+L['filter']+'</label><select id="update-category"><option value="">'+L['all']+'</option>'+options+'</select></div><section class="updates-list" aria-label="'+L['title']+'">'+''.join(cards)+'</section><p id="updates-empty" hidden role="status">'+L['empty']+'</p></main>'
  (folder/'news.html').write_text(page(template,main,L['title'],L['lead']))
  # Keep the home-page news in sync with the two latest published entries.
  home=folder/'index.html';hs=home.read_text();briefs=[]
@@ -113,8 +113,8 @@ for p in ROOT.rglob('*.html'):
   return tag+body+marker+'</a>'
  s=re.sub(r'(<a\b[^>]*>)(.*?)</a>',external_link,s,flags=re.S)
 
- s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.32',s)
- s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.32',s)
+ s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.37',s)
+ s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.37',s)
 
  # Keep intrinsic dimensions consistent with optimized local assets.
  def image_dimensions(match):

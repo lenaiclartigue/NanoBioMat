@@ -218,3 +218,36 @@ document.querySelectorAll('.language-switch a').forEach(link => {
   if (trigger) trigger.focus({preventScroll:true});
  });
 })();
+
+// Equipment videos: explicit playback, pause on close and restore focus.
+(() => {
+ if (typeof HTMLDialogElement === 'undefined') return;
+ const links = [...document.querySelectorAll('.video-zoom')];
+ if (!links.length) return;
+ const fr = document.documentElement.lang === 'fr';
+ const dialog = document.createElement('dialog'); dialog.className = 'image-dialog video-dialog';
+ dialog.setAttribute('aria-label', fr ? 'Vidéo du montage' : 'Setup video');
+ dialog.setAttribute('aria-describedby', 'equipment-video-caption');
+ const close = document.createElement('button'); close.type = 'button'; close.className = 'notice-dialog-close';
+ close.textContent = fr ? 'Fermer ×' : 'Close ×';
+ const video = document.createElement('video'); video.controls = true; video.playsInline = true; video.preload = 'none';
+ const caption = document.createElement('p'); caption.className = 'image-dialog-caption'; caption.id = 'equipment-video-caption';
+ dialog.append(close, video, caption); document.body.append(dialog); let trigger;
+ links.forEach(link => {
+  link.setAttribute('aria-haspopup', 'dialog');
+  link.addEventListener('click', event => {
+   event.preventDefault(); trigger = link; video.poster = link.href.replace(/\.mp4$/, "-poster.jpg"); video.src = link.href;
+   caption.textContent = link.dataset.videoCaption; video.setAttribute('aria-label', caption.textContent);
+   dialog.showModal(); document.documentElement.classList.add('notice-modal-open'); close.focus();
+  });
+ });
+ close.addEventListener('click', () => dialog.close());
+ dialog.addEventListener('click', event => {
+  const r = dialog.getBoundingClientRect();
+  if (event.target === dialog && (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom)) dialog.close();
+ });
+ dialog.addEventListener('close', () => {
+  video.pause(); video.removeAttribute('src'); video.load();
+  document.documentElement.classList.remove('notice-modal-open'); trigger?.focus({preventScroll:true});
+ });
+})();

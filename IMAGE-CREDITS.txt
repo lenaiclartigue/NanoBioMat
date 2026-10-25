@@ -8,3 +8,12 @@ Les précédentes archives complètes conservent les images avant optimisation.
 
 Affichage V3.21 : Crédit : © Lénaïc Lartigue (FR) / Credit: © Lénaïc Lartigue (EN).
 Les crédits sont superposés dans les limites de la photographie. Les légendes descriptives restent sous les images agrandies.
+
+V3.34 — équipements ajoutés
+- equipment-hyperthermia-animal.jpg : photographie fournie par Lénaïc Lartigue (DSCF5394.jpeg).
+- equipment-flash-nanoprecipitation.jpg : photographie fournie par Lénaïc Lartigue.
+- flash-curcumin.mp4 et flash-curcumin-ionps.mp4 : vidéos fournies par Lénaïc Lartigue ; copies web sans piste audio, sans modification des images. Posters extraits de la première image.
+- equipment-cij-scheme.png : illustration originale extraite de la figure S26 de Supporting Information Publi curcumin(4).docx ; conversion EMF vers PNG, sans redessin. Schéma de formulation de dérivés Kno-Cx, distinct des formulations des vidéos. Aucun statut de publication ni DOI attribué sans vérification.
+- Les fichiers -thumb.webp sont des aperçus réduits.
+
+V3.35 — equipment-cij-generic-fr.svg / -en.svg : schémas de principe redessinés à partir du montage fourni et des indications de Lénaïc Lartigue. Versions FR/EN génériques avec IONPs, composé organique et polymère ; représentation conceptuelle non à l’échelle. Les miniatures WebP sont dérivées des SVG.

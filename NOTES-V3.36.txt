@@ -1,0 +1,5 @@
+NanoBioMat V3.36 — 25 octobre 2026
+
+Ajout d’un court bloc Culture cellulaire / Cell culture dans Équipements / Facilities. Mention du PSM, de l’incubateur CO2 et du lecteur ALLSHENG AMR-100 confirmé par Lénaïc Lartigue. Modes indiqués : absorbance en plaques 96 puits, selon la fiche officielle https://www.allsheng.com/products-detail-1163. Aucun mode fluorescence/luminescence attribué. Aucun filtre spécifique supposé installé. Les devis et les prix ne sont pas publiés. Aucun visuel de salle inventé.
+
+Correctif cumulatif depuis V3.32, également applicable sur V3.33, V3.34 ou V3.35. Aucun fichier à supprimer. Fichier de validation Google conservé.

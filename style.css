@@ -509,3 +509,10 @@ section,[id]{scroll-margin-top:calc(var(--header-height) + 16px)}
 /* V3.27: project titles link to verified institutional sources. */
 .project-source-link{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
 .project-source-format{font-family:Arial,Helvetica,sans-serif;font-size:.7rem;letter-spacing:.03em;vertical-align:middle;color:var(--muted)}
+
+/* V3.34: research questions and compact equipment media. */
+.research-answer{font-size:1.08rem;font-weight:600;color:var(--dark)}
+.equipment-media{display:grid;gap:18px;align-content:start;min-width:0}
+.equipment-media .equipment-figure{margin:0}
+.equipment-video-links{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin:18px 0}
+.video-dialog video{display:block;width:auto;max-width:calc(100vw - 60px);max-height:calc(100dvh - 200px);margin:12px auto;background:#000}

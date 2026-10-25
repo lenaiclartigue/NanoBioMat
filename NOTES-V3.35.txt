@@ -1,0 +1,12 @@
+NanoBioMat V3.35 — 25 octobre 2026
+
+Schéma générique CIJ redessiné en SVG, versions française et anglaise.
+Phase organique : composé organique + nanoparticules d’oxyde de fer (IONPs) dans le THF. Phase aqueuse : solution de polymère. Mélangeur en PTFE, récupération en bain aqueux et représentation conceptuelle d’un nanoassemblage hybride.
+
+Le schéma est adapté du montage original fourni, avec ajout des IONPs et du polymère conformément aux indications de Lénaïc Lartigue. Il ne reproduit pas une formulation Kno-Cx de l’article. La taille, le nombre et l’organisation des composants sont illustratifs, non des résultats expérimentaux. Dimensions et vitesse spécifiques retirées.
+
+Page FR : equipment-cij-generic-fr.svg. Page EN : equipment-cij-generic-en.svg. Miniatures WebP ; agrandissement avec le visualiseur existant. Les SVG restent éditables et autonomes.
+
+Validation : rendu des deux schémas, XML SVG, correspondance langue/page et liens locaux.
+
+Correctif cumulatif V3.32 vers V3.35 (version publique observée), utilisable aussi après V3.33 ou V3.34. Aucun fichier à supprimer. Les anciennes images sont conservées, mais ne sont plus affichées.
