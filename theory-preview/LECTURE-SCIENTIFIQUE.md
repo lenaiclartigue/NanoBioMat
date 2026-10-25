@@ -142,8 +142,3 @@ ainsi que les articles ayant motivé la sélection des protéines.
 ## Révision rédactionnelle V4.3-preview
 
 Les textes français et anglais utilisent des phrases déclaratives courtes. Les introductions, étapes, limites et fiches de ressources ont été révisées. Les pages publiques Recherche ont également été réécrites. Les schémas, les références et les calculs sont conservés. Les 140 états graphiques et les tests numériques passent.
-
-
-## V4.4
-
-Les bases theoriques sont maintenant accessibles depuis chacun des trois axes de Recherche. La navigation utilise un code couleur constant. Les modeles et leurs limites restent inchanges.

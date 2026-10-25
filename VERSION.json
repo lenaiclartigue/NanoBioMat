@@ -1,11 +1,11 @@
 {
-  "delivery": "V4.7",
+  "delivery": "V4.8",
   "date": "2026-10-25",
-  "patch_base": "V4.6",
-  "live_version_verified": "V4.6",
-  "changes": "Compact circular axis badges FR/EN",
+  "patch_base": "V4.7",
+  "live_version_verified": "V4.7",
+  "changes": "Animation playback and scientific schematic revision FR/EN",
   "obsolete_tracking_files": [
-    "INSTALLATION-V4.6.txt",
-    "MANIFEST-V4.6.json"
+    "INSTALLATION-V4.7.txt",
+    "MANIFEST-V4.7.json"
   ]
 }
