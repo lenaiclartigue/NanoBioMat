@@ -1,0 +1,43 @@
+NanoBioMat V3.37 vers V4.0
+Extraire puis déposer le contenu à la racine du dépôt NanoBioMat, en conservant les dossiers fr et tools. Remplacer les fichiers de même nom. AUCUN FICHIER À SUPPRIMER. Validation Google conservée.
+
+Fichiers ajoutés ou remplacés :
+IMAGE-CREDITS.txt
+NOTES-V4.0.txt
+collaborations.html
+contact.html
+equipment-cij-generic-en-thumb.webp
+equipment-cij-generic-en.svg
+equipment-cij-generic-fr-thumb.webp
+equipment-cij-generic-fr.svg
+facilities.html
+fr/collaborations.html
+fr/contact.html
+fr/facilities.html
+fr/index.html
+fr/news-brevet-curcumine.html
+fr/news-lea-ponroy-photonano26.html
+fr/news-magnetima-anr.html
+fr/news-marie-lea-lalanne-she.html
+fr/news.html
+fr/outreach.html
+fr/projects.html
+fr/publications.html
+fr/research.html
+fr/teaching.html
+fr/team.html
+index.html
+nanoassemblies-sem.png
+news-brevet-curcumine.html
+news-lea-ponroy-photonano26.html
+news-magnetima-anr.html
+news-marie-lea-lalanne-she.html
+news.html
+outreach.html
+projects.html
+publications.html
+research.html
+style.css
+teaching.html
+team.html
+tools/build_news.py

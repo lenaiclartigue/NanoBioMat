@@ -113,8 +113,8 @@ for p in ROOT.rglob('*.html'):
   return tag+body+marker+'</a>'
  s=re.sub(r'(<a\b[^>]*>)(.*?)</a>',external_link,s,flags=re.S)
 
- s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=3.37',s)
- s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=3.37',s)
+ s=re.sub(r'style\.css\?v=[^" ]+', 'style.css?v=4.0',s)
+ s=re.sub(r'site\.js\?v=[^" ]+', 'site.js?v=4.0',s)
 
  # Keep intrinsic dimensions consistent with optimized local assets.
  def image_dimensions(match):

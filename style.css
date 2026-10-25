@@ -516,3 +516,16 @@ section,[id]{scroll-margin-top:calc(var(--header-height) + 16px)}
 .equipment-media .equipment-figure{margin:0}
 .equipment-video-links{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin:18px 0}
 .video-dialog video{display:block;width:auto;max-width:calc(100vw - 60px);max-height:calc(100dvh - 200px);margin:12px auto;background:#000}
+
+/* V4.0: explicit research actions and discreet methodology citations. */
+.direction-card{display:flex;flex-direction:column;align-items:flex-start;background:#fff;border:1px solid #c9dadd;border-radius:12px;padding:24px;gap:10px}
+.direction-card h3,.direction-card p{margin:0}.direction-card .index{margin-bottom:2px}
+.direction-card p{line-height:1.55}.direction-card .axis-button{margin-top:auto}
+a.axis-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;background:#124957;color:#fff;border-radius:7px;text-decoration:none;font-weight:600;line-height:1.35;box-sizing:border-box}
+a.axis-button:hover{background:#0b3540;text-decoration:none}a.axis-button:focus-visible{outline:3px solid #bd6c25;outline-offset:4px}
+.direction-card p:last-of-type{margin-bottom:12px}
+a.method-citation{text-decoration-line:underline;text-decoration-style:dotted;text-decoration-thickness:1px;text-underline-offset:4px}a.method-citation:hover,a.method-citation:focus-visible{text-decoration-style:solid}
+.method-references{font-size:.88rem;line-height:1.65;color:#425b64}
+.axis-micrograph{margin:24px 0 0}.axis-micrograph img{width:100%;height:auto;max-width:360px}.axis-micrograph figcaption{font-size:.82rem;line-height:1.5;margin-top:8px;max-width:360px}
+
+.direction-grid{gap:16px}
