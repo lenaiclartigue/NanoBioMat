@@ -603,8 +603,8 @@ body[data-section="index"] #news-title{color:#526c32}
 /* V4.6: large numbered badges and one consistent research action component. */
 .axis-menu-card .index,.research-axis-card .axis-number,.page-research .research-row>div>.eyebrow{
  display:inline-flex;align-items:center;justify-content:center;flex:none;
- width:72px;height:72px;padding:0;margin:0 0 12px;border-radius:14px;
- background:var(--axis);color:#fff;font:800 38px/1 Arial,Helvetica,sans-serif;
+ width:52px;height:52px;padding:0;margin:0 0 10px;border-radius:50%;
+ background:var(--axis);color:#fff;font:700 26px/1 Arial,Helvetica,sans-serif;
  letter-spacing:0;font-variant-numeric:tabular-nums;
 }
 .page-research .research-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:1fr;gap:12px!important;align-items:stretch;width:100%}
@@ -612,7 +612,7 @@ body[data-section="index"] #news-title{color:#526c32}
 .page-research .research-actions>a:hover{background:var(--axis);color:#fff;border-color:var(--axis);text-decoration:underline;text-underline-offset:4px;box-shadow:0 3px 10px #17384025}
 .page-research .research-actions>a:focus-visible{outline:3px solid #173840;outline-offset:4px}
 @media(max-width:700px){
- .axis-menu-card .index,.research-axis-card .axis-number,.page-research .research-row>div>.eyebrow{width:64px;height:64px;font-size:34px;border-radius:12px}
+ .axis-menu-card .index,.research-axis-card .axis-number,.page-research .research-row>div>.eyebrow{width:44px;height:44px;font-size:22px;border-radius:50%}
  .page-research .research-actions{grid-template-columns:1fr}
  .page-research .research-actions>a{min-height:60px;font-size:17px;padding:14px 16px}
 }
