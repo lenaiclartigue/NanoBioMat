@@ -2,6 +2,9 @@ from pathlib import Path
 import json
 p=Path('theory-v05');assets={'proteins':(p/'dist/assets/protein-symbols.svg').read_text()}
 for lang in ['fr','en']:assets['cij-'+lang]=(p/f'dist/assets/cij-{lang}.svg').read_text()
+foundation=(p/'work/foundations-template.html').read_text().replace('/*MODEL*/',(p/'dist/foundations-model.js').read_text()).replace('/*UI*/','const FORMULAS='+(p/'dist/foundations-equations.json').read_text()+';\n'+(p/'dist/foundations-ui.js').read_text())
+(p/'dist/foundations.html').write_text(foundation)
+assets['foundations']=(p/'dist/foundations.html').read_text()
 assets['curves']=(p/'dist/measurements.html').read_text()
 (p/'dist/measurements.html').write_text(assets['curves'])
 html=(p/'work/template.html').read_text()

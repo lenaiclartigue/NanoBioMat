@@ -1,0 +1,39 @@
+# NanoBioMat — V4.12
+
+## Modifications
+
+Interactions magnétiques : deux moments géants soumis à des fluctuations thermiques. La distance entre surfaces règle le couplage dipolaire. Un réglage séparé impose un échange ferromagnétique au contact. Aucun seuil universel de 2 nm. Aucun ralentissement universel imposé.
+Couronne : transport dans le plasma, adsorption et échanges, rencontre avec une cellule. Scénario Vroman sélectionnable, non présenté comme universel. Structures PDB conservées et citées. Abondances, affinités, temps et dimensions illustratifs ; aucune composition mesurée de nos formulations n’est revendiquée.
+Le module final sur les ligands est retiré. Les liens industriels apparaissent sous IRM, MPI et hyperthermie, ainsi que dans Recherche / Interfaces biologiques. Le dispositif Nanotherm est indiqué comme expérimental.
+IRM : impulsion idéale de 90°, puis récupération de Mz et décroissance simultanée de Mxy. Repère tournant et temps affiché après le pulse. L’échelle temporelle avance non linéairement pour montrer T1 et T2. Le vecteur représente les protons, non le moment d’une IONP.
+Le schéma Eau, IONPs et relaxivité est statique. Les facettes/chevrons des représentations de cœurs sont supprimés.
+FR et EN mises à jour. Les corrections de V4.11 sont incluses.
+
+## Hypothèses du modèle dipolaire
+
+Deux moments de norme constante, diamètre de cœur 12 nm, Ms = 480 kA/m, T = 300 K. Rotations dans un plan, sans anisotropie, corps fixes. U/kBT = lambda[cos(a-b) - 3 cos(a)cos(b)] - j cos(a-b). lambda = mu0 mu²/(4 pi kBT r³), r = diamètre + distance entre surfaces. j = 20 uniquement lorsque l’échange est explicitement activé au contact.
+Intégration d’une dynamique rotationnelle suramortie avec bruit thermique gaussien ; temps réduit sans calibration en secondes. Ce modèle illustre les corrélations, sans prédire le temps de relaxation d’un échantillon réel. Le couplage d’échange choisi est ferromagnétique ; il ne représente pas toutes les interfaces.
+
+## Sources ajoutées
+
+https://doi.org/10.1002/advs.202203397
+https://doi.org/10.1039/D0CP04377J
+https://doi.org/10.1021/am503909q
+https://doi.org/10.1038/nnano.2016.269
+https://pubmed.ncbi.nlm.nih.gov/22342465/ (USPIO sans effet Vroman classique dans les conditions étudiées)
+IRM : https://doi.org/10.3390/nano10010028
+Les références et liens PDB accompagnent les modules. Les liens industriels sont des exemples et n’indiquent pas de partenariat avec NanoBioMat.
+
+## Installation
+
+Site public V4.10 vérifié le 26 octobre 2026. Correctif cumulatif V4.10 vers V4.12, incluant V4.11. Copier le contenu du correctif à la racine du dépôt, en conservant les sous-dossiers et en remplaçant les fichiers homonymes. Aucun déploiement effectué par l’assistant.
+Supprimer manuellement les deux anciens exports du module retiré :
+- theory-preview/svg/delivery-fr.svg
+- theory-preview/svg/delivery-en.svg
+Nettoyage facultatif : INSTALLATION-V4.10.txt, MANIFEST-V4.10.json, et les équivalents V4.11 s’ils ont été ajoutés.
+
+## Vérifications
+
+140 états graphiques FR/EN ; 28 SVG vectoriels exportés ; 30 cas lecture/pause/reset ; 8 cas FR/EN des modèles de magnétisme. Vérification de la loi dipolaire r^-3, de l’échange réservé au contact, de la corrélation des moments sous échange, et de Mz/M0 = 1-exp(-1) à t=T1. Contrôle visuel des vues agrandies IRM et couronne.
+Reconstruction depuis theory-preview/source : python3 theory-v05/work/build.py ; node theory-v05/work/test.js. Copier ensuite theory-v05/dist/index.html vers theory-preview/index.html et les exports dist/svg vers theory-preview/svg, sauf les anciens fichiers delivery.
+

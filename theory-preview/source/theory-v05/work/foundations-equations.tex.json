@@ -1,0 +1,19 @@
+{
+  "swangle": [
+    "\\frac{E}{KV}=\\sin^2(\\varphi-\\alpha)-2h\\cos\\varphi",
+    "h=\\frac{H}{H_K},\\qquad \\mu_0 H_K=\\frac{2K}{M_{\\mathrm{s,core}}}"
+  ],
+  "mh": [
+    "m_r=\\frac{M_R}{M_S},\\qquad M(H_C)=0",
+    "\\left\\langle|\\cos\\alpha|\\right\\rangle_{\\mathrm{3D}}=\\frac12"
+  ],
+  "initial": [
+    "\\frac{M}{M_S}=\\mathcal L(\\xi),\\qquad\\mathcal L(\\xi)=\\coth\\xi-\\frac1\\xi",
+    "\\xi=\\frac{\\mu\\mu_0H}{k_{\\mathrm B}T},\\qquad\\mu=M_{\\mathrm{s,core}}V",
+    "\\frac{M}{M_S}=\\frac{\\int V\\,f(V)\\,\\mathcal L\\!\\left(\\frac{M_{\\mathrm{s,core}}V\\mu_0H}{k_{\\mathrm B}T}\\right)\\,\\mathrm dV}{\\int V\\,f(V)\\,\\mathrm dV}"
+  ],
+  "zfc": [
+    "\\tau_N\\approx\\tau_0\\exp\\!\\left(\\frac{KV}{k_{\\mathrm B}T}\\right),\\qquad \\tau_0=10^{-9}\\,\\mathrm s",
+    "T_B\\approx\\frac{KV}{k_{\\mathrm B}\\ln(t_m/\\tau_0)}"
+  ]
+}

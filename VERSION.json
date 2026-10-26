@@ -1,13 +1,13 @@
 {
-  "delivery": "V4.10",
-  "date": "2026-10-25",
-  "patch_base": "V4.8",
-  "live_version_verified": "V4.8",
-  "changes": "Facilities simplified; small-animal hyperthermia photo moved to research axis 3; includes V4.9",
-  "obsolete_tracking_files": [
-    "INSTALLATION-V4.8.txt",
-    "MANIFEST-V4.8.json",
-    "INSTALLATION-V4.9.txt",
-    "MANIFEST-V4.9.json"
+  "delivery": "V4.12",
+  "date": "2026-10-26",
+  "patch_base": "V4.10",
+  "manual_deletions": [
+    "theory-preview/svg/delivery-fr.svg",
+    "theory-preview/svg/delivery-en.svg",
+    "INSTALLATION-V4.10.txt",
+    "MANIFEST-V4.10.json",
+    "INSTALLATION-V4.11.txt",
+    "MANIFEST-V4.11.json"
   ]
 }
