@@ -1,68 +1,37 @@
-# NanoBioMat — V4.16 · 26 octobre 2026
+# NanoBioMat V4.18 — 26 octobre 2026
 
-## Installation
-Le site public a été contrôlé : VERSION.json annonce V4.14 et theory-preview/index.html est identique octet pour octet à l’archive V4.14. Le correctif V4.14 → V4.16 est cumulatif et inclut V4.15. Il convient aussi si V4.15 vient d’être déposée. Aucun déploiement effectué par l’assistant.
+Installation : correctif cumulatif depuis V4.16, version publique vérifiée (VERSION.json et index théorique identique à l’archive V4.16). Il inclut le retrait du module industriel effectué en V4.17 et convient aussi si V4.17 a été déposée depuis cette vérification.
+Copier le contenu du correctif à la racine du dépôt en conservant les sous-dossiers. Remplacer les fichiers homonymes. Aucun fichier fonctionnel à supprimer.
+Nettoyage facultatif des notices : INSTALLATION-V4.16.txt et MANIFEST-V4.16.json ; INSTALLATION-V4.17.txt et MANIFEST-V4.17.json si présents. Ne pas supprimer theory-preview/source/.
 
-Décompresser le correctif puis copier son contenu à la racine du dépôt, en conservant les sous-dossiers et en remplaçant les fichiers homonymes. Les fichiers inchangés ne sont pas dans le correctif.
+## Modifications FR / EN
+- 19 modules : 9 Particules, 3 Assemblages, 7 Interfaces biologiques.
+- Superparamagnétisme et blocage fusionné avec ZFC/FC. Définition des deux temps avant le protocole. Suppression de la courbe exponentielle et de ses deux curseurs séparés. Les anciens liens #particles/superpara ouvrent #particles/zfc.
+- Titre français : Relaxations de Néel et brownienne.
+- Typographie scientifique : indices dans les textes, légendes SVG, lectures numériques et vues intégrées ; exposants des ions/unités reconnus. Les formules MathML et les liens sont préservés. Les autres pages du site ont été inspectées pour les mêmes notations brutes.
+- Couronne : titre lié à l’étape courante, pauses aux quatre étapes conservées. Distribution pseudo-aléatoire reproductible des protéines, sans réseau ni rééchantillonnage à chaque image. Même scène que les hématies et la nanoparticule.
+- Mélange pédagogique de trois espèces : albumine, IgG, fibrinogène. Concentrations choisies 40, 10 et 3 g/L ; masses moléculaires arrondies 66,5, 150 et 340 kDa. Conversion concentration/massse molaire puis normalisation entre ces trois espèces ; 133/15/2 silhouettes sur 150. Ce sous-ensemble ne prétend pas reproduire tout le protéome. Le repère IgG provient de sérum adulte, déclaré dans le tableau ; il sert à choisir un ordre de grandeur. La composition de la couronne est distincte du mélange en solution, sans classement universel d’affinité.
+- Encarts dépliables : protéines du sang ; voies d’internalisation ; compartiments, pH, ions et force ionique. Valeurs contextualisées, citations à proximité. Aucune affectation automatique d’une voie d’entrée à une taille de particule.
+- Maintien de la suppression du module Applications and industrial developments et des liens Research FR/EN.
 
-Supprimer manuellement le dossier theory-preview/svg/ : anciens exports autonomes, sans rôle dans le fonctionnement des animations. Ne pas supprimer theory-preview/source/.
-Nettoyage des notices obsolètes : INSTALLATION-V4.14.txt, MANIFEST-V4.14.json ; si V4.15 a été déposée, INSTALLATION-V4.15.txt et MANIFEST-V4.15.json également. La liste exacte de reconstruction depuis V4.14 figure ci-dessous.
-
-## Contenu FR / EN
-21 modules : 10 Particules, 3 Assemblages, 8 Interfaces biologiques.
-
-Ordre de l’axe 1 : phases et sites des oxydes de fer ; monodomaine ; rotation cohérente et macrospin ; anisotropie ; Stoner–Wohlfarth ; Néel et Brown ; superparamagnétisme et blocage ; ZFC/FC ; M(H) ; Langevin.
-
-- Nouveau module Superparamagnétisme et blocage : température et temps d’observation réglables. Comparaison τN / tm, TB, courbe exponentielle de relaxation de l’aimantation moyenne. Cœurs immobilisés monodisperses, K = 20 kJ/m³, diamètre 21 nm, τ0 = 10⁻⁹ s : paramètres illustratifs déclarés, non mesures d’un échantillon. Formules MathML. L’ordre ferrimagnétique interne subsiste.
-- Nouveau module Phases et sites : magnétite, maghémite, coordination A/B, valences, lacunes octaédriques dans le modèle idéal, ferrimagnétisme, bilans ioniques colinéaires normalisés à O4. Les coordinations 4 et 6 et les distances Fe–O sont calculées à partir du CIF COD 9007644. La maghémite est documentée par COD 9017489 (P4332), avec mention des autres ordres de lacunes possibles. Les paramètres de maille sont attribués à des entrées, non présentés comme universels. Les liens depuis Research FR/EN ouvrent ce module en premier.
-- Définitions de M, H, B, K, V, MS/MR/HC ; clarification de la référence Brown 1963. ZFC : distribution de TB et rôle du temps. Langevin : moments indépendants à l’équilibre, anisotropie négligée.
-- ΔM : sigles, protocole, normalisation et distinction tendance collective / échange microscopique. FORC : Hr, Hc, Hu, rho et références fondatrices visibles.
-- Couronne : scène unique avec globules rouges biconcaves, IONP, protéines et membrane. Quatre étapes et pauses conservées. Les 4555 cercles des six protéines ont été remplacés par 12 contours vectoriels issus des mêmes projections PDB (413180 → 9852 octets pour la banque de formes). Rafraîchissement limité à environ 30 images/s. Les objets nanométriques sont agrandis, leur nombre n’est pas une concentration.
-- IRM : T1, T2, T2*, origine protonique du vecteur ; loi d’échelle de Vuong et al. expliquée et distinction entre moyenne par diffusion et déphasage statique.
-- Interfaces : taille, forme, revêtement et cinétique de la couronne ; portée des expériences historiques explicitée. MPI : lien avec Langevin et dynamique. Hyperthermie : ajout de Carrey et al. et temps effectif des deux voies indépendantes.
-
-## Références ajoutées
-Néel 1948 (ferrimagnétisme), Langevin 1905, Bean et Livingston 1959, Mørup 2010, Henkel 1964, Kelly 1989, Pike 1999, Roberts 2000, Cedervall 2007, Lundqvist 2008, Chithrani 2006, Champion et Mitragotri 2006, Carrey 2011, Fleet 1981, Greaves 1983, Shmakov 1995. DOI cliquables près des modules. La référence de Néel 1948 distingue la 12e série du tome 3 (confondus dans certaines métadonnées).
-
-## Attribution des données
-- PDB : 1AO6, 2L7B, 1HZH, 8VXJ, 1RHP, 3GHG, coordonnées Cα projetées ; liens visibles sous la scène, provenance des chaînes conservée dans assets/protein-provenance.json. Contours simplifiés pour l’affichage, pas de détail atomique revendiqué.
-- BioNumbers : BNID 108239, hématie humaine 7,7 µm (moyenne de 8 mesures) ; BNID 112585 pour le repère de bicouche lipidique du module cellulaire.
-- NIST CODATA 2022 : kB exact 1,380649 × 10⁻²³ J/K, cité auprès des modèles et dans les vues numériques.
-- NIST Chemistry WebBook : Fe3O4, CAS 1317-61-9, masse molaire 231,533 g/mol.
-- IUPAC Gold Book M03690 : ordre magnétique, utilisé pour le ferrimagnétisme et sa distinction du blocage.
-- COD 9007644 : Fleet 1981, a = 8,3941 Å, Fd-3m ; lecture du CIF distribué dans le dépôt Avogadro à partir du COD. COD 9017489 : Shmakov et al. 1995, a = 8,3474 Å, P4332 ; CIF lu sur le miroir COD de l’Université de Grenade. Les fichiers et les distances vérifiées sont conservés dans work/data-v416/.
-- MAGNDATA : ressource pour poursuivre l’étude ; aucun moment numérique ni fichier mcif de cette base n’a été utilisé dans cette version. La fiche le précise. Le bilan de moments exposé est celui du modèle ionique de Néel, pas une extraction de MAGNDATA.
-- CRC/ICSD/ICDD : ressources bibliographiques ; aucune donnée sous licence n’est attribuée à une consultation non effectuée.
+## Sources consultées pour les nouveaux encarts
+- BioNumbers BNID 100940 : albumine plasmatique humaine 39–55 g/L ; source Flindt, Amazing Numbers in Biology, 2006, p.220. https://bionumbers.hms.harvard.edu/bionumber.aspx?id=100940
+- Mayo Clinic : IgG sérique adulte 767–1590 mg/dL = 7,67–15,90 g/L. https://www.mayocliniclabs.com/test-catalog/Overview/800053
+- Mayo Clinic : fibrinogène plasmatique 200–393 mg/dL = 2,00–3,93 g/L. https://www.mayocliniclabs.com/test-catalog/overview/40937
+- PDB : 1AO6, 1HZH, 3GHG pour les trois silhouettes affichées. Coordonnées et simplification V4.16 conservées ; aucune image lourde supplémentaire.
+- Anderson & Anderson 2002 : https://doi.org/10.1074/mcp.R200007-MCP200
+- Vroman & Adams 1969 : https://doi.org/10.1002/jbm.820030106
+- Rejman et al. 2004 : billes latex, cellules B16, seuil expérimental et non universel. https://doi.org/10.1042/BJ20031253
+- Racoosin & Swanson 1992 : https://doi.org/10.1242/jcs.102.4.867
+- Champion & Mitragotri 2006 : https://doi.org/10.1073/pnas.0600997103
+- Rink et al. 2005 : https://doi.org/10.1016/j.cell.2005.06.043
+- BioNumbers BNID 108100 / Paroutis et al. 2004 figure 1 : exemples précoce 6,3 ; tardif 6,0 ; lysosome 5,5. https://bionumbers.hms.harvard.edu/bionumber.aspx?id=108100
+- Ohkuma & Poole 1978 : lysosomes de macrophages pH 4,7–4,8. https://doi.org/10.1073/pnas.75.7.3327
+- Sonawane & Verkman 2003 : J774, endosomes précoces/recyclage Cl− 20→41 mM et pH 6,91→6,05 ; voie tardive Cl− 28→58 mM, pH 6,85→5,20. Temps/protocole précisés. https://doi.org/10.1083/jcb.200211098
+- Chakraborty et al. 2017 : lysosomes J774A.1 et THP-1 non traités ~118 mM Cl−. https://doi.org/10.7554/eLife.28862
+- IUPAC Gold Book I03180 : force ionique sur base concentration, I = 1/2 somme(ci zi²). Une concentration de chlorure seule ne donne pas la force ionique totale. https://goldbook.iupac.org/terms/view/I03180
 
 ## Vérifications
-21 modules ; 90 états graphiques ; 16 cas lecture/pause/recommencement ; 8 vues numériques FR/EN ; contrôles de la limite isolée, du contact, des pauses à 25/50/75/100 %, des références, de TB et de la dépendance au temps de mesure. Les coordinations cristallines donnent 4 oxygènes à 1,8886 Å et 6 à 2,0582 Å. Contrôle FR/EN des deux nouveaux modules et des annotations. Navigation et lecture de la couronne, changement de température, équations et module cristallographique inspectés dans le navigateur. Les performances sur chaque téléphone ne sont pas garanties par ces vérifications.
-
-Reconstruction : depuis theory-preview/source, lancer python3 theory-v05/work/build.py puis les tests test.js, test-playback.js, test-foundations.js, test-live-interactions.js, test-v415.js et test-v416.js avec Node. Copier theory-v05/dist/index.html vers theory-preview/index.html après reconstruction. Les SVG autonomes générés par test.js ne doivent pas être remis dans theory-preview/svg/.
-
-## Suppressions pour reconstruire exactement le complet depuis V4.14
-- INSTALLATION-V4.14.txt
-- MANIFEST-V4.14.json
-- theory-preview/svg/anisotropy-en.svg
-- theory-preview/svg/anisotropy-fr.svg
-- theory-preview/svg/corona-en.svg
-- theory-preview/svg/corona-fr.svg
-- theory-preview/svg/fate-en.svg
-- theory-preview/svg/fate-fr.svg
-- theory-preview/svg/interactions-en.svg
-- theory-preview/svg/interactions-fr.svg
-- theory-preview/svg/macrospin-en.svg
-- theory-preview/svg/macrospin-fr.svg
-- theory-preview/svg/monodomain-en.svg
-- theory-preview/svg/monodomain-fr.svg
-- theory-preview/svg/mri-en.svg
-- theory-preview/svg/mri-fr.svg
-- theory-preview/svg/protein-1AO6.svg
-- theory-preview/svg/protein-1HZH.svg
-- theory-preview/svg/protein-1RHP.svg
-- theory-preview/svg/protein-2L7B.svg
-- theory-preview/svg/protein-3GHG.svg
-- theory-preview/svg/protein-8VXJ.svg
-- theory-preview/svg/relax-en.svg
-- theory-preview/svg/relax-fr.svg
-- theory-preview/svg/rem-en.svg
-- theory-preview/svg/rem-fr.svg
+Construction autonome HTML sans PNG/JPEG embarqué. Sept suites Node réussies : géométrie (90 états), 16 cas lecture/pause/reset, modèles magnétiques, 8 vues FR/EN, interactions, couronne, cristallographie et nouvelles fonctionnalités. Vérification navigateur : ouverture des encarts, titre de la troisième étape, ancien lien superpara redirigé vers ZFC, module 7/9, lecture ZFC avançant de 5 à 87 K puis pause, indices HTML/SVG.
+Les exports générés par les tests ne sont pas inclus dans le site.
+Reconstruction depuis theory-preview/source : python theory-v05/work/build.py. Copier dist/index.html vers theory-preview/index.html. Tests : node theory-v05/work/test*.js (exécuter les sept fichiers individuellement, hors glob dans un unique appel Node).

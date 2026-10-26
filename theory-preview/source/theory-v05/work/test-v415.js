@@ -1,5 +1,5 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert');const helper=fs.readFileSync('theory-v05/work/test-playback.js','utf8');eval(helper.slice(helper.indexOf('function environment()'),helper.indexOf('\nlet env=')));
-const env=environment();delete env.ctx.window;env.ctx.ASSETS={proteins:fs.readFileSync('theory-v05/dist/assets/protein-symbols.svg','utf8'),'cij-fr':'','cij-en':''};vm.createContext(env.ctx);for(const name of ['resources.js','vector.js','app.js'])vm.runInContext(fs.readFileSync('theory-v05/dist/'+name,'utf8'),env.ctx);
+const env=environment();delete env.ctx.window;env.ctx.ASSETS={proteins:fs.readFileSync('theory-v05/dist/assets/protein-symbols.svg','utf8'),'cij-fr':'','cij-en':''};vm.createContext(env.ctx);for(const name of ['resources.js','vector.js','typography.js','pedagogy.js','app.js'])vm.runInContext(fs.readFileSync('theory-v05/dist/'+name,'utf8'),env.ctx);
 for(const language of ['fr','en']){
 vm.runInContext(`lang='${language}';current='corona';axis=2;u=0;values={};render()`,env.ctx);
 for(const target of [.25,.5,.75,1]){env.els.play.onclick();assert(vm.runInContext('playing',env.ctx));env.tick(10000);assert.equal(vm.runInContext('u',env.ctx),target);assert(!vm.runInContext('playing',env.ctx));}

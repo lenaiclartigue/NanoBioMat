@@ -1,14 +1,6 @@
 {
-  "VERSION.json": {
-    "sha256": "3ba9526b5d01c9b9e00735adaf0f50520e249a2b20ea3e3dbc83e2cf28e1ed6f",
-    "bytes": 616,
-    "content": "{\n  \"delivery\": \"V4.14\",\n  \"date\": \"2026-10-26\",\n  \"patch_base\": \"V4.12\",\n  \"live_version_verified\": \"V4.12\",\n  \"manual_deletions\": [\n    \"theory-preview/svg/assembly-en.svg\",\n    \"theory-preview/svg/assembly-fr.svg\",\n    \"theory-preview/svg/heat-en.svg\",\n    \"theory-preview/svg/heat-fr.svg\",\n    \"theory-preview/svg/lamer-en.svg\",\n    \"theory-preview/svg/lamer-fr.svg\",\n    \"theory-preview/svg/mpi-en.svg\",\n    \"theory-preview/svg/mpi-fr.svg\",\n    \"theory-preview/svg/photo-en.svg\",\n    \"theory-preview/svg/photo-fr.svg\",\n    \"theory-preview/svg/relaxivity-en.svg\",\n    \"theory-preview/svg/relaxivity-fr.svg\"\n  ]\n}"
-  },
-  "theory-preview/index.html": {
-    "sha256": "92f6e6d81c244554aaf5a6070628f0619dbcb5c12844aa803c316f3eb1f07406",
-    "bytes": 1989135
-  },
-  "matches": [
-    "4.14"
-  ]
+  "date": "2026-10-26",
+  "version": "V4.16",
+  "index_matches_V416_archive": true,
+  "sha256": "fcd6098cf3adce44035ac41aeafbfc6dd3180a8547d41127cbfe322ecede1514"
 }
