@@ -1,0 +1,11 @@
+{
+  "relaxivity": [
+    "R_i=R_{i,0}+r_i c_{\\mathrm{Fe}}",
+    "\\tau_D=\\frac{d^2}{4D},\\qquad\\Delta\\omega=\\frac{\\gamma\\mu_0M_v}{3},\\qquad\\Delta\\omega\\tau_D<1",
+    "\\frac{r_2\\phi_{\\mathrm{intra}}}{M_v^2}\\propto\\frac{d^2}{D}"
+  ],
+  "forc": [
+    "m=\\frac{M}{M_s},\\qquad\\rho(H,H_r)=-\\frac12\\frac{\\partial^2 m(H,H_r)}{\\partial H\\,\\partial H_r}",
+    "H_c=\\frac{H-H_r}{2},\\qquad H_u=\\frac{H+H_r}{2}"
+  ]
+}

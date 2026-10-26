@@ -1,9 +1,10 @@
 {
-  "delivery": "V4.20",
+  "delivery": "V4.22",
   "date": "2026-10-26",
-  "patch_base": "V4.18",
-  "live_version_verified": "V4.18",
+  "patch_base": "V4.20",
+  "live_version_verified": "V4.20",
   "modules": 21,
+  "audit_points": 28,
   "manual_deletions": [],
   "pending": [
     "Exact ALF-II formulation/reference",
