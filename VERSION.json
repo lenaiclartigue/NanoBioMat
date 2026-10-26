@@ -1,9 +1,12 @@
 {
-  "delivery": "V4.15",
+  "delivery": "V4.16",
   "date": "2026-10-26",
   "patch_base": "V4.14",
   "live_version_verified": "V4.14",
+  "modules": 21,
   "manual_deletions": [
+    "INSTALLATION-V4.14.txt",
+    "MANIFEST-V4.14.json",
     "theory-preview/svg/anisotropy-en.svg",
     "theory-preview/svg/anisotropy-fr.svg",
     "theory-preview/svg/corona-en.svg",

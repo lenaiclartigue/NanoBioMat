@@ -89,3 +89,7 @@ header #language{font-weight:700;background:#173c4c;color:white;border-color:#17
 .text-module{padding:8px 24px 22px;max-width:78ch}.text-module h3{margin:23px 0 8px}.text-module p{line-height:1.65}.text-module a{font-weight:650}#stage:has(.text-module){background:#fff;min-width:0}#math math{margin:18px 0}#math{overflow-x:auto}[hidden]{display:none!important}
 
 #source,#limits{display:none!important}.symbols{margin:18px 0}.symbols summary{cursor:pointer;font-weight:600}
+
+.sp-readout{padding:14px 18px;border-left:4px solid var(--axis-color,#31579c);background:#eef3f8;border-radius:4px;margin:18px 0}.sp-readout p{margin:6px 0}.module-definitions{border-top:1px solid #dce4eb;padding-top:12px} .text-module details{margin:14px 0}.text-module summary{cursor:pointer;font-weight:600}
+
+.data-notes{font-size:.87rem;line-height:1.6;margin:16px 0;color:#4b626e}.data-notes:empty{display:none}.data-cite{text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}.phase-table{overflow-x:auto;margin:18px 0}.phase-table table{border-collapse:collapse;width:100%;font-size:.92rem}.phase-table th,.phase-table td{padding:10px;border-bottom:1px solid #dce4eb;text-align:left}.phase-table thead{background:#edf3f8}

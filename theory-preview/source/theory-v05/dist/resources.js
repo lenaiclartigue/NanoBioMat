@@ -43,6 +43,19 @@ const RESOURCE_DATA=[
     "Open access"
   ],
   [
+    "NIST · Chemistry WebBook",
+    "https://webbook.nist.gov/",
+    "definitions",
+    [
+      0,
+      2
+    ],
+    "Composition et masse molaire des composés. La fiche Fe₃O₄ (CAS 1317-61-9) est citée dans le module sur les phases. Les constantes physiques viennent du NIST CODATA.",
+    "Compound composition and molar mass. The Fe₃O₄ entry (CAS 1317-61-9) is cited in the phases module. Physical constants come from NIST CODATA.",
+    "Accès libre",
+    "Open access"
+  ],
+  [
     "Crystallography Open Database · COD",
     "https://cod.psdi.ac.uk/",
     "structures",
@@ -86,8 +99,8 @@ const RESOURCE_DATA=[
       0,
       1
     ],
-    "MAGNDATA décrit des structures magnétiques publiées. Les fichiers mcif contiennent les moments atomiques et les symétries. La base ne fournit pas un catalogue universel de K, Ms ou ZFC/FC pour les IONPs.",
-    "MAGNDATA describes published magnetic structures. Its mcif files contain atomic moments and symmetry. The database does not provide a universal catalogue of IONP K, Ms or ZFC/FC data.",
+    "MAGNDATA décrit des structures magnétiques publiées. Les fichiers mcif contiennent les moments atomiques et les symétries. La base ne fournit pas un catalogue universel de K, Ms ou ZFC/FC pour les IONPs. Aucune valeur de moment de cette base n’est injectée dans les schémas actuels ; ceux-ci présentent le modèle de Néel.",
+    "MAGNDATA describes published magnetic structures. Its mcif files contain atomic moments and symmetry. The database does not provide a universal catalogue of IONP K, Ms or ZFC/FC data. No moment value from this database is inserted into the current diagrams; they present the Néel model.",
     "Consultation publique ; export global sur inscription",
     "Public browsing; bulk export requires registration"
   ],

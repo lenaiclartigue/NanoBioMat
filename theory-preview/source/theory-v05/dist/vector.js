@@ -169,21 +169,31 @@ function deltaScene(){const sign=values.deltaSign||0,rows=deltaData(sign);let s=
 // Four continuous stages; blood context and molecular detail use separate views.
 function ease415(x){x=Math.max(0,Math.min(1,x));return x*x*(3-2*x)}
 function redCell415(x,y,angle,scale=1){return `<g data-red-cell="biconcave" transform="translate(${x} ${y}) rotate(${angle}) scale(${scale})"><ellipse cy="7" rx="46" ry="24" fill="#8f2638" opacity=".12"/><path d="M-48 0C-48-28-16-35 8-29C36-29 51-12 48 4C45 28 15 34-11 28C-35 28-48 17-48 0Z" fill="url(#rbc415)" stroke="#9e3546" stroke-width="1.2"/><ellipse cx="-1" cy="-2" rx="25" ry="14" fill="url(#rbcDimple415)"/><path d="M-40-8C-34-24-10-28 12-23" fill="none" stroke="#f7b4b8" stroke-width="3" opacity=".7"/><path d="M-35 16C-9 31 25 25 39 12" fill="none" stroke="#851f34" stroke-width="2" opacity=".45"/></g>`}
-function coronaScene(t){const adsorption=ease415((t-.25)/.25),encounter=ease415((t-.75)/.25),cx=515+178*encounter,cy=270,phase=Math.min(3,Math.floor(Math.max(0,t-1e-8)*4));let s=`<defs><radialGradient id="rbc415" cx="42%" cy="35%"><stop stop-color="#f0a0a5"/><stop offset=".45" stop-color="#cb5a69"/><stop offset=".78" stop-color="#b3314c"/><stop offset="1" stop-color="#8e263e"/></radialGradient><radialGradient id="rbcDimple415"><stop stop-color="#f3b8b7"/><stop offset=".55" stop-color="#e9939b"/><stop offset="1" stop-color="#b83e54" stop-opacity=".05"/></radialGradient><clipPath id="blood415"><rect x="20" y="80" width="260" height="365" rx="12"/></clipPath><clipPath id="molecular415"><rect x="310" y="80" width="570" height="365" rx="12"/></clipPath></defs>`;
-s+=V.txt(150,45,T('Dans le vaisseau','In the vessel'),21)+V.txt(595,45,T('Gros plan sur la surface','Surface close-up'),21);
-s+=`<g clip-path="url(#blood415)"><rect x="20" y="80" width="260" height="365" fill="#fff0ed"/>`;
-for(let i=0;i<42;i++){let x=35+(i*63)%225,y=75+((i*83+t*165)%390);s+=V.c(x,y,.9,'#9f83a3');}
-for(let i=0;i<6;i++){let x=64+(i%2)*145,y=45+((i*93+t*165)%450);s+=redCell415(x,y,i*37+Math.sin(t*5+i)*12,.82+(i%3)*.08);}
-const px=40+110*ease415(t/.25),py=120+210*t;s+=V.p(`M30 92L${px} ${py}`,'none','#537a87',1,'3 4')+V.c(px,py,4,'#183d45','#fff',1)+V.c(px,py,12,'none','#31579c',1.5)+V.txt(148,420,'IONP',15);s+='</g>';
-s+=V.p('M26 70L64 110M34 62L72 102M26 70L34 62M64 110L72 102','none','#6b8791',3)+V.p('M68 106L81 120','none','#506f7d',1.8)+V.p('M160 436v25m0 0l-5-8m5 8l5-8','none','#aa6470',2);
-s+=`<g clip-path="url(#molecular415)"><rect x="310" y="80" width="570" height="365" fill="#fff9f5"/>`;
-// Numerous freely moving molecules. Fixed deterministic phases avoid random frame flicker.
-for(let i=0;i<150;i++){const x=290+((i*107+95*t)%525),y=65+((i*71+18*Math.sin(t*5+i))%400),r=Math.hypot(x-cx,y-cy);if(r<82)continue;s+=`<g data-plasma-protein="${i}" opacity="${.60+(i%3)*.17}">`+prot(x,y,.09+(i%3)*.008,i%9<6?0:1+i%5,i*41+t*55)+'</g>';}
-const membrane=Array.from({length:66},(_,i)=>[792+5*Math.sin(i/10),70+i*6]);const path='M'+membrane.map(p=>p.join(' ')).join('L');s+=V.p(path+'L900 470V70Z','url(#vCyto)','none')+V.p(path,'none','#a3ad93',8)+V.p(path,'none','#e8e5d4',4)+leaflets(membrane,'#909d87',2);for(const i of[16,32,47])s+=receptor(membrane[i][0],membrane[i][1],-90,.65);s+=V.p('M895 200C830 215 835 340 899 353Z','url(#vNucleus)','#9eafbd',2);
-s+=`<g data-nanoparticle="coated">`+np(cx,cy,43,true)+'</g>';
-for(let i=0;i<14;i++){const a=i*Math.PI*2/14,progress=ease415((t-.25-i*.004)/.19),rr=62+95*(1-progress),x=cx+rr*Math.cos(a),y=cy+rr*Math.sin(a);if(t<.25)continue;const switchAt=.505+(i%7)*.024,exchange=ease415((t-switchAt)/.065),replacing=i%3!==2;const oldAlpha=replacing?1-exchange:1;const drift=replacing?exchange*75:0;s+=`<g data-corona-protein="${i}" opacity="${oldAlpha}">`+prot(x+drift*Math.cos(a),y+drift*Math.sin(a),.105,0,a*180/Math.PI)+'</g>';if(replacing&&t>=switchAt){const approach=85*(1-exchange);s+=`<g data-replacement-protein="${i}" opacity="${exchange}">`+prot(cx+(62+approach)*Math.cos(a+.1),cy+(62+approach)*Math.sin(a+.1),.105,1+i%4,a*180/Math.PI)+'</g>';}}
-// Exchange persists after replacement: a small, smooth outward/inward trajectory.
-if(t>.65){const q=(t-.65)*12,rr=70+24*(.5-.5*Math.cos(q)),a=2.6;s+=prot(cx+rr*Math.cos(a),cy+rr*Math.sin(a),.08,0,q*30);}
-if(encounter>.7)s+=V.p(`M${cx+65} ${cy}Q770 262 786 265`,'none','#8b819f',2);
-s+='</g>'+V.txt(150,490,T('Transport sanguin','Blood transport'),16)+V.txt(595,490,T('Protéines plasmatiques · IONP · membrane cellulaire','Plasma proteins · IONP · cell membrane'),16)+V.txt(450,535,T('Deux échelles : vaisseau et interface moléculaire.','Two scales: vessel and molecular interface.'),14);
-return vsvg(s,900,555)}
+// One continuous bloodstream scene. PDB silhouettes are reused from the shared SVG bank.
+function coronaScene(t){
+ const encounter=ease415((t-.75)/.25),cx=95+390*ease415(t/.75)+220*encounter,cy=255;
+ let s=`<defs><radialGradient id="rbc415" cx="42%" cy="35%"><stop stop-color="#f0a0a5"/><stop offset=".45" stop-color="#cb5a69"/><stop offset=".78" stop-color="#b3314c"/><stop offset="1" stop-color="#8e263e"/></radialGradient><radialGradient id="rbcDimple415"><stop stop-color="#f3b8b7"/><stop offset=".55" stop-color="#e9939b"/><stop offset="1" stop-color="#b83e54" stop-opacity=".05"/></radialGradient><clipPath id="coronaBlood"><rect x="20" y="62" width="860" height="375" rx="14"/></clipPath></defs>`;
+ s+=V.txt(450,32,T('Dans le sang : une identité biologique en évolution','In blood: an evolving biological identity'),20);
+ s+=`<g clip-path="url(#coronaBlood)"><rect x="20" y="62" width="860" height="375" fill="#fff5f0"/>`;
+ for(let i=0;i<132;i++){const x=10+((i*127+t*110)%780),y=57+((i*73+10*Math.sin(t*7+i))%390),r=Math.hypot(x-cx,y-cy);if(r<77)continue;s+=`<g data-plasma-protein="${i}" opacity=".60">`+prot(x,y,.065+(i%3)*.008,i%9<6?0:1+i%5,i*41+t*30)+'</g>';}
+ // Biconcave cells travel in the same scene, around the focal nanoparticle trajectory.
+ for(let i=0;i<5;i++){const x=-90+((i*219+t*145)%1000),y=i%2?412:89;s+=redCell415(x,y,i*39+Math.sin(t*5+i)*8,1.30+(i%2)*.35);}
+ const membrane=Array.from({length:56},(_,i)=>[795+5*Math.sin(i/10),55+i*7]);const outline='M'+membrane.map(p=>p.join(' ')).join('L');
+ s+=V.p(outline+'L915 470V50Z','url(#vCyto)','none')+V.p(outline,'none','#a3ad93',8)+V.p(outline,'none','#e8e5d4',4)+leaflets(membrane,'#909d87',3);
+ for(const i of[14,27,41])s+=receptor(membrane[i][0],membrane[i][1],-90,.65);
+ s+=V.p('M900 170C838 185 833 322 900 335Z','url(#vNucleus)','#9eafbd',2);
+ s+=`<g data-nanoparticle="coated">`+np(cx,cy,37,true)+'</g>';
+ for(let i=0;i<14;i++){
+  if(t<.25)continue;
+  const a=i*Math.PI*2/14,progress=ease415((t-.25-i*.004)/.19),rr=55+88*(1-progress),x=cx+rr*Math.cos(a),y=cy+rr*Math.sin(a);
+  const switchAt=.505+(i%7)*.024,exchange=ease415((t-switchAt)/.065),replacing=i%3!==2,oldAlpha=replacing?1-exchange:1,drift=replacing?exchange*70:0;
+  if(oldAlpha>.001)s+=`<g data-corona-protein="${i}" opacity="${oldAlpha}">`+prot(x+drift*Math.cos(a),y+drift*Math.sin(a),.10,0,a*180/Math.PI)+'</g>';
+  if(replacing&&t>=switchAt){const approach=80*(1-exchange);s+=`<g data-replacement-protein="${i}" opacity="${exchange}">`+prot(cx+(55+approach)*Math.cos(a+.1),cy+(55+approach)*Math.sin(a+.1),.10,1+i%4,a*180/Math.PI)+'</g>';}
+ }
+ if(t>.65){const q=(t-.65)*12,rr=62+20*(.5-.5*Math.cos(q)),a=2.6;s+=prot(cx+rr*Math.cos(a),cy+rr*Math.sin(a),.075,0,q*30);}
+ if(encounter>.7)s+=V.p(`M${cx+58} ${cy}Q770 250 790 255`,'none','#8b819f',2);
+ s+='</g>';
+ s+=V.txt(150,468,T('Globules rouges et protéines plasmatiques','Red blood cells and plasma proteins'),14,'start')+V.txt(800,468,T('Cellule','Cell'),14);
+ s+=V.txt(450,500,T('IONP et protéines agrandies pour montrer les échanges.','IONP and proteins enlarged to show exchange.'),14);
+ return vsvg(s,900,515);
+}

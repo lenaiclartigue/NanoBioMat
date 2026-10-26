@@ -1,0 +1,12 @@
+{
+  "superpara": [
+    "\\tau_{\\mathrm N}\\simeq\\tau_0\\exp\\left(\\frac{KV}{k_{\\mathrm B}T}\\right)",
+    "T_{\\mathrm B}=\\frac{KV}{k_{\\mathrm B}\\ln(t_{\\mathrm m}/\\tau_0)},\\qquad \\frac{M(t)}{M(0)}=\\exp\\left(-\\frac{t}{\\tau_{\\mathrm N}}\\right)"
+  ],
+  "exchange": [
+    "E_{\\mathrm{ex}}=-J\\,\\hat{\\boldsymbol\\mu}_1\\cdot\\hat{\\boldsymbol\\mu}_2"
+  ],
+  "tau": [
+    "\\frac{1}{\\tau_{\\mathrm{eff}}}=\\frac{1}{\\tau_{\\mathrm N}}+\\frac{1}{\\tau_{\\mathrm B}}"
+  ]
+}
