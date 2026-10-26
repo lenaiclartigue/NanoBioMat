@@ -5,7 +5,7 @@
   ],
   "anisotropy": [
     "E(\\theta)=KV\\sin^2\\theta",
-    "\\Delta E=KV,\\qquad \\sigma=\\frac{KV}{k_{\\mathrm B}T}"
+    "\\Delta E=KV"
   ],
   "relax": [
     "\\tau_{\\mathrm N}\\approx\\tau_0\\exp\\!\\left(\\frac{KV}{k_{\\mathrm B}T}\\right)",
@@ -19,8 +19,11 @@
     "\\frac{M_{xy}(t)}{M_0}=\\exp\\!\\left(-\\frac{t}{T_2}\\right)"
   ],
   "heat": [
-    "H(t)=H_0\\sin(\\omega t)",
-    "M(t)=M_0\\sin(\\omega t-\\varphi)"
+    "P_V=\\mu_0 f\\left|\\oint M\\,\\mathrm dH\\right|",
+    "P_V=\\pi\\mu_0\\chi'' fH_0^2,\\qquad \\chi''=\\chi_0\\frac{2\\pi f\\tau}{1+(2\\pi f\\tau)^2}",
+    "\\mathrm{SAR}=\\frac{P_V}{\\rho_{\\mathrm{mag}}}\\simeq\\frac{C_{\\mathrm{tot}}}{m_{\\mathrm{mag}}}\\left(\\frac{\\mathrm dT}{\\mathrm dt}\\right)_{t\\to0}",
+    "\\mathrm{ILP}=\\frac{\\mathrm{SAR}}{fH_0^2}",
+    "H_0 f\\lesssim4.85\\times10^8\\;\\mathrm{A\\,m^{-1}\\,s^{-1}}"
   ],
   "zfc": [
     "\\tau_{\\mathrm N}=\\tau_0\\exp\\!\\left(\\frac{K_{\\mathrm{eff}}V}{k_{\\mathrm B}T}\\right)",
@@ -37,8 +40,8 @@
     "\\Gamma_{\\pm}=\\frac{1}{2\\tau_0}\\exp\\!\\left(-\\frac{\\Delta E_{\\pm}}{k_{\\mathrm B}T}\\right)"
   ],
   "rem": [
-    "\\Delta M(H)=m_{\\mathrm{DCD}}(H)-[1-2m_{\\mathrm{IRM}}(H)]",
-    "\\Delta M(H)=0\\quad\\text{(Wohlfarth)}"
+    "m_{\\mathrm{DCD}}(H)=1-2m_{\\mathrm{IRM}}(H)\\quad\\text{(Wohlfarth)}",
+    "\\Delta M(H)=m_{\\mathrm{DCD}}(H)-[1-2m_{\\mathrm{IRM}}(H)]"
   ],
   "time": [
     "M(t)=\\sum_i\\mu_i\\langle\\cos\\theta_i\\rangle_0\\exp\\!\\left(-\\frac{t}{\\tau_i}\\right)",
@@ -47,5 +50,17 @@
   "forc": [
     "\\rho(H,H_{\\mathrm r})=-\\frac12\\frac{\\partial^2 M(H,H_{\\mathrm r})}{\\partial H\\,\\partial H_{\\mathrm r}}",
     "H_{\\mathrm c}=\\frac{H-H_{\\mathrm r}}2,\\qquad H_{\\mathrm u}=\\frac{H+H_{\\mathrm r}}2"
+  ],
+  "monodomain": [
+    "d_c\\approx\\frac{18\\sqrt{AK}}{\\mu_0 M_S^2}"
+  ],
+  "relaxivity": [
+    "R_i=\\frac{1}{T_i}=R_{i,0}+r_i c_{\\mathrm{Fe}},\\qquad i\\in\\{1,2\\}"
+  ],
+  "mpi": [
+    "u(t)=-N\\frac{\\mathrm d\\Phi(t)}{\\mathrm dt}\\;\\propto\\;-\\frac{\\mathrm d M(t)}{\\mathrm dt}"
+  ],
+  "photo": [
+    "C_{\\mathrm{tot}}\\frac{\\mathrm dT}{\\mathrm dt}=\\eta P_{\\mathrm{abs}}+P_{\\mathrm{blank}}-G(T-T_{\\mathrm{env}})"
   ]
 }

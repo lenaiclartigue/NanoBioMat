@@ -1,22 +1,7 @@
-[
-  {
-    "path": "index.html",
-    "matches_base": true,
-    "sha256": "fef00f63bb132c8768a7ab325e8482bfaf4ca8dc39d412dc9aed3718c8126986"
-  },
-  {
-    "path": "research.html",
-    "matches_base": true,
-    "sha256": "eac9711940907881bad3a7ca8d43fef4d76541d6405afab7db836848d184d62a"
-  },
-  {
-    "path": "fr/research.html",
-    "matches_base": true,
-    "sha256": "12eaea319b7e64ffb816f02c30baef1eccec33ff25ae10ba043882516cbb98d6"
-  },
-  {
-    "path": "style.css",
-    "matches_base": true,
-    "sha256": "879755ad64d4158f9e4b18a4cd2359740d4e32d72fce633079dffc2429532900"
-  }
-]
+{
+  "checked": "2026-10-26",
+  "live_version": "V4.12",
+  "url": "https://lenaiclartigue.github.io/NanoBioMat/theory-preview/index.html",
+  "matches_archive_V4_12": true,
+  "sha256": "3abcf12f8f9eefc5a7d6c2e4d19ccdcdea696c32c4abfc091f7ca4e5998e524b"
+}

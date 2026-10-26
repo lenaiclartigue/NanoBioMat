@@ -1,3 +1,97 @@
+# NanoBioMat — V4.14
+
+## Installation
+Version publique V4.12 vérifiée le 26 octobre 2026. Le fichier public theory-preview/index.html correspond exactement (SHA-256) à l’archive V4.12. Correctif cumulatif V4.12 → V4.14 : les corrections V4.13 sont incluses.
+Copier le contenu du correctif à la racine du dépôt GitHub en conservant les sous-dossiers. Remplacer les fichiers homonymes. Aucun déploiement effectué.
+Supprimer manuellement les anciens exports suivants :
+- theory-preview/svg/assembly-en.svg
+- theory-preview/svg/assembly-fr.svg
+- theory-preview/svg/heat-en.svg
+- theory-preview/svg/heat-fr.svg
+- theory-preview/svg/lamer-en.svg
+- theory-preview/svg/lamer-fr.svg
+- theory-preview/svg/mpi-en.svg
+- theory-preview/svg/mpi-fr.svg
+- theory-preview/svg/photo-en.svg
+- theory-preview/svg/photo-fr.svg
+- theory-preview/svg/relaxivity-en.svg
+- theory-preview/svg/relaxivity-fr.svg
+
+Nettoyage facultatif : INSTALLATION-V4.12.txt, MANIFEST-V4.12.json et, si présents, INSTALLATION-V4.13.txt, MANIFEST-V4.13.json. Les anciens delivery-fr.svg et delivery-en.svg peuvent aussi être supprimés s’ils subsistent.
+
+## Changements FR / EN
+- Suppression du module Flash nanoprecipitation dans Assemblages.
+- Interactions : fluctuations automatiques des moments, sans Start. Seule la distance entre surfaces varie. Le modèle plan inclut les gradients dipolaires et le bruit thermique. Un couplage d’échange ferromagnétique est supposé au contact magnétique direct, sans couche isolante. Aucune distance universelle de 2 nm n’est proposée. Le modèle n’affirme pas un ralentissement universel par les interactions.
+- Une seule activité IRM / DCD / ΔM : référence sans interaction, écart positif, écart négatif. Les courbes pédagogiques construites respectent ΔM = mDCD − (1 − 2mIRM). Normalisation par la rémanence à saturation. Le signe seul n’identifie pas sans ambiguïté un mécanisme microscopique. Les anciennes vues numériques ne proposent plus que FORC.
+- Retrait des mentions « for review ».
+- Eau/relaxivité, MPI, hyperthermie et photothermie : fiches de lecture statiques avec phénomènes, équations MathML, variables, limites et références. L’animation IRM T1/T2 est conservée.
+- Hyperthermie : aire du cycle, réponse linéaire de Rosensweig, SAR, ILP et repère historique d’Atkinson–Brezovich. Le produit Hf est contextualisé ; il ne constitue pas une limite universelle de sécurité.
+- Module Développements industriels dédié : Ferabright, Magnetic Insight, Nanotherm Therapeutics et Magtrace. Liens retirés de la liste de la page Recherche et remplacés par un accès à ce module. Pas de partenariat implicite.
+
+## Sources
+Manuscrit HDR_LARTIGUE_2025(2).pdf consulté : pages imprimées 35–38 et 91–92, références 90–92, 126–142 et 215–221. Le manuscrit privé n’est pas intégré à cette archive publique.
+Références historiques et théoriques : Dias/Lauterbur, Roch/Muller/Gillis, Gleich/Weizenecker, Gilchrist, Jordan, Rosensweig, Atkinson/Brezovich/Chakraborty, Hergt, Kallumadil, Shen, Plan Sangnier et Roper. DOI cliquables dans chaque fiche.
+Deux corrections bibliographiques par rapport au manuscrit : Dias 1986, DOI 10.1002/mrm.1910030218 ; Jordan 1993, DOI original 10.3109/02656739309061478 (et non DOI de la réédition 2009).
+Photothermie : bilan thermique global ; la référence Roper décrit une méthode calorimétrique initialement appliquée à l’or, sans attribuer un mécanisme plasmonique d’or aux IONPs.
+
+## Vérifications
+19 modules ; 90 états graphiques FR/EN ; 18 exports SVG ; 10 cas de fiches bilingues ; 16 cas lecture/pause/reset ; 8 cas d’interface magnétique. Identité ΔM, signes, bornes et contact d’échange vérifiés. Démarrage automatique des interactions, variation de distance et arrêt lors du changement de module vérifiés. Tests Stoner–Wohlfarth, Langevin et ZFC conservés et réussis. Contrôle visuel des interactions, de ΔM et de la fiche hyperthermie.
+Reconstruction depuis theory-preview/source :
+python3 theory-v05/work/build.py
+node theory-v05/work/test.js
+node theory-v05/work/test-playback.js
+node theory-v05/work/test-foundations.js
+node theory-v05/work/test-live-interactions.js
+Copier dist/index.html vers theory-preview/index.html. Publier uniquement les exports SVG des modules actifs ; exclure lamer, assembly, relaxivity, mpi, heat, photo et delivery.
+
+## Historique — consignes remplacées par V4.14 ci-dessus
+
+# NanoBioMat — V4.13
+
+## Installation
+
+Version publique V4.12 vérifiée le 26 octobre 2026. Le fichier public theory-preview/index.html correspond exactement (SHA-256) à l’archive complète V4.12. Ce correctif contient uniquement les fichiers modifiés depuis V4.12.
+Copier le contenu à la racine du dépôt GitHub, conserver les sous-dossiers et remplacer les fichiers homonymes. Aucun déploiement effectué par l’assistant.
+Supprimer manuellement les exports de Nucléation / croissance retiré :
+- theory-preview/svg/lamer-fr.svg
+- theory-preview/svg/lamer-en.svg
+Nettoyage facultatif : INSTALLATION-V4.12.txt et MANIFEST-V4.12.json.
+Si les anciens exports delivery-fr.svg et delivery-en.svg sont encore présents dans theory-preview/svg, ils peuvent aussi être supprimés, comme indiqué dans V4.12.
+
+## Changements FR / EN
+
+- Suppression de « A single-domain core can be blocked or superparamagnetic » et de la phrase « Prescribed rotation illustrates the model; positions are not crystallographic », ainsi que des traductions françaises.
+- Introduction des domaines et déplacement de paroi, puis monodomaine. La notion de superparamagnétisme est définie dans le module Néel–Brown avant les modules ZFC/FC et M(H).
+- Suppression des curseurs K, diamètre et température dans Axes facile/difficile et Néel–Brown. Suppression des curseurs viscosité et épaisseur hydrodynamique du schéma qualitatif Néel–Brown. Les valeurs calculées qui en dépendaient sont retirées ; les formules symboliques restent visibles. Seule l’immobilisation est réglable et bloque effectivement la rotation du corps.
+- Lire un cycle M(H) : axes faciles aléatoires en 3D uniquement, sans sélecteur. MR/MS = 0,5. Le module distinct Stoner–Wohlfarth conserve son curseur d’angle.
+- Suppression du module Nucléation / croissance.
+- Conditions du modèle SW explicites : monodomaine avec rotation cohérente ; anisotropie uniaxiale ; interactions dipolaires négligeables. Calcul à température nulle.
+- Reprise SVG des deux schémas fournis le 26 octobre : image(20261026-072328).png et image(20261026-072337).png. Sphères sombres, flèches blanches, ellipse et agrandissements. Les deux agrandissements montrent deux instants d’une rotation cohérente. Le schéma Néel–Brown distingue le retournement interne de la rotation du corps, avec un repère fixé à la sphère. Les flèches opposées dans les agrandissements conservent l’ordre ferrimagnétique. Ce sont des dessins vectoriels animés adaptés, non des images matricielles intégrées.
+
+## Références et notation
+
+Monodomaine : J. Frenkel, J. Dorfman, Nature 1930, 126, 274–275. https://doi.org/10.1038/126274a0
+Domaines : C. Kittel, Phys. Rev. 1946, 70, 965–971. https://doi.org/10.1103/PhysRev.70.965
+Rotation cohérente : E. C. Stoner, E. P. Wohlfarth, Phil. Trans. R. Soc. A 1948, 240, 599–642. https://doi.org/10.1098/rsta.1948.0007
+Dynamique : L. Néel, Ann. Géophys. 1949, 5, 99–136. https://hal.science/hal-03070532
+Régimes et cycles : C. P. Bean, J. Appl. Phys. 1955, 26, 1381–1383. https://doi.org/10.1063/1.1721912
+Brown 1963 est conservé pour les fluctuations thermiques du moment ; Rosensweig 2002 accompagne les expressions des relaxations interne et brownienne.
+Les références des vues numériques sont maintenant propres au module, au lieu d’une liste commune.
+L’estimation dc ≈ 18 sqrt(AK)/(mu0 MS²) est composée en MathML, avec une racine carrée. A est la rigidité d’échange en J/m, K une densité d’énergie en J/m³ et MS une aimantation en A/m. Le coefficient dépend des hypothèses du modèle ; ce n’est pas une limite universelle de taille pour les IONPs. L’emploi moderne de cette expression est également documenté par Materials 2019, 12, 2663, https://doi.org/10.3390/ma12172663 ; elle n’est pas présentée comme une transcription littérale de Kittel 1946.
+
+## Vérifications
+
+20 modules, 130 états graphiques FR/EN, 26 exports SVG. 30 cas lecture/pause/reset et 8 cas d’interface numérique FR/EN. Contrôles des curseurs retirés, des phrases retirées, de l’immobilisation du corps, du maintien des retournements de Néel et du symbole racine. Tests numériques SW et Langevin inchangés et réussis.
+Contrôle visuel des vues agrandies Rotation cohérente et Néel–Brown. Reprise des références contrôlée sur les pages Nature, APS, AIP et les métadonnées HAL ; pas de revendication d’accès intégral à tous les articles historiques.
+Reconstruction depuis theory-preview/source :
+python3 theory-v05/work/build.py
+node theory-v05/work/test.js
+node theory-v05/work/test-playback.js
+node theory-v05/work/test-foundations.js
+Copier ensuite theory-v05/dist/index.html vers theory-preview/index.html et les SVG dist/svg vers theory-preview/svg, en excluant les anciens exports lamer et delivery.
+
+## Historique des versions antérieures (consignes remplacées par V4.13 ci-dessus)
+
 # NanoBioMat — V4.12
 
 ## Modifications

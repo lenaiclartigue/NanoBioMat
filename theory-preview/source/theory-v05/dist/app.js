@@ -1,15 +1,19 @@
-const EQUATIONS={"macrospin":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"bold-italic\">μ</mi><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi mathvariant=\"bold-italic\">μ</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\boldsymbol{\\mu}=\\sum_i\\boldsymbol{\\mu}_i</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">∣</mo><mi mathvariant=\"bold-italic\">μ</mi><mo stretchy=\"false\">∣</mo><mo>=</mo><msub><mi>M</mi><mrow><mi mathvariant=\"normal\">s</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">e</mi></mrow></msub><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">\\lvert\\boldsymbol{\\mu}\\rvert=M_{\\mathrm{s,core}}V</annotation></semantics></math></span></div>","anisotropy":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>K</mi><mi>V</mi><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">E(\\theta)=KV\\sin^2\\theta</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>E</mi><mo>=</mo><mi>K</mi><mi>V</mi><mo separator=\"true\">,</mo><mspace width=\"2em\"/><mi>σ</mi><mo>=</mo><mfrac><mrow><mi>K</mi><mi>V</mi></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\Delta E=KV,\\qquad \\sigma=\\frac{KV}{k_{\\mathrm B}T}</annotation></semantics></math></span></div>","relax":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>τ</mi><mi mathvariant=\"normal\">N</mi></msub><mo>≈</mo><msub><mi>τ</mi><mn>0</mn></msub><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>K</mi><mi>V</mi></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\tau_{\\mathrm N}\\approx\\tau_0\\exp\\!\\left(\\frac{KV}{k_{\\mathrm B}T}\\right)</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>τ</mi><mi mathvariant=\"normal\">B</mi></msub><mo>=</mo><mfrac><mrow><mn>3</mn><mi>η</mi><msub><mi>V</mi><mi mathvariant=\"normal\">h</mi></msub></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac><mo separator=\"true\">,</mo><mspace width=\"2em\"/><msub><mi>τ</mi><mn>0</mn></msub><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup><mtext> </mtext><mi mathvariant=\"normal\">s</mi></mrow><annotation encoding=\"application/x-tex\">\\tau_{\\mathrm B}=\\frac{3\\eta V_{\\mathrm h}}{k_{\\mathrm B}T},\\qquad \\tau_0=10^{-9}\\,\\mathrm{s}</annotation></semantics></math></span></div>","interactions":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>U</mi><mrow><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\">d</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>μ</mi><mn>0</mn></msub><mrow><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow></mfrac><mrow><mo fence=\"true\">[</mo><msub><mi mathvariant=\"bold-italic\">μ</mi><mn>1</mn></msub><mo>⋅</mo><msub><mi mathvariant=\"bold-italic\">μ</mi><mn>2</mn></msub><mo>−</mo><mn>3</mn><mo stretchy=\"false\">(</mo><msub><mi mathvariant=\"bold-italic\">μ</mi><mn>1</mn></msub><mo>⋅</mo><mover accent=\"true\"><mi mathvariant=\"bold-italic\">r</mi><mo>^</mo></mover><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msub><mi mathvariant=\"bold-italic\">μ</mi><mn>2</mn></msub><mo>⋅</mo><mover accent=\"true\"><mi mathvariant=\"bold-italic\">r</mi><mo>^</mo></mover><mo stretchy=\"false\">)</mo><mo fence=\"true\">]</mo></mrow></mrow><annotation encoding=\"application/x-tex\">U_{\\mathrm{dd}}=\\frac{\\mu_0}{4\\pi r^3}\\left[\\boldsymbol{\\mu}_1\\cdot\\boldsymbol{\\mu}_2-3(\\boldsymbol{\\mu}_1\\cdot\\hat{\\boldsymbol r})(\\boldsymbol{\\mu}_2\\cdot\\hat{\\boldsymbol r})\\right]</annotation></semantics></math></span></div>","mri":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><msub><mi>M</mi><mi>z</mi></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><msub><mi>M</mi><mn>0</mn></msub></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mo>−</mo><mfrac><mi>t</mi><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\frac{M_z(t)}{M_0}=1-\\exp\\!\\left(-\\frac{t}{T_1}\\right)</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><msub><mi>M</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><msub><mi>M</mi><mn>0</mn></msub></mfrac><mo>=</mo><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mo>−</mo><mfrac><mi>t</mi><msub><mi>T</mi><mn>2</mn></msub></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\frac{M_{xy}(t)}{M_0}=\\exp\\!\\left(-\\frac{t}{T_2}\\right)</annotation></semantics></math></span></div>","heat":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>H</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>H</mi><mn>0</mn></msub><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>ω</mi><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">H(t)=H_0\\sin(\\omega t)</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>M</mi><mn>0</mn></msub><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>φ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">M(t)=M_0\\sin(\\omega t-\\varphi)</annotation></semantics></math></span></div>","zfc":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>τ</mi><mi mathvariant=\"normal\">N</mi></msub><mo>=</mo><msub><mi>τ</mi><mn>0</mn></msub><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mfrac><mrow><msub><mi>K</mi><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub><mi>V</mi></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\tau_{\\mathrm N}=\\tau_0\\exp\\!\\left(\\frac{K_{\\mathrm{eff}}V}{k_{\\mathrm B}T}\\right)</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mi>T</mi><mi mathvariant=\"normal\">B</mi><mo lspace=\"0em\" rspace=\"0em\">∗</mo></msubsup><mo>=</mo><mfrac><mrow><msub><mi>K</mi><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub><mi>V</mi></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>ln</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msub><mi>t</mi><mi mathvariant=\"normal\">m</mi></msub><mi mathvariant=\"normal\">/</mi><msub><mi>τ</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">T_{\\mathrm B}^{*}=\\frac{K_{\\mathrm{eff}}V}{k_{\\mathrm B}\\ln(t_{\\mathrm m}/\\tau_0)}</annotation></semantics></math></span></div>","mh":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>E</mi><mo stretchy=\"false\">(</mo><mi>φ</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>K</mi><mi>V</mi></mrow></mfrac><mo>=</mo><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mo stretchy=\"false\">(</mo><mi>φ</mi><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mn>2</mn><mi>h</mi><mi>cos</mi><mo>⁡</mo><mi>φ</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{E(\\varphi)}{KV}=\\sin^2(\\varphi-\\theta)-2h\\cos\\varphi</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mi>H</mi><msub><mi>H</mi><mi mathvariant=\"normal\">K</mi></msub></mfrac><mo separator=\"true\">,</mo><mspace width=\"2em\"/><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>H</mi><mi mathvariant=\"normal\">K</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><msub><mi>K</mi><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub></mrow><msub><mi>M</mi><mrow><mi mathvariant=\"normal\">s</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">e</mi></mrow></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">h=\\frac{H}{H_{\\mathrm K}},\\qquad \\mu_0H_{\\mathrm K}=\\frac{2K_{\\mathrm{eff}}}{M_{\\mathrm{s,core}}}</annotation></semantics></math></span></div>","initial":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">(</mo><mi>ξ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>coth</mi><mo>⁡</mo><mi>ξ</mi><mo>−</mo><mfrac><mn>1</mn><mi>ξ</mi></mfrac><mo separator=\"true\">,</mo><mspace width=\"2em\"/><mi>ξ</mi><mo>=</mo><mfrac><mrow><mi>μ</mi><msub><mi>μ</mi><mn>0</mn></msub><mi>H</mi></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\mathcal L(\\xi)=\\coth\\xi-\\frac1\\xi,\\qquad \\xi=\\frac{\\mu\\mu_0H}{k_{\\mathrm B}T}</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>M</mi><msub><mi>M</mi><mrow><mi mathvariant=\"normal\">s</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">s</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">e</mi></mrow></msub></mfrac><mo>=</mo><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">(</mo><mi>ξ</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mspace width=\"2em\"/><mi>μ</mi><mo>=</mo><msub><mi>M</mi><mrow><mi mathvariant=\"normal\">s</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">e</mi></mrow></msub><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{M}{M_{\\mathrm{s,ensemble}}}=\\mathcal L(\\xi),\\qquad \\mu=M_{\\mathrm{s,core}}V</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>ξ</mi><mo>→</mo><mn>0</mn></mrow></munder><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">(</mo><mi>ξ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mo separator=\"true\">,</mo><mspace width=\"2em\"/><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>ξ</mi><mo>→</mo><mo>+</mo><mi mathvariant=\"normal\">∞</mi></mrow></munder><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">(</mo><mi>ξ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\lim_{\\xi\\to0}\\mathcal L(\\xi)=0,\\qquad \\lim_{\\xi\\to+\\infty}\\mathcal L(\\xi)=1</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi mathvariant=\"normal\">Γ</mi><mo lspace=\"0em\" rspace=\"0em\">±</mo></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><msub><mi>τ</mi><mn>0</mn></msub></mrow></mfrac><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mo>−</mo><mfrac><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>E</mi><mo lspace=\"0em\" rspace=\"0em\">±</mo></msub></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\Gamma_{\\pm}=\\frac{1}{2\\tau_0}\\exp\\!\\left(-\\frac{\\Delta E_{\\pm}}{k_{\\mathrm B}T}\\right)</annotation></semantics></math></span></div>","rem":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>M</mi><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">D</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mo stretchy=\"false\">[</mo><mn>1</mn><mo>−</mo><mn>2</mn><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">M</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\Delta M(H)=m_{\\mathrm{DCD}}(H)-[1-2m_{\\mathrm{IRM}}(H)]</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>M</mi><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mspace width=\"1em\"/><mtext>(Wohlfarth)</mtext></mrow><annotation encoding=\"application/x-tex\">\\Delta M(H)=0\\quad\\text{(Wohlfarth)}</annotation></semantics></math></span></div>","time":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>μ</mi><mi>i</mi></msub><mo stretchy=\"false\">⟨</mo><mi>cos</mi><mo>⁡</mo><msub><mi>θ</mi><mi>i</mi></msub><msub><mo stretchy=\"false\">⟩</mo><mn>0</mn></msub><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mo>−</mo><mfrac><mi>t</mi><msub><mi>τ</mi><mi>i</mi></msub></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">M(t)=\\sum_i\\mu_i\\langle\\cos\\theta_i\\rangle_0\\exp\\!\\left(-\\frac{t}{\\tau_i}\\right)</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>τ</mi><mi>i</mi></msub><mo>=</mo><msub><mi>τ</mi><mn>0</mn></msub><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mfrac><mrow><msub><mi>K</mi><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub><msub><mi>V</mi><mi>i</mi></msub></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\tau_i=\\tau_0\\exp\\!\\left(\\frac{K_{\\mathrm{eff}}V_i}{k_{\\mathrm B}T}\\right)</annotation></semantics></math></span></div>","forc":"<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ρ</mi><mo stretchy=\"false\">(</mo><mi>H</mi><mo separator=\"true\">,</mo><msub><mi>H</mi><mi mathvariant=\"normal\">r</mi></msub><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><mrow><msup><mi mathvariant=\"normal\">∂</mi><mn>2</mn></msup><mi>M</mi><mo stretchy=\"false\">(</mo><mi>H</mi><mo separator=\"true\">,</mo><msub><mi>H</mi><mi mathvariant=\"normal\">r</mi></msub><mo stretchy=\"false\">)</mo></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>H</mi><mtext> </mtext><mi mathvariant=\"normal\">∂</mi><msub><mi>H</mi><mi mathvariant=\"normal\">r</mi></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\rho(H,H_{\\mathrm r})=-\\frac12\\frac{\\partial^2 M(H,H_{\\mathrm r})}{\\partial H\\,\\partial H_{\\mathrm r}}</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>H</mi><mi mathvariant=\"normal\">c</mi></msub><mo>=</mo><mfrac><mrow><mi>H</mi><mo>−</mo><msub><mi>H</mi><mi mathvariant=\"normal\">r</mi></msub></mrow><mn>2</mn></mfrac><mo separator=\"true\">,</mo><mspace width=\"2em\"/><msub><mi>H</mi><mi mathvariant=\"normal\">u</mi></msub><mo>=</mo><mfrac><mrow><mi>H</mi><mo>+</mo><msub><mi>H</mi><mi mathvariant=\"normal\">r</mi></msub></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">H_{\\mathrm c}=\\frac{H-H_{\\mathrm r}}2,\\qquad H_{\\mathrm u}=\\frac{H+H_{\\mathrm r}}2</annotation></semantics></math></span></div>"};
+const EQUATIONS={"macrospin": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"bold-italic\">μ</mi><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi mathvariant=\"bold-italic\">μ</mi><mi>i</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\boldsymbol{\\mu}=\\sum_i\\boldsymbol{\\mu}_i</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mo stretchy=\"false\">∣</mo><mi mathvariant=\"bold-italic\">μ</mi><mo stretchy=\"false\">∣</mo><mo>=</mo><msub><mi>M</mi><mrow><mi mathvariant=\"normal\">s</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">e</mi></mrow></msub><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">\\lvert\\boldsymbol{\\mu}\\rvert=M_{\\mathrm{s,core}}V</annotation></semantics></math></span></div>", "anisotropy": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>E</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>K</mi><mi>V</mi><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mi>θ</mi></mrow><annotation encoding=\"application/x-tex\">E(\\theta)=KV\\sin^2\\theta</annotation></semantics></math><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mi>ΔE</mi><mo>=</mo><mi>K</mi><mi>V</mi></math>", "relax": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>τ</mi><mi mathvariant=\"normal\">N</mi></msub><mo>≈</mo><msub><mi>τ</mi><mn>0</mn></msub><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi>K</mi><mi>V</mi></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\tau_{\\mathrm N}\\approx\\tau_0\\exp\\!\\left(\\frac{KV}{k_{\\mathrm B}T}\\right)</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>τ</mi><mi mathvariant=\"normal\">B</mi></msub><mo>=</mo><mfrac><mrow><mn>3</mn><mi>η</mi><msub><mi>V</mi><mi mathvariant=\"normal\">h</mi></msub></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac><mo separator=\"true\">,</mo><mspace width=\"2em\"/><msub><mi>τ</mi><mn>0</mn></msub><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup><mtext> </mtext><mi mathvariant=\"normal\">s</mi></mrow><annotation encoding=\"application/x-tex\">\\tau_{\\mathrm B}=\\frac{3\\eta V_{\\mathrm h}}{k_{\\mathrm B}T},\\qquad \\tau_0=10^{-9}\\,\\mathrm{s}</annotation></semantics></math></span></div>", "interactions": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>U</mi><mrow><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\">d</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>μ</mi><mn>0</mn></msub><mrow><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow></mfrac><mrow><mo fence=\"true\">[</mo><msub><mi mathvariant=\"bold-italic\">μ</mi><mn>1</mn></msub><mo>⋅</mo><msub><mi mathvariant=\"bold-italic\">μ</mi><mn>2</mn></msub><mo>−</mo><mn>3</mn><mo stretchy=\"false\">(</mo><msub><mi mathvariant=\"bold-italic\">μ</mi><mn>1</mn></msub><mo>⋅</mo><mover accent=\"true\"><mi mathvariant=\"bold-italic\">r</mi><mo>^</mo></mover><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msub><mi mathvariant=\"bold-italic\">μ</mi><mn>2</mn></msub><mo>⋅</mo><mover accent=\"true\"><mi mathvariant=\"bold-italic\">r</mi><mo>^</mo></mover><mo stretchy=\"false\">)</mo><mo fence=\"true\">]</mo></mrow></mrow><annotation encoding=\"application/x-tex\">U_{\\mathrm{dd}}=\\frac{\\mu_0}{4\\pi r^3}\\left[\\boldsymbol{\\mu}_1\\cdot\\boldsymbol{\\mu}_2-3(\\boldsymbol{\\mu}_1\\cdot\\hat{\\boldsymbol r})(\\boldsymbol{\\mu}_2\\cdot\\hat{\\boldsymbol r})\\right]</annotation></semantics></math></span></div>", "mri": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><msub><mi>M</mi><mi>z</mi></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><msub><mi>M</mi><mn>0</mn></msub></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mo>−</mo><mfrac><mi>t</mi><msub><mi>T</mi><mn>1</mn></msub></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\frac{M_z(t)}{M_0}=1-\\exp\\!\\left(-\\frac{t}{T_1}\\right)</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><msub><mi>M</mi><mrow><mi>x</mi><mi>y</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><msub><mi>M</mi><mn>0</mn></msub></mfrac><mo>=</mo><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mo>−</mo><mfrac><mi>t</mi><msub><mi>T</mi><mn>2</mn></msub></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\frac{M_{xy}(t)}{M_0}=\\exp\\!\\left(-\\frac{t}{T_2}\\right)</annotation></semantics></math></span></div>", "heat": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>H</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>H</mi><mn>0</mn></msub><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>ω</mi><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">H(t)=H_0\\sin(\\omega t)</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>M</mi><mn>0</mn></msub><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>φ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">M(t)=M_0\\sin(\\omega t-\\varphi)</annotation></semantics></math></span></div>", "zfc": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>τ</mi><mi mathvariant=\"normal\">N</mi></msub><mo>=</mo><msub><mi>τ</mi><mn>0</mn></msub><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mfrac><mrow><msub><mi>K</mi><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub><mi>V</mi></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\tau_{\\mathrm N}=\\tau_0\\exp\\!\\left(\\frac{K_{\\mathrm{eff}}V}{k_{\\mathrm B}T}\\right)</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msubsup><mi>T</mi><mi mathvariant=\"normal\">B</mi><mo lspace=\"0em\" rspace=\"0em\">∗</mo></msubsup><mo>=</mo><mfrac><mrow><msub><mi>K</mi><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub><mi>V</mi></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>ln</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><msub><mi>t</mi><mi mathvariant=\"normal\">m</mi></msub><mi mathvariant=\"normal\">/</mi><msub><mi>τ</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">T_{\\mathrm B}^{*}=\\frac{K_{\\mathrm{eff}}V}{k_{\\mathrm B}\\ln(t_{\\mathrm m}/\\tau_0)}</annotation></semantics></math></span></div>", "mh": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>E</mi><mo stretchy=\"false\">(</mo><mi>φ</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi>K</mi><mi>V</mi></mrow></mfrac><mo>=</mo><msup><mrow><mi>sin</mi><mo>⁡</mo></mrow><mn>2</mn></msup><mo stretchy=\"false\">(</mo><mi>φ</mi><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mn>2</mn><mi>h</mi><mi>cos</mi><mo>⁡</mo><mi>φ</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{E(\\varphi)}{KV}=\\sin^2(\\varphi-\\theta)-2h\\cos\\varphi</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mi>H</mi><msub><mi>H</mi><mi mathvariant=\"normal\">K</mi></msub></mfrac><mo separator=\"true\">,</mo><mspace width=\"2em\"/><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>H</mi><mi mathvariant=\"normal\">K</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><msub><mi>K</mi><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub></mrow><msub><mi>M</mi><mrow><mi mathvariant=\"normal\">s</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">e</mi></mrow></msub></mfrac></mrow><annotation encoding=\"application/x-tex\">h=\\frac{H}{H_{\\mathrm K}},\\qquad \\mu_0H_{\\mathrm K}=\\frac{2K_{\\mathrm{eff}}}{M_{\\mathrm{s,core}}}</annotation></semantics></math></span></div>", "initial": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">(</mo><mi>ξ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>coth</mi><mo>⁡</mo><mi>ξ</mi><mo>−</mo><mfrac><mn>1</mn><mi>ξ</mi></mfrac><mo separator=\"true\">,</mo><mspace width=\"2em\"/><mi>ξ</mi><mo>=</mo><mfrac><mrow><mi>μ</mi><msub><mi>μ</mi><mn>0</mn></msub><mi>H</mi></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\mathcal L(\\xi)=\\coth\\xi-\\frac1\\xi,\\qquad \\xi=\\frac{\\mu\\mu_0H}{k_{\\mathrm B}T}</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mi>M</mi><msub><mi>M</mi><mrow><mi mathvariant=\"normal\">s</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">s</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">e</mi></mrow></msub></mfrac><mo>=</mo><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">(</mo><mi>ξ</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mspace width=\"2em\"/><mi>μ</mi><mo>=</mo><msub><mi>M</mi><mrow><mi mathvariant=\"normal\">s</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">c</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">e</mi></mrow></msub><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">\\frac{M}{M_{\\mathrm{s,ensemble}}}=\\mathcal L(\\xi),\\qquad \\mu=M_{\\mathrm{s,core}}V</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>ξ</mi><mo>→</mo><mn>0</mn></mrow></munder><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">(</mo><mi>ξ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mo separator=\"true\">,</mo><mspace width=\"2em\"/><munder><mrow><mi>lim</mi><mo>⁡</mo></mrow><mrow><mi>ξ</mi><mo>→</mo><mo>+</mo><mi mathvariant=\"normal\">∞</mi></mrow></munder><mi mathvariant=\"script\">L</mi><mo stretchy=\"false\">(</mo><mi>ξ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">\\lim_{\\xi\\to0}\\mathcal L(\\xi)=0,\\qquad \\lim_{\\xi\\to+\\infty}\\mathcal L(\\xi)=1</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi mathvariant=\"normal\">Γ</mi><mo lspace=\"0em\" rspace=\"0em\">±</mo></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><msub><mi>τ</mi><mn>0</mn></msub></mrow></mfrac><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mo>−</mo><mfrac><mrow><mi mathvariant=\"normal\">Δ</mi><msub><mi>E</mi><mo lspace=\"0em\" rspace=\"0em\">±</mo></msub></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\Gamma_{\\pm}=\\frac{1}{2\\tau_0}\\exp\\!\\left(-\\frac{\\Delta E_{\\pm}}{k_{\\mathrm B}T}\\right)</annotation></semantics></math></span></div>", "rem": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>M</mi><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">D</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mo stretchy=\"false\">[</mo><mn>1</mn><mo>−</mo><mn>2</mn><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">M</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\Delta M(H)=m_{\\mathrm{DCD}}(H)-[1-2m_{\\mathrm{IRM}}(H)]</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>M</mi><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn><mspace width=\"1em\"/><mtext>(Wohlfarth)</mtext></mrow><annotation encoding=\"application/x-tex\">\\Delta M(H)=0\\quad\\text{(Wohlfarth)}</annotation></semantics></math></span></div>", "time": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>M</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>μ</mi><mi>i</mi></msub><mo stretchy=\"false\">⟨</mo><mi>cos</mi><mo>⁡</mo><msub><mi>θ</mi><mi>i</mi></msub><msub><mo stretchy=\"false\">⟩</mo><mn>0</mn></msub><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mo>−</mo><mfrac><mi>t</mi><msub><mi>τ</mi><mi>i</mi></msub></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">M(t)=\\sum_i\\mu_i\\langle\\cos\\theta_i\\rangle_0\\exp\\!\\left(-\\frac{t}{\\tau_i}\\right)</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>τ</mi><mi>i</mi></msub><mo>=</mo><msub><mi>τ</mi><mn>0</mn></msub><mi>exp</mi><mo>⁡</mo><mtext> ⁣</mtext><mrow><mo fence=\"true\">(</mo><mfrac><mrow><msub><mi>K</mi><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">f</mi></mrow></msub><msub><mi>V</mi><mi>i</mi></msub></mrow><mrow><msub><mi>k</mi><mi mathvariant=\"normal\">B</mi></msub><mi>T</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow></mrow><annotation encoding=\"application/x-tex\">\\tau_i=\\tau_0\\exp\\!\\left(\\frac{K_{\\mathrm{eff}}V_i}{k_{\\mathrm B}T}\\right)</annotation></semantics></math></span></div>", "forc": "<div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>ρ</mi><mo stretchy=\"false\">(</mo><mi>H</mi><mo separator=\"true\">,</mo><msub><mi>H</mi><mi mathvariant=\"normal\">r</mi></msub><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><mrow><msup><mi mathvariant=\"normal\">∂</mi><mn>2</mn></msup><mi>M</mi><mo stretchy=\"false\">(</mo><mi>H</mi><mo separator=\"true\">,</mo><msub><mi>H</mi><mi mathvariant=\"normal\">r</mi></msub><mo stretchy=\"false\">)</mo></mrow><mrow><mi mathvariant=\"normal\">∂</mi><mi>H</mi><mtext> </mtext><mi mathvariant=\"normal\">∂</mi><msub><mi>H</mi><mi mathvariant=\"normal\">r</mi></msub></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\rho(H,H_{\\mathrm r})=-\\frac12\\frac{\\partial^2 M(H,H_{\\mathrm r})}{\\partial H\\,\\partial H_{\\mathrm r}}</annotation></semantics></math></span></div><div class=\"equation-line\"><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>H</mi><mi mathvariant=\"normal\">c</mi></msub><mo>=</mo><mfrac><mrow><mi>H</mi><mo>−</mo><msub><mi>H</mi><mi mathvariant=\"normal\">r</mi></msub></mrow><mn>2</mn></mfrac><mo separator=\"true\">,</mo><mspace width=\"2em\"/><msub><mi>H</mi><mi mathvariant=\"normal\">u</mi></msub><mo>=</mo><mfrac><mrow><mi>H</mi><mo>+</mo><msub><mi>H</mi><mi mathvariant=\"normal\">r</mi></msub></mrow><mn>2</mn></mfrac></mrow><annotation encoding=\"application/x-tex\">H_{\\mathrm c}=\\frac{H-H_{\\mathrm r}}2,\\qquad H_{\\mathrm u}=\\frac{H+H_{\\mathrm r}}2</annotation></semantics></math></span></div>"};
 let lang='fr',axis=0,current='monodomain',u=0,playing=false,last=0,raf=0,values={};
 const $=id=>document.getElementById(id), T=(fr,en)=>lang==='fr'?fr:en;
 const axes=[['Particules','Particles','Construire et comprendre','Build and understand'],['Assemblages','Assemblies','Organiser et coupler','Organize and couple'],['Interfaces biologiques','Biological interfaces','Interagir, imager, agir','Interact, image, act']];
 const refs={corona2023:['W. Mekseriwattana et al., ACS Appl. Nano Mater. 2023, 6, 13952–13964','10.1021/acsanm.3c01767'],vogt:['C. Vogt et al., PLoS One 2015, 10, e0129008','10.1371/journal.pone.0129008'],rink:['J. Rink et al., Cell 2005, 122, 735–749','10.1016/j.cell.2005.06.043'],membrane:['E. Evans, D. Needham, J. Phys. Chem. 1987, 91, 4219–4228','10.1021/j100300a003'],han:['J. Han et al., J. Pharm. Sci. 2012, 101, 4018–4023','10.1002/jps.23259'],prudhomme:['B. K. Johnson, R. K. Prud’homme, Aust. J. Chem. 2003, 56, 1021–1024','10.1071/CH03115'],brown:['W. F. Brown, Phys. Rev. 1963, 130, 1677–1686','10.1103/PhysRev.130.1677'],sw:['E. C. Stoner, E. P. Wohlfarth, Phil. Trans. R. Soc. A 1948, 240, 599–642','10.1098/rsta.1948.0007'],corona:['M. P. Monopoli et al., Nat. Nanotechnol. 2012, 7, 779–786','10.1038/nnano.2012.207'],salvati:['A. Salvati et al., Nat. Nanotechnol. 2013, 8, 137–143','10.1038/nnano.2012.237'],bio:['L. Lartigue et al., ACS Nano 2012, 6, 2665–2678','10.1021/nn300060u'],fate:['L. Lartigue et al., ACS Nano 2013, 7, 3939–3952','10.1021/nn305719y'],mri:['L. Lartigue, D. Coupeau, M. Lesault, Nanomaterials 2020, 10, 28','10.3390/nano10010028'],size:['L. Lartigue et al., J. Am. Chem. Soc. 2011, 133, 10459–10472','10.1021/ja111448t'],multi:['L. Lartigue et al., ACS Nano 2012, 6, 10935–10949','10.1021/nn304477s'],lamer:['V. K. LaMer, R. H. Dinegar, J. Am. Chem. Soc. 1950, 72, 4847–4854','10.1021/ja01167a001'],mpi:['B. Gleich, J. Weizenecker, Nature 2005, 435, 1214–1217','10.1038/nature03808'],heat:['R. E. Rosensweig, J. Magn. Magn. Mater. 2002, 252, 370–374','10.1016/S0304-8853(02)00706-0']};
 // All explanations are review text, independent from experimental measurements.
 Object.assign(refs,{dipolar2023:['García-Acevedo et al., Advanced Science 2023','10.1002/advs.202203397'],dynamics2020:['Dynamics of interacting magnetic nanoparticles, PCCP 2020','10.1039/D0CP04377J'],exchange2014:['J. Ashby, S. Pan, W. Zhong, ACS Appl. Mater. Interfaces 2014, 6, 15412–15419','10.1021/am503909q'],complement2017:['Complement proteins bind to nanoparticle protein corona and undergo dynamic exchange in vivo, Nat. Nanotechnol. 2017','10.1038/nnano.2016.269']});
+Object.assign(refs,{frenkel:['J. Frenkel, J. Dorfman, Nature 1930, 126, 274–275','10.1038/126274a0'],kittel:['C. Kittel, Phys. Rev. 1946, 70, 965–971','10.1103/PhysRev.70.965'],neel:['L. Néel, Ann. Géophys. 1949, 5, 99–136','https://hal.science/hal-03070532'],bean:['C. P. Bean, J. Appl. Phys. 1955, 26, 1381–1383','10.1063/1.1721912'],critical2019:['The Effect of Polyol Composition on the Structural and Magnetic Properties of Magnetite Nanoparticles for Magnetic Particle Hyperthermia, Materials 2019, 12, 2663','10.3390/ma12172663']});
+EQUATIONS.monodomain="<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><msub><mi>d</mi><mi>c</mi></msub><mo>\u2248</mo><mfrac><mrow><mn>18</mn><msqrt><mrow><mi>A</mi><mi>K</mi></mrow></msqrt></mrow><mrow><msub><mi>\u03bc</mi><mn>0</mn></msub><msubsup><mi>M</mi><mi>S</mi><mn>2</mn></msubsup></mrow></mfrac></math>";
+Object.assign(refs,{"wohlfarth1958": ["E. P. Wohlfarth, J. Appl. Phys. 1958, 29, 595–596", "10.1063/1.1723232"], "dias1986": ["M. H. M. Dias, P. C. Lauterbur, Magn. Reson. Med. 1986, 3, 328–330", "10.1002/mrm.1910030218"], "roch1999": ["A. Roch, R. N. Muller, P. Gillis, J. Chem. Phys. 1999, 110, 5403–5411", "10.1063/1.478435"], "vuong2012": ["Q. L. Vuong et al., Adv. Healthc. Mater. 2012, 1, 502–512", "10.1002/adhm.201200078"], "mpi2015": ["L. M. Bauer et al., J. Phys. Chem. Lett. 2015, 6, 2509–2517", "10.1021/acs.jpclett.5b00610"], "mpi2021": ["C. Lu et al., Chem. Soc. Rev. 2021, 50, 8102–8146", "10.1039/d0cs00260g"], "gilchrist1957": ["R. K. Gilchrist et al., Ann. Surg. 1957, 146, 596–606", "10.1097/00000658-195710000-00007"], "jordan1993": ["A. Jordan et al., Int. J. Hyperthermia 1993, 9, 51–68", "10.3109/02656739309061478"], "atkinson1984": ["W. J. Atkinson, I. A. Brezovich, D. P. Chakraborty, IEEE Trans. Biomed. Eng. 1984, 31, 70–75", "10.1109/TBME.1984.325372"], "hergt2008": ["R. Hergt, S. Dutz, M. Röder, J. Phys. Condens. Matter 2008, 20, 385214", "10.1088/0953-8984/20/38/385214"], "kallumadil2009": ["M. Kallumadil et al., J. Magn. Magn. Mater. 2009, 321, 1509–1513", "10.1016/j.jmmm.2009.02.075"], "eddy2025": ["K. Pilpilidis et al., Revisiting the safety limit in magnetic nanoparticle hyperthermia, 2025", "https://pubmed.ncbi.nlm.nih.gov/39813796/"], "shen2013": ["S. Shen et al., Nanoscale 2013, 5, 8056–8066", "10.1039/c3nr01447a"], "shen2015": ["S. Shen et al., Biomaterials 2015, 39, 67–74", "10.1016/j.biomaterials.2014.10.064"], "sangnier2018": ["A. Plan Sangnier et al., J. Control. Release 2018, 279, 271–281", "10.1016/j.jconrel.2018.04.036"], "roper2007": ["D. K. Roper, W. Ahn, M. Hoepfner, J. Phys. Chem. C 2007, 111, 3636–3641", "10.1021/jp064341w"]});
+Object.assign(EQUATIONS,{"relaxivity":"<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>R</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><msub><mi>T</mi><mi>i</mi></msub></mfrac><mo>=</mo><msub><mi>R</mi><mrow><mi>i</mi><mo separator=\"true\">,</mo><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>r</mi><mi>i</mi></msub><msub><mi>c</mi><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">e</mi></mrow></msub><mo separator=\"true\">,</mo><mspace width=\"2em\"/><mi>i</mi><mo>∈</mo><mo stretchy=\"false\">{</mo><mn>1</mn><mo separator=\"true\">,</mo><mn>2</mn><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">R_i=\\frac{1}{T_i}=R_{i,0}+r_i c_{\\mathrm{Fe}},\\qquad i\\in\\{1,2\\}</annotation></semantics></math></span>","mpi":"<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>u</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><mi>N</mi><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\">Φ</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi mathvariant=\"normal\">d</mi><mi>t</mi></mrow></mfrac><mtext>  </mtext><mo>∝</mo><mtext>  </mtext><mo>−</mo><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi>M</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi mathvariant=\"normal\">d</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">u(t)=-N\\frac{\\mathrm d\\Phi(t)}{\\mathrm dt}\\;\\propto\\;-\\frac{\\mathrm d M(t)}{\\mathrm dt}</annotation></semantics></math></span>","heat":"<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>P</mi><mi>V</mi></msub><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi>f</mi><mrow><mo fence=\"true\">∣</mo><mo>∮</mo><mi>M</mi><mtext> </mtext><mi mathvariant=\"normal\">d</mi><mi>H</mi><mo fence=\"true\">∣</mo></mrow></mrow><annotation encoding=\"application/x-tex\">P_V=\\mu_0 f\\left|\\oint M\\,\\mathrm dH\\right|</annotation></semantics></math></span><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>P</mi><mi>V</mi></msub><mo>=</mo><mi>π</mi><msub><mi>μ</mi><mn>0</mn></msub><msup><mi>χ</mi><mrow><mo mathvariant=\"normal\">′</mo><mo mathvariant=\"normal\">′</mo></mrow></msup><mi>f</mi><msubsup><mi>H</mi><mn>0</mn><mn>2</mn></msubsup><mo separator=\"true\">,</mo><mspace width=\"2em\"/><msup><mi>χ</mi><mrow><mo mathvariant=\"normal\">′</mo><mo mathvariant=\"normal\">′</mo></mrow></msup><mo>=</mo><msub><mi>χ</mi><mn>0</mn></msub><mfrac><mrow><mn>2</mn><mi>π</mi><mi>f</mi><mi>τ</mi></mrow><mrow><mn>1</mn><mo>+</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>π</mi><mi>f</mi><mi>τ</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P_V=\\pi\\mu_0\\chi&#x27;&#x27; fH_0^2,\\qquad \\chi&#x27;&#x27;=\\chi_0\\frac{2\\pi f\\tau}{1+(2\\pi f\\tau)^2}</annotation></semantics></math></span><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">R</mi></mrow><mo>=</mo><mfrac><msub><mi>P</mi><mi>V</mi></msub><msub><mi>ρ</mi><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">g</mi></mrow></msub></mfrac><mo>≃</mo><mfrac><msub><mi>C</mi><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">t</mi></mrow></msub><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">g</mi></mrow></msub></mfrac><msub><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi>T</mi></mrow><mrow><mi mathvariant=\"normal\">d</mi><mi>t</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow><mrow><mi>t</mi><mo>→</mo><mn>0</mn></mrow></msub></mrow><annotation encoding=\"application/x-tex\">\\mathrm{SAR}=\\frac{P_V}{\\rho_{\\mathrm{mag}}}\\simeq\\frac{C_{\\mathrm{tot}}}{m_{\\mathrm{mag}}}\\left(\\frac{\\mathrm dT}{\\mathrm dt}\\right)_{t\\to0}</annotation></semantics></math></span><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">P</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">R</mi></mrow><mrow><mi>f</mi><msubsup><mi>H</mi><mn>0</mn><mn>2</mn></msubsup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\mathrm{ILP}=\\frac{\\mathrm{SAR}}{fH_0^2}</annotation></semantics></math></span><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub><mi>f</mi><mo>≲</mo><mn>4.85</mn><mo>×</mo><msup><mn>10</mn><mn>8</mn></msup><mtext>  </mtext><mrow><mi mathvariant=\"normal\">A</mi><mtext> </mtext><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mtext> </mtext><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><annotation encoding=\"application/x-tex\">H_0 f\\lesssim4.85\\times10^8\\;\\mathrm{A\\,m^{-1}\\,s^{-1}}</annotation></semantics></math></span>","photo":"<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>C</mi><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">t</mi></mrow></msub><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi>T</mi></mrow><mrow><mi mathvariant=\"normal\">d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>η</mi><msub><mi>P</mi><mrow><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">s</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">k</mi></mrow></msub><mo>−</mo><mi>G</mi><mo stretchy=\"false\">(</mo><mi>T</mi><mo>−</mo><msub><mi>T</mi><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">v</mi></mrow></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">C_{\\mathrm{tot}}\\frac{\\mathrm dT}{\\mathrm dt}=\\eta P_{\\mathrm{abs}}+P_{\\mathrm{blank}}-G(T-T_{\\mathrm{env}})</annotation></semantics></math></span>","rem":"<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">D</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">M</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mspace width=\"1em\"/><mtext>(Wohlfarth)</mtext></mrow><annotation encoding=\"application/x-tex\">m_{\\mathrm{DCD}}(H)=1-2m_{\\mathrm{IRM}}(H)\\quad\\text{(Wohlfarth)}</annotation></semantics></math></span><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>M</mi><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">D</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mo stretchy=\"false\">[</mo><mn>1</mn><mo>−</mo><mn>2</mn><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">M</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\Delta M(H)=m_{\\mathrm{DCD}}(H)-[1-2m_{\\mathrm{IRM}}(H)]</annotation></semantics></math></span>"});
 const D={
   "monodomain": {
     "a": 0,
     "kind": "domain",
-    "static": true,
+    "static": false,
     "n": [
       "Particule monodomaine",
       "Single-domain particle"
@@ -20,19 +24,32 @@ const D={
     ],
     "steps": [
       [
+        "Domaines",
+        "Domains",
+        "Une paroi sépare deux domaines. Chaque domaine possède une direction d’aimantation.",
+        "A wall separates two domains. Each domain has a magnetization direction."
+      ],
+      [
+        "Déplacement de paroi",
+        "Domain-wall displacement",
+        "Le déplacement de la paroi modifie les volumes des domaines.",
+        "Wall displacement changes the domain volumes."
+      ],
+      [
         "Monodomaine",
         "Single domain",
-        "L’ordre magnétique reste cohérent à l’échelle du cœur. Monodomaine ne signifie pas nécessairement bloqué : son moment peut fluctuer thermiquement.",
-        "Magnetic order remains coherent across the core. Single-domain does not necessarily mean blocked: its moment can fluctuate thermally."
+        "Une particule monodomaine ne contient pas de paroi interne.",
+        "A single-domain particle has no internal domain wall."
       ]
     ],
     "refs": [
-      "sw",
-      "brown"
+      "frenkel",
+      "kittel",
+      "critical2019"
     ],
     "limits": [
-      "Schéma qualitatif des domaines. Les flèches représentent des directions locales d’aimantation, pas les sous-réseaux atomiques. La taille critique dépend du matériau, de la forme et des énergies en compétition.",
-      "Qualitative domain diagram. Arrows represent local magnetization directions, not atomic sublattices. Critical size depends on material, shape and competing energies."
+      "La taille critique dépend du matériau et de la géométrie. L’expression de dc est une estimation simplifiée. Elle ne fixe pas une taille universelle pour les IONPs.",
+      "Critical size depends on material and geometry. The dc expression is a simplified estimate. It does not define a universal IONP size."
     ]
   },
   "macrospin": {
@@ -44,9 +61,8 @@ const D={
     "kind": "spin",
     "src": "hdr-macrospin",
     "refs": [
-      "sw",
-      "brown",
-      "size"
+      "frenkel",
+      "sw"
     ],
     "lead": [
       "Les moments internes tournent collectivement. Leur somme se représente par un seul moment magnétique.",
@@ -73,8 +89,8 @@ const D={
       ]
     ],
     "limits": [
-      "Le schéma adapte les diapositives 6–7 et 17–18 de l’HDR. La sphère est redessinée en SVG. Deux sous-réseaux opposés représentent le ferrimagnétisme. Leurs positions ne décrivent pas la structure cristalline.",
-      "The diagram adapts HDR slides 6–7 and 17–18. The sphere is redrawn in SVG. Two opposite sublattices represent ferrimagnetism. Their positions do not describe the crystal structure."
+      "Approximation de rotation cohérente. Les deux contributions ferrimagnétiques restent opposées. Schéma adapté des figures fournies par Lénaïc Lartigue.",
+      "Coherent-rotation approximation. The two ferrimagnetic contributions remain antiparallel. Diagram adapted from figures supplied by Lénaïc Lartigue."
     ]
   },
   "swangle": {
@@ -89,14 +105,13 @@ const D={
   "anisotropy": {
     "a": 0,
     "n": [
-      "Axes facile et difficile · K et V",
-      "Easy and hard axes · K and V"
+      "Axes facile et difficile",
+      "Easy and hard axes"
     ],
     "kind": "anisotropy",
     "src": "02-anisotropie",
     "refs": [
-      "sw",
-      "brown"
+      "sw"
     ],
     "lead": [
       "L’axe facile correspond aux minima du potentiel. Une direction perpendiculaire correspond à son maximum dans le modèle uniaxial à champ nul.",
@@ -118,13 +133,13 @@ const D={
       [
         "Autre minimum",
         "Other minimum",
-        "La température et le temps d’observation déterminent si des retournements sont détectés. Le blocage n’est pas une transition vers un ordre ferromagnétique.",
-        "Temperature and observation time determine whether reversals are detected. Blocking is not a transition to ferromagnetic order."
+        "Le moment atteint l’autre direction de l’axe facile. Son énergie retrouve un minimum.",
+        "The moment reaches the other easy-axis direction. Its energy returns to a minimum."
       ]
     ],
     "limits": [
-      "Le modèle suppose une anisotropie uniaxiale et un champ nul. La particule est sphérique : V = πd³/6. Le calcul omet l’anisotropie cubique détaillée et le désordre de surface.",
-      "The model assumes uniaxial anisotropy and zero field. The particle is spherical: V = πd³/6. The calculation omits detailed cubic anisotropy and surface disorder."
+      "Anisotropie uniaxiale à champ nul. Le potentiel est normalisé par KV. La hauteur affichée ne dépend donc pas de K ou de V.",
+      "Uniaxial anisotropy at zero field. The potential is normalized by KV. Its displayed height therefore does not depend on K or V."
     ]
   },
   "relax": {
@@ -136,18 +151,21 @@ const D={
     "kind": "relax",
     "src": "04-relaxations",
     "refs": [
-      "brown"
+      "neel",
+      "bean",
+      "brown",
+      "heat"
     ],
     "lead": [
-      "Les mécanismes de Néel et de Brown réorientent le moment d’une nanoparticule.",
-      "Néel and Brownian mechanisms reorient a nanoparticle moment."
+      "Le moment peut se réorienter dans la particule ou avec elle.",
+      "The moment can reorient within the particle or with it."
     ],
     "steps": [
       [
         "Néel",
         "Néel",
-        "Le moment se retourne dans la particule. L’orientation mécanique de la particule reste fixe.",
-        "The moment reverses inside the particle. The particle’s mechanical orientation remains fixed."
+        "Le moment se retourne dans la particule. L’orientation mécanique de la particule reste fixe. Si ces retournements sont rapides devant le temps d’observation, la particule est dans le régime superparamagnétique.",
+        "The moment reverses inside the particle. The particle’s mechanical orientation remains fixed. If these reversals are fast relative to the observation time, the particle is in the superparamagnetic regime."
       ],
       [
         "Brown",
@@ -163,8 +181,8 @@ const D={
       ]
     ],
     "limits": [
-      "Le schéma distingue deux mécanismes limites. L’animation est ralentie. Sa vitesse ne représente pas le temps physique calculé. L’expression de τN suppose une barrière élevée et un champ nul. Vh inclut le revêtement. Le signe positif de l’exponentielle corrige le schéma source.",
-      "The diagram distinguishes two limiting mechanisms. The animation is slowed down. Its speed does not represent the calculated physical time. The τN expression assumes a high barrier and zero field. Vh includes the coating. The positive exponential corrects the source diagram."
+      "Deux mécanismes limites sont représentés séparément. Les mouvements sont ralentis pour les observer. τN décrit le retournement interne ; τB décrit la rotation mécanique. Vh comprend le revêtement. La formule de Néel suppose une barrière élevée et un champ nul.",
+      "Two limiting mechanisms are shown separately. Motion is slowed for observation. τN describes internal reversal; τB describes mechanical rotation. Vh includes the coating. The Néel formula assumes a high barrier and zero field."
     ]
   },
   "zfc": {
@@ -194,87 +212,6 @@ const D={
     "kind": "curves",
     "mode": "initial"
   },
-  "lamer": {
-    "a": 0,
-    "n": [
-      "Nucléation et croissance",
-      "Nucleation and growth"
-    ],
-    "kind": "lamer",
-    "src": "01-lamer",
-    "refs": [
-      "lamer"
-    ],
-    "lead": [
-      "Le modèle de LaMer distingue la nucléation et la croissance. Son application dépend du mécanisme de synthèse.",
-      "The LaMer model distinguishes nucleation and growth. Its applicability depends on the synthesis mechanism."
-    ],
-    "steps": [
-      [
-        "Accumulation",
-        "Accumulation",
-        "La concentration en espèces disponibles augmente avant l’apparition de nouveaux germes.",
-        "The concentration of available species rises before new nuclei appear."
-      ],
-      [
-        "Nucléation",
-        "Nucleation",
-        "Une sursaturation suffisante permet une bouffée de nucléation. La consommation des espèces réduit ensuite leur concentration.",
-        "Sufficient supersaturation allows a nucleation burst. Consumption then reduces species concentration."
-      ],
-      [
-        "Croissance",
-        "Growth",
-        "Les germes existants croissent. La formation de nouveaux germes devient négligeable dans ce régime.",
-        "Existing nuclei grow. New nucleation becomes negligible in this regime."
-      ]
-    ],
-    "limits": [
-      "La courbe reprend le principe du schéma de cours. Elle décrit une évolution qualitative. Elle ne donne ni vitesse de réaction ni taille de particule. Certaines synthèses suivent d’autres mécanismes.",
-      "The curve follows the principle of the course diagram. It describes a qualitative evolution. It gives neither reaction rates nor particle sizes. Some syntheses follow other mechanisms."
-    ]
-  },
-  "assembly": {
-    "a": 1,
-    "n": [
-      "Nanoprécipitation flash",
-      "Flash nanoprecipitation"
-    ],
-    "kind": "guided",
-    "src": "cij",
-    "refs": [
-      "han",
-      "prudhomme"
-    ],
-    "lead": [
-      "Deux flux se rencontrent dans le mélangeur. Le mélange rapide déclenche la nanoprécipitation.",
-      "Two streams meet in the mixer. Rapid mixing triggers nanoprecipitation."
-    ],
-    "steps": [
-      [
-        "Deux phases",
-        "Two phases",
-        "Une phase organique transporte le composé organique et, selon la formulation, les IONPs. L’autre contient le polymère en phase aqueuse.",
-        "An organic phase carries the organic compound and, depending on formulation, IONPs. The other contains the polymer in water."
-      ],
-      [
-        "Mélange rapide",
-        "Rapid mixing",
-        "La rencontre des flux modifie rapidement la qualité du solvant. Les temps de mélange, de précipitation et de stabilisation sont couplés.",
-        "Stream impingement rapidly changes solvent quality. Mixing, precipitation and stabilization times are coupled."
-      ],
-      [
-        "Assemblages",
-        "Assemblies",
-        "Le polymère contribue à stabiliser les objets formés. Le contenu, la taille et la structure doivent être caractérisés expérimentalement.",
-        "The polymer helps stabilize the resulting objects. Loading, size and structure require experimental characterization."
-      ]
-    ],
-    "limits": [
-      "Le dessin reprend le montage CIJ du site V4.0. Les repères animés indiquent l’ordre du procédé. Il est adapté de Han et al. et de la méthode de Johnson et Prud’homme. Il ne prédit ni trajectoires ni cinétique. Les IONPs appartiennent à notre formulation. Elles ne figurent pas dans celle de Han.",
-      "The diagram retains the V4.0 CIJ setup. It adapts Han et al.’s mixer and Johnson and Prud’homme’s method. It predicts neither trajectories nor kinetics. IONPs belong to our formulation. They are absent from Han’s formulation."
-    ]
-  },
   "interactions": {
     "a": 1,
     "n": [
@@ -289,39 +226,52 @@ const D={
       "brown"
     ],
     "lead": [
-      "La distance modifie le couplage entre les moments fluctuants.",
-      "Distance changes coupling between fluctuating moments."
+      "Rapprochez les particules. Le couplage dipolaire augmente. Au contact, ce modèle suppose un échange ferromagnétique.",
+      "Bring the particles closer. Dipolar coupling increases. At contact, this model assumes ferromagnetic exchange."
     ],
     "steps": [
       [
-        "Fluctuations et couplage",
-        "Fluctuations and coupling",
-        "Réduisez la distance entre les surfaces. Activez séparément un échange ferromagnétique au contact.",
-        "Reduce the surface gap. Separately enable ferromagnetic exchange at contact."
+        "Distance et corrélations",
+        "Distance and correlations",
+        "Les moments fluctuent en continu. Le voisin modifie leur énergie d’orientation. Au contact direct des cœurs, un échange ferromagnétique est imposé ici.",
+        "The moments fluctuate continuously. The neighbour changes their orientation energy. Ferromagnetic exchange is imposed here at direct core contact."
       ]
     ],
     "limits": [
-      "Modèle stochastique plan, sans anisotropie, à 300 K. Le temps est réduit. Le couplage peut modifier la relaxation ; aucun ralentissement universel n’est imposé. Une distance inférieure à 2 nm ne suffit pas à établir un échange.",
-      "Planar stochastic model without anisotropy, at 300 K. Time is reduced. Coupling can change relaxation; no universal slowing is imposed. A gap below 2 nm does not establish exchange."
-    ]
+      "Modèle plan, corps fixes, sans anisotropie, à 300 K. Temps réduit. Le contact suppose une interface magnétique sans couche isolante. Il ne constitue pas une preuve d’échange dans un échantillon réel.",
+      "Planar model, fixed bodies, no anisotropy, at 300 K. Reduced time. Contact assumes a magnetic interface without an insulating layer. It does not establish exchange in a real sample."
+    ],
+    "auto": true,
+    "static": true
   },
   "rem": {
     "a": 1,
+    "kind": "delta",
+    "static": true,
     "n": [
-      "IRM / DCD / ΔM",
-      "IRM / DCD / ΔM"
+      "IRM / DCD : signe de ΔM",
+      "IRM / DCD: sign of ΔM"
     ],
-    "kind": "curves",
-    "mode": "rem"
-  },
-  "time": {
-    "a": 1,
-    "n": [
-      "IRM(t) / DCD(t)",
-      "IRM(t) / DCD(t)"
+    "lead": [
+      "ΔM compare deux courbes de rémanence à une référence sans interactions.",
+      "ΔM compares two remanence curves with a noninteracting reference."
     ],
-    "kind": "curves",
-    "mode": "time"
+    "steps": [
+      [
+        "Interpréter le signe",
+        "Interpreting the sign",
+        "ΔM positif indique un écart favorisant l’aimantation. ΔM négatif indique un écart démagnétisant. Le signe seul ne permet pas d’identifier un couplage d’échange ou dipolaire.",
+        "Positive ΔM indicates a magnetizing deviation. Negative ΔM indicates a demagnetizing deviation. The sign alone does not identify exchange or dipolar coupling."
+      ]
+    ],
+    "refs": [
+      "wohlfarth1958",
+      "multi"
+    ],
+    "limits": [
+      "Courbes pédagogiques construites, pas un ajustement microscopique. mIRM et mDCD sont normalisés par la rémanence à saturation. La relation de Wohlfarth suppose des particules uniaxiales sans interactions, un protocole adapté et une activation thermique négligeable.",
+      "Constructed teaching curves, not a microscopic fit. mIRM and mDCD are normalized by saturation remanence. The Wohlfarth relation assumes noninteracting uniaxial particles, an appropriate protocol and negligible thermal activation."
+    ]
   },
   "forc": {
     "a": 1,
@@ -492,168 +442,146 @@ const D={
   },
   "relaxivity": {
     "a": 2,
+    "kind": "reading",
+    "static": true,
     "n": [
       "Eau, IONPs et relaxivité",
       "Water, IONPs and relaxivity"
     ],
-    "kind": "diffusion",
-    "src": "review-fig3",
+    "lead": [
+      "Les IONPs modifient la relaxation des protons de l’eau.",
+      "IONPs modify water-proton relaxation."
+    ],
+    "body": [
+      "<div class=\"text-module\"><h3>Origine du contraste</h3><p>Les moments des IONPs créent des champs locaux. Le mouvement de l’eau et la dynamique magnétique modulent les champs ressentis par les protons. Ces mécanismes modifient T₁ et T₂.</p><h3>Mesurer les relaxivités</h3><p>La pente de 1/T₁ ou de 1/T₂ en fonction de la concentration en fer définit r₁ ou r₂. Il faut préciser le champ B₀, la température et le milieu.</p><h3>Structure et propriétés</h3><p>La taille du cœur, l’aimantation, le revêtement et l’agrégation influencent la relaxation. Un rapport r₂/r₁ élevé ne suffit pas, seul, à prédire la qualité d’une image.</p></div>",
+      "<div class=\"text-module\"><h3>Contrast mechanism</h3><p>IONP moments create local fields. Water motion and magnetic dynamics modulate the fields experienced by protons. These mechanisms modify T₁ and T₂.</p><h3>Measuring relaxivity</h3><p>The slope of 1/T₁ or 1/T₂ versus iron concentration defines r₁ or r₂. Report B₀, temperature and medium.</p><h3>Structure and properties</h3><p>Core size, magnetization, coating and aggregation influence relaxation. A high r₂/r₁ ratio alone does not predict image quality.</p></div>"
+    ],
+    "steps": [],
     "refs": [
+      "dias1986",
+      "roch1999",
+      "vuong2012",
       "mri"
     ],
-    "lead": [
-      "L’eau explore le champ magnétique local. Ce champ dépend des nanoparticules et de leur organisation.",
-      "Water probes the local magnetic field. This field depends on nanoparticles and their organization."
-    ],
-    "steps": [
-      [
-        "Eau et surface",
-        "Water and surface",
-        "Les fluctuations des interactions entre protons et moments magnétiques contribuent à la relaxation. L’accès et les échanges de l’eau près de la surface comptent.",
-        "Fluctuating interactions between protons and magnetic moments contribute to relaxation. Water access and exchange near the surface matter."
-      ],
-      [
-        "Moyennage dynamique",
-        "Motional averaging",
-        "La diffusion rapide de l’eau échantillonne les variations locales de champ. Elle contribue au moyennage du déphasage. Le volume vert représente la région explorée.",
-        "Rapid water diffusion samples local field variations. It contributes to averaging dephasing. The green volume represents the explored region."
-      ],
-      [
-        "Déphasage statique",
-        "Static dephasing",
-        "Des objets plus grands et fortement aimantés peuvent conduire à un autre régime de déphasage. La relaxivité ne croît pas indéfiniment avec la taille.",
-        "Larger, strongly magnetized objects may lead to another dephasing regime. Relaxivity does not increase indefinitely with size."
-      ]
-    ],
     "limits": [
-      "Le schéma adapte la figure 3 de la revue en SVG. Il conserve les deux panneaux et les deux régimes de déphasage. Les légendes sont traduites. Le mouvement de l’eau est illustratif. Il ne calcule ni trajectoire brownienne ni relaxivité r₂. La figure source provient de Lartigue, Coupeau et Lesault (Nanomaterials, 2020). Sa licence est CC BY 4.0.",
-      "The SVG diagram adapts Figure 3 of the review. It retains both panels and both dephasing regimes. Labels are translated. Water motion is illustrative. It calculates neither Brownian trajectories nor r₂ relaxivity. The source figure comes from Lartigue, Coupeau and Lesault (Nanomaterials, 2020). Its licence is CC BY 4.0."
-    ],
-    "static": true
+      "Rᵢ = 1/Tᵢ ; i = 1 ou 2. cFe est en mmol/L ; rᵢ en L·mmol⁻¹·s⁻¹. La relation linéaire s’applique dans le domaine de concentration validé expérimentalement.",
+      "Rᵢ = 1/Tᵢ; i = 1 or 2. cFe is in mmol/L; rᵢ in L·mmol⁻¹·s⁻¹. The linear relation applies over an experimentally validated concentration range."
+    ]
   },
   "mpi": {
     "a": 2,
+    "kind": "reading",
+    "static": true,
     "n": [
-      "Imagerie MPI",
-      "MPI imaging"
-    ],
-    "kind": "mpi",
-    "refs": [
-      "mpi"
+      "Imagerie par particules magnétiques",
+      "Magnetic particle imaging"
     ],
     "lead": [
-      "La MPI détecte la réponse non linéaire d’un traceur magnétique.",
-      "MPI detects the nonlinear response of a magnetic tracer."
+      "Le MPI détecte directement la réponse magnétique des traceurs.",
+      "MPI directly detects the magnetic response of tracers."
     ],
-    "steps": [
-      [
-        "Champ de sélection",
-        "Selection field",
-        "Un gradient crée une région de champ faible. Loin de celle-ci, les moments sont proches de la saturation.",
-        "A gradient creates a low-field region. Far from it, moments approach saturation."
-      ],
-      [
-        "Balayage",
-        "Scanning",
-        "Le déplacement de cette région fait varier fortement l’aimantation des particules qui la traversent.",
-        "Moving this region strongly changes magnetization of particles crossing it."
-      ],
-      [
-        "Détection",
-        "Detection",
-        "Une bobine détecte une tension liée à dM/dt. La reconstruction transforme les signaux en image du traceur.",
-        "A coil detects a voltage related to dM/dt. Reconstruction converts the signals into a tracer image."
-      ]
+    "body": [
+      "<div class=\"text-module\"><h3>Localiser le signal</h3><p>Un gradient crée une région de champ nul. Un champ d’excitation déplace cette région. Les particules proches répondent fortement ; les particules éloignées sont proches de la saturation.</p><h3>Réponse non linéaire</h3><p>La variation de l’aimantation induit une tension dans une bobine de réception. La réponse non linéaire contient des harmoniques. La reconstruction utilise la sensibilité spatiale et la réponse du traceur.</p><h3>Rôle du traceur</h3><p>Le moment magnétique, l’anisotropie et les temps de relaxation modifient le signal et la résolution. Le signal de particules présente peu de fond endogène ; le bruit instrumental subsiste.</p></div>",
+      "<div class=\"text-module\"><h3>Localizing the signal</h3><p>A gradient creates a field-free region. A drive field moves this region. Nearby particles respond strongly; distant particles approach saturation.</p><h3>Nonlinear response</h3><p>Changing magnetization induces voltage in a receive coil. The nonlinear response contains harmonics. Reconstruction uses spatial sensitivity and tracer response.</p><h3>Tracer properties</h3><p>Magnetic moment, anisotropy and relaxation times affect signal and resolution. Particle signals have little endogenous background; instrumental noise remains.</p></div>"
+    ],
+    "steps": [],
+    "refs": [
+      "mpi",
+      "mpi2015",
+      "mpi2021"
     ],
     "limits": [
-      "Le modèle décrit le principe en une dimension. Le pic représente une sensibilité locale indicative. Il ne représente ni tension mesurée ni image reconstruite. La relaxation, le gradient et le traceur déterminent la résolution réelle.",
-      "The model describes the principle in one dimension. The peak represents indicative local sensitivity. It represents neither measured voltage nor a reconstructed image. Relaxation, gradient and tracer determine actual resolution."
+      "u : tension reçue ; Φ : flux magnétique ; N : nombre de spires. La proportionnalité à dM/dt suppose une géométrie de détection fixée. Elle ne décrit pas à elle seule la reconstruction spatiale.",
+      "u: received voltage; Φ: magnetic flux; N: coil turns. Proportionality to dM/dt assumes fixed detection geometry. It does not by itself describe spatial reconstruction."
     ]
   },
   "heat": {
     "a": 2,
+    "kind": "reading",
+    "static": true,
     "n": [
       "Hyperthermie magnétique",
       "Magnetic hyperthermia"
     ],
-    "kind": "heat",
-    "src": "10-hyperthermie",
-    "refs": [
-      "heat",
-      "multi"
-    ],
     "lead": [
-      "Un champ alternatif peut provoquer une dissipation d’énergie dans les nanoparticules.",
-      "An alternating field can cause energy dissipation in nanoparticles."
+      "Un champ alternatif transfère de l’énergie aux moments magnétiques. Une partie est dissipée en chaleur.",
+      "An alternating field transfers energy to magnetic moments. Some is dissipated as heat."
     ],
-    "steps": [
-      [
-        "Excitation",
-        "Excitation",
-        "Le champ appliqué varie périodiquement. La réponse dépend notamment de l’anisotropie, de la taille, de la mobilité et des interactions.",
-        "The applied field varies periodically. Response depends on anisotropy, size, mobility and interactions."
-      ],
-      [
-        "Retard",
-        "Lag",
-        "Une composante de l’aimantation est déphasée par rapport au champ.",
-        "A component of magnetization lags behind the field."
-      ],
-      [
-        "Dissipation",
-        "Dissipation",
-        "L’aire du cycle dynamique correspond à l’énergie dissipée par période. Ce calcul exige une normalisation et des unités cohérentes.",
-        "The dynamic-loop area corresponds to energy dissipated per period. This calculation requires consistent normalization and units."
-      ]
+    "body": [
+      "<div class=\"text-module\"><h3>Dissipation</h3><p>L’aire du cycle dynamique M(H) mesure l’énergie dissipée par cycle et par volume magnétique. La fréquence convertit cette énergie en puissance.</p><h3>Réponse linéaire de Rosensweig</h3><p>À faible excitation, χ″ décrit la composante dissipative. Un modèle à temps de relaxation unique relie χ″ à χ₀ et à 2πfτ. Cette approximation ne couvre pas tous les cycles non linéaires ni les assemblages fortement couplés.</p><h3>Comparer les mesures</h3><p>Le SAR rapporte la puissance à une masse explicitement définie : fer ou oxyde. En calorimétrie, il dépend de la capacité thermique totale et de la pente initiale de température. L’ILP n’est comparable que dans les conditions où la réponse linéaire est appropriée.</p><h3>Amplitude et fréquence : critère de Brezovich</h3><p>Le repère historique H₀f ≲ 4,85 × 10⁸ A·m⁻¹·s⁻¹ provient de conditions d’exposition particulières. Des critères moins restrictifs, autour de 5 × 10⁹, ont été proposés pour d’autres géométries. Aucun de ces produits ne garantit à lui seul la tolérance : volume exposé, durée et refroidissement comptent aussi.</p></div>",
+      "<div class=\"text-module\"><h3>Dissipation</h3><p>The area of the dynamic M(H) loop gives energy loss per cycle and magnetic volume. Frequency converts this energy into power.</p><h3>Rosensweig linear response</h3><p>At low excitation, χ″ describes the dissipative component. A single-relaxation-time model relates χ″ to χ₀ and 2πfτ. This approximation does not cover all nonlinear loops or strongly coupled assemblies.</p><h3>Comparing measurements</h3><p>SAR divides power by an explicitly defined mass: iron or oxide. Calorimetry uses total heat capacity and the initial temperature slope. ILP is comparable only when linear-response conditions are appropriate.</p><h3>Amplitude and frequency: the Brezovich criterion</h3><p>The historical guide H₀f ≲ 4.85 × 10⁸ A·m⁻¹·s⁻¹ comes from specific exposure conditions. Less restrictive criteria near 5 × 10⁹ have been proposed for other geometries. Neither product alone guarantees tolerance: exposed volume, duration and cooling also matter.</p></div>"
+    ],
+    "steps": [],
+    "refs": [
+      "gilchrist1957",
+      "jordan1993",
+      "heat",
+      "atkinson1984",
+      "hergt2008",
+      "kallumadil2009",
+      "eddy2025"
     ],
     "limits": [
-      "L’ellipse illustre une réponse linéaire avec un déphasage fixé. Elle ne fournit ni SAR expérimental ni température tissulaire. Elle ne définit pas de protocole de traitement.",
-      "The ellipse illustrates a linear response with a fixed phase lag. It provides neither experimental SAR nor tissue temperature. It defines no treatment protocol."
+      "H₀ est l’amplitude crête en A/m, f la fréquence en Hz, τ le temps de relaxation. M est une aimantation volumique. Pᵥ est en W/m³ de phase magnétique ; ρmag en kg/m³ donne un SAR en W/kg de phase magnétique. Ctot est la capacité thermique totale (J/K) et mmag la masse de référence (kg). Les pertes thermiques doivent être prises en compte.",
+      "H₀ is peak amplitude in A/m, f is frequency in Hz, τ is relaxation time. M is volume magnetization. Pᵥ is in W/m³ of magnetic phase; ρmag in kg/m³ gives SAR in W/kg of magnetic phase. Ctot is total heat capacity (J/K) and mmag is reference mass (kg). Heat losses must be accounted for."
     ]
   },
   "photo": {
     "a": 2,
+    "kind": "reading",
+    "static": true,
     "n": [
-      "Photothermie",
+      "Conversion photothermique",
       "Photothermal conversion"
     ],
-    "kind": "guided",
-    "src": "09-photothermie",
-    "refs": [],
     "lead": [
-      "L’absorption de lumière peut produire de la chaleur.",
-      "Light absorption can produce heat."
+      "La lumière absorbée peut être dissipée sous forme de chaleur.",
+      "Absorbed light can be dissipated as heat."
     ],
-    "steps": [
-      [
-        "Absorption",
-        "Absorption",
-        "L’absorption dépend de la composition, de la structure et de la longueur d’onde d’excitation.",
-        "Absorption depends on composition, structure and excitation wavelength."
-      ],
-      [
-        "Conversion",
-        "Conversion",
-        "Une partie de l’énergie absorbée est dissipée par des voies non radiatives.",
-        "Part of the absorbed energy dissipates through nonradiative pathways."
-      ],
-      [
-        "Chaleur",
-        "Heat",
-        "La chaleur se transfère au milieu environnant. La photothermie se distingue de la photosensibilisation et de la production d’espèces réactives.",
-        "Heat transfers to the surroundings. Photothermal conversion differs from photosensitization and reactive-species generation."
-      ]
+    "body": [
+      "<div class=\"text-module\"><h3>Absorption et dissipation</h3><p>Les voies de relaxation non radiatives transfèrent l’énergie absorbée au milieu. La photothermie se distingue de la photodynamique, qui repose sur des espèces réactives.</p><h3>IONPs et assemblages</h3><p>L’absorption dépend de la composition, de la longueur d’onde et de l’organisation des particules. Des études sur les IONPs et leurs amas montrent une conversion dans le proche infrarouge. Le mécanisme plasmonique des nanoparticules d’or ne doit pas être transposé automatiquement aux IONPs.</p><h3>Bilan thermique</h3><p>La température résulte de la puissance absorbée et des pertes. Un blanc permet d’estimer le chauffage du solvant et du contenant. Le rendement dépend du bilan thermique et de la mesure de l’absorption.</p></div>",
+      "<div class=\"text-module\"><h3>Absorption and dissipation</h3><p>Nonradiative relaxation pathways transfer absorbed energy to the surroundings. Photothermal conversion differs from photodynamic action, which involves reactive species.</p><h3>IONPs and assemblies</h3><p>Absorption depends on composition, wavelength and particle organization. Studies of IONPs and clusters show near-infrared conversion. Gold-nanoparticle plasmonic mechanisms should not automatically be assigned to IONPs.</p><h3>Heat balance</h3><p>Temperature reflects absorbed power and heat losses. A blank estimates solvent and container heating. Efficiency depends on the heat balance and absorption measurement.</p></div>"
+    ],
+    "steps": [],
+    "refs": [
+      "shen2013",
+      "shen2015",
+      "sangnier2018",
+      "roper2007"
     ],
     "limits": [
-      "Le schéma représente l’absorption et la dissipation d’énergie. Il n’attribue pas aux IONPs un mécanisme plasmonique propre à l’or. Il ne prédit ni rendement photothermique ni température.",
-      "The diagram represents energy absorption and dissipation. It does not attribute a gold-specific plasmonic mechanism to IONPs. It predicts neither photothermal efficiency nor temperature."
+      "Ctot : capacité thermique totale ; η : rendement ; Pabs : puissance optique absorbée par les particules ; Pblanc : chauffage de fond ; G : conductance thermique effective ; Tenv : température du milieu. Modèle global à température uniforme, sans prédiction de température cellulaire locale.",
+      "Ctot: total heat capacity; η: efficiency; Pabs: optical power absorbed by particles; Pblank: background heating; G: effective thermal conductance; Tenv: ambient temperature. Lumped uniform-temperature model, not a prediction of local cellular temperature."
+    ]
+  },
+  "industry": {
+    "a": 2,
+    "kind": "reading",
+    "static": true,
+    "n": [
+      "Développements industriels",
+      "Industrial developments"
+    ],
+    "lead": [
+      "Des exemples relient les phénomènes aux produits et instruments.",
+      "Examples connect physical mechanisms with products and instruments."
+    ],
+    "body": [
+      "<div class=\"text-module\"><h3>IRM · Azurity / Ferabright</h3><p><a href=\"https://www.ferabright.com/\" target=\"_blank\" rel=\"noopener\">Ferabright</a> : produit à base de ferumoxytol. Consulter les indications américaines du fabricant.</p><h3>MPI · Magnetic Insight</h3><p><a href=\"https://www.magneticinsight.com/\" target=\"_blank\" rel=\"noopener\">Magnetic Insight</a> : instrumentation d’imagerie par particules magnétiques pour la recherche.</p><h3>Hyperthermie · Nanotherm Therapeutics</h3><p><a href=\"https://www.nanothermtx.com/\" target=\"_blank\" rel=\"noopener\">Nanotherm Therapeutics</a> : développement d’un dispositif expérimental d’hyperthermie magnétique.</p><h3>Ganglion sentinelle · Endomag</h3><p><a href=\"https://www.endomag.com/en/products/magtrace/\" target=\"_blank\" rel=\"noopener\">Magtrace</a> : traceur magnétique pour le repérage ganglionnaire.</p></div>",
+      "<div class=\"text-module\"><h3>MRI · Azurity / Ferabright</h3><p><a href=\"https://www.ferabright.com/\" target=\"_blank\" rel=\"noopener\">Ferabright</a>: ferumoxytol product. See the manufacturer’s US indications.</p><h3>MPI · Magnetic Insight</h3><p><a href=\"https://www.magneticinsight.com/\" target=\"_blank\" rel=\"noopener\">Magnetic Insight</a>: magnetic particle imaging research instrumentation.</p><h3>Hyperthermia · Nanotherm Therapeutics</h3><p><a href=\"https://www.nanothermtx.com/\" target=\"_blank\" rel=\"noopener\">Nanotherm Therapeutics</a>: development of an investigational magnetic-hyperthermia device.</p><h3>Sentinel node · Endomag</h3><p><a href=\"https://www.endomag.com/en/products/magtrace/\" target=\"_blank\" rel=\"noopener\">Magtrace</a>: magnetic tracer for lymph-node detection.</p></div>"
+    ],
+    "steps": [],
+    "refs": [],
+    "limits": [
+      "Exemples non exhaustifs. Les sites des fabricants précisent le statut, les indications et les pays concernés. Ces liens n’impliquent pas un partenariat avec NanoBioMat.",
+      "Non-exhaustive examples. Manufacturer websites specify status, indications and applicable countries. These links do not imply a NanoBioMat partnership."
     ]
   }
 };
 function range(id,fr,en,min,max,val,step,unit){if(values[id]===undefined)values[id]=val;return `<label>${T(fr,en)}<input id="${id}" type="range" min="${min}" max="${max}" step="${step}" value="${values[id]}"><output>${values[id]} ${unit}</output></label>`;}
-function controls(m){let s='';if(['anisotropy','relax'].includes(m.kind))s=range('K','Anisotropie K','Anisotropy K',5,40,20,1,'kJ/m³')+range('d','Diamètre du cœur','Core diameter',6,25,14,1,'nm')+range('T','Température','Temperature',100,350,300,5,'K');if(m.kind==='relax')s+=range('shell','Épaisseur hydrodynamique','Hydrodynamic shell',0,20,4,1,'nm')+range('eta','Viscosité','Viscosity',.5,10,1,.5,'mPa·s')+`<label><input type="checkbox" id="fixed" ${values.fixed?'checked':''}> ${T('Particule immobilisée','Immobilized particle')}</label>`;if(m.kind==='dipole')s=range('gap','Distance entre surfaces','Surface gap',0,60,35,1,'nm')+`<label><input id="exchange" type="checkbox" ${values.exchange?'checked':''}>${T('Contact magnétique : échange ferromagnétique imposé','Magnetic contact: imposed ferromagnetic exchange')}</label>`;if(m.kind==='mri')s=range('T1','T₁','T₁',400,2000,1000,100,'ms')+range('T2','T₂','T₂',40,400,180,10,'ms');if(m.kind==='corona')s+=`<label>${T('Scénario','Scenario')}<select id="coronaMode"><option value="dynamic">${T('Couronne dynamique','Dynamic corona')}</option><option value="vroman">${T('Effet Vroman · scénario possible','Vroman effect · possible scenario')}</option></select></label>`;$('controls').innerHTML=s;if($('coronaMode')){$('coronaMode').value=values.coronaMode||'dynamic';$('coronaMode').onchange=()=>{values.coronaMode=$('coronaMode').value;draw();};}$('controls').querySelectorAll('input').forEach(el=>el.oninput=()=>{values[el.id]=el.type==='checkbox'?el.checked:+el.value;if(el.id==='exchange'&&el.checked){values.gap=0;$('gap').value=0;$('gap').nextElementSibling.textContent='0 nm';}if(el.id==='gap'&&values.gap>0){values.exchange=false;$('exchange').checked=false;}if(el.type==='range')el.nextElementSibling.textContent=el.value+' '+({gap:'nm',K:'kJ/m³',d:'nm',T:'K',shell:'nm',eta:'mPa·s',angle:'°',T1:'ms',T2:'ms'}[el.id]||'');draw();});}
+function controls(m){let s='';if(m.kind==='relax')s=`<label><input type="checkbox" id="fixed" ${values.fixed?'checked':''}> ${T('Particule immobilisée','Immobilized particle')}</label>`;if(m.kind==='dipole')s=range('gap','Distance entre surfaces','Surface gap',0,60,35,.1,'nm');if(m.kind==='delta')s=`<label>${T('Écart à la référence','Deviation from the reference')}<select id="deltaSign"><option value="0">${T('Sans écart : ΔM = 0','No deviation: ΔM = 0')}</option><option value="1">${T('Favorisant l’aimantation : ΔM > 0','Magnetizing: ΔM > 0')}</option><option value="-1">${T('Démagnétisant : ΔM < 0','Demagnetizing: ΔM < 0')}</option></select></label>`;if(m.kind==='mri')s=range('T1','T₁','T₁',400,2000,1000,100,'ms')+range('T2','T₂','T₂',40,400,180,10,'ms');if(m.kind==='corona')s+=`<label>${T('Scénario','Scenario')}<select id="coronaMode"><option value="dynamic">${T('Couronne dynamique','Dynamic corona')}</option><option value="vroman">${T('Effet Vroman · scénario possible','Vroman effect · possible scenario')}</option></select></label>`;$('controls').innerHTML=s;if($('deltaSign')){$('deltaSign').value=String(values.deltaSign||0);$('deltaSign').onchange=()=>{values.deltaSign=+$('deltaSign').value;draw();};}if($('coronaMode')){$('coronaMode').value=values.coronaMode||'dynamic';$('coronaMode').onchange=()=>{values.coronaMode=$('coronaMode').value;draw();};}$('controls').querySelectorAll('input').forEach(el=>el.oninput=()=>{values[el.id]=el.type==='checkbox'?el.checked:+el.value;if(el.type==='range')el.nextElementSibling.textContent=el.value+' '+({gap:'nm',K:'kJ/m³',d:'nm',T:'K',shell:'nm',eta:'mPa·s',angle:'°',T1:'ms',T2:'ms'}[el.id]||'');draw();});}
 function stop(){playing=false;cancelAnimationFrame(raf);if($('play'))$('play').textContent=T('Lire','Play');}
-function render(){stop();renderResources();renderModuleNavigation();const m=D[current];document.documentElement.lang=lang;$('language').textContent=lang==='fr'?'EN':'FR';$('language').ariaLabel=T('Switch to English','Passer en français');$('edition').textContent=T('Bases théoriques','Theoretical background');$('eyebrow').textContent=T('Recherche · Explorer les mécanismes','Research · Explore the mechanisms');$('title').textContent=T('De la nanoparticule au vivant','From nanoparticles to living systems');$('intro').textContent=T('Les schémas et les modèles expliquent les mécanismes étudiés dans nos trois axes de recherche.','Diagrams and models explain the mechanisms studied across our three research axes.');$('axes').innerHTML=axes.map((a,i)=>`<button data-axis="${i}" aria-pressed="${i===axis}"><span class="axis-number">0${i+1}</span><b>${a[lang==='fr'?0:1]}</b><span>${a[lang==='fr'?2:3]}</span><span class="axis-open">${i===axis?T('Axe sélectionné','Selected axis'):T('Explorer cet axe','Explore this axis')}</span></button>`).join('');$('axes').querySelectorAll('button').forEach(b=>b.onclick=()=>{chooseModule(Object.keys(D).find(k=>D[k].a===+b.dataset.axis));});$('modules').innerHTML=Object.entries(D).filter(([k,v])=>v.a===axis).map(([k,v])=>`<button data-module="${k}" aria-pressed="${current===k}">${v.n[lang==='fr'?0:1]}</button>`).join('');$('modules').querySelectorAll('button').forEach(b=>b.onclick=()=>{chooseModule(b.dataset.module);});$('heading').innerHTML=`<p class="eyebrow">${axes[axis][lang==='fr'?0:1]}</p><h2>${m.n[lang==='fr'?0:1]}</h2><p>${m.lead?m.lead[lang==='fr'?0:1]:T('Les courbes illustrent les modèles et leurs paramètres. Elles ne représentent pas de données expérimentales.','The curves illustrate models and their parameters. They do not represent experimental data.')}</p>`;$('stage').innerHTML='';controls(m);const iscurve=m.kind==='curves';$('enlarge').hidden=iscurve;$('enlarge').textContent=T('Agrandir le schéma','Enlarge diagram');$('zoomTitle').textContent=T('Vue agrandie · animation en pause','Enlarged view · animation paused');$('closeZoom').textContent=T('Fermer','Close');['transport','steps','explain','math','references','limits'].forEach(id=>$(id).hidden=iscurve);$('source').hidden=iscurve||!m.src;$('source').open=false;$('source').hidden=iscurve;$('sourceTitle').textContent=T('Exporter les schémas vectoriels','Export vector diagrams');$('sourceNote').textContent=T('Les fichiers SVG sont éditables. Ils ne contiennent pas d’image matricielle. Les légendes suivent la langue choisie. Les références et les limites figurent sous le module.','SVG files are editable. They contain no raster images. Labels follow the selected language. References and limits appear below the module.');$('sourceImage').hidden=true;$('download').hidden=true;$('exportFR').textContent='SVG · Français';$('exportEN').textContent='SVG · English';if(iscurve){$('stage').innerHTML='<iframe id="curves" title="'+T('Modèles de magnétisme interactifs','Interactive magnetism models')+'"></iframe>';const f=$('curves');f.onload=()=>f.contentWindow.postMessage({kind:'protocol',mode:m.mode,lang},'*');f.srcdoc=['swangle','zfc','mh','initial'].includes(m.mode)?ASSETS.foundations:ASSETS.curves;return;}$('reset').textContent=T('Recommencer','Restart');$('timelineLabel').textContent=T('Progression','Progress');$('steps').innerHTML=m.steps.map((s,i)=>`<button data-step="${i}">${i+1}. ${s[lang==='fr'?0:1]}</button>`).join('');$('steps').querySelectorAll('button').forEach(b=>b.onclick=()=>{stop();u=(+b.dataset.step+.5)/m.steps.length;draw();});$('references').innerHTML=`<h3>${T('Publications et ressources','Publications and resources')}</h3><ul>${(m.refs||[]).map(k=>`<li>${refs[k][0]}. <a href="https://doi.org/${refs[k][1]}" target="_blank" rel="noopener noreferrer">doi: ${refs[k][1]}</a></li>`).join('')}</ul><a href="https://lenaiclartigue.github.io/python-chimie/" target="_blank" rel="noopener noreferrer">${T('Python pour la chimie · prolonger l’exploration','Python for chemistry · explore further')}</a>`;$('limits').textContent=m.limits[lang==='fr'?0:1];if(current==='corona')$('references').innerHTML+=proteinEvidence()+`<p><a href="https://pubmed.ncbi.nlm.nih.gov/22342465/" target="_blank" rel="noopener">${T('USPIO : exemple sans effet Vroman classique','USPIO: example without a classical Vroman effect')}</a></p><p><a href="#biointerfaces/fate">${T('Poursuivre : entrée et devenir cellulaire','Continue: cell entry and fate')}</a></p>`;$('references').innerHTML+=applicationLinks(current);if(current==='fate')$('references').innerHTML+=`<p>${T('Repère de dimensions : bicouche lipidique ~3–4 nm dans la source citée, sans imposer cette valeur à toutes les membranes. Le schéma est hors échelle.','Dimensional context: lipid bilayer ~3–4 nm in the cited source, not a universal value for all membranes. Diagram not to scale.')} <a href="https://bionumbers.hms.harvard.edu/bionumber.aspx?id=112585&org=&trm=membrane&ver=3" target="_blank" rel="noopener">BioNumbers BNID 112585</a>.</p>`;$('footer').textContent=T('Les modèles illustrent les mécanismes étudiés. Les références et les hypothèses accompagnent chaque module.','The models illustrate the mechanisms studied. References and assumptions accompany each module.');draw();}
+function render(){stop();renderResources();renderModuleNavigation();const m=D[current];document.documentElement.lang=lang;$('language').textContent=lang==='fr'?'EN':'FR';$('language').ariaLabel=T('Switch to English','Passer en français');$('edition').textContent=T('Bases théoriques','Theoretical background');$('eyebrow').textContent=T('Recherche · Explorer les mécanismes','Research · Explore the mechanisms');$('title').textContent=T('De la nanoparticule au vivant','From nanoparticles to living systems');$('intro').textContent=T('Les schémas et les modèles expliquent les mécanismes étudiés dans nos trois axes de recherche.','Diagrams and models explain the mechanisms studied across our three research axes.');$('axes').innerHTML=axes.map((a,i)=>`<button data-axis="${i}" aria-pressed="${i===axis}"><span class="axis-number">0${i+1}</span><b>${a[lang==='fr'?0:1]}</b><span>${a[lang==='fr'?2:3]}</span><span class="axis-open">${i===axis?T('Axe sélectionné','Selected axis'):T('Explorer cet axe','Explore this axis')}</span></button>`).join('');$('axes').querySelectorAll('button').forEach(b=>b.onclick=()=>{chooseModule(Object.keys(D).find(k=>D[k].a===+b.dataset.axis));});$('modules').innerHTML=Object.entries(D).filter(([k,v])=>v.a===axis).map(([k,v])=>`<button data-module="${k}" aria-pressed="${current===k}">${v.n[lang==='fr'?0:1]}</button>`).join('');$('modules').querySelectorAll('button').forEach(b=>b.onclick=()=>{chooseModule(b.dataset.module);});$('heading').innerHTML=`<p class="eyebrow">${axes[axis][lang==='fr'?0:1]}</p><h2>${m.n[lang==='fr'?0:1]}</h2><p>${m.lead?m.lead[lang==='fr'?0:1]:T('Les courbes illustrent les modèles et leurs paramètres. Elles ne représentent pas de données expérimentales.','The curves illustrate models and their parameters. They do not represent experimental data.')}</p>`;$('stage').innerHTML='';controls(m);const iscurve=m.kind==='curves';$('enlarge').hidden=iscurve;$('enlarge').textContent=T('Agrandir le schéma','Enlarge diagram');$('zoomTitle').textContent=T('Vue agrandie · animation en pause','Enlarged view · animation paused');$('closeZoom').textContent=T('Fermer','Close');['transport','steps','explain','math','references','limits'].forEach(id=>$(id).hidden=iscurve);$('source').hidden=iscurve||!m.src;$('source').open=false;$('source').hidden=iscurve;$('sourceTitle').textContent=T('Exporter les schémas vectoriels','Export vector diagrams');$('sourceNote').textContent=T('Les fichiers SVG sont éditables. Ils ne contiennent pas d’image matricielle. Les légendes suivent la langue choisie. Les références et les limites figurent sous le module.','SVG files are editable. They contain no raster images. Labels follow the selected language. References and limits appear below the module.');$('sourceImage').hidden=true;$('download').hidden=true;$('exportFR').textContent='SVG · Français';$('exportEN').textContent='SVG · English';if(iscurve){$('stage').innerHTML='<iframe id="curves" title="'+T('Modèles de magnétisme interactifs','Interactive magnetism models')+'"></iframe>';const f=$('curves');f.onload=()=>f.contentWindow.postMessage({kind:'protocol',mode:m.mode,lang},'*');f.srcdoc=['swangle','zfc','mh','initial'].includes(m.mode)?ASSETS.foundations:ASSETS.curves;return;}$('reset').textContent=T('Recommencer','Restart');$('timelineLabel').textContent=T('Progression','Progress');$('steps').innerHTML=m.steps.map((s,i)=>`<button data-step="${i}">${i+1}. ${s[lang==='fr'?0:1]}</button>`).join('');$('steps').querySelectorAll('button').forEach(b=>b.onclick=()=>{stop();u=(+b.dataset.step+.5)/m.steps.length;draw();});$('references').innerHTML=`<h3>${T('Publications et ressources','Publications and resources')}</h3><ul>${(m.refs||[]).map(k=>`<li>${refs[k][0]}. <a href="${refs[k][1].startsWith('https://')?refs[k][1]:'https://doi.org/'+refs[k][1]}" target="_blank" rel="noopener noreferrer">${refs[k][1].startsWith('https://')?T('Consulter la source','View source'):'doi: '+refs[k][1]}</a></li>`).join('')}</ul><a href="https://lenaiclartigue.github.io/python-chimie/" target="_blank" rel="noopener noreferrer">${T('Python pour la chimie · prolonger l’exploration','Python for chemistry · explore further')}</a>`;$('limits').textContent=m.limits[lang==='fr'?0:1];if(current==='corona')$('references').innerHTML+=proteinEvidence()+`<p><a href="https://pubmed.ncbi.nlm.nih.gov/22342465/" target="_blank" rel="noopener">${T('USPIO : exemple sans effet Vroman classique','USPIO: example without a classical Vroman effect')}</a></p><p><a href="#biointerfaces/fate">${T('Poursuivre : entrée et devenir cellulaire','Continue: cell entry and fate')}</a></p>`;if(current==='fate')$('references').innerHTML+=`<p>${T('Repère de dimensions : bicouche lipidique ~3–4 nm dans la source citée, sans imposer cette valeur à toutes les membranes. Le schéma est hors échelle.','Dimensional context: lipid bilayer ~3–4 nm in the cited source, not a universal value for all membranes. Diagram not to scale.')} <a href="https://bionumbers.hms.harvard.edu/bionumber.aspx?id=112585&org=&trm=membrane&ver=3" target="_blank" rel="noopener">BioNumbers BNID 112585</a>.</p>`;$('footer').textContent=T('Les modèles illustrent les mécanismes étudiés. Les références et les hypothèses accompagnent chaque module.','The models illustrate the mechanisms studied. References and assumptions accompany each module.');draw();}
 const C={teal:'#315b78',orange:'#a66b49',purple:'#775b8c',ink:'#243944'};
 function line(x1,y1,x2,y2,c=C.ink,w=2,dash=''){return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="${w}" ${dash?'stroke-dasharray="'+dash+'"':''}/>`;}
 function text(x,y,s,size=17,c=C.ink){return `<text x="${x}" y="${y}" text-anchor="middle" style="font-size:${size}px;fill:${c}">${s}</text>`;}
@@ -665,7 +593,7 @@ function svg(content){return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0
 function path(points,color,width=3){return `<path d="${points.map((p,i)=>(i?'L':'M')+p[0].toFixed(2)+' '+p[1].toFixed(2)).join(' ')}" fill="none" stroke="${color}" stroke-width="${width}"/>`;}
 function chart(curves,xmax,ymax,xlabel,ylabel,box=[410,80,330,240]){const[x,y,w,h]=box;let s='';for(let i=0;i<=4;i++){const px=x+w*i/4,py=y+h-h*i/4;s+=line(px,y,px,y+h,'#e3e9ed',1)+line(x,py,x+w,py,'#e3e9ed',1)+text(px,y+h+17,Number((xmax*i/4).toPrecision(3)),11,'#657b88')+text(x-19,py+4,Number((ymax*i/4).toPrecision(3)),11,'#657b88');}s+=line(x,y,x,y+h,'#586e7b',1.5)+line(x,y+h,x+w,y+h,'#586e7b',1.5)+text(x+w/2,y+h+38,xlabel,14)+text(x+w/2,y-18,ylabel,14);for(const [pts,c]of curves)s+=path(pts.map(([a,b])=>[x+w*a/xmax,y+h-h*b/ymax]),c,2.5);return s;}
 
-function drawRaw(){const m=D[current];if(m.kind==='curves')return;const idx=Math.min(m.steps.length-1,Math.floor(u*m.steps.length)),step=m.steps[idx];$('timeline').value=Math.round(u*1000);$('progress').textContent=Math.round(u*100)+'%';$('steps').querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-pressed',i===idx));const explanation='<h3>'+step[lang==='fr'?0:1]+'</h3><p>'+step[lang==='fr'?2:3]+'</p>';if($('explain').innerHTML!==explanation)$('explain').innerHTML=explanation;$('math').innerHTML='';let s='';const replacement=current==='mri'?mriProjectionScene(u):current==='relaxivity'?relaxivityScene(.35):finalMagneticScene(current,u);if(replacement){$('stage').innerHTML=replacement;return;}
+function drawRaw(){const m=D[current];if(m.kind==='curves')return;if(m.kind==='reading'){$('stage').innerHTML=m.body[lang==='fr'?0:1];$('math').innerHTML=EQUATIONS[current]||'';return;}const idx=Math.min(m.steps.length-1,Math.floor(u*m.steps.length)),step=m.steps[idx];$('timeline').value=Math.round(u*1000);$('progress').textContent=Math.round(u*100)+'%';$('steps').querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-pressed',i===idx));const explanation='<h3>'+step[lang==='fr'?0:1]+'</h3><p>'+step[lang==='fr'?2:3]+'</p>';if($('explain').innerHTML!==explanation)$('explain').innerHTML=explanation;$('math').innerHTML='';let s='';const replacement=current==='rem'?deltaScene():current==='relax'?hdrRelaxScene(u):current==='mri'?mriProjectionScene(u):current==='relaxivity'?relaxivityScene(.35):finalMagneticScene(current,u);if(replacement){$('stage').innerHTML=replacement;return;}
 if(m.kind==='spin'){let a=(u<.65?-.5:-.5+(u-.65)/.35*Math.PI);s=sphere(140,195,95,a)+line(220,160,310,120,'#8c9aa0',1)+line(220,230,310,280,'#8c9aa0',1)+sphere(400,195,100,a,0,true)+arrow(560,195,Math.PI/2,30,C.ink,3)+circle(680,195,70,'#e6f2ee')+arrow(680,195,a,54,C.teal,6)+text(140,330,T('Particule monodomaine','Single-domain particle'))+text(400,330,T('Sous-réseaux couplés','Coupled sublattices'))+text(680,330,T('Moment résultant','Net moment'))+text(400,47,T('Rotation collective · opposition conservée','Collective rotation · antiparallel order preserved'),20);}
 if(m.kind==='anisotropy'){const a=u*Math.PI,V=Math.PI/6*(values.d*1e-9)**3,E=values.K*1000*V,barrier=E/(1.380649e-23*values.T);s=sphere(175,190,90,a)+text(175,325,'θ = '+Math.round(u*180)+'°');const points=Array.from({length:101},(_,i)=>[i/100*180,Math.sin(i/100*Math.PI)**2]);s+=chart([[points,C.teal]],180,1,'θ (°)','E / KV')+circle(410+330*u,320-240*Math.sin(a)**2,7,C.orange)+text(410,345,'0°',13)+text(740,345,'180°',13);$('math').innerHTML=`E(θ) = KV sin²θ · ΔE = KV = ${(E/1e-21).toFixed(1)} × 10⁻²¹ J · ΔE/kBT = ${barrier.toFixed(1)}`;}
 if(m.kind==='relax'){const immobilized=values.fixed||idx===2;const a=Math.PI*(.5-.5*Math.cos(4*Math.PI*u));const b=immobilized?0:Math.PI*2*u; s=text(220,48,'Néel',23)+text(585,48,T('Brown','Brownian'),23)+sphere(220,195,90,a,0,false)+sphere(585,195,90,b,b*180/Math.PI,false)+text(220,335,T('Particule fixe · moment mobile','Fixed particle · moving moment'),17)+text(585,335,immobilized?T('Rotation mécanique bloquée','Mechanical rotation blocked'):T('Particule et moment tournent','Particle and moment rotate'),17);const V=Math.PI/6*(values.d*1e-9)**3,Vh=Math.PI/6*((values.d+2*values.shell)*1e-9)**3,q=values.K*1000*V/(1.380649e-23*values.T),tn=1e-9*Math.exp(q),tb=3*values.eta*.001*Vh/(1.380649e-23*values.T);$('math').innerHTML=`τN ≈ τ₀ exp(KV/kBT) = ${tn.toExponential(2)} s · τ₀ = 10⁻⁹ s<br>τB = 3ηVh/(kBT) = ${immobilized?'∞':tb.toExponential(2)+' s'} · KV/kBT = ${q.toFixed(1)}${q<5?'<br>'+T('Barrière faible : approximation de τN à interpréter avec prudence.','Low barrier: interpret the τN approximation with caution.'):''}`;}
@@ -723,4 +651,10 @@ function renderModuleNavigation(){
  writeRoute();
 }
 
-function draw(){drawRaw();$('transport').hidden=!!D[current].static||D[current].kind==='curves';if(!EQUATIONS[current])return;let numbers='';if(current==='relax'){const v=Math.PI/6*(values.d*1e-9)**3,vh=Math.PI/6*((values.d+2*values.shell)*1e-9)**3,q=values.K*1000*v/(1.380649e-23*values.T);const fixed=values.fixed||Math.min(2,Math.floor(u*3))===2;numbers=`<p>τ<sub>N</sub> ≈ ${(1e-9*Math.exp(q)).toExponential(2)} s · τ<sub>B</sub> = ${fixed?'∞':(3*values.eta*.001*vh/(1.380649e-23*values.T)).toExponential(2)+' s'} · KV/(k<sub>B</sub>T) = ${q.toFixed(1)}</p>`;if(q<5)numbers+='<p>'+T('Barrière faible : approximation de Néel limitée.','Low barrier: limited Néel approximation.')+'</p>';}if(current==='anisotropy'){const e=values.K*1000*Math.PI/6*(values.d*1e-9)**3;numbers=`<p>ΔE = ${(e/1e-21).toFixed(1)} × 10<sup>−21</sup> J · ΔE/(k<sub>B</sub>T) = ${(e/(1.380649e-23*values.T)).toFixed(1)}</p>`;}if(current==='heat')numbers='<p>'+T('Illustration avec déphasage fixé.','Illustration with fixed phase lag.')+'</p>';$('math').innerHTML=EQUATIONS[current]+numbers;}
+function draw(){drawRaw();$('transport').hidden=!!D[current].static||D[current].kind==='curves';if(!EQUATIONS[current])return;let numbers='';$('math').innerHTML=EQUATIONS[current]+numbers;if(current==='monodomain')$('math').innerHTML+=T('<p>A : rigidité d’échange (J/m). K : densité d’énergie d’anisotropie (J/m³). μ₀ : perméabilité du vide. MS : aimantation à saturation (A/m).</p>','<p>A: exchange stiffness (J/m). K: anisotropy energy density (J/m³). μ₀: vacuum permeability. MS: saturation magnetization (A/m).</p>');}
+
+function startLiveInteractions(){if(typeof performance==='undefined')return;if(current!=='interactions'||(typeof document!=='undefined'&&document.hidden))return;playing=true;last=performance.now();function next(now){if(!playing||current!=='interactions')return;advanceLivePair(values.gap??35,(now-last)/1000);last=now;draw();raf=requestAnimationFrame(next);}raf=requestAnimationFrame(next);}
+const renderBeforeV414=render;render=function(){renderBeforeV414();const m=D[current],reading=m.kind==='reading';for(const id of ['enlarge','source','steps','explain'])if(reading)$(id).hidden=true;$('transport').hidden=!!m.static||m.kind==='curves';if(current==='industry')$('references').hidden=true;if(typeof document.querySelector==='function'){const note=document.querySelector('.figure-scroll-note');if(note)note.hidden=reading;}if(m.auto){$('steps').hidden=true;startLiveInteractions();}};
+$('closeZoom').onclick=()=>{$('zoom').close();if(D[current].auto)startLiveInteractions();};
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&D[current].auto)startLiveInteractions();});
+render();

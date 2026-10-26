@@ -1,4 +1,4 @@
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-label="Easy and hard axes · K and V"><defs>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="img" aria-label="Easy and hard axes"><defs>
 <radialGradient id="vCore" cx="32%" cy="25%" r="73%"><stop stop-color="#b0b4b0"/><stop offset=".24" stop-color="#636c68"/><stop offset=".65" stop-color="#27362f"/><stop offset="1" stop-color="#0c191a"/></radialGradient>
 <radialGradient id="vGold" cx="30%" cy="24%" r="78%"><stop stop-color="#ffe8a0"/><stop offset=".5" stop-color="#dfad43"/><stop offset="1" stop-color="#ad7028"/></radialGradient>
 <radialGradient id="vCyto" cx="38%" cy="42%" r="65%"><stop stop-color="#f8fafb"/><stop offset="1" stop-color="#e6ecef"/></radialGradient>

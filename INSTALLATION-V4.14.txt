@@ -1,0 +1,45 @@
+# NanoBioMat — V4.14
+
+## Installation
+Version publique V4.12 vérifiée le 26 octobre 2026. Le fichier public theory-preview/index.html correspond exactement (SHA-256) à l’archive V4.12. Correctif cumulatif V4.12 → V4.14 : les corrections V4.13 sont incluses.
+Copier le contenu du correctif à la racine du dépôt GitHub en conservant les sous-dossiers. Remplacer les fichiers homonymes. Aucun déploiement effectué.
+Supprimer manuellement les anciens exports suivants :
+- theory-preview/svg/assembly-en.svg
+- theory-preview/svg/assembly-fr.svg
+- theory-preview/svg/heat-en.svg
+- theory-preview/svg/heat-fr.svg
+- theory-preview/svg/lamer-en.svg
+- theory-preview/svg/lamer-fr.svg
+- theory-preview/svg/mpi-en.svg
+- theory-preview/svg/mpi-fr.svg
+- theory-preview/svg/photo-en.svg
+- theory-preview/svg/photo-fr.svg
+- theory-preview/svg/relaxivity-en.svg
+- theory-preview/svg/relaxivity-fr.svg
+
+Nettoyage facultatif : INSTALLATION-V4.12.txt, MANIFEST-V4.12.json et, si présents, INSTALLATION-V4.13.txt, MANIFEST-V4.13.json. Les anciens delivery-fr.svg et delivery-en.svg peuvent aussi être supprimés s’ils subsistent.
+
+## Changements FR / EN
+- Suppression du module Flash nanoprecipitation dans Assemblages.
+- Interactions : fluctuations automatiques des moments, sans Start. Seule la distance entre surfaces varie. Le modèle plan inclut les gradients dipolaires et le bruit thermique. Un couplage d’échange ferromagnétique est supposé au contact magnétique direct, sans couche isolante. Aucune distance universelle de 2 nm n’est proposée. Le modèle n’affirme pas un ralentissement universel par les interactions.
+- Une seule activité IRM / DCD / ΔM : référence sans interaction, écart positif, écart négatif. Les courbes pédagogiques construites respectent ΔM = mDCD − (1 − 2mIRM). Normalisation par la rémanence à saturation. Le signe seul n’identifie pas sans ambiguïté un mécanisme microscopique. Les anciennes vues numériques ne proposent plus que FORC.
+- Retrait des mentions « for review ».
+- Eau/relaxivité, MPI, hyperthermie et photothermie : fiches de lecture statiques avec phénomènes, équations MathML, variables, limites et références. L’animation IRM T1/T2 est conservée.
+- Hyperthermie : aire du cycle, réponse linéaire de Rosensweig, SAR, ILP et repère historique d’Atkinson–Brezovich. Le produit Hf est contextualisé ; il ne constitue pas une limite universelle de sécurité.
+- Module Développements industriels dédié : Ferabright, Magnetic Insight, Nanotherm Therapeutics et Magtrace. Liens retirés de la liste de la page Recherche et remplacés par un accès à ce module. Pas de partenariat implicite.
+
+## Sources
+Manuscrit HDR_LARTIGUE_2025(2).pdf consulté : pages imprimées 35–38 et 91–92, références 90–92, 126–142 et 215–221. Le manuscrit privé n’est pas intégré à cette archive publique.
+Références historiques et théoriques : Dias/Lauterbur, Roch/Muller/Gillis, Gleich/Weizenecker, Gilchrist, Jordan, Rosensweig, Atkinson/Brezovich/Chakraborty, Hergt, Kallumadil, Shen, Plan Sangnier et Roper. DOI cliquables dans chaque fiche.
+Deux corrections bibliographiques par rapport au manuscrit : Dias 1986, DOI 10.1002/mrm.1910030218 ; Jordan 1993, DOI original 10.3109/02656739309061478 (et non DOI de la réédition 2009).
+Photothermie : bilan thermique global ; la référence Roper décrit une méthode calorimétrique initialement appliquée à l’or, sans attribuer un mécanisme plasmonique d’or aux IONPs.
+
+## Vérifications
+19 modules ; 90 états graphiques FR/EN ; 18 exports SVG ; 10 cas de fiches bilingues ; 16 cas lecture/pause/reset ; 8 cas d’interface magnétique. Identité ΔM, signes, bornes et contact d’échange vérifiés. Démarrage automatique des interactions, variation de distance et arrêt lors du changement de module vérifiés. Tests Stoner–Wohlfarth, Langevin et ZFC conservés et réussis. Contrôle visuel des interactions, de ΔM et de la fiche hyperthermie.
+Reconstruction depuis theory-preview/source :
+python3 theory-v05/work/build.py
+node theory-v05/work/test.js
+node theory-v05/work/test-playback.js
+node theory-v05/work/test-foundations.js
+node theory-v05/work/test-live-interactions.js
+Copier dist/index.html vers theory-preview/index.html. Publier uniquement les exports SVG des modules actifs ; exclure lamer, assembly, relaxivity, mpi, heat, photo et delivery.

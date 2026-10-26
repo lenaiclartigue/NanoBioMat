@@ -85,3 +85,5 @@ header #language{font-weight:700;background:#173c4c;color:white;border-color:#17
 .figure-scroll-note{display:none}html[lang=fr] .figure-scroll-note [lang=en],html[lang=en] .figure-scroll-note [lang=fr]{display:none}@media(max-width:760px){.figure-scroll-note{display:block;font-size:12px;color:#526976;margin:4px 0 8px}}
 
 .equation-line{overflow-x:auto;padding:10px 2px;max-width:100%;font-size:1.15rem}.equation-line math{font-family:math;display:block;margin:auto} .katex{white-space:normal}
+
+.text-module{padding:8px 24px 22px;max-width:78ch}.text-module h3{margin:23px 0 8px}.text-module p{line-height:1.65}.text-module a{font-weight:650}#stage:has(.text-module){background:#fff;min-width:0}#math math{margin:18px 0}#math{overflow-x:auto}[hidden]{display:none!important}

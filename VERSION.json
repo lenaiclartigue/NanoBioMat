@@ -1,13 +1,20 @@
 {
-  "delivery": "V4.12",
+  "delivery": "V4.14",
   "date": "2026-10-26",
-  "patch_base": "V4.10",
+  "patch_base": "V4.12",
+  "live_version_verified": "V4.12",
   "manual_deletions": [
-    "theory-preview/svg/delivery-fr.svg",
-    "theory-preview/svg/delivery-en.svg",
-    "INSTALLATION-V4.10.txt",
-    "MANIFEST-V4.10.json",
-    "INSTALLATION-V4.11.txt",
-    "MANIFEST-V4.11.json"
+    "theory-preview/svg/assembly-en.svg",
+    "theory-preview/svg/assembly-fr.svg",
+    "theory-preview/svg/heat-en.svg",
+    "theory-preview/svg/heat-fr.svg",
+    "theory-preview/svg/lamer-en.svg",
+    "theory-preview/svg/lamer-fr.svg",
+    "theory-preview/svg/mpi-en.svg",
+    "theory-preview/svg/mpi-fr.svg",
+    "theory-preview/svg/photo-en.svg",
+    "theory-preview/svg/photo-fr.svg",
+    "theory-preview/svg/relaxivity-en.svg",
+    "theory-preview/svg/relaxivity-fr.svg"
   ]
 }
