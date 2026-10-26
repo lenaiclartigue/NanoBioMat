@@ -1,8 +1,12 @@
 {
-  "delivery": "V4.18",
+  "delivery": "V4.20",
   "date": "2026-10-26",
-  "patch_base": "V4.16",
-  "live_version_verified": "V4.16",
-  "modules": 19,
-  "manual_deletions": []
+  "patch_base": "V4.18",
+  "live_version_verified": "V4.18",
+  "modules": 21,
+  "manual_deletions": [],
+  "pending": [
+    "Exact ALF-II formulation/reference",
+    "Private team services"
+  ]
 }

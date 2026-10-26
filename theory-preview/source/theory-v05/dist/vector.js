@@ -20,7 +20,8 @@ function leaflets(points,color='#929a70',spacing=1){let s='';for(let i=1;i<point
 function bez(p0,p1,p2,p3,n=30){return Array.from({length:n},(_,i)=>{let t=i/n,q=1-t;return[q*q*q*p0[0]+3*q*q*t*p1[0]+3*q*t*t*p2[0]+t*t*t*p3[0],q*q*q*p0[1]+3*q*q*t*p1[1]+3*q*t*t*p2[1]+t*t*t*p3[1]]});}
 function mitochondrion(x,y,a=0,k=1){return `<g transform="translate(${x} ${y}) rotate(${a}) scale(${k})">${V.p('M-48-12C-25-37 36-25 46-1C57 28 7 30-21 22C-48 17-62 4-48-12Z','#c8b8aa','#98745e',2)}${V.p('M-43-6C-22-22 30-18 37-1C45 17 4 22-19 14C-41 9-48 2-43-6Z','#e4d9cc','#a27c65',1.4)}${V.p('M-32-10Q-21 4-32 7M-15-17Q3 3-17 16M4-17Q18 3 3 18M25-10Q34 0 22 13','none','#a27862',2.3)}</g>`;}
 function vesicle(x,y,r,type=0,opacity=1){let s=`<g opacity="${opacity}">`+V.c(x,y,r,'url(#vLumen)','#6d795b',2)+V.c(x,y,r-5,'none','#a9af7e',1.3);const pts=Array.from({length:Math.ceil(r)},(_,i)=>[x+(r-2)*Math.cos(i/r*Math.PI*2),y+(r-2)*Math.sin(i/r*Math.PI*2)]);s+=leaflets(pts,'#8e966a',2);if(type===0)s+=V.p(`M${x-r+8} ${y-8}q-25-17-23-31q4-7 11 0l19 18`,'url(#vLumen)','#7c8567',2);if(type===1)for(let i=0;i<8;i++){let a=i*2.4;s+=V.c(x+Math.cos(a)*r*.52,y+Math.sin(a)*r*.52,5+i%3,'#e7e6c1','#929d74',1);}if(type===2)for(let i=0;i<25;i++){let a=i*2.4,rr=Math.sqrt((i+.5)/25)*r*.74;s+=V.c(x+Math.cos(a)*rr,y+Math.sin(a)*rr,1.4,'#a8a375');}return s+'</g>';}
-function ferritin(x,y,r=18,iron=0){let s=V.c(x,y,r,'#f0e6e7','#a28b9b',1);for(let i=0;i<24;i++){let a=i*Math.PI/12;s+=V.c(x+(r-3)*Math.cos(a),y+(r-3)*Math.sin(a),2.6,i%2?'#a38da8':'#c4b1c6');}s+=V.c(x,y,Math.max(1,iron*r*.55),'#b56d3e');return s;}
+function ferritin(x,y,r=18,iron=0){const fill=Math.max(0,Math.min(1,iron));let s=`<g data-storage-cage="${fill===0?'apoferritin':'iron-loaded-ferritin'}" data-outer-radius="${r}" data-loading="${fill}">`+V.c(x,y,r,'#f5eef6','#9d86a5',Math.max(.5,r*.035))+V.c(x,y,r*2/3,'#fffaf4','#d9cbd9',.5);for(let i=0;i<24;i++){const a=i*Math.PI/12;s+=V.c(x+r*.85*Math.cos(a),y+r*.85*Math.sin(a),r*.11,i%2?'#ae98b7':'#d3c0d9');}if(fill>0)s+=`<g data-mineral-core="true">`+V.c(x,y,r*2/3*Math.cbrt(fill),'#b56d3e','#9d5834',.5)+'</g>';return s+'</g>';}
+
 function coronaScene(t){let s=V.txt(150,42,T('Identité de synthèse','Synthetic identity'),20)+V.txt(465,42,T('Couronne biomoléculaire','Biomolecular corona'),20)+V.txt(766,42,T('Interface cellulaire','Cell interface'),20);s+=np(140,260,58,true)+V.txt(140,390,T('Cœur et revêtement','Core and coating'),16);let center=460+Math.max(0,t-.75)/.25*160;
 // A curved membrane section, with the extracellular side to its left.
 let boundary=[];for(let i=0;i<=75;i++){let y=80+i*5.5,x=760+12*Math.sin(y/65)+Math.max(0,t-.8)*180*Math.exp(-(((y-270)/65)**2));boundary.push([x,y]);}
@@ -108,7 +109,7 @@ for(let i=0;i<12;i++){const a=i*2.399,rr=18*Math.sqrt((i+.5)/12),target=r-12,rad
 const labels=[T('Invagination','Invagination'),T('Fermeture de la vésicule','Vesicle closure'),T('Endosome précoce → tardif','Early → late endosome'),T('Fusion avec un lysosome','Fusion with a lysosome'),T('Redistribution périphérique','Peripheral redistribution'),T('Érosion des IONPs','IONP erosion')];s+=V.txt(460,35,labels[stage],23);
 if(stage>=2)s+=V.txt(x,y-r-22,stage===2?T('Compartiment en maturation','Maturing compartment'):T('Compartiment endolysosomal','Endolysosomal compartment'),16);
 if(stage>=4){s+=V.p(`M${x+r-4} ${y+25}L720 405`,'none','#839177',1)+V.txt(720,426,T('Membrane lysosomale','Lysosomal membrane'),15);}
-if(stage===5){for(let i=0;i<3;i++)s+=ferritin(650+i*48,235-i%2*25,13,g.erosion);s+=V.txt(704,180,T('Ferritine · stockage du fer','Ferritin · iron storage'),16)+`<path d="M${x+r-5} ${y-20}Q627 244 647 240" stroke="#a66b49" fill="none" stroke-dasharray="4 4" stroke-width="1.5"/>`+V.txt(705,284,T('Transfert local proposé','Proposed local transfer'),13)+V.txt(705,306,T('Mécanisme non résolu','Unresolved mechanism'),13);}
+if(stage===5)return vsvg(ironStorageScene419(g.erosion,s),900,565);
 s+=V.txt(450,540,T('Lartigue et al., ACS Nano 2013 · figures 5–7 · schéma non à l’échelle','Lartigue et al., ACS Nano 2013 · Figures 5–7 · diagram not to scale'),14);return vsvg(s,900,565);}
 // V4.11 magnetic introduction: qualitative diagrams, then the explicit macrospin approximation.
 function domainScene(){let s=panel(20,20,420,380,T('Plusieurs domaines','Multiple domains'))+panel(460,20,420,380,T('Un seul domaine','Single domain'));s+=V.c(230,195,110,'#edf2f5','#869caa',2)+V.c(670,195,110,'#edf2f5','#869caa',2)+V.p('M230 85V305','none','#a77751',3);for(let row=0;row<4;row++)for(let col=0;col<4;col++){let x=-64+col*42,y=-64+row*42;if(Math.hypot(x,y)>90)continue;s+=arrow(230+x,195+y,col<2?0:Math.PI,20,'#31579c',2)+arrow(670+x,195+y,0,20,'#31579c',2)}s+=V.txt(230,355,T('Paroi entre domaines','Domain wall'),18)+V.txt(670,355,T('Aucune paroi interne','No internal domain wall'),18);return vsvg(s,900,475)}
@@ -200,4 +201,30 @@ function coronaScene(t){
  s+=V.txt(150,468,T('Globules rouges et protéines plasmatiques','Red blood cells and plasma proteins'),14,'start')+V.txt(800,468,T('Cellule','Cell'),14);
  s+=V.txt(450,500,T('IONP et protéines agrandies pour montrer les échanges.','IONP and proteins enlarged to show exchange.'),14);
  return vsvg(s,900,515);
+}
+
+// Qualitative molecular zoom. A 20 nm example IONP and 12 nm cage share one length scale.
+function ironStorageScene419(q,cellContext){
+ const release=Math.max(0,Math.min(1,(q-.08)/.78)),load=Math.max(0,Math.min(1,(q-.30)/.70));
+ const coreR=50*(1-.55*release),cageR=30;
+ let s=V.txt(450,34,T('Dissolution des IONPs et stockage du fer','IONP dissolution and iron storage'),23);
+ s+=V.txt(200,110,T('IONP · cœur modèle de 20 nm','IONP · 20 nm example core'),17);
+ s+=`<circle cx="200" cy="210" r="50" fill="none" stroke="#acb8bf" stroke-dasharray="4 4"/>`;
+ s+=`<g data-dissolving-core="true" data-core-radius="${coreR}">`+np(200,210,coreR,false)+'</g>';
+ s+=V.txt(200,300,T('Le cœur se dissout progressivement.','The core progressively dissolves.'),15);
+ const cages=[[610,185],[745,185],[678,285]];
+ for(let i=0;i<cages.length;i++){const[x,y]=cages[i];s+=ferritin(x,y,cageR,Math.max(0,load-i*.12));}
+ s+=V.txt(675,90,load===0?T('Apoferritine · coque vide','Apoferritin · empty cage'):T('Ferritine · chargement en fer','Ferritin · iron loading'),19);
+ s+=V.txt(675,117,T('Diamètre extérieur ≈ 12 nm','Outer diameter ≈ 12 nm'),15);
+ if(q>.08&&q<.97)for(let i=0;i<15;i++){const z=((q-.08)*2+i/15)%1,[tx,ty]=cages[i%3],sx=200+coreR,sy=210,xx=sx+(tx-cageR-sx)*z,yy=sy+(ty-sy)*z+18*Math.sin(Math.PI*z+i);s+=`<circle data-released-iron="${i}" cx="${xx}" cy="${yy}" r="2.2" fill="#bc783e" opacity="${Math.sin(Math.PI*z)}"/>`;}
+ s+=V.txt(405,160,T('Fer libéré','Released iron'),17)+V.txt(405,182,T('dissous / complexé','dissolved / complexed'),14);
+ s+=V.txt(675,350,T('Formation d’un cœur minéral ferrique','Formation of a ferric mineral core'),16);
+ s+=`<g transform="translate(15 360) scale(.26)" opacity=".72">${cellContext}</g>`;
+ s+=V.txt(143,520,T('Contexte endolysosomal','Endolysosomal context'),13);
+ s+=V.txt(590,420,T('L’apoferritine est dépourvue de cœur minéral.','Apoferritin has no mineral core.'),16);
+ s+=V.txt(590,446,T('La ferritine se charge progressivement.','Ferritin loads progressively.'),16);
+ s+=V.txt(590,476,T('La charge en fer peut rester partielle.','Iron loading can remain partial.'),15);
+ s+=V.txt(590,515,T('Zoom : tailles initiales comparables ; cages montrées à titre d’exemples.','Zoom: initial sizes to scale; representative storage cages.'),12);
+ s+=V.txt(450,550,'Volatron et al., Small 2017 · Bugg et al., Angew. Chem. Int. Ed. 2026',13);
+ return s;
 }

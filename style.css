@@ -616,3 +616,5 @@ body[data-section="index"] #news-title{color:#526c32}
  .page-research .research-actions{grid-template-columns:1fr}
  .page-research .research-actions>a{min-height:60px;font-size:17px;padding:14px 16px}
 }
+
+.team-space-link{font-size:inherit;text-decoration:underline;text-underline-offset:3px;line-height:1.3}
