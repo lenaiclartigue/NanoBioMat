@@ -9,6 +9,8 @@ Object.assign(refs,{frenkel:['J. Frenkel, J. Dorfman, Nature 1930, 126, 274–27
 EQUATIONS.monodomain="<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><msub><mi>d</mi><mi>c</mi></msub><mo>\u2248</mo><mfrac><mrow><mn>18</mn><msqrt><mrow><mi>A</mi><mi>K</mi></mrow></msqrt></mrow><mrow><msub><mi>\u03bc</mi><mn>0</mn></msub><msubsup><mi>M</mi><mi>S</mi><mn>2</mn></msubsup></mrow></mfrac></math>";
 Object.assign(refs,{"wohlfarth1958": ["E. P. Wohlfarth, J. Appl. Phys. 1958, 29, 595–596", "10.1063/1.1723232"], "dias1986": ["M. H. M. Dias, P. C. Lauterbur, Magn. Reson. Med. 1986, 3, 328–330", "10.1002/mrm.1910030218"], "roch1999": ["A. Roch, R. N. Muller, P. Gillis, J. Chem. Phys. 1999, 110, 5403–5411", "10.1063/1.478435"], "vuong2012": ["Q. L. Vuong et al., Adv. Healthc. Mater. 2012, 1, 502–512", "10.1002/adhm.201200078"], "mpi2015": ["L. M. Bauer et al., J. Phys. Chem. Lett. 2015, 6, 2509–2517", "10.1021/acs.jpclett.5b00610"], "mpi2021": ["C. Lu et al., Chem. Soc. Rev. 2021, 50, 8102–8146", "10.1039/d0cs00260g"], "gilchrist1957": ["R. K. Gilchrist et al., Ann. Surg. 1957, 146, 596–606", "10.1097/00000658-195710000-00007"], "jordan1993": ["A. Jordan et al., Int. J. Hyperthermia 1993, 9, 51–68", "10.3109/02656739309061478"], "atkinson1984": ["W. J. Atkinson, I. A. Brezovich, D. P. Chakraborty, IEEE Trans. Biomed. Eng. 1984, 31, 70–75", "10.1109/TBME.1984.325372"], "hergt2008": ["R. Hergt, S. Dutz, M. Röder, J. Phys. Condens. Matter 2008, 20, 385214", "10.1088/0953-8984/20/38/385214"], "kallumadil2009": ["M. Kallumadil et al., J. Magn. Magn. Mater. 2009, 321, 1509–1513", "10.1016/j.jmmm.2009.02.075"], "eddy2025": ["K. Pilpilidis et al., Revisiting the safety limit in magnetic nanoparticle hyperthermia, 2025", "https://pubmed.ncbi.nlm.nih.gov/39813796/"], "shen2013": ["S. Shen et al., Nanoscale 2013, 5, 8056–8066", "10.1039/c3nr01447a"], "shen2015": ["S. Shen et al., Biomaterials 2015, 39, 67–74", "10.1016/j.biomaterials.2014.10.064"], "sangnier2018": ["A. Plan Sangnier et al., J. Control. Release 2018, 279, 271–281", "10.1016/j.jconrel.2018.04.036"], "roper2007": ["D. K. Roper, W. Ahn, M. Hoepfner, J. Phys. Chem. C 2007, 111, 3636–3641", "10.1021/jp064341w"]});
 Object.assign(EQUATIONS,{"relaxivity":"<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>R</mi><mi>i</mi></msub><mo>=</mo><mfrac><mn>1</mn><msub><mi>T</mi><mi>i</mi></msub></mfrac><mo>=</mo><msub><mi>R</mi><mrow><mi>i</mi><mo separator=\"true\">,</mo><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>r</mi><mi>i</mi></msub><msub><mi>c</mi><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">e</mi></mrow></msub><mo separator=\"true\">,</mo><mspace width=\"2em\"/><mi>i</mi><mo>∈</mo><mo stretchy=\"false\">{</mo><mn>1</mn><mo separator=\"true\">,</mo><mn>2</mn><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">R_i=\\frac{1}{T_i}=R_{i,0}+r_i c_{\\mathrm{Fe}},\\qquad i\\in\\{1,2\\}</annotation></semantics></math></span>","mpi":"<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>u</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo>−</mo><mi>N</mi><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\">Φ</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi mathvariant=\"normal\">d</mi><mi>t</mi></mrow></mfrac><mtext>  </mtext><mo>∝</mo><mtext>  </mtext><mo>−</mo><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi>M</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><mrow><mi mathvariant=\"normal\">d</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">u(t)=-N\\frac{\\mathrm d\\Phi(t)}{\\mathrm dt}\\;\\propto\\;-\\frac{\\mathrm d M(t)}{\\mathrm dt}</annotation></semantics></math></span>","heat":"<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>P</mi><mi>V</mi></msub><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi>f</mi><mrow><mo fence=\"true\">∣</mo><mo>∮</mo><mi>M</mi><mtext> </mtext><mi mathvariant=\"normal\">d</mi><mi>H</mi><mo fence=\"true\">∣</mo></mrow></mrow><annotation encoding=\"application/x-tex\">P_V=\\mu_0 f\\left|\\oint M\\,\\mathrm dH\\right|</annotation></semantics></math></span><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>P</mi><mi>V</mi></msub><mo>=</mo><mi>π</mi><msub><mi>μ</mi><mn>0</mn></msub><msup><mi>χ</mi><mrow><mo mathvariant=\"normal\">′</mo><mo mathvariant=\"normal\">′</mo></mrow></msup><mi>f</mi><msubsup><mi>H</mi><mn>0</mn><mn>2</mn></msubsup><mo separator=\"true\">,</mo><mspace width=\"2em\"/><msup><mi>χ</mi><mrow><mo mathvariant=\"normal\">′</mo><mo mathvariant=\"normal\">′</mo></mrow></msup><mo>=</mo><msub><mi>χ</mi><mn>0</mn></msub><mfrac><mrow><mn>2</mn><mi>π</mi><mi>f</mi><mi>τ</mi></mrow><mrow><mn>1</mn><mo>+</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>π</mi><mi>f</mi><mi>τ</mi><msup><mo stretchy=\"false\">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">P_V=\\pi\\mu_0\\chi&#x27;&#x27; fH_0^2,\\qquad \\chi&#x27;&#x27;=\\chi_0\\frac{2\\pi f\\tau}{1+(2\\pi f\\tau)^2}</annotation></semantics></math></span><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">R</mi></mrow><mo>=</mo><mfrac><msub><mi>P</mi><mi>V</mi></msub><msub><mi>ρ</mi><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">g</mi></mrow></msub></mfrac><mo>≃</mo><mfrac><msub><mi>C</mi><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">t</mi></mrow></msub><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">m</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">g</mi></mrow></msub></mfrac><msub><mrow><mo fence=\"true\">(</mo><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi>T</mi></mrow><mrow><mi mathvariant=\"normal\">d</mi><mi>t</mi></mrow></mfrac><mo fence=\"true\">)</mo></mrow><mrow><mi>t</mi><mo>→</mo><mn>0</mn></mrow></msub></mrow><annotation encoding=\"application/x-tex\">\\mathrm{SAR}=\\frac{P_V}{\\rho_{\\mathrm{mag}}}\\simeq\\frac{C_{\\mathrm{tot}}}{m_{\\mathrm{mag}}}\\left(\\frac{\\mathrm dT}{\\mathrm dt}\\right)_{t\\to0}</annotation></semantics></math></span><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">P</mi></mrow><mo>=</mo><mfrac><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">A</mi><mi mathvariant=\"normal\">R</mi></mrow><mrow><mi>f</mi><msubsup><mi>H</mi><mn>0</mn><mn>2</mn></msubsup></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\mathrm{ILP}=\\frac{\\mathrm{SAR}}{fH_0^2}</annotation></semantics></math></span><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>H</mi><mn>0</mn></msub><mi>f</mi><mo>≲</mo><mn>4.85</mn><mo>×</mo><msup><mn>10</mn><mn>8</mn></msup><mtext>  </mtext><mrow><mi mathvariant=\"normal\">A</mi><mtext> </mtext><msup><mi mathvariant=\"normal\">m</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mtext> </mtext><msup><mi mathvariant=\"normal\">s</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><annotation encoding=\"application/x-tex\">H_0 f\\lesssim4.85\\times10^8\\;\\mathrm{A\\,m^{-1}\\,s^{-1}}</annotation></semantics></math></span>","photo":"<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>C</mi><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">t</mi></mrow></msub><mfrac><mrow><mi mathvariant=\"normal\">d</mi><mi>T</mi></mrow><mrow><mi mathvariant=\"normal\">d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>η</mi><msub><mi>P</mi><mrow><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">s</mi></mrow></msub><mo>+</mo><msub><mi>P</mi><mrow><mi mathvariant=\"normal\">b</mi><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">k</mi></mrow></msub><mo>−</mo><mi>G</mi><mo stretchy=\"false\">(</mo><mi>T</mi><mo>−</mo><msub><mi>T</mi><mrow><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">v</mi></mrow></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">C_{\\mathrm{tot}}\\frac{\\mathrm dT}{\\mathrm dt}=\\eta P_{\\mathrm{abs}}+P_{\\mathrm{blank}}-G(T-T_{\\mathrm{env}})</annotation></semantics></math></span>","rem":"<span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">D</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">M</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mspace width=\"1em\"/><mtext>(Wohlfarth)</mtext></mrow><annotation encoding=\"application/x-tex\">m_{\\mathrm{DCD}}(H)=1-2m_{\\mathrm{IRM}}(H)\\quad\\text{(Wohlfarth)}</annotation></semantics></math></span><span class=\"katex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">Δ</mi><mi>M</mi><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">D</mi><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">D</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo>−</mo><mo stretchy=\"false\">[</mo><mn>1</mn><mo>−</mo><mn>2</mn><msub><mi>m</mi><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">R</mi><mi mathvariant=\"normal\">M</mi></mrow></msub><mo stretchy=\"false\">(</mo><mi>H</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\Delta M(H)=m_{\\mathrm{DCD}}(H)-[1-2m_{\\mathrm{IRM}}(H)]</annotation></semantics></math></span>"});
+Object.assign(refs,{"vroman1969": ["L. Vroman, A. L. Adams, J. Biomed. Mater. Res. 1969, 3, 43–67", "10.1002/jbm.820030106"], "vroman2003": ["S.-Y. Jung et al., J. Am. Chem. Soc. 2003, 125, 12782–12786", "10.1021/ja037263o"], "mahmoudi2011": ["M. Mahmoudi, I. Lynch, M. R. Ejtehadi, M. P. Monopoli, F. B. Bombelli, S. Laurent, Chem. Rev. 2011, 111, 5610–5637", "10.1021/cr100440g"], "fortin2007": ["J.-P. Fortin, C. Wilhelm, J. Servais, C. Ménager, J.-C. Bacri, F. Gazeau, J. Am. Chem. Soc. 2007, 129, 2628–2635", "10.1021/ja067457e"], "cheon2011": ["J.-H. Lee et al. (J. Cheon), Nat. Nanotechnol. 2011, 6, 418–422", "10.1038/nnano.2011.95"], "dutz2013": ["S. Dutz, R. Hergt, Int. J. Hyperthermia 2013, 29, 790–800", "10.3109/02656736.2013.822993"], "sandre2015": ["E. A. Périgo, G. Hemery, O. Sandre, D. Ortega, E. Garaio, F. Plazaola, F. J. Teran, Appl. Phys. Rev. 2015, 2, 041302", "10.1063/1.4935688"], "krishnan2010": ["K. M. Krishnan, IEEE Trans. Magn. 2010, 46, 2523–2558", "10.1109/TMAG.2010.2046907"], "harrell1993": ["J. W. Harrell, D. Richards, M. R. Parker, J. Appl. Phys. 1993, 73, 6722–6724", "10.1063/1.352514"]});
+refs.bloch1946=['F. Bloch, Phys. Rev. 1946, 70, 460–474','10.1103/PhysRev.70.460'];
 const D={
   "monodomain": {
     "a": 0,
@@ -44,12 +46,11 @@ const D={
     ],
     "refs": [
       "frenkel",
-      "kittel",
-      "critical2019"
+      "kittel"
     ],
     "limits": [
-      "La taille critique dépend du matériau et de la géométrie. L’expression de dc est une estimation simplifiée. Elle ne fixe pas une taille universelle pour les IONPs.",
-      "Critical size depends on material and geometry. The dc expression is a simplified estimate. It does not define a universal IONP size."
+      "",
+      ""
     ]
   },
   "macrospin": {
@@ -89,8 +90,8 @@ const D={
       ]
     ],
     "limits": [
-      "Approximation de rotation cohérente. Les deux contributions ferrimagnétiques restent opposées. Schéma adapté des figures fournies par Lénaïc Lartigue.",
-      "Coherent-rotation approximation. The two ferrimagnetic contributions remain antiparallel. Diagram adapted from figures supplied by Lénaïc Lartigue."
+      "",
+      ""
     ]
   },
   "swangle": {
@@ -100,6 +101,10 @@ const D={
     "n": [
       "Stoner–Wohlfarth : angle",
       "Stoner–Wohlfarth: angle"
+    ],
+    "limits": [
+      "",
+      ""
     ]
   },
   "anisotropy": {
@@ -138,8 +143,8 @@ const D={
       ]
     ],
     "limits": [
-      "Anisotropie uniaxiale à champ nul. Le potentiel est normalisé par KV. La hauteur affichée ne dépend donc pas de K ou de V.",
-      "Uniaxial anisotropy at zero field. The potential is normalized by KV. Its displayed height therefore does not depend on K or V."
+      "",
+      ""
     ]
   },
   "relax": {
@@ -181,8 +186,8 @@ const D={
       ]
     ],
     "limits": [
-      "Deux mécanismes limites sont représentés séparément. Les mouvements sont ralentis pour les observer. τN décrit le retournement interne ; τB décrit la rotation mécanique. Vh comprend le revêtement. La formule de Néel suppose une barrière élevée et un champ nul.",
-      "Two limiting mechanisms are shown separately. Motion is slowed for observation. τN describes internal reversal; τB describes mechanical rotation. Vh includes the coating. The Néel formula assumes a high barrier and zero field."
+      "",
+      ""
     ]
   },
   "zfc": {
@@ -192,7 +197,11 @@ const D={
       "ZFC / FC"
     ],
     "kind": "curves",
-    "mode": "zfc"
+    "mode": "zfc",
+    "limits": [
+      "",
+      ""
+    ]
   },
   "mh": {
     "a": 0,
@@ -201,7 +210,11 @@ const D={
       "Reading an M(H) loop"
     ],
     "kind": "curves",
-    "mode": "mh"
+    "mode": "mh",
+    "limits": [
+      "",
+      ""
+    ]
   },
   "initial": {
     "a": 0,
@@ -210,7 +223,11 @@ const D={
       "Initial magnetization: Langevin"
     ],
     "kind": "curves",
-    "mode": "initial"
+    "mode": "initial",
+    "limits": [
+      "",
+      ""
+    ]
   },
   "interactions": {
     "a": 1,
@@ -221,13 +238,12 @@ const D={
     "kind": "dipole",
     "src": "03-interactions",
     "refs": [
-      "dipolar2023",
-      "dynamics2020",
-      "brown"
+      "brown",
+      "krishnan2010"
     ],
     "lead": [
-      "Rapprochez les particules. Le couplage dipolaire augmente. Au contact, ce modèle suppose un échange ferromagnétique.",
-      "Bring the particles closer. Dipolar coupling increases. At contact, this model assumes ferromagnetic exchange."
+      "Partez de particules isolées. Rapprochez-les pour renforcer le couplage dipolaire. Au contact magnétique direct, un échange ferromagnétique est représenté.",
+      "Start with isolated particles. Bring them closer to strengthen dipolar coupling. Ferromagnetic exchange is represented at direct magnetic contact."
     ],
     "steps": [
       [
@@ -238,8 +254,8 @@ const D={
       ]
     ],
     "limits": [
-      "Modèle plan, corps fixes, sans anisotropie, à 300 K. Temps réduit. Le contact suppose une interface magnétique sans couche isolante. Il ne constitue pas une preuve d’échange dans un échantillon réel.",
-      "Planar model, fixed bodies, no anisotropy, at 300 K. Reduced time. Contact assumes a magnetic interface without an insulating layer. It does not establish exchange in a real sample."
+      "",
+      ""
     ],
     "auto": true,
     "static": true
@@ -249,8 +265,8 @@ const D={
     "kind": "delta",
     "static": true,
     "n": [
-      "IRM / DCD : signe de ΔM",
-      "IRM / DCD: sign of ΔM"
+      "Couplage magnétique · ΔM",
+      "Magnetic coupling · ΔM"
     ],
     "lead": [
       "ΔM compare deux courbes de rémanence à une référence sans interactions.",
@@ -260,17 +276,17 @@ const D={
       [
         "Interpréter le signe",
         "Interpreting the sign",
-        "ΔM positif indique un écart favorisant l’aimantation. ΔM négatif indique un écart démagnétisant. Le signe seul ne permet pas d’identifier un couplage d’échange ou dipolaire.",
-        "Positive ΔM indicates a magnetizing deviation. Negative ΔM indicates a demagnetizing deviation. The sign alone does not identify exchange or dipolar coupling."
+        "ΔM > 0 : effet magnétisant, de type ferromagnétique. ΔM < 0 : effet démagnétisant, de type antiferromagnétique. Le signe décrit une tendance collective ; il ne prouve pas un échange ferro- ou antiferromagnétique.",
+        "ΔM > 0: magnetizing, ferromagnetic-like effect. ΔM < 0: demagnetizing, antiferromagnetic-like effect. The sign describes a collective tendency; it does not prove ferro- or antiferromagnetic exchange."
       ]
     ],
     "refs": [
       "wohlfarth1958",
-      "multi"
+      "harrell1993"
     ],
     "limits": [
-      "Courbes pédagogiques construites, pas un ajustement microscopique. mIRM et mDCD sont normalisés par la rémanence à saturation. La relation de Wohlfarth suppose des particules uniaxiales sans interactions, un protocole adapté et une activation thermique négligeable.",
-      "Constructed teaching curves, not a microscopic fit. mIRM and mDCD are normalized by saturation remanence. The Wohlfarth relation assumes noninteracting uniaxial particles, an appropriate protocol and negligible thermal activation."
+      "",
+      ""
     ]
   },
   "forc": {
@@ -280,7 +296,11 @@ const D={
       "FORC"
     ],
     "kind": "curves",
-    "mode": "forc"
+    "mode": "forc",
+    "limits": [
+      "",
+      ""
+    ]
   },
   "corona": {
     "a": 2,
@@ -291,13 +311,9 @@ const D={
     "kind": "corona",
     "src": "12-corona",
     "refs": [
-      "corona2023",
-      "vogt",
-      "corona",
-      "salvati",
-      "bio",
-      "exchange2014",
-      "complement2017"
+      "vroman1969",
+      "vroman2003",
+      "corona"
     ],
     "lead": [
       "Une IONP acquiert une couronne biomoléculaire dans le plasma. Cette couronne évolue avant la rencontre cellulaire.",
@@ -305,33 +321,36 @@ const D={
     ],
     "steps": [
       [
-        "Surface initiale",
-        "Initial surface",
-        "La particule entre dans le milieu biologique.",
-        "The particle enters the biological medium."
+        "Injection",
+        "Injection",
+        "Les nanoparticules entrent dans le sang. Elles rencontrent les protéines du plasma.",
+        "Nanoparticles enter the bloodstream. They encounter plasma proteins."
       ],
       [
-        "Adsorption",
-        "Adsorption",
-        "Les protéines rencontrent la surface et s’y adsorbent.",
-        "Proteins encounter and adsorb onto the surface."
+        "Adsorption des protéines",
+        "Protein adsorption",
+        "Les protéines diffusent vers la surface et s’y adsorbent. Une couronne se forme.",
+        "Proteins diffuse towards the surface and adsorb. A corona forms."
       ],
       [
-        "Échanges",
-        "Exchange",
-        "Des protéines se détachent. D’autres occupent les sites disponibles. Le scénario Vroman illustre un remplacement compétitif possible.",
-        "Proteins detach. Others occupy available sites. The Vroman scenario illustrates possible competitive replacement."
+        "Échanges · effet Vroman",
+        "Exchange · Vroman effect",
+        "Des protéines abondantes arrivent rapidement. Certaines sont ensuite remplacées par des protéines ayant une plus forte affinité pour cette surface. La composition reste dynamique et dépend de la surface.",
+        "Abundant proteins arrive rapidly. Some are then replaced by proteins with higher affinity for this surface. The composition remains dynamic and depends on the surface."
       ],
       [
-        "Rencontre cellulaire",
-        "Cell encounter",
-        "La cellule rencontre une identité de surface modifiée. Poursuivez avec le module sur le devenir cellulaire.",
-        "The cell encounters an altered surface identity. Continue with the cellular-fate module."
+        "Interaction cellulaire",
+        "Cell interaction",
+        "La cellule rencontre la couronne protéique. Cette identité biologique influence la reconnaissance et l’entrée cellulaire.",
+        "The cell encounters the protein corona. This biological identity influences recognition and cell entry."
       ]
     ],
     "limits": [
-      "Les espèces, abondances et affinités ne décrivent pas une formulation mesurée. L’effet Vroman dépend de la surface et du milieu ; il n’est pas universel pour les IONPs. Les temps et dimensions sont illustratifs.",
-      "Species, abundances and affinities do not describe a measured formulation. The Vroman effect depends on surface and medium; it is not universal for IONPs. Times and dimensions are illustrative."
+      "",
+      ""
+    ],
+    "reviews": [
+      "mahmoudi2011"
     ]
   },
   "fate": {
@@ -390,8 +409,8 @@ const D={
       ]
     ],
     "limits": [
-      "Schéma de la voie endolysosomale. La vésicule d’entrée rejoint normalement un réseau endosomal. Cette étape est condensée ici. La redistribution périphérique et la ferritine reprennent les figures 5–7 de Lartigue et al. (2013). Le trait pointillé indique un transfert proposé, pas une voie de transport établie. Dimensions et durées non à l’échelle.",
-      "Diagram of the endolysosomal pathway. The uptake vesicle normally enters an endosomal network. That step is condensed here. Peripheral redistribution and ferritin follow Figures 5–7 of Lartigue et al. (2013). The dashed line indicates proposed transfer, not an established transport route. Dimensions and durations are not to scale."
+      "",
+      ""
     ]
   },
   "mri": {
@@ -403,7 +422,7 @@ const D={
     "kind": "mri",
     "src": "review-fig2",
     "refs": [
-      "mri"
+      "bloch1946"
     ],
     "lead": [
       "Une impulsion RF de 90° bascule l’aimantation des protons. Les deux composantes relaxent ensuite simultanément.",
@@ -436,8 +455,8 @@ const D={
       ]
     ],
     "limits": [
-      "Repère tournant, impulsion idéale, relaxation monoexponentielle. Le vecteur représente l’aimantation collective des protons. Il ne représente pas le moment d’une IONP. Le temps après l’impulsion avance sur une échelle non linéaire pour montrer T₁ et T₂.",
-      "Rotating frame, ideal pulse, monoexponential relaxation. The vector represents collective proton magnetization, not an IONP moment. Time after the pulse advances nonlinearly to show both T₁ and T₂."
+      "",
+      ""
     ]
   },
   "relaxivity": {
@@ -453,19 +472,18 @@ const D={
       "IONPs modify water-proton relaxation."
     ],
     "body": [
-      "<div class=\"text-module\"><h3>Origine du contraste</h3><p>Les moments des IONPs créent des champs locaux. Le mouvement de l’eau et la dynamique magnétique modulent les champs ressentis par les protons. Ces mécanismes modifient T₁ et T₂.</p><h3>Mesurer les relaxivités</h3><p>La pente de 1/T₁ ou de 1/T₂ en fonction de la concentration en fer définit r₁ ou r₂. Il faut préciser le champ B₀, la température et le milieu.</p><h3>Structure et propriétés</h3><p>La taille du cœur, l’aimantation, le revêtement et l’agrégation influencent la relaxation. Un rapport r₂/r₁ élevé ne suffit pas, seul, à prédire la qualité d’une image.</p></div>",
-      "<div class=\"text-module\"><h3>Contrast mechanism</h3><p>IONP moments create local fields. Water motion and magnetic dynamics modulate the fields experienced by protons. These mechanisms modify T₁ and T₂.</p><h3>Measuring relaxivity</h3><p>The slope of 1/T₁ or 1/T₂ versus iron concentration defines r₁ or r₂. Report B₀, temperature and medium.</p><h3>Structure and properties</h3><p>Core size, magnetization, coating and aggregation influence relaxation. A high r₂/r₁ ratio alone does not predict image quality.</p></div>"
+      "<div class=\"text-module\"><h3>Origine du contraste</h3><p>Les moments des IONPs créent des champs locaux. Le mouvement de l’eau et la dynamique magnétique modulent les champs ressentis par les protons. Ces mécanismes modifient T₁ et T₂.</p><h3>Mesurer les relaxivités</h3><p>La pente de 1/T₁ ou de 1/T₂ en fonction de la concentration en fer définit r₁ ou r₂. Il faut préciser le champ B₀, la température et le milieu.</p><h3>Structure et propriétés</h3><p>La taille du cœur, l’aimantation, le revêtement et l’agrégation influencent la relaxation. Un rapport r₂/r₁ élevé ne suffit pas, seul, à prédire la qualité d’une image.</p><details class=\"symbols\"><summary>Symboles et unités</summary><p>Rᵢ = 1/Tᵢ ; i = 1 ou 2. cFe est en mmol/L ; rᵢ en L·mmol⁻¹·s⁻¹. La relation linéaire s’applique dans le domaine de concentration validé expérimentalement.</p></details></div>",
+      "<div class=\"text-module\"><h3>Contrast mechanism</h3><p>IONP moments create local fields. Water motion and magnetic dynamics modulate the fields experienced by protons. These mechanisms modify T₁ and T₂.</p><h3>Measuring relaxivity</h3><p>The slope of 1/T₁ or 1/T₂ versus iron concentration defines r₁ or r₂. Report B₀, temperature and medium.</p><h3>Structure and properties</h3><p>Core size, magnetization, coating and aggregation influence relaxation. A high r₂/r₁ ratio alone does not predict image quality.</p><details class=\"symbols\"><summary>Symbols and units</summary><p>Rᵢ = 1/Tᵢ; i = 1 or 2. cFe is in mmol/L; rᵢ in L·mmol⁻¹·s⁻¹. The linear relation applies over an experimentally validated concentration range.</p></details></div>"
     ],
     "steps": [],
     "refs": [
       "dias1986",
       "roch1999",
-      "vuong2012",
-      "mri"
+      "vuong2012"
     ],
     "limits": [
-      "Rᵢ = 1/Tᵢ ; i = 1 ou 2. cFe est en mmol/L ; rᵢ en L·mmol⁻¹·s⁻¹. La relation linéaire s’applique dans le domaine de concentration validé expérimentalement.",
-      "Rᵢ = 1/Tᵢ; i = 1 or 2. cFe is in mmol/L; rᵢ in L·mmol⁻¹·s⁻¹. The linear relation applies over an experimentally validated concentration range."
+      "",
+      ""
     ]
   },
   "mpi": {
@@ -481,18 +499,19 @@ const D={
       "MPI directly detects the magnetic response of tracers."
     ],
     "body": [
-      "<div class=\"text-module\"><h3>Localiser le signal</h3><p>Un gradient crée une région de champ nul. Un champ d’excitation déplace cette région. Les particules proches répondent fortement ; les particules éloignées sont proches de la saturation.</p><h3>Réponse non linéaire</h3><p>La variation de l’aimantation induit une tension dans une bobine de réception. La réponse non linéaire contient des harmoniques. La reconstruction utilise la sensibilité spatiale et la réponse du traceur.</p><h3>Rôle du traceur</h3><p>Le moment magnétique, l’anisotropie et les temps de relaxation modifient le signal et la résolution. Le signal de particules présente peu de fond endogène ; le bruit instrumental subsiste.</p></div>",
-      "<div class=\"text-module\"><h3>Localizing the signal</h3><p>A gradient creates a field-free region. A drive field moves this region. Nearby particles respond strongly; distant particles approach saturation.</p><h3>Nonlinear response</h3><p>Changing magnetization induces voltage in a receive coil. The nonlinear response contains harmonics. Reconstruction uses spatial sensitivity and tracer response.</p><h3>Tracer properties</h3><p>Magnetic moment, anisotropy and relaxation times affect signal and resolution. Particle signals have little endogenous background; instrumental noise remains.</p></div>"
+      "<div class=\"text-module\"><h3>Localiser le signal</h3><p>Un gradient crée une région de champ nul. Un champ d’excitation déplace cette région. Les particules proches répondent fortement ; les particules éloignées sont proches de la saturation.</p><h3>Réponse non linéaire</h3><p>La variation de l’aimantation induit une tension dans une bobine de réception. La réponse non linéaire contient des harmoniques. La reconstruction utilise la sensibilité spatiale et la réponse du traceur.</p><h3>Rôle du traceur</h3><p>Le moment magnétique, l’anisotropie et les temps de relaxation modifient le signal et la résolution. Le signal de particules présente peu de fond endogène ; le bruit instrumental subsiste.</p><details class=\"symbols\"><summary>Symboles et unités</summary><p>u : tension reçue ; Φ : flux magnétique ; N : nombre de spires. La proportionnalité à dM/dt suppose une géométrie de détection fixée. Elle ne décrit pas à elle seule la reconstruction spatiale.</p></details></div>",
+      "<div class=\"text-module\"><h3>Localizing the signal</h3><p>A gradient creates a field-free region. A drive field moves this region. Nearby particles respond strongly; distant particles approach saturation.</p><h3>Nonlinear response</h3><p>Changing magnetization induces voltage in a receive coil. The nonlinear response contains harmonics. Reconstruction uses spatial sensitivity and tracer response.</p><h3>Tracer properties</h3><p>Magnetic moment, anisotropy and relaxation times affect signal and resolution. Particle signals have little endogenous background; instrumental noise remains.</p><details class=\"symbols\"><summary>Symbols and units</summary><p>u: received voltage; Φ: magnetic flux; N: coil turns. Proportionality to dM/dt assumes fixed detection geometry. It does not by itself describe spatial reconstruction.</p></details></div>"
     ],
     "steps": [],
     "refs": [
-      "mpi",
-      "mpi2015",
-      "mpi2021"
+      "mpi"
     ],
     "limits": [
-      "u : tension reçue ; Φ : flux magnétique ; N : nombre de spires. La proportionnalité à dM/dt suppose une géométrie de détection fixée. Elle ne décrit pas à elle seule la reconstruction spatiale.",
-      "u: received voltage; Φ: magnetic flux; N: coil turns. Proportionality to dM/dt assumes fixed detection geometry. It does not by itself describe spatial reconstruction."
+      "",
+      ""
+    ],
+    "reviews": [
+      "krishnan2010"
     ]
   },
   "heat": {
@@ -508,22 +527,29 @@ const D={
       "An alternating field transfers energy to magnetic moments. Some is dissipated as heat."
     ],
     "body": [
-      "<div class=\"text-module\"><h3>Dissipation</h3><p>L’aire du cycle dynamique M(H) mesure l’énergie dissipée par cycle et par volume magnétique. La fréquence convertit cette énergie en puissance.</p><h3>Réponse linéaire de Rosensweig</h3><p>À faible excitation, χ″ décrit la composante dissipative. Un modèle à temps de relaxation unique relie χ″ à χ₀ et à 2πfτ. Cette approximation ne couvre pas tous les cycles non linéaires ni les assemblages fortement couplés.</p><h3>Comparer les mesures</h3><p>Le SAR rapporte la puissance à une masse explicitement définie : fer ou oxyde. En calorimétrie, il dépend de la capacité thermique totale et de la pente initiale de température. L’ILP n’est comparable que dans les conditions où la réponse linéaire est appropriée.</p><h3>Amplitude et fréquence : critère de Brezovich</h3><p>Le repère historique H₀f ≲ 4,85 × 10⁸ A·m⁻¹·s⁻¹ provient de conditions d’exposition particulières. Des critères moins restrictifs, autour de 5 × 10⁹, ont été proposés pour d’autres géométries. Aucun de ces produits ne garantit à lui seul la tolérance : volume exposé, durée et refroidissement comptent aussi.</p></div>",
-      "<div class=\"text-module\"><h3>Dissipation</h3><p>The area of the dynamic M(H) loop gives energy loss per cycle and magnetic volume. Frequency converts this energy into power.</p><h3>Rosensweig linear response</h3><p>At low excitation, χ″ describes the dissipative component. A single-relaxation-time model relates χ″ to χ₀ and 2πfτ. This approximation does not cover all nonlinear loops or strongly coupled assemblies.</p><h3>Comparing measurements</h3><p>SAR divides power by an explicitly defined mass: iron or oxide. Calorimetry uses total heat capacity and the initial temperature slope. ILP is comparable only when linear-response conditions are appropriate.</p><h3>Amplitude and frequency: the Brezovich criterion</h3><p>The historical guide H₀f ≲ 4.85 × 10⁸ A·m⁻¹·s⁻¹ comes from specific exposure conditions. Less restrictive criteria near 5 × 10⁹ have been proposed for other geometries. Neither product alone guarantees tolerance: exposed volume, duration and cooling also matter.</p></div>"
+      "<div class=\"text-module\"><h3>Dissipation</h3><p>L’aire du cycle dynamique M(H) mesure l’énergie dissipée par cycle et par volume magnétique. La fréquence convertit cette énergie en puissance.</p><h3>Réponse linéaire de Rosensweig</h3><p>À faible excitation, χ″ décrit la composante dissipative. Un modèle à temps de relaxation unique relie χ″ à χ₀ et à 2πfτ. Cette approximation ne couvre pas tous les cycles non linéaires ni les assemblages fortement couplés.</p><h3>Anisotropie et relaxation</h3><p>La barrière K<sub>eff</sub>V contrôle le retournement de Néel. La rotation brownienne dépend de la viscosité et du volume hydrodynamique. Fortin et al. séparent ces contributions en variant la taille, l’anisotropie et la viscosité.</p><h3>Ajuster l’anisotropie</h3><p>Une anisotropie plus forte n’augmente pas toujours le chauffage. La réponse doit correspondre à l’amplitude et à la fréquence du champ. Lee et al., dans l’équipe de Cheon, utilisent le couplage d’échange cœur–coquille pour ajuster les propriétés magnétiques et augmenter la puissance dissipée.</p><h3>Comparer les mesures</h3><p>Le SAR rapporte la puissance à une masse explicitement définie : fer ou oxyde. En calorimétrie, il dépend de la capacité thermique totale et de la pente initiale de température. L’ILP n’est comparable que dans les conditions où la réponse linéaire est appropriée.</p><h3>Amplitude et fréquence : critère de Brezovich</h3><p>Le repère historique H₀f ≲ 4,85 × 10⁸ A·m⁻¹·s⁻¹ provient de conditions d’exposition particulières. Des critères moins restrictifs, autour de 5 × 10⁹, ont été proposés pour d’autres géométries. Aucun de ces produits ne garantit à lui seul la tolérance : volume exposé, durée et refroidissement comptent aussi.</p><details class=\"symbols\"><summary>Symboles et unités</summary><p>H₀ est l’amplitude crête en A/m, f la fréquence en Hz, τ le temps de relaxation. M est une aimantation volumique. Pᵥ est en W/m³ de phase magnétique ; ρmag en kg/m³ donne un SAR en W/kg de phase magnétique. Ctot est la capacité thermique totale (J/K) et mmag la masse de référence (kg). Les pertes thermiques doivent être prises en compte.</p></details></div>",
+      "<div class=\"text-module\"><h3>Dissipation</h3><p>The area of the dynamic M(H) loop gives energy loss per cycle and magnetic volume. Frequency converts this energy into power.</p><h3>Rosensweig linear response</h3><p>At low excitation, χ″ describes the dissipative component. A single-relaxation-time model relates χ″ to χ₀ and 2πfτ. This approximation does not cover all nonlinear loops or strongly coupled assemblies.</p><h3>Anisotropy and relaxation</h3><p>The K<sub>eff</sub>V barrier controls Néel reversal. Brownian rotation depends on viscosity and hydrodynamic volume. Fortin et al. separate these contributions by varying size, anisotropy and viscosity.</p><h3>Tuning anisotropy</h3><p>Higher anisotropy does not always increase heating. The response must match the field amplitude and frequency. Lee et al., in Cheon’s group, use core–shell exchange coupling to tune magnetic properties and increase dissipated power.</p><h3>Comparing measurements</h3><p>SAR divides power by an explicitly defined mass: iron or oxide. Calorimetry uses total heat capacity and the initial temperature slope. ILP is comparable only when linear-response conditions are appropriate.</p><h3>Amplitude and frequency: the Brezovich criterion</h3><p>The historical guide H₀f ≲ 4.85 × 10⁸ A·m⁻¹·s⁻¹ comes from specific exposure conditions. Less restrictive criteria near 5 × 10⁹ have been proposed for other geometries. Neither product alone guarantees tolerance: exposed volume, duration and cooling also matter.</p><details class=\"symbols\"><summary>Symbols and units</summary><p>H₀ is peak amplitude in A/m, f is frequency in Hz, τ is relaxation time. M is volume magnetization. Pᵥ is in W/m³ of magnetic phase; ρmag in kg/m³ gives SAR in W/kg of magnetic phase. Ctot is total heat capacity (J/K) and mmag is reference mass (kg). Heat losses must be accounted for.</p></details></div>"
     ],
     "steps": [],
     "refs": [
       "gilchrist1957",
-      "jordan1993",
+      "neel",
+      "brown",
       "heat",
-      "atkinson1984",
+      "fortin2007",
+      "cheon2011",
       "hergt2008",
-      "kallumadil2009",
-      "eddy2025"
+      "atkinson1984",
+      "kallumadil2009"
     ],
     "limits": [
-      "H₀ est l’amplitude crête en A/m, f la fréquence en Hz, τ le temps de relaxation. M est une aimantation volumique. Pᵥ est en W/m³ de phase magnétique ; ρmag en kg/m³ donne un SAR en W/kg de phase magnétique. Ctot est la capacité thermique totale (J/K) et mmag la masse de référence (kg). Les pertes thermiques doivent être prises en compte.",
-      "H₀ is peak amplitude in A/m, f is frequency in Hz, τ is relaxation time. M is volume magnetization. Pᵥ is in W/m³ of magnetic phase; ρmag in kg/m³ gives SAR in W/kg of magnetic phase. Ctot is total heat capacity (J/K) and mmag is reference mass (kg). Heat losses must be accounted for."
+      "",
+      ""
+    ],
+    "reviews": [
+      "dutz2013",
+      "sandre2015",
+      "krishnan2010"
     ]
   },
   "photo": {
@@ -539,19 +565,18 @@ const D={
       "Absorbed light can be dissipated as heat."
     ],
     "body": [
-      "<div class=\"text-module\"><h3>Absorption et dissipation</h3><p>Les voies de relaxation non radiatives transfèrent l’énergie absorbée au milieu. La photothermie se distingue de la photodynamique, qui repose sur des espèces réactives.</p><h3>IONPs et assemblages</h3><p>L’absorption dépend de la composition, de la longueur d’onde et de l’organisation des particules. Des études sur les IONPs et leurs amas montrent une conversion dans le proche infrarouge. Le mécanisme plasmonique des nanoparticules d’or ne doit pas être transposé automatiquement aux IONPs.</p><h3>Bilan thermique</h3><p>La température résulte de la puissance absorbée et des pertes. Un blanc permet d’estimer le chauffage du solvant et du contenant. Le rendement dépend du bilan thermique et de la mesure de l’absorption.</p></div>",
-      "<div class=\"text-module\"><h3>Absorption and dissipation</h3><p>Nonradiative relaxation pathways transfer absorbed energy to the surroundings. Photothermal conversion differs from photodynamic action, which involves reactive species.</p><h3>IONPs and assemblies</h3><p>Absorption depends on composition, wavelength and particle organization. Studies of IONPs and clusters show near-infrared conversion. Gold-nanoparticle plasmonic mechanisms should not automatically be assigned to IONPs.</p><h3>Heat balance</h3><p>Temperature reflects absorbed power and heat losses. A blank estimates solvent and container heating. Efficiency depends on the heat balance and absorption measurement.</p></div>"
+      "<div class=\"text-module\"><h3>Absorption et dissipation</h3><p>Les voies de relaxation non radiatives transfèrent l’énergie absorbée au milieu. La photothermie se distingue de la photodynamique, qui repose sur des espèces réactives.</p><h3>IONPs et assemblages</h3><p>L’absorption dépend de la composition, de la longueur d’onde et de l’organisation des particules. Des études sur les IONPs et leurs amas montrent une conversion dans le proche infrarouge. Le mécanisme plasmonique des nanoparticules d’or ne doit pas être transposé automatiquement aux IONPs.</p><h3>Bilan thermique</h3><p>La température résulte de la puissance absorbée et des pertes. Un blanc permet d’estimer le chauffage du solvant et du contenant. Le rendement dépend du bilan thermique et de la mesure de l’absorption.</p><details class=\"symbols\"><summary>Symboles et unités</summary><p>Ctot : capacité thermique totale ; η : rendement ; Pabs : puissance optique absorbée par les particules ; Pblanc : chauffage de fond ; G : conductance thermique effective ; Tenv : température du milieu. Modèle global à température uniforme, sans prédiction de température cellulaire locale.</p></details></div>",
+      "<div class=\"text-module\"><h3>Absorption and dissipation</h3><p>Nonradiative relaxation pathways transfer absorbed energy to the surroundings. Photothermal conversion differs from photodynamic action, which involves reactive species.</p><h3>IONPs and assemblies</h3><p>Absorption depends on composition, wavelength and particle organization. Studies of IONPs and clusters show near-infrared conversion. Gold-nanoparticle plasmonic mechanisms should not automatically be assigned to IONPs.</p><h3>Heat balance</h3><p>Temperature reflects absorbed power and heat losses. A blank estimates solvent and container heating. Efficiency depends on the heat balance and absorption measurement.</p><details class=\"symbols\"><summary>Symbols and units</summary><p>Ctot: total heat capacity; η: efficiency; Pabs: optical power absorbed by particles; Pblank: background heating; G: effective thermal conductance; Tenv: ambient temperature. Lumped uniform-temperature model, not a prediction of local cellular temperature.</p></details></div>"
     ],
     "steps": [],
     "refs": [
       "shen2013",
       "shen2015",
-      "sangnier2018",
       "roper2007"
     ],
     "limits": [
-      "Ctot : capacité thermique totale ; η : rendement ; Pabs : puissance optique absorbée par les particules ; Pblanc : chauffage de fond ; G : conductance thermique effective ; Tenv : température du milieu. Modèle global à température uniforme, sans prédiction de température cellulaire locale.",
-      "Ctot: total heat capacity; η: efficiency; Pabs: optical power absorbed by particles; Pblank: background heating; G: effective thermal conductance; Tenv: ambient temperature. Lumped uniform-temperature model, not a prediction of local cellular temperature."
+      "",
+      ""
     ]
   },
   "industry": {
@@ -567,21 +592,21 @@ const D={
       "Examples connect physical mechanisms with products and instruments."
     ],
     "body": [
-      "<div class=\"text-module\"><h3>IRM · Azurity / Ferabright</h3><p><a href=\"https://www.ferabright.com/\" target=\"_blank\" rel=\"noopener\">Ferabright</a> : produit à base de ferumoxytol. Consulter les indications américaines du fabricant.</p><h3>MPI · Magnetic Insight</h3><p><a href=\"https://www.magneticinsight.com/\" target=\"_blank\" rel=\"noopener\">Magnetic Insight</a> : instrumentation d’imagerie par particules magnétiques pour la recherche.</p><h3>Hyperthermie · Nanotherm Therapeutics</h3><p><a href=\"https://www.nanothermtx.com/\" target=\"_blank\" rel=\"noopener\">Nanotherm Therapeutics</a> : développement d’un dispositif expérimental d’hyperthermie magnétique.</p><h3>Ganglion sentinelle · Endomag</h3><p><a href=\"https://www.endomag.com/en/products/magtrace/\" target=\"_blank\" rel=\"noopener\">Magtrace</a> : traceur magnétique pour le repérage ganglionnaire.</p></div>",
-      "<div class=\"text-module\"><h3>MRI · Azurity / Ferabright</h3><p><a href=\"https://www.ferabright.com/\" target=\"_blank\" rel=\"noopener\">Ferabright</a>: ferumoxytol product. See the manufacturer’s US indications.</p><h3>MPI · Magnetic Insight</h3><p><a href=\"https://www.magneticinsight.com/\" target=\"_blank\" rel=\"noopener\">Magnetic Insight</a>: magnetic particle imaging research instrumentation.</p><h3>Hyperthermia · Nanotherm Therapeutics</h3><p><a href=\"https://www.nanothermtx.com/\" target=\"_blank\" rel=\"noopener\">Nanotherm Therapeutics</a>: development of an investigational magnetic-hyperthermia device.</p><h3>Sentinel node · Endomag</h3><p><a href=\"https://www.endomag.com/en/products/magtrace/\" target=\"_blank\" rel=\"noopener\">Magtrace</a>: magnetic tracer for lymph-node detection.</p></div>"
+      "<div class=\"text-module\"><h3>IRM · Azurity / Ferabright</h3><p><a href=\"https://www.ferabright.com/\" target=\"_blank\" rel=\"noopener\">Ferabright</a> : produit à base de ferumoxytol. Consulter les indications américaines du fabricant.</p><h3>MPI · Magnetic Insight</h3><p><a href=\"https://www.magneticinsight.com/\" target=\"_blank\" rel=\"noopener\">Magnetic Insight</a> : instrumentation d’imagerie par particules magnétiques pour la recherche.</p><h3>Hyperthermie · Nanotherm Therapeutics</h3><p><a href=\"https://www.nanothermtx.com/\" target=\"_blank\" rel=\"noopener\">Nanotherm Therapeutics</a> : développement d’un dispositif expérimental d’hyperthermie magnétique.</p><h3>Détection magnétique par susceptométrie · Endomag</h3><p><a href=\"https://www.endomag.com/en/products/magtrace/\" target=\"_blank\" rel=\"noopener\">Magtrace</a> : traceur magnétique détecté par la sonde Sentimag sous champ alternatif. Application : repérage ganglionnaire.</p></div>",
+      "<div class=\"text-module\"><h3>MRI · Azurity / Ferabright</h3><p><a href=\"https://www.ferabright.com/\" target=\"_blank\" rel=\"noopener\">Ferabright</a>: ferumoxytol product. See the manufacturer’s US indications.</p><h3>MPI · Magnetic Insight</h3><p><a href=\"https://www.magneticinsight.com/\" target=\"_blank\" rel=\"noopener\">Magnetic Insight</a>: magnetic particle imaging research instrumentation.</p><h3>Hyperthermia · Nanotherm Therapeutics</h3><p><a href=\"https://www.nanothermtx.com/\" target=\"_blank\" rel=\"noopener\">Nanotherm Therapeutics</a>: development of an investigational magnetic-hyperthermia device.</p><h3>Magnetic detection by susceptometry · Endomag</h3><p><a href=\"https://www.endomag.com/en/products/magtrace/\" target=\"_blank\" rel=\"noopener\">Magtrace</a>: magnetic tracer detected by the Sentimag probe under an alternating field. Application: lymph-node detection.</p></div>"
     ],
     "steps": [],
     "refs": [],
     "limits": [
-      "Exemples non exhaustifs. Les sites des fabricants précisent le statut, les indications et les pays concernés. Ces liens n’impliquent pas un partenariat avec NanoBioMat.",
-      "Non-exhaustive examples. Manufacturer websites specify status, indications and applicable countries. These links do not imply a NanoBioMat partnership."
+      "",
+      ""
     ]
   }
 };
 function range(id,fr,en,min,max,val,step,unit){if(values[id]===undefined)values[id]=val;return `<label>${T(fr,en)}<input id="${id}" type="range" min="${min}" max="${max}" step="${step}" value="${values[id]}"><output>${values[id]} ${unit}</output></label>`;}
-function controls(m){let s='';if(m.kind==='relax')s=`<label><input type="checkbox" id="fixed" ${values.fixed?'checked':''}> ${T('Particule immobilisée','Immobilized particle')}</label>`;if(m.kind==='dipole')s=range('gap','Distance entre surfaces','Surface gap',0,60,35,.1,'nm');if(m.kind==='delta')s=`<label>${T('Écart à la référence','Deviation from the reference')}<select id="deltaSign"><option value="0">${T('Sans écart : ΔM = 0','No deviation: ΔM = 0')}</option><option value="1">${T('Favorisant l’aimantation : ΔM > 0','Magnetizing: ΔM > 0')}</option><option value="-1">${T('Démagnétisant : ΔM < 0','Demagnetizing: ΔM < 0')}</option></select></label>`;if(m.kind==='mri')s=range('T1','T₁','T₁',400,2000,1000,100,'ms')+range('T2','T₂','T₂',40,400,180,10,'ms');if(m.kind==='corona')s+=`<label>${T('Scénario','Scenario')}<select id="coronaMode"><option value="dynamic">${T('Couronne dynamique','Dynamic corona')}</option><option value="vroman">${T('Effet Vroman · scénario possible','Vroman effect · possible scenario')}</option></select></label>`;$('controls').innerHTML=s;if($('deltaSign')){$('deltaSign').value=String(values.deltaSign||0);$('deltaSign').onchange=()=>{values.deltaSign=+$('deltaSign').value;draw();};}if($('coronaMode')){$('coronaMode').value=values.coronaMode||'dynamic';$('coronaMode').onchange=()=>{values.coronaMode=$('coronaMode').value;draw();};}$('controls').querySelectorAll('input').forEach(el=>el.oninput=()=>{values[el.id]=el.type==='checkbox'?el.checked:+el.value;if(el.type==='range')el.nextElementSibling.textContent=el.value+' '+({gap:'nm',K:'kJ/m³',d:'nm',T:'K',shell:'nm',eta:'mPa·s',angle:'°',T1:'ms',T2:'ms'}[el.id]||'');draw();});}
-function stop(){playing=false;cancelAnimationFrame(raf);if($('play'))$('play').textContent=T('Lire','Play');}
-function render(){stop();renderResources();renderModuleNavigation();const m=D[current];document.documentElement.lang=lang;$('language').textContent=lang==='fr'?'EN':'FR';$('language').ariaLabel=T('Switch to English','Passer en français');$('edition').textContent=T('Bases théoriques','Theoretical background');$('eyebrow').textContent=T('Recherche · Explorer les mécanismes','Research · Explore the mechanisms');$('title').textContent=T('De la nanoparticule au vivant','From nanoparticles to living systems');$('intro').textContent=T('Les schémas et les modèles expliquent les mécanismes étudiés dans nos trois axes de recherche.','Diagrams and models explain the mechanisms studied across our three research axes.');$('axes').innerHTML=axes.map((a,i)=>`<button data-axis="${i}" aria-pressed="${i===axis}"><span class="axis-number">0${i+1}</span><b>${a[lang==='fr'?0:1]}</b><span>${a[lang==='fr'?2:3]}</span><span class="axis-open">${i===axis?T('Axe sélectionné','Selected axis'):T('Explorer cet axe','Explore this axis')}</span></button>`).join('');$('axes').querySelectorAll('button').forEach(b=>b.onclick=()=>{chooseModule(Object.keys(D).find(k=>D[k].a===+b.dataset.axis));});$('modules').innerHTML=Object.entries(D).filter(([k,v])=>v.a===axis).map(([k,v])=>`<button data-module="${k}" aria-pressed="${current===k}">${v.n[lang==='fr'?0:1]}</button>`).join('');$('modules').querySelectorAll('button').forEach(b=>b.onclick=()=>{chooseModule(b.dataset.module);});$('heading').innerHTML=`<p class="eyebrow">${axes[axis][lang==='fr'?0:1]}</p><h2>${m.n[lang==='fr'?0:1]}</h2><p>${m.lead?m.lead[lang==='fr'?0:1]:T('Les courbes illustrent les modèles et leurs paramètres. Elles ne représentent pas de données expérimentales.','The curves illustrate models and their parameters. They do not represent experimental data.')}</p>`;$('stage').innerHTML='';controls(m);const iscurve=m.kind==='curves';$('enlarge').hidden=iscurve;$('enlarge').textContent=T('Agrandir le schéma','Enlarge diagram');$('zoomTitle').textContent=T('Vue agrandie · animation en pause','Enlarged view · animation paused');$('closeZoom').textContent=T('Fermer','Close');['transport','steps','explain','math','references','limits'].forEach(id=>$(id).hidden=iscurve);$('source').hidden=iscurve||!m.src;$('source').open=false;$('source').hidden=iscurve;$('sourceTitle').textContent=T('Exporter les schémas vectoriels','Export vector diagrams');$('sourceNote').textContent=T('Les fichiers SVG sont éditables. Ils ne contiennent pas d’image matricielle. Les légendes suivent la langue choisie. Les références et les limites figurent sous le module.','SVG files are editable. They contain no raster images. Labels follow the selected language. References and limits appear below the module.');$('sourceImage').hidden=true;$('download').hidden=true;$('exportFR').textContent='SVG · Français';$('exportEN').textContent='SVG · English';if(iscurve){$('stage').innerHTML='<iframe id="curves" title="'+T('Modèles de magnétisme interactifs','Interactive magnetism models')+'"></iframe>';const f=$('curves');f.onload=()=>f.contentWindow.postMessage({kind:'protocol',mode:m.mode,lang},'*');f.srcdoc=['swangle','zfc','mh','initial'].includes(m.mode)?ASSETS.foundations:ASSETS.curves;return;}$('reset').textContent=T('Recommencer','Restart');$('timelineLabel').textContent=T('Progression','Progress');$('steps').innerHTML=m.steps.map((s,i)=>`<button data-step="${i}">${i+1}. ${s[lang==='fr'?0:1]}</button>`).join('');$('steps').querySelectorAll('button').forEach(b=>b.onclick=()=>{stop();u=(+b.dataset.step+.5)/m.steps.length;draw();});$('references').innerHTML=`<h3>${T('Publications et ressources','Publications and resources')}</h3><ul>${(m.refs||[]).map(k=>`<li>${refs[k][0]}. <a href="${refs[k][1].startsWith('https://')?refs[k][1]:'https://doi.org/'+refs[k][1]}" target="_blank" rel="noopener noreferrer">${refs[k][1].startsWith('https://')?T('Consulter la source','View source'):'doi: '+refs[k][1]}</a></li>`).join('')}</ul><a href="https://lenaiclartigue.github.io/python-chimie/" target="_blank" rel="noopener noreferrer">${T('Python pour la chimie · prolonger l’exploration','Python for chemistry · explore further')}</a>`;$('limits').textContent=m.limits[lang==='fr'?0:1];if(current==='corona')$('references').innerHTML+=proteinEvidence()+`<p><a href="https://pubmed.ncbi.nlm.nih.gov/22342465/" target="_blank" rel="noopener">${T('USPIO : exemple sans effet Vroman classique','USPIO: example without a classical Vroman effect')}</a></p><p><a href="#biointerfaces/fate">${T('Poursuivre : entrée et devenir cellulaire','Continue: cell entry and fate')}</a></p>`;if(current==='fate')$('references').innerHTML+=`<p>${T('Repère de dimensions : bicouche lipidique ~3–4 nm dans la source citée, sans imposer cette valeur à toutes les membranes. Le schéma est hors échelle.','Dimensional context: lipid bilayer ~3–4 nm in the cited source, not a universal value for all membranes. Diagram not to scale.')} <a href="https://bionumbers.hms.harvard.edu/bionumber.aspx?id=112585&org=&trm=membrane&ver=3" target="_blank" rel="noopener">BioNumbers BNID 112585</a>.</p>`;$('footer').textContent=T('Les modèles illustrent les mécanismes étudiés. Les références et les hypothèses accompagnent chaque module.','The models illustrate the mechanisms studied. References and assumptions accompany each module.');draw();}
+function controls(m){let s='';if(m.kind==='relax')s=`<label><input type="checkbox" id="fixed" ${values.fixed?'checked':''}> ${T('Particule immobilisée','Immobilized particle')}</label>`;if(m.kind==='dipole')s=range('gap','Distance entre surfaces','Surface gap',0,60,60,.1,'nm');if(m.kind==='delta')s=`<label>${T('Écart à la référence','Deviation from the reference')}<select id="deltaSign"><option value="0">${T('Sans écart : ΔM = 0','No deviation: ΔM = 0')}</option><option value="1">${T('Type ferromagnétique : ΔM > 0','Ferromagnetic-like: ΔM > 0')}</option><option value="-1">${T('Type antiferromagnétique : ΔM < 0','Antiferromagnetic-like: ΔM < 0')}</option></select></label>`;if(m.kind==='mri')s=range('T1','T₁','T₁',400,2000,1000,100,'ms')+range('T2','T₂','T₂',40,400,180,10,'ms');$('controls').innerHTML=s;if(m.kind==='dipole'&&values.gap>=60){const out=$('controls').querySelector('output');if(out)out.textContent=T('Isolées','Isolated');}if($('deltaSign')){$('deltaSign').value=String(values.deltaSign||0);$('deltaSign').onchange=()=>{values.deltaSign=+$('deltaSign').value;draw();};}if($('coronaMode')){$('coronaMode').value=values.coronaMode||'dynamic';$('coronaMode').onchange=()=>{values.coronaMode=$('coronaMode').value;draw();};}$('controls').querySelectorAll('input').forEach(el=>el.oninput=()=>{values[el.id]=el.type==='checkbox'?el.checked:+el.value;if(el.type==='range')el.nextElementSibling.textContent=el.value+' '+({gap:'nm',K:'kJ/m³',d:'nm',T:'K',shell:'nm',eta:'mPa·s',angle:'°',T1:'ms',T2:'ms'}[el.id]||'');if(el.id==='gap'&&+el.value>=60)el.nextElementSibling.textContent=T('Isolées','Isolated');draw();});}
+function stop(){playing=false;cancelAnimationFrame(raf);if($('play'))$('play').textContent=current==='corona'&&u>0&&u<1?T('Poursuivre','Continue'):T('Lire','Play');}
+function render(){stop();renderResources();renderModuleNavigation();const m=D[current];document.documentElement.lang=lang;$('language').textContent=lang==='fr'?'EN':'FR';$('language').ariaLabel=T('Switch to English','Passer en français');$('edition').textContent=T('Bases théoriques','Theoretical background');$('eyebrow').textContent=T('Recherche · Explorer les mécanismes','Research · Explore the mechanisms');$('title').textContent=T('De la nanoparticule au vivant','From nanoparticles to living systems');$('intro').textContent=T('Les schémas et les modèles expliquent les mécanismes étudiés dans nos trois axes de recherche.','Diagrams and models explain the mechanisms studied across our three research axes.');$('axes').innerHTML=axes.map((a,i)=>`<button data-axis="${i}" aria-pressed="${i===axis}"><span class="axis-number">0${i+1}</span><b>${a[lang==='fr'?0:1]}</b><span>${a[lang==='fr'?2:3]}</span><span class="axis-open">${i===axis?T('Axe sélectionné','Selected axis'):T('Explorer cet axe','Explore this axis')}</span></button>`).join('');$('axes').querySelectorAll('button').forEach(b=>b.onclick=()=>{chooseModule(Object.keys(D).find(k=>D[k].a===+b.dataset.axis));});$('modules').innerHTML=Object.entries(D).filter(([k,v])=>v.a===axis).map(([k,v])=>`<button data-module="${k}" aria-pressed="${current===k}">${v.n[lang==='fr'?0:1]}</button>`).join('');$('modules').querySelectorAll('button').forEach(b=>b.onclick=()=>{chooseModule(b.dataset.module);});$('heading').innerHTML=`<p class="eyebrow">${axes[axis][lang==='fr'?0:1]}</p><h2>${m.n[lang==='fr'?0:1]}</h2><p>${m.lead?m.lead[lang==='fr'?0:1]:''}</p>`;$('stage').innerHTML='';controls(m);const iscurve=m.kind==='curves';$('enlarge').hidden=iscurve;$('enlarge').textContent=T('Agrandir le schéma','Enlarge diagram');$('zoomTitle').textContent=T('Vue agrandie · animation en pause','Enlarged view · animation paused');$('closeZoom').textContent=T('Fermer','Close');['transport','steps','explain','math','references','limits'].forEach(id=>$(id).hidden=iscurve);if(iscurve){$('stage').innerHTML='<iframe id="curves" title="'+T('Modèles de magnétisme interactifs','Interactive magnetism models')+'"></iframe>';const f=$('curves');f.onload=()=>f.contentWindow.postMessage({kind:'protocol',mode:m.mode,lang},'*');f.srcdoc=['swangle','zfc','mh','initial'].includes(m.mode)?ASSETS.foundations:ASSETS.curves;return;}$('reset').textContent=T('Recommencer','Restart');$('timelineLabel').textContent=T('Progression','Progress');$('steps').innerHTML=m.steps.map((s,i)=>`<button data-step="${i}">${i+1}. ${s[lang==='fr'?0:1]}</button>`).join('');$('steps').querySelectorAll('button').forEach(b=>b.onclick=()=>{stop();u=current==='corona'?[.25,.5,.75,1][+b.dataset.step]:(+b.dataset.step+.5)/m.steps.length;draw();});$('references').innerHTML=`<h3>${T('Publications de référence','Reference publications')}</h3><ul>${(m.refs||[]).map(k=>`<li>${refs[k][0]}. <a href="${refs[k][1].startsWith('https://')?refs[k][1]:'https://doi.org/'+refs[k][1]}" target="_blank" rel="noopener noreferrer">${refs[k][1].startsWith('https://')?T('Consulter la source','View source'):'doi: '+refs[k][1]}</a></li>`).join('')}</ul>`;$('limits').textContent='';$('limits').hidden=true;if(m.reviews)$('references').innerHTML+=`<h3>${T('Synthèses de référence','Reference reviews')}</h3><ul>${m.reviews.map(k=>`<li>${refs[k][0]}. <a href="https://doi.org/${refs[k][1]}" target="_blank" rel="noopener">doi: ${refs[k][1]}</a></li>`).join('')}</ul>`;if(current==='corona')$('references').innerHTML+=proteinEvidence()+`<p><a href="#biointerfaces/fate">${T('Poursuivre : entrée et devenir cellulaire','Continue: cell entry and fate')}</a></p>`;if(current==='fate')$('references').innerHTML+=`<p>${T('Repère de dimensions : bicouche lipidique ~3–4 nm dans la source citée, sans imposer cette valeur à toutes les membranes. Le schéma est hors échelle.','Dimensional context: lipid bilayer ~3–4 nm in the cited source, not a universal value for all membranes. Diagram not to scale.')} <a href="https://bionumbers.hms.harvard.edu/bionumber.aspx?id=112585&org=&trm=membrane&ver=3" target="_blank" rel="noopener">BioNumbers BNID 112585</a>.</p>`;$('footer').textContent='NanoBioMat';draw();}
 const C={teal:'#315b78',orange:'#a66b49',purple:'#775b8c',ink:'#243944'};
 function line(x1,y1,x2,y2,c=C.ink,w=2,dash=''){return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${c}" stroke-width="${w}" ${dash?'stroke-dasharray="'+dash+'"':''}/>`;}
 function text(x,y,s,size=17,c=C.ink){return `<text x="${x}" y="${y}" text-anchor="middle" style="font-size:${size}px;fill:${c}">${s}</text>`;}
@@ -593,7 +618,7 @@ function svg(content){return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0
 function path(points,color,width=3){return `<path d="${points.map((p,i)=>(i?'L':'M')+p[0].toFixed(2)+' '+p[1].toFixed(2)).join(' ')}" fill="none" stroke="${color}" stroke-width="${width}"/>`;}
 function chart(curves,xmax,ymax,xlabel,ylabel,box=[410,80,330,240]){const[x,y,w,h]=box;let s='';for(let i=0;i<=4;i++){const px=x+w*i/4,py=y+h-h*i/4;s+=line(px,y,px,y+h,'#e3e9ed',1)+line(x,py,x+w,py,'#e3e9ed',1)+text(px,y+h+17,Number((xmax*i/4).toPrecision(3)),11,'#657b88')+text(x-19,py+4,Number((ymax*i/4).toPrecision(3)),11,'#657b88');}s+=line(x,y,x,y+h,'#586e7b',1.5)+line(x,y+h,x+w,y+h,'#586e7b',1.5)+text(x+w/2,y+h+38,xlabel,14)+text(x+w/2,y-18,ylabel,14);for(const [pts,c]of curves)s+=path(pts.map(([a,b])=>[x+w*a/xmax,y+h-h*b/ymax]),c,2.5);return s;}
 
-function drawRaw(){const m=D[current];if(m.kind==='curves')return;if(m.kind==='reading'){$('stage').innerHTML=m.body[lang==='fr'?0:1];$('math').innerHTML=EQUATIONS[current]||'';return;}const idx=Math.min(m.steps.length-1,Math.floor(u*m.steps.length)),step=m.steps[idx];$('timeline').value=Math.round(u*1000);$('progress').textContent=Math.round(u*100)+'%';$('steps').querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-pressed',i===idx));const explanation='<h3>'+step[lang==='fr'?0:1]+'</h3><p>'+step[lang==='fr'?2:3]+'</p>';if($('explain').innerHTML!==explanation)$('explain').innerHTML=explanation;$('math').innerHTML='';let s='';const replacement=current==='rem'?deltaScene():current==='relax'?hdrRelaxScene(u):current==='mri'?mriProjectionScene(u):current==='relaxivity'?relaxivityScene(.35):finalMagneticScene(current,u);if(replacement){$('stage').innerHTML=replacement;return;}
+function drawRaw(){const m=D[current];if(m.kind==='curves')return;if(m.kind==='reading'){$('stage').innerHTML=m.body[lang==='fr'?0:1];$('math').innerHTML=EQUATIONS[current]||'';return;}const idx=Math.min(m.steps.length-1,Math.floor((current==='corona'?Math.max(0,u-1e-8):u)*m.steps.length)),step=m.steps[idx];$('timeline').value=Math.round(u*1000);$('progress').textContent=Math.round(u*100)+'%';$('steps').querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-pressed',i===idx));const explanation='<h3>'+step[lang==='fr'?0:1]+'</h3><p>'+step[lang==='fr'?2:3]+'</p>';if($('explain').innerHTML!==explanation)$('explain').innerHTML=explanation;$('math').innerHTML='';let s='';const replacement=current==='rem'?deltaScene():current==='relax'?hdrRelaxScene(u):current==='mri'?mriProjectionScene(u):current==='relaxivity'?relaxivityScene(.35):finalMagneticScene(current,u);if(replacement){$('stage').innerHTML=replacement;return;}
 if(m.kind==='spin'){let a=(u<.65?-.5:-.5+(u-.65)/.35*Math.PI);s=sphere(140,195,95,a)+line(220,160,310,120,'#8c9aa0',1)+line(220,230,310,280,'#8c9aa0',1)+sphere(400,195,100,a,0,true)+arrow(560,195,Math.PI/2,30,C.ink,3)+circle(680,195,70,'#e6f2ee')+arrow(680,195,a,54,C.teal,6)+text(140,330,T('Particule monodomaine','Single-domain particle'))+text(400,330,T('Sous-réseaux couplés','Coupled sublattices'))+text(680,330,T('Moment résultant','Net moment'))+text(400,47,T('Rotation collective · opposition conservée','Collective rotation · antiparallel order preserved'),20);}
 if(m.kind==='anisotropy'){const a=u*Math.PI,V=Math.PI/6*(values.d*1e-9)**3,E=values.K*1000*V,barrier=E/(1.380649e-23*values.T);s=sphere(175,190,90,a)+text(175,325,'θ = '+Math.round(u*180)+'°');const points=Array.from({length:101},(_,i)=>[i/100*180,Math.sin(i/100*Math.PI)**2]);s+=chart([[points,C.teal]],180,1,'θ (°)','E / KV')+circle(410+330*u,320-240*Math.sin(a)**2,7,C.orange)+text(410,345,'0°',13)+text(740,345,'180°',13);$('math').innerHTML=`E(θ) = KV sin²θ · ΔE = KV = ${(E/1e-21).toFixed(1)} × 10⁻²¹ J · ΔE/kBT = ${barrier.toFixed(1)}`;}
 if(m.kind==='relax'){const immobilized=values.fixed||idx===2;const a=Math.PI*(.5-.5*Math.cos(4*Math.PI*u));const b=immobilized?0:Math.PI*2*u; s=text(220,48,'Néel',23)+text(585,48,T('Brown','Brownian'),23)+sphere(220,195,90,a,0,false)+sphere(585,195,90,b,b*180/Math.PI,false)+text(220,335,T('Particule fixe · moment mobile','Fixed particle · moving moment'),17)+text(585,335,immobilized?T('Rotation mécanique bloquée','Mechanical rotation blocked'):T('Particule et moment tournent','Particle and moment rotate'),17);const V=Math.PI/6*(values.d*1e-9)**3,Vh=Math.PI/6*((values.d+2*values.shell)*1e-9)**3,q=values.K*1000*V/(1.380649e-23*values.T),tn=1e-9*Math.exp(q),tb=3*values.eta*.001*Vh/(1.380649e-23*values.T);$('math').innerHTML=`τN ≈ τ₀ exp(KV/kBT) = ${tn.toExponential(2)} s · τ₀ = 10⁻⁹ s<br>τB = 3ηVh/(kBT) = ${immobilized?'∞':tb.toExponential(2)+' s'} · KV/kBT = ${q.toFixed(1)}${q<5?'<br>'+T('Barrière faible : approximation de τN à interpréter avec prudence.','Low barrier: interpret the τN approximation with caution.'):''}`;}
@@ -610,8 +635,7 @@ $('math').innerHTML='Mz(t)/M₀ = 1 − exp(−t/T₁) · Mxy(t)/M₀ = exp(−t
 if(m.kind==='mpi'){const pos=100+600*u;s+=text(400,45,T('Région de champ faible en déplacement','Moving low-field region'),21)+`<rect x="100" y="100" width="600" height="110" rx="35" fill="#eef3f3"/>`+`<rect x="${pos-25}" y="85" width="50" height="140" fill="#e8c8a8" opacity=".6"/>`;for(let i=0;i<16;i++){const x=120+i*37;let a=Math.PI/2*(1+Math.tanh((x-pos)/30));s+=circle(x,155,8,C.teal)+arrow(x,155,a,27,C.ink,2);}const pts=Array.from({length:121},(_,i)=>[100+i*5,340-65/Math.cosh((100+i*5-pos)/35)**2]);s+=path(pts,C.orange)+line(100,340,700,340)+text(400,378,T('Sensibilité locale illustrative','Illustrative local sensitivity'),16);}
 if(m.kind==='heat'){const p=u*2*Math.PI,h=Math.sin(p),mm=Math.sin(p-.55);s+=text(180,60,'H(t)',22)+arrow(180,195,h>=0?0:Math.PI,Math.max(1,Math.abs(h)*100),C.teal,5)+sphere(180,195,48,mm>=0?0:Math.PI)+text(180,335,T('Champ alternatif','Alternating field'),18);const points=Array.from({length:121},(_,i)=>{let t=i/120*2*Math.PI;return[575+135*Math.sin(t),195-100*Math.sin(t-.55)]});s+=line(410,195,740,195)+line(575,70,575,320)+`<path d="${points.map((p,i)=>(i?'L':'M')+p.join(' ')).join(' ')}Z" fill="#a66b491b" stroke="#b8c5cc" stroke-width="1"/>`+path(points.slice(0,Math.max(2,Math.ceil(u*120))),C.orange)+circle(575+135*h,195-100*mm,7,C.teal)+text(745,220,'H',16)+text(600,70,'M',16)+text(575,360,T('Aire du cycle → dissipation','Loop area → dissipation'),18);$('math').innerHTML=T('Illustration : H = H₀ sin(ωt), M = M₀ sin(ωt − φ), φ fixé.','Illustration: H = H₀ sin(ωt), M = M₀ sin(ωt − φ), fixed φ.');}
 $('stage').innerHTML=svg(s);}
-function exportVector(target){stop();const saved=lang;lang=target;draw();let raw=$('stage').innerHTML.replace(/(<svg[^>]*>)/,'$1'+VECTOR_DEFS);if(!raw.includes('xmlns:xlink='))raw=raw.replace('<svg ','<svg xmlns:xlink="http://www.w3.org/1999/xlink" ');raw=raw.replace(/<use href="([^"]+)"/g,'<use href="$1" xlink:href="$1"');lang=saved;draw();const blob=new Blob([raw],{type:'image/svg+xml;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='NanoBioMat-'+current+'-'+target+'.svg';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-$('exportFR').onclick=()=>exportVector('fr');$('exportEN').onclick=()=>exportVector('en');$('enlarge').onclick=()=>{stop();$('zoomContent').innerHTML=$('stage').innerHTML;$('zoom').showModal();};$('closeZoom').onclick=()=>$('zoom').close();$('language').onclick=()=>{lang=lang==='fr'?'en':'fr';render();};$('timeline').oninput=e=>{stop();u=+e.target.value/1000;draw();};$('reset').onclick=()=>{stop();u=0;draw();};$('play').onclick=()=>{if(playing){stop();return;}if(u>=1)u=0;playing=true;$('play').textContent=T('Pause','Pause');u=Math.min(.995,u+.012);draw();last=performance.now();function tick(now){if(!playing)return;u=Math.min(1,u+(now-last)/18000);last=now;draw();if(u>=1)stop();else raf=requestAnimationFrame(tick);}raf=requestAnimationFrame(tick);};document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});initializeRoute();render();
+$('enlarge').onclick=()=>{stop();$('zoomContent').innerHTML=$('stage').innerHTML;$('zoom').showModal();};$('closeZoom').onclick=()=>$('zoom').close();$('language').onclick=()=>{lang=lang==='fr'?'en':'fr';render();};$('timeline').oninput=e=>{stop();u=+e.target.value/1000;draw();};$('reset').onclick=()=>{stop();u=0;draw();};$('play').onclick=()=>{if(playing){stop();return;}if(u>=1)u=0;playing=true;$('play').textContent=T('Pause','Pause');u=Math.min(.995,u+.012);draw();last=performance.now();function tick(now){if(!playing)return;const target=current==='corona'?Math.min(1,(Math.floor((u+1e-7)*4)+1)/4):1;u=Math.min(target,u+(now-last)/(current==='corona'?28000:18000));last=now;draw();if(u>=target)stop();else raf=requestAnimationFrame(tick);}raf=requestAnimationFrame(tick);};document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});initializeRoute();render();
 
 function routeKeys(){return ['particles','assemblies','biointerfaces'];}
 function readRoute(){
@@ -654,7 +678,7 @@ function renderModuleNavigation(){
 function draw(){drawRaw();$('transport').hidden=!!D[current].static||D[current].kind==='curves';if(!EQUATIONS[current])return;let numbers='';$('math').innerHTML=EQUATIONS[current]+numbers;if(current==='monodomain')$('math').innerHTML+=T('<p>A : rigidité d’échange (J/m). K : densité d’énergie d’anisotropie (J/m³). μ₀ : perméabilité du vide. MS : aimantation à saturation (A/m).</p>','<p>A: exchange stiffness (J/m). K: anisotropy energy density (J/m³). μ₀: vacuum permeability. MS: saturation magnetization (A/m).</p>');}
 
 function startLiveInteractions(){if(typeof performance==='undefined')return;if(current!=='interactions'||(typeof document!=='undefined'&&document.hidden))return;playing=true;last=performance.now();function next(now){if(!playing||current!=='interactions')return;advanceLivePair(values.gap??35,(now-last)/1000);last=now;draw();raf=requestAnimationFrame(next);}raf=requestAnimationFrame(next);}
-const renderBeforeV414=render;render=function(){renderBeforeV414();const m=D[current],reading=m.kind==='reading';for(const id of ['enlarge','source','steps','explain'])if(reading)$(id).hidden=true;$('transport').hidden=!!m.static||m.kind==='curves';if(current==='industry')$('references').hidden=true;if(typeof document.querySelector==='function'){const note=document.querySelector('.figure-scroll-note');if(note)note.hidden=reading;}if(m.auto){$('steps').hidden=true;startLiveInteractions();}};
+const renderBeforeV414=render;render=function(){renderBeforeV414();const m=D[current],reading=m.kind==='reading';for(const id of ['enlarge','steps','explain'])if(reading)$(id).hidden=true;$('transport').hidden=!!m.static||m.kind==='curves';$('limits').hidden=true;if(current==='industry')$('references').hidden=true;if(typeof document.querySelector==='function'){const note=document.querySelector('.figure-scroll-note');if(note)note.hidden=reading;}if(m.auto){$('steps').hidden=true;startLiveInteractions();}};
 $('closeZoom').onclick=()=>{$('zoom').close();if(D[current].auto)startLiveInteractions();};
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&D[current].auto)startLiveInteractions();});
 render();

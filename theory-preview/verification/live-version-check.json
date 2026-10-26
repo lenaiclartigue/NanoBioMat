@@ -1,7 +1,1 @@
-{
-  "checked": "2026-10-26",
-  "live_version": "V4.12",
-  "url": "https://lenaiclartigue.github.io/NanoBioMat/theory-preview/index.html",
-  "matches_archive_V4_12": true,
-  "sha256": "3abcf12f8f9eefc5a7d6c2e4d19ccdcdea696c32c4abfc091f7ca4e5998e524b"
-}
+{"checked": "2026-10-26", "live_version": "V4.14", "matches_archive": true, "sha256": "92f6e6d81c244554aaf5a6070628f0619dbcb5c12844aa803c316f3eb1f07406"}

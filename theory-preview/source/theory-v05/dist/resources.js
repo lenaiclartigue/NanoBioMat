@@ -194,20 +194,6 @@ const RESOURCE_DATA=[
     "Python · documentation"
   ],
   [
-    "Python pour la chimie · Python for chemistry",
-    "https://lenaiclartigue.github.io/python-chimie/",
-    "tools",
-    [
-      0,
-      1,
-      2
-    ],
-    "Ce site propose des ressources de programmation et d’analyse de données pour la chimie.",
-    "This website provides programming and data-analysis resources for chemistry.",
-    "FR / EN",
-    "FR / EN"
-  ],
-  [
     "ClinicalTrials.gov",
     "https://clinicaltrials.gov/",
     "clinical",
