@@ -1,4 +1,0 @@
-NanoBioMat V3.30
-Suppression des flèches des liens externes, y compris DOI, logos, acronymes et RSS.
-Indications de nouvel onglet accessibles et flèches de navigation conservées.
-Aucun fichier à supprimer.
