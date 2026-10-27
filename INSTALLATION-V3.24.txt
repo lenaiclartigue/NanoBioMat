@@ -1,3 +1,0 @@
-NanoBioMat V3.24 — correctif depuis V3.23.
-Copier les fichiers à la racine du dépôt GitHub en conservant les dossiers et en remplaçant les fichiers existants.
-Aucun fichier à supprimer. Cette notice peut rester hors du dépôt.
