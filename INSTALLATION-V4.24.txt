@@ -1,7 +1,0 @@
-NanoBioMat V4.24 — 26/10/2026
-Correctif cumulatif V4.22 → V4.24, également applicable à V4.23.
-Décompresser et déposer les fichiers à la racine du dépôt, conserver les sous-dossiers, remplacer les fichiers existants.
-Aucun fichier à supprimer. Aucun déploiement effectué.
-Périmètre : changements V4.23 conservés ; références ergonomiques ajoutées à Conception/Design sur 32 pages ; rapport d’audit et contrôles joints.
-Les recommandations de l’audit ne sont pas encore appliquées : pas de refonte implicite des boutons, du menu ou des animations.
-Les documents des versions antérieures sont conservés comme historique.
