@@ -11,7 +11,8 @@ const NB_REFERENCE_REGISTRY={"https://doi.org/10.1021/acsanm.3c01767": "W. Mekse
   if(!stored && !/\b(?:18|19|20)\d{2}\b/.test(el.textContent))return;
   const txt=el.textContent.trim();
   if(txt.length>700)return;
-  const fallback=el.textContent.replace(a.textContent,'').trim()||a.textContent;
+  const residue=el.textContent.replace(a.textContent,'').trim();
+  const fallback=(!residue||/^[\s\[\]\d.,;]+$/.test(residue))?el.textContent.trim():residue;
   let citation=stored||escape(fallback).replace(/[.\s]+$/,'');
   if(!citation.includes('<strong>'))citation=citation.replace(/\b((?:18|19|20)\d{2})\b/, '<strong>$1</strong>');
   if(!citation.includes('<em>'))citation=citation.replace(/, ([^,<>]+) (<strong>(?:18|19|20)\d{2}<\/strong>),/, ', <em>$1</em> $2,');
