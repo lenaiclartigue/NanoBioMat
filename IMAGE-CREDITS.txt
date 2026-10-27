@@ -19,3 +19,8 @@ V3.34 — équipements ajoutés
 V3.35 — equipment-cij-generic-fr.svg / -en.svg : schémas de principe redessinés à partir du montage fourni et des indications de Lénaïc Lartigue. Versions FR/EN génériques avec IONPs, composé organique et polymère ; représentation conceptuelle non à l’échelle. Les miniatures WebP sont dérivées des SVG.
 
 V4.0 : schémas CIJ FR/EN fondés sur les tracés vectoriels originaux de la figure S26 fournie, avec libellés génériques et ajout conceptuel des IONPs. Le redessin simplifié V3.35 est remplacé. nanoassemblies-sem.png restauré à partir du fichier intact de la V3.0, sans retouche.
+
+Creative Commons BY-NC-ND badge: official vector artwork (unmodified).
+https://creativecommons.org/mission/downloads/
+https://github.com/creativecommons/cc-assets/blob/main/license_badges/big/by_nc_nd.svg
+CC trademark policy: https://creativecommons.org/policies/

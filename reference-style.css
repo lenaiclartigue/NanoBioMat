@@ -1,0 +1,22 @@
+/* Shared bibliographic presentation across pages and theory frames. */
+.ref-block,.study-references{font:14px/1.55 Arial,Helvetica,sans-serif;color:#243c49;text-align:left;margin:18px 0 0}
+.ref-heading,.ref-block>.ref-heading,.study-references>.ref-heading{font:600 16px/1.35 Arial,Helvetica,sans-serif!important;letter-spacing:0!important;color:#173840!important;margin:18px 0 10px!important}
+.ref-list,.ref-block>ul,.study-references>ul{margin:0;padding-left:20px;font:14px/1.55 Arial,Helvetica,sans-serif}
+.ref-block li,.ref-block p,.study-references li,.citation-entry,.full-citation{font:14px/1.55 Arial,Helvetica,sans-serif!important;letter-spacing:0!important;text-align:left;margin:0 0 9px!important;overflow-wrap:anywhere}
+.ref-block a,.study-references a,.citation-entry a,.full-citation a{font:inherit;color:#175563;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.ref-block strong,.citation-entry strong,.full-citation strong{font-weight:700}
+.ref-block em,.citation-entry em,.full-citation em{font-style:italic}
+.reference-table-wrap{max-width:100%;overflow-x:auto;margin:18px 0;overscroll-behavior-x:contain}
+.reference-table{border-collapse:collapse;width:100%;font:14px/1.45 Arial,Helvetica,sans-serif;color:#243c49;min-width:620px;table-layout:auto}
+.reference-table caption{text-align:left;font:600 17px/1.4 Arial,Helvetica,sans-serif;padding:0 0 10px;color:#173840}
+.reference-table th,.reference-table td{border:1px solid #cfdade;padding:10px 12px;text-align:left;vertical-align:middle;white-space:normal}
+.reference-table thead th{background:#eaf0f5;color:#173840;font-weight:600}
+.reference-table tbody th{font-weight:600;min-width:115px}
+.reference-table tbody tr:nth-child(even){background:#f6f8fa}
+.context-values{margin:20px 0;padding-top:14px;border-top:1px solid #dce4e8;font:15px/1.5 Arial,Helvetica,sans-serif}
+.context-values>summary{cursor:pointer;font:600 15px/1.5 Arial,Helvetica,sans-serif;padding:8px 0;min-height:40px}
+.context-values h3{font:600 17px/1.4 Arial,Helvetica,sans-serif}
+.context-values p{font:15px/1.5 Arial,Helvetica,sans-serif}
+.context-values dl{margin:12px 0}.context-values dt{font-weight:600;margin-top:14px}.context-values dd{margin:4px 0 12px}
+.reference-table-wrap:focus-visible{outline:3px solid #a26400;outline-offset:3px}
+@media(max-width:600px){.reference-table{font-size:13px}.reference-table th,.reference-table td{padding:8px}}
