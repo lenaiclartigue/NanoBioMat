@@ -1,6 +1,0 @@
-NanoBioMat V3.33 — 24 octobre 2026
-Ajout de Theses.fr aux profils académiques des pages Contact française et anglaise.
-Lien externe ouvert dans un nouvel onglet, annoncé aux technologies d’assistance, sans flèche visible.
-Fichier de validation Google conservé sans modification.
-Correctif établi depuis la V3.32 observée en ligne. Aucun fichier à supprimer.
-Audit de visibilité livré séparément : les autres enrichissements éditoriaux restent des propositions.
