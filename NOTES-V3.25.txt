@@ -1,9 +1,0 @@
-NanoBioMat V3.25
-Six articles ajoutés à partir des sept PDF fournis ; article ACS Nano 2013 déjà présent conservé sans doublon.
-Particules : diffraction 2025, revêtements 2020, ferrites dopées 2019.
-Assemblages : architectures cœur-coquille 2016.
-Interfaces biologiques : dégradation des nanofleurs 2014, couronne protéique 2012.
-Références complètes avec DOI ; ordre antéchronologique dans chaque axe.
-Liens de la page Recherche vers toutes les publications de chaque axe.
-Aucun fichier à supprimer.
-Lien Google Patents vers EP4525838A1 ajouté à la référence du brevet.
