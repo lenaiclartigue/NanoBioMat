@@ -1,13 +1,14 @@
 {
-  "delivery": "V4.22",
-  "date": "2026-10-26",
-  "patch_base": "V4.20",
-  "live_version_verified": "V4.20",
+  "delivery": "V4.25",
+  "date": "2026-10-27",
+  "patch_base": "V4.22",
+  "live_version_verified": "V4.22",
   "modules": 21,
   "audit_points": 28,
   "manual_deletions": [],
   "pending": [
     "Exact ALF-II formulation/reference",
     "Private team services"
-  ]
+  ],
+  "ionp_records": 31
 }

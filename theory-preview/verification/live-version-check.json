@@ -1,6 +1,17 @@
 {
-  "version": "V4.20",
-  "index_matches_archive": true,
-  "date": "2026-10-26",
-  "sha256": "7c1b462a726ec0097f7e64f59a43a9fa36d77915e4146683545b4023ec08e23e"
+  "checked": "2026-10-27",
+  "version_manifest": {
+    "delivery": "V4.22",
+    "date": "2026-10-26",
+    "patch_base": "V4.20",
+    "live_version_verified": "V4.20",
+    "modules": 21,
+    "audit_points": 28,
+    "manual_deletions": [],
+    "pending": [
+      "Exact ALF-II formulation/reference",
+      "Private team services"
+    ]
+  },
+  "verification": "VERSION.json fetched; prior byte comparison of V4.22 theory on 2026-10-26"
 }

@@ -88,8 +88,8 @@ if(stage===0){s+=V.txt(625,175,T('IONP ferrimagnétique','Ferrimagnetic IONP'),2
 if(stage===1){s+=arrow(525,210,.3,90,'#315b78',5)+arrow(630,210,.3+Math.PI,55,'#ad7151',5)+arrow(755,210,.3,35,'#243944',5)+V.txt(630,315,T('Somme vectorielle des moments','Vector sum of the moments'),18)+V.txt(630,354,T('Moment résultant de la particule','Net particle moment'),18);}
 if(stage===2){s+=V.txt(625,160,T('Approximation monodomaine','Single-domain approximation'),21)+V.txt(625,220,T('La direction du moment varie.','The moment direction changes.'),18)+V.txt(625,260,T('Sa norme reste constante ici.','Its magnitude stays constant here.'),18)+V.txt(625,320,T('Ce moment sera utilisé ensuite.','This moment is used from now on.'),18);}
 s+=V.txt(450,493,T('Positions schématiques : ni maille cristalline ni rapport stœchiométrique.','Schematic positions: neither a crystal lattice nor a stoichiometric ratio.'),14);return vsvg(s,900,520);}
-function fateGeometry(t){const clamp=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=clamp(x);return x*x*(3-2*x)};const close=ease((t-1/6)*6),travel=ease((t-1/3)*6),fusion=ease((t-.5)*6),redistribution=ease((t-2/3)*6),erosion=ease((t-5/6)*6);return {close,travel,fusion,redistribution,erosion,x:690-150*travel,y:210+82*travel,r:48+13*travel+8*fusion};}
-function fateScene(t){const g=fateGeometry(t),stage=Math.min(5,Math.floor(t*6));let s=V.p('M80 130Q55 140 55 200L55 460Q55 500 110 500H815Q850 500 850 460V130Z','url(#vCyto)','none');
+function fateGeometry(t){const clamp=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=clamp(x);return x*x*(3-2*x)};const close=ease((t-1/6)*12-1),travel=ease((t-.5)*6),fusion=ease((t-2/3)*12),redistribution=ease((t-2/3)*12-1),erosion=ease((t-5/6)*6);return {close,travel,fusion,redistribution,erosion,x:690-150*travel,y:210+82*travel,r:48+13*travel+8*fusion};}
+function fateScene(t){const g=fateGeometry(t),stage=Math.min(5,Math.floor(Math.max(0,t-1e-8)*6));let s=V.p('M80 130Q55 140 55 200L55 460Q55 500 110 500H815Q850 500 850 460V130Z','url(#vCyto)','none');
 s+=V.txt(180,65,T('Milieu extracellulaire','Extracellular medium'),16)+V.txt(150,475,T('Cytoplasme','Cytoplasm'),16);
 // A section of cell with nucleus, ER and mitochondria; the upper contour is its plasma membrane.
 s+=V.p('M114 271C135 222 230 225 256 277C283 321 250 390 194 403C132 412 100 365 114 271Z','url(#vNucleus)','#9cabc0',3)+V.p('M128 277C149 238 224 238 244 282C264 325 239 377 192 389C141 397 114 361 128 277Z','none','#e0e6ef',2);
@@ -97,17 +97,18 @@ s+=V.c(181,315,24,'#879ab2')+V.txt(185,365,T('Noyau','Nucleus'),14);
 for(let i=0;i<5;i++)s+=V.p(`M${280+i*6} ${248+i*27}q35-14 50 2t21 15`,'none','#b5a0aa',6)+V.p(`M${280+i*6} ${248+i*27}q35-14 50 2t21 15`,'none','#eddee3',2);
 s+=mitochondrion(345,429,-18,.7)+mitochondrion(125,190,20,.55);
 // Continuous invagination contour. The neck narrows before fission.
-let membrane='M55 130H850';if(stage<2){const q=stage===0?Math.min(1,t*6):1,depth=80*q,neck=42*(1-g.close)+2;membrane=`M55 130H${690-neck}C${690-neck} ${145+depth*.2} ${636} ${130+depth*.7} 645 ${130+depth}C645 ${130+depth+48*q} 735 ${130+depth+48*q} 735 ${130+depth}C744 ${130+depth*.7} ${690+neck} ${145+depth*.2} ${690+neck} 130H850`;}
+let membrane='M55 130H850';if(stage<2){const q=stage===0?0:Math.min(1,(t-1/6)*12),depth=80*q,neck=42*(1-g.close)+2;membrane=`M55 130H${690-neck}C${690-neck} ${145+depth*.2} ${636} ${130+depth*.7} 645 ${130+depth}C645 ${130+depth+48*q} 735 ${130+depth+48*q} 735 ${130+depth}C744 ${130+depth*.7} ${690+neck} ${145+depth*.2} ${690+neck} 130H850`;}
+if(stage===1&&g.close>.99)membrane='M55 130H850';
 s+=V.p(membrane,'none','#899779',10)+V.p(membrane,'none','#e1dfc6',5);
-let x=g.x,y=g.y,r=g.r;if(stage===0){y=99+111*Math.min(1,t*6);}
-if(stage>=2)s+=`<g data-compartment="particle-bearing">`+vesicle(x,y,r,stage>=3?2:1)+'</g>';
+let x=g.x,y=g.y,r=g.r;if(stage===0){y=65+35*Math.min(1,t*6);}if(stage===1){y=100+110*Math.min(1,(t-1/6)*12);}
+if(stage>=2)s+=`<g data-compartment="particle-bearing">`+vesicle(x,y,r,stage>=4?2:1)+'</g>';
 if(stage===1&&g.close>.75)s+=vesicle(x,y,r,0,Math.min(1,(g.close-.75)*4));
 // A lysosome approaches the same late endosome and merges with it.
-if(stage===2||stage===3){const lx=705-115*g.fusion,ly=370-65*g.fusion;const opacity=1-g.fusion;s+=vesicle(lx,ly,29,2,opacity);if(stage===3&&g.fusion>.1&&g.fusion<.9)s+=V.p(`M${x+40} ${y+15}Q${lx-15} ${ly-35} ${lx} ${ly-20}L${lx-15} ${ly+15}Q${x+48} ${y+45} ${x+30} ${y+30}Z`,'url(#vLumen)','#879779',2);if(opacity>.4)s+=V.txt(lx,ly+49,T('Lysosome','Lysosome'),15);}
+if(stage===3||stage===4){const lx=705-115*g.fusion,ly=370-65*g.fusion;const opacity=1-g.fusion;s+=vesicle(lx,ly,29,2,opacity);if(stage===4&&g.fusion>.1&&g.fusion<.9)s+=V.p(`M${x+40} ${y+15}Q${lx-15} ${ly-35} ${lx} ${ly-20}L${lx-15} ${ly+15}Q${x+48} ${y+45} ${x+30} ${y+30}Z`,'url(#vLumen)','#879779',2);if(opacity>.4)s+=V.txt(lx,ly+49,T('Lysosome','Lysosome'),15);}
 // Multiple cargo particles stay inside the moving, maturing compartment.
-for(let i=0;i<12;i++){const a=i*2.399,rr=18*Math.sqrt((i+.5)/12),target=r-12,rad=rr*(1-g.redistribution)+target*g.redistribution,sz=4.8*(1-.55*g.erosion);s+=`<g data-cargo="${i}" data-radius="${rad}">`+np(x+rad*Math.cos(a),y+rad*Math.sin(a),sz,false)+'</g>';}
-const labels=[T('Invagination','Invagination'),T('Fermeture de la vésicule','Vesicle closure'),T('Endosome précoce → tardif','Early → late endosome'),T('Fusion avec un lysosome','Fusion with a lysosome'),T('Redistribution périphérique','Peripheral redistribution'),T('Érosion des IONPs','IONP erosion')];s+=V.txt(460,35,labels[stage],23);
-if(stage>=2)s+=V.txt(x,y-r-22,stage===2?T('Compartiment en maturation','Maturing compartment'):T('Compartiment endolysosomal','Endolysosomal compartment'),16);
+for(let i=0;i<12;i++){const a=i*2.399,rr=18*Math.sqrt((i+.5)/12),target=r-12,rad=rr*(1-g.redistribution)+target*g.redistribution,sz=4.8*(1-.55*g.erosion);s+=`<g data-cargo="${i}" data-radius="${rad}">`+np(x+rad*Math.cos(a),y+rad*Math.sin(a),sz,false)+'</g>';if(stage<2)for(let j=0;j<3;j++){const pa=j*2.094+i;s+=V.c(x+rad*Math.cos(a)+7*Math.cos(pa),y+rad*Math.sin(a)+7*Math.sin(pa),1.5,'#8d6b94');}}
+const labels=[T('Contact membranaire','Membrane contact'),T('Invagination et internalisation','Invagination and internalization'),T('Endosome précoce','Early endosome'),T('Endosome tardif','Late endosome'),T('Compartiment endolysosomal','Endolysosomal compartment'),T('Dissolution et stockage du fer','Dissolution and iron storage')];s+=V.txt(460,35,labels[stage],23);
+if(stage>=2)s+=V.txt(x,y-r-22,stage===2?T('Endosome précoce','Early endosome'):stage===3?T('Endosome tardif','Late endosome'):T('Compartiment endolysosomal','Endolysosomal compartment'),16);
 if(stage>=4){s+=V.p(`M${x+r-4} ${y+25}L720 405`,'none','#839177',1)+V.txt(720,426,T('Membrane lysosomale','Lysosomal membrane'),15);}
 if(stage===5)return vsvg(ironStorageScene419(g.erosion,s),900,565);
 s+=V.txt(450,540,T('Lartigue et al., ACS Nano 2013 · figures 5–7 · schéma non à l’échelle','Lartigue et al., ACS Nano 2013 · Figures 5–7 · diagram not to scale'),14);return vsvg(s,900,565);}

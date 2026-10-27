@@ -97,3 +97,5 @@ header #language{font-weight:700;background:#173c4c;color:white;border-color:#17
 
 /* V4.20 plasma map and uniform reference blocks */
 .plasma-row{display:grid;grid-template-columns:minmax(150px,1.2fr) minmax(90px,2fr) 80px;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid #dce5e2}.plasma-row svg{width:100%;height:18px}.plasma-row span{text-align:right;font-variant-numeric:tabular-nums}.study-references{border-top:1px solid #cbded7;margin-top:18px;padding-top:4px}.study-references li{margin:9px 0;overflow-wrap:anywhere}@media(max-width:600px){.plasma-row{grid-template-columns:1fr 85px}.plasma-row svg{grid-column:1;grid-row:auto}.plasma-row strong{grid-column:1/-1}}
+
+.fate-navigation{display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%;margin-top:12px}.fate-navigation span{flex:1;font-size:.88rem}.fate-navigation button{min-height:44px}.fate-navigation button:disabled{opacity:.45;cursor:default}

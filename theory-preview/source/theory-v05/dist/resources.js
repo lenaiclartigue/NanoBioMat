@@ -1,6 +1,20 @@
 // Selection reviewed against official resource pages, 2026-10-25.
 const RESOURCE_DATA=[
   [
+    "NanoBioMat · IONP data",
+    "../ionp-data.html",
+    "measurements",
+    [
+      0,
+      1,
+      2
+    ],
+    "Fiches de grandeurs, unités, conditions et références. Première sélection documentée.",
+    "Quantity records, units, conditions and references. Initial documented selection.",
+    "FR / EN",
+    "FR / EN"
+  ],
+  [
     "IUPAC · Gold Book",
     "https://goldbook.iupac.org/",
     "definitions",
@@ -318,11 +332,59 @@ const RESOURCE_DATA=[
     "micromod supplies particles for MPI, hyperthermia and separation research. Products differ in core, coating and size. The catalogue is not clinical authorization.",
     "Réactifs de recherche",
     "Research reagents"
+  ],
+  [
+    "NovoMag",
+    "https://zenodo.org/records/17399362",
+    "computed",
+    [
+      0
+    ],
+    "Structures, énergies et anisotropies calculées par DFT. Base orientée vers les aimants sans terres rares. Une valeur cristalline ne remplace pas l’anisotropie effective d’une nanoparticule.",
+    "Structures, energies and anisotropies calculated by DFT. Focus on rare-earth-free magnets. A crystal value does not replace nanoparticle effective anisotropy.",
+    "Dépôt ouvert · version 2025",
+    "Open deposit · 2025 version"
+  ],
+  [
+    "NEMAD",
+    "https://www.nature.com/articles/s41467-025-64458-z",
+    "measurements",
+    [
+      0
+    ],
+    "Propriétés magnétiques extraites de publications expérimentales avec des modèles de langage. Vérifier la publication et les conditions avant de réutiliser une valeur.",
+    "Magnetic properties extracted from experimental publications using language models. Check the source paper and conditions before reusing a value.",
+    "Article et accès à la base",
+    "Article and database access"
+  ],
+  [
+    "caNanoLab · NCI",
+    "https://dctd.cancer.gov/data-tools-biospecimens/data/nanotechnology-data-tools",
+    "measurements",
+    [
+      2
+    ],
+    "Caractérisations physicochimiques, essais in vitro et in vivo et protocoles de nanomatériaux biomédicaux. La couverture dépend des formulations déposées.",
+    "Physicochemical characterization, in vitro and in vivo assays, and biomedical nanomaterial protocols. Coverage depends on deposited formulations.",
+    "Portail institutionnel",
+    "Institutional portal"
+  ],
+  [
+    "eNanoMapper",
+    "https://www.enanomapper.net/data",
+    "measurements",
+    [
+      2
+    ],
+    "Données de caractérisation et résultats biologiques et toxicologiques. Comparer les matériaux avec leur milieu, dose et durée d’exposition.",
+    "Characterization data and biological and toxicological results. Compare materials together with medium, dose and exposure time.",
+    "Données et documentation",
+    "Data and documentation"
   ]
 ];
 const RESOURCE_TYPES={all:["Toutes les ressources","All resources"],definitions:["Définitions et constantes","Definitions and constants"],structures:["Structures","Structures"],measurements:["Données expérimentales","Experimental data"],computed:["Données calculées","Computed data"],tools:["Outils et Python","Tools and Python"],clinical:["Essais et réglementation","Trials and regulation"],industry:["Produits et entreprises","Products and companies"]};
 let resourceQuery='',resourceType='all',resourceAxis='all';
-function resourceLink(url,label){return '<a href="'+url+'" target="_blank" rel="noopener noreferrer">'+label+'</a>';}
+function resourceLink(url,label){if(url==='../ionp-data.html'&&lang==='fr')url='../fr/ionp-data.html';return '<a href="'+url+'" target="_blank" rel="noopener noreferrer">'+label+'</a>';}
 function renderResources(){
  const i=lang==='fr'?0:1;
  $('resourceTitle').textContent=T('Ressources et outils pour travailler','Resources and tools for research');

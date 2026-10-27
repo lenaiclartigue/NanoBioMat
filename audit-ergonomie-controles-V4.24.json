@@ -1,0 +1,236 @@
+{
+  "pages": [
+    {
+      "page": "news-brevet-curcumine.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "publications.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "news-magnetima-anr.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "outreach.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "team-space.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "projects.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "collaborations.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "facilities.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "googlef4aba441b3f24c9e.html",
+      "h1": 0,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": false
+    },
+    {
+      "page": "research.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "news-lea-ponroy-photonano26.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "team.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "contact.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "index.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "teaching.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "news.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "news-marie-lea-lalanne-she.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/news-brevet-curcumine.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/publications.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/news-magnetima-anr.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/outreach.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/team-space.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/projects.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/collaborations.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/facilities.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/research.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/news-lea-ponroy-photonano26.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/team.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/contact.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/index.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/teaching.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/news.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    },
+    {
+      "page": "fr/news-marie-lea-lalanne-she.html",
+      "h1": 1,
+      "missing_alt": 0,
+      "duplicate_ids": [],
+      "skip": true
+    }
+  ],
+  "broken_local": []
+}

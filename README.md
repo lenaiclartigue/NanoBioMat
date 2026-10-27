@@ -1,3 +1,9 @@
+Version courante : V4.25 — 27/10/2026. Base IONPs initiale (31 fiches) et typographie scientifique. Voir INSTALLATION-V4.25.txt.
+
+Version courante : V4.24. Voir INSTALLATION-V4.24.txt et AUDIT-ERGONOMIE-V4.24.md.
+
+Version courante : V4.23 (26/10/2026). Correctif depuis V4.22. Voir INSTALLATION-V4.23.txt.
+
 # NanoBioMat V4.22 — 26 octobre 2026
 
 ## Installation

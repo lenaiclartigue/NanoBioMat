@@ -1,0 +1,28 @@
+NanoBioMat V4.23 — 26 octobre 2026
+
+PÉRIMÈTRE
+- Devenir intracellulaire : 6 étapes FR/EN, titre courant, lecture avec arrêt automatique à chaque étape, accès direct, précédent/suivant.
+- Contact avec couronne ; invagination/scission ; endosome précoce ; endosome tardif ; fusion endolysosomale et redistribution ; dissolution et stockage du fer.
+- Dessins de cellule et zoom apoferritine/ferritine conservés et transitions adaptées. Schéma qualitatif, pas une nouvelle simulation cinétique.
+- Ressources commentées NovoMag, NEMAD, caNanoLab et eNanoMapper, filtres par axe/type. Renvois contextuels depuis les phases et le devenir cellulaire. COD et MAGNDATA existants conservés.
+- Aucune nouvelle valeur physique/biologique importée de ces bases. Les notices orientent vers les sources ; leur couverture spécifique des IONPs reste à vérifier entrée par entrée.
+
+INSTALLATION
+Version en ligne vérifiée : V4.22 ; page theory-preview/index.html identique à l’archive V4.22 octet par octet.
+Décompresser le correctif et déposer son contenu à la racine du dépôt, en conservant les sous-dossiers et en remplaçant les fichiers existants.
+Ne pas déposer le ZIP lui-même. L’archive complète contient tout le site pour archivage/restauration.
+Aucun fichier à supprimer. Les anciens documents de livraison peuvent rester comme historique.
+Aucun déploiement effectué par l’assistant.
+
+VÉRIFICATIONS
+Tests FR/EN des six arrêts, précédent/suivant, filtres de ressources, géométrie sans NaN et déplacement du compartiment.
+16 cas de lecture/pause/remise à zéro sur les modules animés. Vérification du zoom ferritine et du rapport de dimensions.
+Contrôle visuel du module dans le navigateur sur ordinateur ; pas de validation exhaustive sur tous les mobiles.
+
+SOURCES DES NOUVELLES NOTICES
+NovoMag : https://zenodo.org/records/17399362 ; publication 10.1103/PhysRevMaterials.4.114408.
+NEMAD : https://www.nature.com/articles/s41467-025-64458-z.
+caNanoLab : https://dctd.cancer.gov/data-tools-biospecimens/data/nanotechnology-data-tools.
+eNanoMapper : https://www.enanomapper.net/data.
+
+Les autres contenus de V4.22 sont conservés. Aucun nouvel audit exhaustif du corpus, aucune modification du référencement Google ni activation d’un intranet dans cette livraison.
