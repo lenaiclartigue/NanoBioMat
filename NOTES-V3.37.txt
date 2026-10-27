@@ -1,6 +1,0 @@
-NanoBioMat V3.37 — 25 octobre 2026
-Navigation : Vie du laboratoire / Lab life.
-Titre de page et rubrique d’accueil : En direct du laboratoire / Inside the lab.
-Introduction, métadonnées, retours depuis les articles et titre RSS harmonisés. Adresses news.html, articles et flux RSS conservées. Aucun nouvel événement inventé.
-Générateur mis à jour et vérifié idempotent ; libellés vérifiés dans toutes les navigations et les flux RSS.
-Correctif cumulatif depuis V3.32, utilisable également après V3.33 à V3.36. Aucun fichier à supprimer.
