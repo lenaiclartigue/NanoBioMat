@@ -655,3 +655,9 @@ body[data-section="index"] #news-title{color:#526c32}
 @media(max-width:650px){.theory-access448{display:block}.footer-identity-copy{gap:8px}.footer-theory448{max-width:105px}}
 .site-footer>div.footer-identity:first-child>.footer-identity-copy{display:flex;flex-direction:row;align-items:center;gap:14px;flex-wrap:wrap}
 @media(max-width:650px){.site-footer>div.footer-identity:first-child>.footer-identity-copy{gap:8px}}
+
+/* Keep the theoretical link beside the licence, including narrow screens. */
+.site-footer>div.footer-identity:first-child>.footer-identity-copy{flex-wrap:nowrap;gap:10px}
+.site-footer .footer-identity-copy>.cc-license-badge{flex:0 0 88px}
+.site-footer .footer-theory448{display:block;max-width:110px;min-width:72px;white-space:normal}
+@media(max-width:440px){.site-footer .footer-theory448{font-size:11px;min-width:60px;max-width:78px}.site-footer>div.footer-identity:first-child>.footer-identity-copy{gap:6px}}
