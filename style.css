@@ -672,3 +672,7 @@ body[data-section="index"] #news-title{color:#526c32}
 .site-footer .footer-theory448.footer-theory-symbol456{width:40px;height:40px;min-width:40px;max-width:40px;min-height:40px;padding:5px;border-radius:50%;background:transparent;flex:0 0 40px}
 .footer-theory-symbol456 svg{display:block;width:28px;height:28px}
 .site-footer .footer-theory-symbol456:hover{background:#edf3f7}
+
+/* V4.57: tau keeps the original workspace destination and position. */
+#nav-menu a.team-symbol457{display:inline-flex;align-items:center;justify-content:center;min-width:32px;min-height:32px;padding:0 7px;font:26px/1 Georgia,serif;text-decoration:none}
+#nav-menu a.team-symbol457:focus-visible{outline:2px solid #315b78;outline-offset:3px;border-radius:4px}

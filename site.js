@@ -257,3 +257,9 @@ document.querySelectorAll('.language-switch a').forEach(link => {
  a.classList.add('footer-theory-symbol456');a.setAttribute('aria-label',fr?'Bases théoriques':'Theoretical background');a.removeAttribute('title');
  a.innerHTML='<svg viewBox="0 0 36 36" width="28" height="28" aria-hidden="true" focusable="false"><path d="M26 6H10v3l9 9-9 9v3h16v-4H16l8-8-8-8h10Z" fill="currentColor"/></svg>';
 });})();
+
+// V4.57: discreet team workspace entry in the main navigation.
+(()=>{const fr=document.documentElement.lang.startsWith('fr');document.querySelectorAll('nav a[href],#nav-menu a[href]').forEach(a=>{
+ if(!/(^|\/)team-space\.html(?:[?#]|$)/.test(a.getAttribute('href')))return;
+ a.classList.add('team-symbol457');a.setAttribute('aria-label',fr?'Espace équipe':'Team workspace');a.removeAttribute('title');a.innerHTML='<span aria-hidden="true">τ</span>';
+});})();
