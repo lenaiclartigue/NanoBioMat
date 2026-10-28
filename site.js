@@ -263,3 +263,15 @@ document.querySelectorAll('.language-switch a').forEach(link => {
  if(!/(^|\/)team-space\.html(?:[?#]|$)/.test(a.getAttribute('href')))return;
  a.classList.add('team-symbol457');a.setAttribute('aria-label',fr?'Espace équipe':'Team workspace');a.removeAttribute('title');a.innerHTML='<span aria-hidden="true">τ</span>';
 });})();
+
+// V4.58: centre tau geometrically between Contact and the language selector.
+(()=>{const tau=document.querySelector('#nav-menu .team-symbol457'),contact=document.querySelector('#nav-menu a[data-destination="contact"]'),language=document.querySelector('.site-header .language-switch'),header=document.querySelector('.site-header');
+ if(!tau||!contact||!language||!header)return;
+ let pending=false;
+ const align=()=>{pending=false;tau.style.transform='';if(!matchMedia('(min-width:1051px)').matches)return;
+ const a=contact.getBoundingClientRect(),b=language.getBoundingClientRect(),r=tau.getBoundingClientRect();
+ if(a.width&&b.width&&r.width&&b.left>a.right)tau.style.transform='translateX('+(((a.right+b.left)/2)-(r.left+r.width/2)).toFixed(2)+'px)';
+ };
+ const schedule=()=>{if(!pending){pending=true;requestAnimationFrame(align)}};
+ new ResizeObserver(schedule).observe(header);window.addEventListener('resize',schedule);document.fonts.ready.then(schedule);schedule();
+})();

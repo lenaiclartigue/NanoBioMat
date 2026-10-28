@@ -676,3 +676,8 @@ body[data-section="index"] #news-title{color:#526c32}
 /* V4.57: tau keeps the original workspace destination and position. */
 #nav-menu a.team-symbol457{display:inline-flex;align-items:center;justify-content:center;min-width:32px;min-height:32px;padding:0 7px;font:26px/1 Georgia,serif;text-decoration:none}
 #nav-menu a.team-symbol457:focus-visible{outline:2px solid #315b78;outline-offset:3px;border-radius:4px}
+
+/* V4.59: tau uses the same circular treatment as the theory entry. */
+#nav-menu a.team-symbol457{width:40px;height:40px;min-width:40px;max-width:40px;min-height:40px;box-sizing:border-box;flex:0 0 40px;padding:0;border:1px solid #a8bfcd;border-radius:50%;background:transparent;color:#244f68}
+#nav-menu a.team-symbol457:hover{background:#edf3f7;border-color:#557d97;color:#193f57}
+#nav-menu a.team-symbol457:focus-visible{border-radius:50%}
