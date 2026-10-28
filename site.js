@@ -251,3 +251,9 @@ document.querySelectorAll('.language-switch a').forEach(link => {
   document.documentElement.classList.remove('notice-modal-open'); trigger?.focus({preventScroll:true});
  });
 })();
+
+// V4.56: discreet, accessible entry to the theoretical resources.
+(()=>{const fr=document.documentElement.lang.startsWith('fr');document.querySelectorAll('.footer-theory448').forEach(a=>{
+ a.classList.add('footer-theory-symbol456');a.setAttribute('aria-label',fr?'Bases théoriques':'Theoretical background');a.removeAttribute('title');
+ a.innerHTML='<svg viewBox="0 0 36 36" width="28" height="28" aria-hidden="true" focusable="false"><path d="M26 6H10v3l9 9-9 9v3h16v-4H16l8-8-8-8h10Z" fill="currentColor"/></svg>';
+});})();

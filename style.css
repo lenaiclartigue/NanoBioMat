@@ -667,3 +667,8 @@ body[data-section="index"] #news-title{color:#526c32}
 .site-footer .footer-theory448:hover{background:#dce9f1;border-color:#557d97;color:#193f57;text-decoration:none}
 .site-footer .footer-theory448:focus-visible{outline:2px solid #315b78;outline-offset:3px}
 @media(max-width:440px){.site-footer .footer-theory448{font-size:11px;min-width:72px;max-width:100px;padding:5px 7px}}
+
+/* V4.56: one discreet symbol, beside the CC pictograms. */
+.site-footer .footer-theory448.footer-theory-symbol456{width:40px;height:40px;min-width:40px;max-width:40px;min-height:40px;padding:5px;border-radius:50%;background:transparent;flex:0 0 40px}
+.footer-theory-symbol456 svg{display:block;width:28px;height:28px}
+.site-footer .footer-theory-symbol456:hover{background:#edf3f7}

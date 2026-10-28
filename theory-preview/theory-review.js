@@ -55,3 +55,18 @@ const resourceRows454=[
 ];
 resourceRows454.forEach(r=>{if(!RESOURCE_DATA.some(q=>q[0]===r[0]))RESOURCE_DATA.push(r);});
 render();
+
+// Shared table enhancement covers modules and dynamically opened reference panels.
+function tables455(){
+ document.querySelectorAll('table:not([data-table455])').forEach(table=>{
+  table.dataset.table455='1';table.classList.add('reference-table','reference-table446');
+  const cols=table.rows[0]?.cells.length||2;table.dataset.columns=cols;table.dataset.wide=String(cols>3);
+  let wrap=table.parentElement;
+  if(!wrap.classList.contains('reference-table-wrap')&&!wrap.classList.contains('study-table-scroll')){wrap=document.createElement('div');table.before(wrap);wrap.append(table);}
+  wrap.classList.add('reference-table-wrap');wrap.tabIndex=0;wrap.setAttribute('role','region');
+  let previous=wrap.previousElementSibling;while(previous&&!/^H[1-6]$/.test(previous.tagName))previous=previous.previousElementSibling;
+  wrap.setAttribute('aria-label',table.caption?.textContent||previous?.textContent||T('Tableau de référence','Reference table'));
+ });
+}
+tables455();
+new MutationObserver(tables455).observe(document.body,{childList:true,subtree:true});
