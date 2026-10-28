@@ -661,3 +661,9 @@ body[data-section="index"] #news-title{color:#526c32}
 .site-footer .footer-identity-copy>.cc-license-badge{flex:0 0 88px}
 .site-footer .footer-theory448{display:block;max-width:110px;min-width:72px;white-space:normal}
 @media(max-width:440px){.site-footer .footer-theory448{font-size:11px;min-width:60px;max-width:78px}.site-footer>div.footer-identity:first-child>.footer-identity-copy{gap:6px}}
+
+/* V4.51: compact theoretical-background button before the licence. */
+.site-footer .footer-theory448{display:inline-flex;align-items:center;justify-content:center;flex:0 1 auto;min-height:32px;padding:5px 9px;box-sizing:border-box;border:1px solid #a8bfcd;border-radius:6px;background:#edf3f7;color:#244f68;font-size:12px;font-weight:600;line-height:1.2;text-align:center;text-decoration:none;max-width:145px;min-width:85px}
+.site-footer .footer-theory448:hover{background:#dce9f1;border-color:#557d97;color:#193f57;text-decoration:none}
+.site-footer .footer-theory448:focus-visible{outline:2px solid #315b78;outline-offset:3px}
+@media(max-width:440px){.site-footer .footer-theory448{font-size:11px;min-width:72px;max-width:100px;padding:5px 7px}}
