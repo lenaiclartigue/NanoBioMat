@@ -1,0 +1,1155 @@
+[
+  {
+    "id": "NP-001",
+    "name": "Doxil / Caelyx",
+    "family": "lipid",
+    "description": [
+      "Liposome PEGylé à chargement actif.",
+      "PEGylated liposomes."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/caelyx-pegylated-liposomal",
+    "sourceName": "EMA · Doxil / Caelyx",
+    "commercial": "https://www.doxil.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Doxorubicine",
+      "Doxorubicin"
+    ]
+  },
+  {
+    "id": "NP-003",
+    "name": "AmBisome",
+    "family": "lipid",
+    "description": [
+      "Petit liposome unilamellaire.",
+      "Liposomal amphotericin B."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://ambisome.com/",
+    "sourceName": "AmBisome · documentation",
+    "commercial": "https://ambisome.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Information de prescription américaine.",
+      "US prescribing information."
+    ],
+    "active": [
+      "Amphotéricine B",
+      "Amphotericin B"
+    ]
+  },
+  {
+    "id": "NP-006",
+    "name": "Myocet",
+    "family": "lipid",
+    "description": [
+      "Liposome non PEGylé.",
+      "Non-PEGylated liposomes."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/myocet-liposomal",
+    "sourceName": "EMA · Myocet",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Doxorubicine",
+      "Doxorubicin"
+    ]
+  },
+  {
+    "id": "NP-007",
+    "name": "Visudyne",
+    "family": "lipid",
+    "description": [
+      "Liposome activé par la lumière.",
+      "Light-activated liposomes."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/visudyne",
+    "sourceName": "EMA · Visudyne",
+    "commercial": "https://www.visudyne.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Vertéporfine",
+      "Verteporfin"
+    ]
+  },
+  {
+    "id": "NP-010",
+    "name": "Mepact",
+    "family": "lipid",
+    "description": [
+      "Liposome.",
+      "Liposomal mifamurtide."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/mepact",
+    "sourceName": "EMA · Mepact",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Mifamurtide",
+      "Mifamurtide"
+    ]
+  },
+  {
+    "id": "NP-012",
+    "name": "Onivyde",
+    "family": "lipid",
+    "description": [
+      "Liposome PEGylé.",
+      "Liposomal irinotecan."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/onivyde-pegylated-liposomal",
+    "sourceName": "EMA · Onivyde",
+    "commercial": "https://www.onivyde.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Irinotécan",
+      "Irinotecan"
+    ]
+  },
+  {
+    "id": "NP-013",
+    "name": "Vyxeos",
+    "family": "lipid",
+    "description": [
+      "Liposome à ratio molaire contrôlé.",
+      "Liposomal daunorubicin and cytarabine."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/vyxeos-liposomal",
+    "sourceName": "EMA · Vyxeos",
+    "commercial": "https://www.vyxeos.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Daunorubicine et cytarabine",
+      "Daunorubicin and cytarabine"
+    ]
+  },
+  {
+    "id": "NP-014",
+    "name": "Arikayce",
+    "family": "lipid",
+    "description": [
+      "Liposome inhalé.",
+      "Inhaled liposomal amikacin."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/arikayce-liposomal",
+    "sourceName": "EMA · Arikayce",
+    "commercial": "https://www.arikayce.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Amikacine",
+      "Amikacin"
+    ]
+  },
+  {
+    "id": "NP-016",
+    "name": "Zolsketil",
+    "family": "lipid",
+    "description": [
+      "Liposome PEGylé.",
+      "PEGylated liposomal doxorubicin."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/zolsketil-pegylated-liposomal",
+    "sourceName": "EMA · Zolsketil",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Doxorubicine",
+      "Doxorubicin"
+    ]
+  },
+  {
+    "id": "NP-017",
+    "name": "Abraxane",
+    "family": "protein",
+    "description": [
+      "Particules liées à l’albumine (nab).",
+      "Albumin-bound paclitaxel."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/abraxane",
+    "sourceName": "EMA · Abraxane",
+    "commercial": "https://www.abraxane.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Paclitaxel",
+      "Paclitaxel"
+    ]
+  },
+  {
+    "id": "NP-018",
+    "name": "Fyarro",
+    "family": "protein",
+    "description": [
+      "Particules liées à l’albumine (nab).",
+      "Albumin-bound sirolimus."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.fyarro.com/",
+    "sourceName": "Fyarro · documentation",
+    "commercial": "https://www.fyarro.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Information de prescription américaine.",
+      "US prescribing information."
+    ],
+    "active": [
+      "Sirolimus",
+      "Sirolimus"
+    ]
+  },
+  {
+    "id": "NP-019",
+    "name": "Apealea",
+    "family": "polymer",
+    "description": [
+      "Micelles de paclitaxel/retinoïde.",
+      "Paclitaxel micelles."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/apealea",
+    "sourceName": "EMA · Apealea",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Autorisation UE retirée le 9 février 2024.",
+      "EU authorization withdrawn on 9 February 2024."
+    ],
+    "active": [
+      "Paclitaxel",
+      "Paclitaxel"
+    ]
+  },
+  {
+    "id": "NP-020",
+    "name": "Genexol-PM",
+    "family": "polymer",
+    "description": [
+      "Micelle polymérique mPEG-PDLLA.",
+      "Paclitaxel in mPEG–PDLLA micelles."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": [
+      "I"
+    ],
+    "source": "https://doi.org/10.1158/1078-0432.CCR-03-0655",
+    "sourceName": "T. Y. Kim et al., Clin. Cancer Res. 2004, 10, 3708–3716",
+    "commercial": "https://www.samyangbiopharm.com/en/company/rnd",
+    "checked": "2026-10-29",
+    "detail": [
+      "Étude de phase I publiée en 2004.",
+      "Phase I study published in 2004."
+    ],
+    "active": [
+      "Paclitaxel",
+      "Paclitaxel"
+    ]
+  },
+  {
+    "id": "NP-021",
+    "name": "Onpattro",
+    "family": "lipid",
+    "description": [
+      "LNP-siRNA ionisable.",
+      "Ionizable lipid nanoparticles carrying siRNA."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/onpattro",
+    "sourceName": "EMA · Onpattro",
+    "commercial": "https://www.onpattro.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Patisiran",
+      "Patisiran"
+    ]
+  },
+  {
+    "id": "NP-022",
+    "name": "Comirnaty",
+    "family": "lipid",
+    "description": [
+      "LNP-ARNm.",
+      "Lipid nanoparticles carrying mRNA."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/comirnaty",
+    "sourceName": "EMA · Comirnaty",
+    "commercial": "https://www.comirnaty.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "ARNm codant Spike",
+      "Spike-encoding mRNA"
+    ]
+  },
+  {
+    "id": "NP-023",
+    "name": "Spikevax",
+    "family": "lipid",
+    "description": [
+      "LNP-ARNm.",
+      "Lipid nanoparticles carrying mRNA."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/spikevax",
+    "sourceName": "EMA · Spikevax",
+    "commercial": "https://www.spikevax.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "ARNm codant Spike",
+      "Spike-encoding mRNA"
+    ]
+  },
+  {
+    "id": "NP-024",
+    "name": "Kostaive",
+    "family": "lipid",
+    "description": [
+      "LNP-saRNA.",
+      "Lipid nanoparticles carrying self-amplifying RNA."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/kostaive",
+    "sourceName": "EMA · Kostaive",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Zapomeran",
+      "Zapomeran"
+    ]
+  },
+  {
+    "id": "NP-025",
+    "name": "mResvia",
+    "family": "lipid",
+    "description": [
+      "LNP-ARNm.",
+      "Lipid nanoparticles carrying mRNA."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/mresvia",
+    "sourceName": "EMA · mResvia",
+    "commercial": "https://www.mresvia.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "ARNm codant la protéine F du VRS",
+      "mRNA encoding RSV F protein"
+    ]
+  },
+  {
+    "id": "NP-028",
+    "name": "Mosquirix",
+    "family": "lipid",
+    "description": [
+      "AS01E liposomal.",
+      "RTS,S antigen with AS01E liposomal adjuvant."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/documents/outside-eu-smop/chmp-post-authorisation-summary-positive-opinion-mosquirix-ii-86_en.pdf",
+    "sourceName": "EMA · Mosquirix",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Avis scientifique EMA pour un usage hors UE. Mise à jour de mars 2025.",
+      "EMA scientific opinion for use outside the EU. March 2025 update."
+    ],
+    "active": [
+      "Antigène RTS,S et adjuvant AS01E",
+      "RTS,S antigen and AS01E adjuvant"
+    ]
+  },
+  {
+    "id": "NP-029",
+    "name": "Shingrix",
+    "family": "lipid",
+    "description": [
+      "AS01B liposomal.",
+      "VZV glycoprotein E with AS01B liposomal adjuvant."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/shingrix",
+    "sourceName": "EMA · Shingrix",
+    "commercial": "https://www.shingrix.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Glycoprotéine E du VZV et adjuvant AS01B",
+      "VZV glycoprotein E and AS01B adjuvant"
+    ]
+  },
+  {
+    "id": "NP-030",
+    "name": "Nuvaxovid",
+    "family": "protein",
+    "description": [
+      "Nanoparticule protéique + Matrix-M.",
+      "Recombinant Spike protein nanoparticles with Matrix-M adjuvant."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/nuvaxovid",
+    "sourceName": "EMA · Nuvaxovid",
+    "commercial": "https://www.nuvaxovid.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ],
+    "active": [
+      "Protéine Spike recombinante et Matrix-M",
+      "Recombinant Spike protein and Matrix-M"
+    ]
+  },
+  {
+    "id": "NP-031",
+    "name": "Venofer",
+    "family": "inorganic",
+    "description": [
+      "Cœur oxyhydroxyde de fer + enveloppe saccharose.",
+      "Iron oxyhydroxide–sucrose complex."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.venofer.com/",
+    "sourceName": "Venofer · documentation",
+    "commercial": "https://www.venofer.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Information de prescription américaine.",
+      "US prescribing information."
+    ]
+  },
+  {
+    "id": "NP-032",
+    "name": "Ferinject / Injectafer",
+    "family": "inorganic",
+    "description": [
+      "Complexe fer–glucide.",
+      "Ferric carboxymaltose."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://dailymed.awsprod.nlm.nih.gov/dailymed/drugInfo.cfm?setid=517b4a19-45b3-4286-9f6a-ced4e10447de",
+    "sourceName": "DailyMed · Injectafer · 2026",
+    "commercial": "https://injectafer.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Information de prescription américaine.",
+      "US prescribing information."
+    ]
+  },
+  {
+    "id": "NP-034",
+    "name": "Monofer / Monoferric",
+    "family": "inorganic",
+    "description": [
+      "Complexe de dérisomaltose ferrique.",
+      "Ferric derisomaltose."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.monoferric.com/",
+    "sourceName": "Monofer / Monoferric · documentation",
+    "commercial": "https://www.monoferric.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Information de prescription américaine.",
+      "US prescribing information."
+    ]
+  },
+  {
+    "id": "NP-044",
+    "name": "NBTXR3 / Hensify",
+    "family": "inorganic",
+    "description": [
+      "Radioenhancer intratumoral.",
+      "Hafnium oxide nanoparticles activated by radiation."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "trial",
+    "phase": [
+      "III"
+    ],
+    "source": "https://ir.nanobiotix.com/news-releases/news-release-details/nanobiotix-provides-first-half-2026-operational-and-financial",
+    "sourceName": "Nanobiotix · Half-year update · 2026",
+    "commercial": "https://www.nanobiotix.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "NANORAY-312 : étude de phase III dans les cancers de la tête et du cou. Mise à jour du promoteur, septembre 2026.",
+      "NANORAY-312: phase III study in head and neck cancer. Sponsor update, September 2026."
+    ]
+  },
+  {
+    "id": "NP-045",
+    "name": "AGuIX",
+    "family": "hybrid",
+    "description": [
+      "Nanoparticule theranostique.",
+      "Polysiloxane nanoparticles bearing gadolinium chelates."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "trial",
+    "phase": [
+      "I",
+      "II"
+    ],
+    "source": "https://www.cancer.gov/research/participate/clinical-trials-search/v?id=NCI-2021-06084",
+    "sourceName": "National Cancer Institute · NCT04789486",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "NCT04789486 : phase I/II avec radiothérapie pour les tumeurs pulmonaires et pancréatiques.",
+      "NCT04789486: phase I/II with radiotherapy for lung and pancreatic tumours."
+    ]
+  },
+  {
+    "id": "NP-046",
+    "name": "AuroShell",
+    "family": "hybrid",
+    "description": [
+      "Silice-or activée NIR.",
+      "Silica–gold nanoshells activated by near-infrared light."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "trial",
+    "phase": [],
+    "source": "https://nanospectra.com/technology/",
+    "sourceName": "Nanospectra · AuroLase clinical programme",
+    "commercial": "https://nanospectra.com/technology/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Évaluation clinique de l’ablation photothermique de la prostate.",
+      "Clinical evaluation of prostate photothermal ablation."
+    ]
+  },
+  {
+    "id": "NP-047",
+    "name": "Emend · capsules / gélules",
+    "family": "crystal",
+    "description": [
+      "Nanocristaux oraux.",
+      "Oral aprepitant nanocrystals."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/emend",
+    "sourceName": "EMA · Emend",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ]
+  },
+  {
+    "id": "NP-048",
+    "name": "Rapamune · tablets / comprimés",
+    "family": "crystal",
+    "description": [
+      "Nanocristaux oraux.",
+      "Oral sirolimus nanocrystals."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/rapamune",
+    "sourceName": "EMA · Rapamune",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ]
+  },
+  {
+    "id": "NP-049",
+    "name": "Apretude",
+    "family": "crystal",
+    "description": [
+      "Suspension injectable de nanocristaux de cabotégravir.",
+      "Injectable cabotegravir nanocrystal suspension."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/apretude",
+    "sourceName": "EMA · Apretude / Vocabria",
+    "commercial": "https://apretude.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ]
+  },
+  {
+    "id": "NP-050",
+    "name": "Rekambys",
+    "family": "crystal",
+    "description": [
+      "Suspension injectable de nanocristaux de rilpivirine.",
+      "Injectable rilpivirine nanocrystal suspension."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/rekambys",
+    "sourceName": "EMA · Cabenuva / Rekambys",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ]
+  },
+  {
+    "id": "NP-051",
+    "name": "Xeplion / Invega Sustenna",
+    "family": "crystal",
+    "description": [
+      "Suspension de cristaux de palmitate de palipéridone à libération prolongée.",
+      "Long-acting paliperidone palmitate crystal suspension."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/xeplion",
+    "sourceName": "EMA · Xeplion / Invega Sustenna",
+    "commercial": "https://www.invegasustenna.com/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Dossier réglementaire européen.",
+      "European regulatory dossier."
+    ]
+  },
+  {
+    "id": "IONP-0",
+    "name": "Ferabright · Azurity",
+    "family": "inorganic",
+    "description": [
+      "Ferumoxytol. Autorisation FDA du 16 octobre 2025. IRM cérébrale chez l’adulte avec tumeur maligne connue ou suspectée et rupture de la barrière hématoencéphalique.",
+      "Ferumoxytol. FDA approval on 16 October 2025. Brain MRI in adults with known or suspected malignant neoplasms and a disrupted blood–brain barrier."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219868s000lbl.pdf",
+    "sourceName": "FDA · Ferabright · 2025",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Ferabright contient du ferumoxytol, comme Feraheme. Cette fiche concerne son indication en contraste IRM.",
+      "Ferabright contains ferumoxytol, as does Feraheme. This entry covers its MRI contrast indication."
+    ],
+    "extraSources": [
+      {
+        "url": "https://precision.fda.gov/uniisearch/srs/unii/R8DG7T2D3A",
+        "name": "FDA GSRS — Ferumoxytol: Ferabright, Feraheme, Rienso"
+      }
+    ]
+  },
+  {
+    "id": "IONP-1",
+    "name": "Resotran · Sanochemia",
+    "family": "inorganic",
+    "description": [
+      "Ferucarbotran. Contraste hépatique. Le fabricant rapporte des autorisations en Allemagne et en Suède.",
+      "Ferucarbotran. Liver contrast. The manufacturer reports authorizations in Germany and Sweden."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.sanochemia.com/en/medical-imaging/",
+    "sourceName": "Sanochemia · Medical imaging",
+    "commercial": "https://www.sanochemia.com/en/medical-imaging/",
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "IONP-2",
+    "name": "Ferumoxytol — Feraheme / Rienso",
+    "family": "inorganic",
+    "description": [
+      "Formulation intraveineuse destinée au traitement de certaines anémies ferriprives. Cette indication diffère de celle de Ferabright.",
+      "Intravenous formulation for specified iron-deficiency anaemia indications. This indication differs from Ferabright."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.feraheme.com/",
+    "sourceName": "Feraheme · prescribing information",
+    "commercial": "https://www.feraheme.com/",
+    "checked": "2026-10-29",
+    "stages": [
+      "clinical",
+      "historical"
+    ],
+    "detail": [
+      "Feraheme : supplémentation en fer aux États-Unis. Rienso : ancien nom européen. Son autorisation européenne a été retirée en 2015 à la demande du titulaire, pour des raisons commerciales.",
+      "Feraheme: iron replacement in the United States. Rienso: former European brand. Its European authorisation was withdrawn in 2015 at the holder’s request for commercial reasons."
+    ],
+    "extraSources": [
+      {
+        "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/rienso",
+        "name": "EMA — Rienso: ferumoxytol, withdrawal 2015"
+      }
+    ]
+  },
+  {
+    "id": "IONP-3",
+    "name": "Magtrace / Sentimag · Endomag",
+    "family": "inorganic",
+    "description": [
+      "Traceur à oxyde de fer et carboxydextrane. La sonde repère les ganglions par détection magnétique. L’autorisation FDA citée concerne la biopsie du ganglion sentinelle dans le cancer du sein.",
+      "Iron oxide tracer with carboxydextran. The probe localizes nodes magnetically. The cited FDA authorization concerns sentinel-node biopsy in breast cancer."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.fda.gov/medical-devices/recently-approved-devices/magtrace-and-sentimag-magnetic-localization-system-p160053s002",
+    "sourceName": "FDA · P160053/S002 · 2022",
+    "commercial": "",
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "IONP-5",
+    "name": "Ferrotran · SPL Medical",
+    "family": "inorganic",
+    "description": [
+      "Ferumoxtran pour l’imagerie ganglionnaire. Le fabricant annonce des résultats de phase III et une demande d’autorisation en 2026. ",
+      "Ferumoxtran for lymph-node imaging. The manufacturer reports phase III results and a marketing authorization application in 2026. "
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "trial",
+    "phase": [
+      "III"
+    ],
+    "source": "https://splmed.com/english/",
+    "sourceName": "SPL Medical · 2026",
+    "commercial": "https://splmed.com/english/",
+    "checked": "2026-10-29",
+    "detail": [
+      "Le ferumoxtran-10 a aussi été développé sous les noms Combidex et Sinerem. Les fiches distinguent les programmes de développement et leurs statuts.",
+      "Ferumoxtran-10 was also developed as Combidex and Sinerem. The entries distinguish development programmes and their status."
+    ],
+    "extraSources": [
+      {
+        "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/ferumoxtran-10",
+        "name": "NCI — Ferumoxtran-10: Combidex / Sinerem"
+      }
+    ]
+  },
+  {
+    "id": "IONP-8",
+    "name": "Nanotherm AS1 / NanoActivator",
+    "family": "inorganic",
+    "description": [
+      "Nanoparticules injectées dans la tumeur et activation par champ alternatif. Le fabricant indique un dispositif expérimental. ",
+      "Intratumoral nanoparticles activated by an alternating field. The manufacturer identifies an investigational device. "
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "trial",
+    "phase": [],
+    "source": "https://www.nanothermtx.com/",
+    "sourceName": "Nanotherm Therapeutics",
+    "commercial": "https://www.nanothermtx.com/",
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "IONP-15",
+    "name": "Sinerem",
+    "family": "inorganic",
+    "description": [
+      "La demande européenne d’autorisation a été retirée en décembre 2007. Il ne s’agit pas du retrait d’une autorisation accordée.",
+      "The EU marketing application was withdrawn in December 2007. This was not withdrawal of an approved authorization."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": [],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/sinerem",
+    "sourceName": "EMA · Sinerem · 2007",
+    "commercial": "",
+    "checked": "2026-10-29",
+    "detail": [
+      "Le ferumoxtran-10 a aussi été développé sous les noms Combidex et Sinerem. Les fiches distinguent les programmes de développement et leurs statuts.",
+      "Ferumoxtran-10 was also developed as Combidex and Sinerem. The entries distinguish development programmes and their status."
+    ],
+    "extraSources": [
+      {
+        "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/ferumoxtran-10",
+        "name": "NCI — Ferumoxtran-10: Combidex / Sinerem"
+      }
+    ]
+  },
+  {
+    "id": "IONP-16",
+    "name": "Feridex / Endorem",
+    "family": "inorganic",
+    "description": [
+      "Ferumoxides associés au dextrane. Exemple historique de contraste hépatique par oxyde de fer. Feridex figure parmi les produits arrêtés dans la documentation FDA.",
+      "Dextran-associated ferumoxides. Historical iron oxide liver contrast agent. FDA documentation lists Feridex among discontinued products."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": [],
+    "source": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2018/208078Orig1s000NameR.pdf",
+    "sourceName": "FDA · discontinued names · 2018",
+    "commercial": "",
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "IONP-17",
+    "name": "GastroMARK / Lumirem",
+    "family": "inorganic",
+    "description": [
+      "Ferumoxsil. Exemple historique de suspension orale pour le contraste digestif. ",
+      "Ferumoxsil. Historical oral suspension for gastrointestinal contrast. "
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": [],
+    "source": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/20937_OptiMark_admindocs_P2.pdf",
+    "sourceName": "FDA · historical record · 1999",
+    "commercial": "",
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "NP-002",
+    "name": "DaunoXome",
+    "family": "lipid",
+    "description": [
+      "Liposome.",
+      "Liposomal daunorubicin."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": [
+      "III"
+    ],
+    "source": "https://doi.org/10.1200/JCO.1996.14.8.2353",
+    "sourceName": "P. S. Gill et al., J. Clin. Oncol. 1996, 14, 2353–2364",
+    "commercial": "",
+    "detail": [
+      "Étude de phase III publiée en 1996.",
+      "Phase III study published in 1996."
+    ],
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "NP-011",
+    "name": "Marqibo",
+    "family": "lipid",
+    "description": [
+      "Liposome sphingomyéline/cholestérol.",
+      "Liposomal vincristine."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": [
+      "II"
+    ],
+    "source": "https://doi.org/10.1200/JCO.2012.46.2309",
+    "sourceName": "S. O’Brien et al., J. Clin. Oncol. 2013, 31, 676–683",
+    "commercial": "",
+    "detail": [
+      "Étude de phase II publiée en 2013.",
+      "Phase II study published in 2013."
+    ],
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "NP-026",
+    "name": "Epaxal",
+    "family": "lipid",
+    "description": [
+      "Virosome.",
+      "Virosomal hepatitis A vaccine."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": [],
+    "source": "https://doi.org/10.1016/S0140-6736(94)91162-2",
+    "sourceName": "L. Loutan et al., Lancet 1994, 343, 322–324",
+    "commercial": "",
+    "detail": [
+      "Vaccin virosomal étudié chez l’humain en 1994.",
+      "Virosomal vaccine studied in humans in 1994."
+    ],
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "NP-027",
+    "name": "Inflexal V",
+    "family": "lipid",
+    "description": [
+      "Virosome.",
+      "Virosomal influenza vaccine."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": [],
+    "source": "https://doi.org/10.1016/j.vaccine.2009.05.029",
+    "sourceName": "C. Herzog et al., Vaccine 2009, 27, 4381–4387",
+    "commercial": "",
+    "detail": [
+      "Usage clinique décrit dans la revue de 2009.",
+      "Clinical use described in the 2009 review."
+    ],
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "NP-033",
+    "name": "INFeD",
+    "family": "inorganic",
+    "description": [
+      "Complexe fer–dextran.",
+      "Iron–dextran complex."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://www.infed.com/dosing-and-administration",
+    "sourceName": "INFeD · US prescribing information",
+    "commercial": "https://www.infed.com/dosing-and-administration",
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "NP-035",
+    "name": "Ferrlecit",
+    "family": "inorganic",
+    "description": [
+      "Complexe de gluconate ferrique sodique dans le saccharose.",
+      "Sodium ferric gluconate complex in sucrose."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": [],
+    "source": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1fe028ff-42ac-4329-b1a5-a9dadfcb79f6",
+    "sourceName": "Ferrlecit · US prescribing information",
+    "commercial": "",
+    "checked": "2026-10-29"
+  },
+  {
+    "id": "NP-005",
+    "name": "Amphotec / Amphocil",
+    "family": "lipid",
+    "description": [
+      "L’amphotéricine B forme un complexe avec le sulfate de cholestéryle. Les particules discoïdales mesurent 120–140 nm.",
+      "Amphotericin B forms a complex with cholesteryl sulfate. Disc-shaped particles measure 120–140 nm."
+    ],
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": [],
+    "detail": [
+      "Formulation répertoriée comme arrêtée dans le support FDA de 2023.",
+      "Formulation listed as discontinued in the 2023 FDA presentation."
+    ],
+    "source": "https://www.fda.gov/media/173376/download",
+    "sourceName": "FDA · Amphotericin B Liposome: Revisions of the Product Specific Guidance · 2023",
+    "commercial": "",
+    "checked": "2026-10-29"
+  }
+]
