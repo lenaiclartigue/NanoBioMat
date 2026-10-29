@@ -11,9 +11,6 @@ const notes={
  heat:[['Comparer des puissances normalisées','Comparing normalized powers'],['Le SLP est une puissance rapportée à une masse explicitement définie : fer, oxyde ou matériau total. L’énergie dissipée par cycle multipliée par la fréquence donne la puissance ; le cycle dépend lui-même de l’amplitude, de la fréquence et du milieu. Pour P_V/ρ, le volume de référence de la puissance volumique et celui de la masse volumique doivent être identiques.','SLP is power per explicitly defined mass: iron, oxide or total material. Dissipated energy per cycle times frequency gives power; the cycle itself depends on amplitude, frequency and medium. For P_V/ρ, volumetric power and mass density must refer to the same volume.'],'R. Hergt & W. Andrä, “Magnetic Hyperthermia and Thermoablation”, in Magnetism in Medicine, 2nd ed. (2007), §4.6.2, pp. 551–555.']
 };
 function apply(){
- const tools=$('theoryTools');let toolsPanel=$('toolsPanel476');
- if(tools&&!toolsPanel){toolsPanel=document.createElement('details');toolsPanel.id='toolsPanel476';const summary=document.createElement('summary');toolsPanel.append(summary);tools.before(toolsPanel);toolsPanel.append(tools);}
- if(toolsPanel)toolsPanel.querySelector('summary').textContent=T('Outils et données','Tools and data');
 
  const v=notes[current];if(v){const box=document.createElement('section');box.id='sourceNote476';box.className='source-note476';const h=document.createElement('h3');h.textContent=T(...v[0]);const p=document.createElement('p');p.textContent=T(...v[1]);const cite=document.createElement('p');cite.className='source-citation476';cite.textContent=v[2];box.append(h,p,cite);($('interpretationNotes')||$('explain')||$('stage')).after(box);}
  if(['corona','response','heat'].includes(current)){
