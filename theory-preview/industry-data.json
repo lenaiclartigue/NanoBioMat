@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Ferabright · Azurity",
+    "group": "clinical",
+    "technology": "IRM / MRI",
+    "description": [
+      "Ferumoxytol. Autorisation FDA du 16 octobre 2025. IRM cérébrale chez l’adulte avec tumeur maligne connue ou suspectée et rupture de la barrière hématoencéphalique.",
+      "Ferumoxytol. FDA approval on 16 October 2025. Brain MRI in adults with known or suspected malignant neoplasms and a disrupted blood–brain barrier."
+    ],
+    "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219868s000lbl.pdf",
+    "sourceName": "FDA · Ferabright · 2025",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "Resotran · Sanochemia",
+    "group": "clinical",
+    "technology": "IRM / MRI",
+    "description": [
+      "Ferucarbotran. Contraste hépatique. Le fabricant rapporte des autorisations en Allemagne et en Suède.",
+      "Ferucarbotran. Liver contrast. The manufacturer reports authorizations in Germany and Sweden."
+    ],
+    "source": "https://www.sanochemia.com/en/medical-imaging/",
+    "sourceName": "Sanochemia · Medical imaging",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "Ferumoxytol · Feraheme",
+    "group": "clinical",
+    "technology": "Fer / Iron",
+    "description": [
+      "Formulation intraveineuse destinée au traitement de certaines anémies ferriprives. Cette indication diffère de celle de Ferabright.",
+      "Intravenous formulation for specified iron-deficiency anaemia indications. This indication differs from Ferabright."
+    ],
+    "source": "https://www.feraheme.com/",
+    "sourceName": "Feraheme · prescribing information",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "Magtrace / Sentimag · Endomag",
+    "group": "clinical",
+    "technology": "Susceptométrie / Susceptometry",
+    "description": [
+      "Traceur à oxyde de fer et carboxydextrane. La sonde repère les ganglions par détection magnétique. L’autorisation FDA citée concerne la biopsie du ganglion sentinelle dans le cancer du sein.",
+      "Iron oxide tracer with carboxydextran. The probe localizes nodes magnetically. The cited FDA authorization concerns sentinel-node biopsy in breast cancer."
+    ],
+    "source": "https://www.fda.gov/medical-devices/recently-approved-devices/magtrace-and-sentimag-magnetic-localization-system-p160053s002",
+    "sourceName": "FDA · P160053/S002 · 2022",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "CliniMACS CD34 · Miltenyi Biotec",
+    "group": "clinical",
+    "technology": "Séparation / Separation",
+    "description": [
+      "Sélection ex vivo de cellules CD34⁺. L’exemption humanitaire FDA BH110018 concerne un protocole précis de greffe dans la leucémie aiguë myéloïde. Elle ne couvre pas tous les usages MACS.",
+      "Ex vivo CD34⁺ cell selection. FDA humanitarian exemption BH110018 concerns a specific transplant protocol in acute myeloid leukaemia. It does not cover all MACS uses."
+    ],
+    "source": "https://www.fda.gov/vaccines-blood-biologics/approved-blood-products/clinimacs-cd34-reagent-system",
+    "sourceName": "FDA · BH110018",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "Ferrotran · SPL Medical",
+    "group": "development",
+    "technology": "IRM / MRI",
+    "description": [
+      "Ferumoxtran pour l’imagerie ganglionnaire. Le fabricant annonce des résultats de phase III et une demande d’autorisation en 2026. Une demande ne constitue pas une autorisation.",
+      "Ferumoxtran for lymph-node imaging. The manufacturer reports phase III results and a marketing authorization application in 2026. An application is not an authorization."
+    ],
+    "source": "https://splmed.com/english/",
+    "sourceName": "SPL Medical · 2026",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "MPB-1523 · MegaPro",
+    "group": "development",
+    "technology": "IRM / MRI",
+    "description": [
+      "Agent à oxyde de fer pour l’IRM hépatique. Le fabricant décrit la préparation d’un programme de phase III. Les échanges réglementaires ne constituent pas une autorisation de mise sur le marché.",
+      "Iron oxide agent for liver MRI. The manufacturer describes preparation of a phase III programme. Regulatory discussions are not marketing authorization."
+    ],
+    "source": "https://www.megaprobio.com/en/news.html",
+    "sourceName": "MegaPro Biomedical · 2026",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "FerroTrace · Ferronova",
+    "group": "development",
+    "technology": "Susceptométrie / Susceptometry",
+    "description": [
+      "Traceur magnétique étudié pour la cartographie lymphatique. Le document cité présente une étude de faisabilité en chirurgie colorectale.",
+      "Magnetic tracer studied for lymphatic mapping. The cited document presents a colorectal surgery feasibility study."
+    ],
+    "source": "https://www.ferronova.com.au/wp-content/uploads/2024/09/64f7b010df4652b1bc04bc8f_SAGES-2023-Ferronova-Poster-v1.0.pdf",
+    "sourceName": "Ferronova · MAGICSENT · SAGES 2023",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "Nanotherm AS1 / NanoActivator",
+    "group": "development",
+    "technology": "Hyperthermie / Hyperthermia",
+    "description": [
+      "Nanoparticules injectées dans la tumeur et activation par champ alternatif. Le fabricant indique un dispositif expérimental. Il précise que l’ancien marquage CE ne constitue pas une autorisation actuelle.",
+      "Intratumoral nanoparticles activated by an alternating field. The manufacturer identifies an investigational device. It states that the former CE marking does not establish current authorization."
+    ],
+    "source": "https://www.nanothermtx.com/",
+    "sourceName": "Nanotherm Therapeutics",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "RCL-01 · Resonant Circuits",
+    "group": "development",
+    "technology": "Hyperthermie / Hyperthermia",
+    "description": [
+      "Préparation d’oxyde de fer. Le catalogue décrit des usages précliniques. Le fabricant rapporte aussi une étude clinique NoCanTher avec ses particules et son générateur.",
+      "Iron oxide preparation. The catalogue describes preclinical uses. The manufacturer also reports the NoCanTher clinical study with its particles and generator."
+    ],
+    "source": "https://www.resonantcircuits.com/news/rcl-amp-vall-dhebron-enrolls-first-patient-for-treatment-of-pancreatic-cancer",
+    "sourceName": "Resonant Circuits · NoCanTher · 2022",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "MPI · Magnetic Insight",
+    "group": "research",
+    "technology": "MPI",
+    "description": [
+      "Systèmes d’imagerie par particules magnétiques pour modèles précliniques. Le constructeur développe également des applications cliniques.",
+      "Magnetic particle imaging systems for preclinical models. The manufacturer also develops clinical applications."
+    ],
+    "source": "https://www.magneticinsight.com/",
+    "sourceName": "Magnetic Insight",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "synomag / perimag / BNF · micromod",
+    "group": "research",
+    "technology": "Traceurs / Tracers",
+    "description": [
+      "Particules de recherche pour l’imagerie, le chauffage et la séparation. Le catalogue distingue les tailles et les revêtements. Un diamètre de formulation ne décrit pas nécessairement le diamètre du cœur.",
+      "Research particles for imaging, heating and separation. The catalogue distinguishes sizes and coatings. Formulation diameter does not necessarily describe core diameter."
+    ],
+    "source": "https://micromod.de/en/products/magnetic-particles/",
+    "sourceName": "micromod · Magnetic particles",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "MACS · Miltenyi Biotec",
+    "group": "research",
+    "technology": "Séparation / Separation",
+    "description": [
+      "Marquage magnétique et tri cellulaire. Les réactifs, colonnes et séparateurs constituent un système ex vivo. Le statut dépend du produit précis.",
+      "Magnetic labelling and cell sorting. Reagents, columns and separators form an ex vivo system. Status depends on the specific product."
+    ],
+    "source": "https://www.miltenyibiotec.com/",
+    "sourceName": "Miltenyi Biotec · MACS",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "Dynabeads · Thermo Fisher",
+    "group": "research",
+    "technology": "Séparation / Separation",
+    "description": [
+      "Microsphères polymères contenant des cristallites de magnétite et de maghémite. Les billes servent à la capture et à la séparation. Leur taille micrométrique les distingue des IONPs injectables.",
+      "Polymer microspheres containing magnetite and maghemite crystallites. Beads support capture and separation. Their micrometre size distinguishes them from injectable IONPs."
+    ],
+    "source": "https://www.thermofisher.com/order/catalog/product/38005D/faqs",
+    "sourceName": "Thermo Fisher · Dynabeads technical FAQ",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "Rienso",
+    "group": "historical",
+    "technology": "Fer / Iron",
+    "description": [
+      "Ferumoxytol. Autorisation européenne retirée en 2015 à la demande du titulaire, pour raisons commerciales.",
+      "Ferumoxytol. EU authorization withdrawn in 2015 at the holder’s request for commercial reasons."
+    ],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/rienso",
+    "sourceName": "EMA · Rienso · 2015",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "Sinerem",
+    "group": "historical",
+    "technology": "IRM / MRI",
+    "description": [
+      "La demande européenne d’autorisation a été retirée en décembre 2007. Il ne s’agit pas du retrait d’une autorisation accordée.",
+      "The EU marketing application was withdrawn in December 2007. This was not withdrawal of an approved authorization."
+    ],
+    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/sinerem",
+    "sourceName": "EMA · Sinerem · 2007",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "Feridex / Endorem",
+    "group": "historical",
+    "technology": "IRM / MRI",
+    "description": [
+      "Ferumoxides associés au dextrane. Exemple historique de contraste hépatique par oxyde de fer. Feridex figure parmi les produits arrêtés dans la documentation FDA.",
+      "Dextran-associated ferumoxides. Historical iron oxide liver contrast agent. FDA documentation lists Feridex among discontinued products."
+    ],
+    "source": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2018/208078Orig1s000NameR.pdf",
+    "sourceName": "FDA · discontinued names · 2018",
+    "date": "2026-10-29"
+  },
+  {
+    "name": "GastroMARK / Lumirem",
+    "group": "historical",
+    "technology": "IRM / MRI",
+    "description": [
+      "Ferumoxsil. Exemple historique de suspension orale pour le contraste digestif. La source historique ne démontre pas une disponibilité actuelle.",
+      "Ferumoxsil. Historical oral suspension for gastrointestinal contrast. The historical source does not establish current availability."
+    ],
+    "source": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/20937_OptiMark_admindocs_P2.pdf",
+    "sourceName": "FDA · historical record · 1999",
+    "date": "2026-10-29"
+  }
+]
