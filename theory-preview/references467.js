@@ -3,21 +3,21 @@
 const css=document.createElement('style');css.textContent=`#moduleReferences467{margin:28px 0 18px;padding:16px 0 0;border:0;border-top:1px solid #dbe3e7;background:none;box-shadow:none;color:#66717a;font:13px/1.6 Arial,sans-serif}#moduleReferences467 h3,#moduleReferences467 h4{font-size:13px;color:#66717a;margin:0 0 8px;font-weight:600}#moduleReferences467 h4{margin-top:15px}#moduleReferences467 ul{padding-left:20px;margin:5px 0}#moduleReferences467 li{margin:7px 0}#moduleReferences467 a,#moduleReferences467 a:visited{color:#1769aa!important;text-decoration:underline;font-size:13px}#moduleReferences467 p{font-size:13px}`;document.head.append(css);
 let groups=[],serial=0;
 const isRef=e=>/^(reference publications?|publications? de référence|références bibliographiques)(\s|$)/i.test(e.textContent.trim());
-function group(title,nodes){if(!nodes.length)return;let html=nodes.map(n=>n.outerHTML).join('');if(!html.trim())return;groups.push({title,html});nodes.forEach(n=>n.remove());}
-function collect(root,defaultTitle){
+function group(title,nodes,preserve){if(!nodes.length)return;let html=nodes.map(n=>{const copy=n.cloneNode(true);copy.removeAttribute('hidden');return copy.outerHTML}).join('');if(!html.trim())return;groups.push({title,html});nodes.forEach(n=>{if(preserve)n.hidden=true;else n.remove()});}
+function collect(root,defaultTitle,preserve=false){
  const heads=[...root.querySelectorAll('h2,h3,h4,strong')].filter(isRef);
- for(const h of heads){if(!h.isConnected||h.closest('#moduleReferences467')||h.closest('[hidden]')||h.closest('[data-inline-references]'))continue;
+ for(const h of heads){if(!h.isConnected||h.closest('#moduleReferences467')||(!preserve&&h.closest('[hidden]'))||h.closest('[data-inline-references]'))continue;
  const section=h.closest('.source465,.ref-block,.study-references,.refs464');
  let title=h.closest('.card')?.querySelector('h2')?.textContent||section?.parentElement?.querySelector('h3,h4')?.textContent;
  if(section?.id==='references')title=T('Mécanismes et données de référence','Mechanisms and reference data');else if(section?.classList.contains('source465'))title=T('Schéma','Diagram');else if(!title||isRef({textContent:title}))title=defaultTitle;
  const nodes=[];let n=h.nextElementSibling;
  while(n&&!/^H[1-4]$/.test(n.tagName)&&!n.matches('section,details,nav,button,iframe')){let next=n.nextElementSibling;if(n.matches('ul,ol,p,div')&&(n.querySelector('a')||n.matches('ul,ol')))nodes.push(n);else break;n=next;}
- group(title,nodes);h.remove();if(section&&section.id!=='references'&&!section.textContent.trim())section.remove();
+ group(title,nodes,preserve);if(preserve)h.hidden=true;else h.remove();if(!preserve&&section&&section.id!=='references'&&!section.textContent.trim())section.remove();
  }
 }
 function finish(){
  collect($('content'),T('Module','Module'));
- for(const frame of $('content').querySelectorAll('iframe')){try{const doc=frame.contentDocument;if(doc?.body){if([...doc.body.querySelectorAll('h3,strong')].some(isRef))groups=groups.filter(g=>g.title!==T('Modèle interactif','Interactive model'));collect(doc.body,T('Modèle interactif','Interactive model'));if(!frame._refObserver467){const obs=new MutationObserver(ms=>{if(ms.some(m=>[...m.addedNodes].some(n=>n.nodeType===1&&(isRef(n)||[...n.querySelectorAll('h3,strong')].some(isRef)))))setTimeout(finish,0)});obs.observe(doc.body,{childList:true,subtree:true});frame._refObserver467=obs;}}}catch(e){}}
+ for(const frame of $('content').querySelectorAll('iframe')){try{const doc=frame.contentDocument;if(doc?.body){if([...doc.body.querySelectorAll('h3,strong')].some(isRef))groups=groups.filter(g=>g.title!==T('Modèle interactif','Interactive model'));collect(doc.body,T('Modèle interactif','Interactive model'),true);if(!frame._refObserver467){const obs=new MutationObserver(ms=>{if(ms.some(m=>[...m.addedNodes].some(n=>n.nodeType===1&&(n.matches('li,ul')||isRef(n)||[...n.querySelectorAll('h3,strong')].some(isRef)))))setTimeout(finish,0)});obs.observe(doc.body,{childList:true,subtree:true});frame._refObserver467=obs;}}}catch(e){}}
  const main=$('references');if(main){main.hidden=false;main.querySelectorAll(':scope > details,:scope > section,:scope > p,:scope > div').forEach(n=>{if(n.textContent.trim())main.before(n)});main.hidden=!main.textContent.trim();}
  let out=$('moduleReferences467');if(!out){out=document.createElement('section');out.id='moduleReferences467';}
  out.replaceChildren();const h=document.createElement('h3');h.textContent=T('Publication de référence','Reference publication');out.append(h);

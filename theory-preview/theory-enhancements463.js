@@ -55,7 +55,7 @@
    s+=`<path d="M${X(state.d)} 60V320" stroke="#617789" stroke-dasharray="3 5"/></svg>`;
    document.getElementById('relaxPlot463').innerHTML=s;
    document.getElementById('relaxResults463').innerHTML=vals.map((v,i)=>`<div style="--tone:${colors[i]}">${labels[i]}<strong>${fmt(result[v])}</strong><small>τ<sub>${['N','B','eff'][i]}</sub></small></div>`).join('');
-   document.getElementById('relaxStatus463').textContent=tr('Le mécanisme le plus rapide domine le temps effectif. ','The faster mechanism dominates the effective time. ')+`KV/(kᵦT) = ${result.sigma.toFixed(1)}. `+(result.sigma<3?tr('Faible barrière : l’approximation exponentielle devient peu précise. ','Low barrier: the exponential approximation becomes inaccurate. '):'')+(result.logN>maxLog?tr('Le temps de Néel dépasse le cadre du graphe. Sa valeur reste affichée.','Néel time exceeds the plotted range. Its value remains displayed.'):'');
+   document.getElementById('relaxStatus463').innerHTML=tr('Le mécanisme le plus rapide domine le temps effectif. ','The faster mechanism dominates the effective time. ')+`KV/(k<sub>B</sub>T) = ${result.sigma.toFixed(1)}. `+(result.sigma<3?tr('Faible barrière : l’approximation exponentielle devient peu précise. ','Low barrier: the exponential approximation becomes inaccurate. '):'')+(result.logN>maxLog?tr('Le temps de Néel dépasse le cadre du graphe. Sa valeur reste affichée.','Néel time exceeds the plotted range. Its value remains displayed.'):'');
   }
   const rows=[
    [tr('Eau · Fortin','Water · Fortin'),'0.700',.7,'37',310.15,'Fortin 2007'],

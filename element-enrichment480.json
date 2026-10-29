@@ -1,0 +1,1314 @@
+{
+  "Ac": {
+    "cp": {
+      "value": 0.12,
+      "form": "Actinium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Al": {
+    "cp": {
+      "value": 0.897,
+      "form": "Aluminum",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 2.709,
+    "ions": [
+      [
+        "Al³⁺",
+        4,
+        54,
+        "—"
+      ]
+    ],
+    "redox": [
+      [
+        "Al³⁺(aq) + 3 e⁻ ⇌ Al(s)",
+        -1.662
+      ]
+    ],
+    "nmr": [
+      [
+        "²⁷Al",
+        100,
+        "5/2",
+        11.1031
+      ]
+    ],
+    "thermal": [
+      [
+        300,
+        237
+      ],
+      [
+        400,
+        240
+      ],
+      [
+        500,
+        236
+      ],
+      [
+        600,
+        236
+      ]
+    ]
+  },
+  "Sb": {
+    "cp": {
+      "value": 0.207,
+      "form": "Antimony",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Ar": {
+    "cp": {
+      "value": 0.52,
+      "form": "Argon",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "As": {
+    "cp": {
+      "value": 0.329,
+      "form": "Arsenic",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Ba": {
+    "cp": {
+      "value": 0.204,
+      "form": "Barium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 34
+  },
+  "Be": {
+    "cp": {
+      "value": 1.825,
+      "form": "Beryllium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 3.7
+  },
+  "Bi": {
+    "cp": {
+      "value": 0.122,
+      "form": "Bismuth",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "B": {
+    "cp": {
+      "value": 1.026,
+      "form": "Boron",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "¹⁰B",
+        19.9,
+        "3",
+        4.5752
+      ],
+      [
+        "¹¹B",
+        80.1,
+        "3/2",
+        13.663
+      ]
+    ]
+  },
+  "Br": {
+    "cp": {
+      "value": 0.474,
+      "form": "Bromine (Br2)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Cd": {
+    "cp": {
+      "value": 0.232,
+      "form": "Cadmium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Ca": {
+    "cp": {
+      "value": 0.647,
+      "form": "Calcium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 3.42
+  },
+  "C": {
+    "cp": {
+      "value": 0.709,
+      "form": "Carbon (graphite)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "¹³C",
+        1.07,
+        "1/2",
+        10.7084
+      ]
+    ]
+  },
+  "Ce": {
+    "cp": {
+      "value": 0.192,
+      "form": "Cerium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Cs": {
+    "cp": {
+      "value": 0.242,
+      "form": "Cesium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 20.8
+  },
+  "Cl": {
+    "cp": {
+      "value": 0.479,
+      "form": "Chlorine (Cl2)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "³⁵Cl",
+        75.76,
+        "3/2",
+        4.1765
+      ],
+      [
+        "³⁷Cl",
+        24.24,
+        "3/2",
+        3.4765
+      ]
+    ]
+  },
+  "Cr": {
+    "cp": {
+      "value": 0.449,
+      "form": "Chromium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 12.6,
+    "structures": [
+      [
+        "α-Cr",
+        "cI2 · Im−3m",
+        0.28848,
+        null,
+        "25 °C · 1 atm"
+      ]
+    ],
+    "transitions": [
+      [
+        "TN",
+        310
+      ]
+    ],
+    "redox": [
+      [
+        "Cr³⁺(aq) + 3 e⁻ ⇌ Cr(s)",
+        -0.744
+      ]
+    ]
+  },
+  "Co": {
+    "cp": {
+      "value": 0.421,
+      "form": "Cobalt",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "structures": [
+      [
+        "ε-Co",
+        "hP2 · P6₃/mmc",
+        0.25071,
+        0.40686,
+        "25 °C · 1 atm"
+      ],
+      [
+        "α-Co",
+        "cF4 · Fm−3m",
+        0.35447,
+        null,
+        "T > 422 °C · 1 atm"
+      ]
+    ],
+    "transitions": [
+      [
+        "Tc",
+        1360
+      ]
+    ],
+    "ions": [
+      [
+        "Co²⁺",
+        6,
+        75,
+        "HS"
+      ],
+      [
+        "Co²⁺",
+        6,
+        65,
+        "LS"
+      ],
+      [
+        "Co³⁺",
+        6,
+        61,
+        "HS"
+      ],
+      [
+        "Co³⁺",
+        6,
+        55,
+        "LS"
+      ]
+    ],
+    "redox": [
+      [
+        "Co²⁺(aq) + 2 e⁻ ⇌ Co(s)",
+        -0.28
+      ],
+      [
+        "Co³⁺(aq) + e⁻ ⇌ Co²⁺(aq)",
+        1.92
+      ]
+    ]
+  },
+  "Cu": {
+    "cp": {
+      "value": 0.385,
+      "form": "Copper",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 1.712,
+    "structures": [
+      [
+        "Cu",
+        "cF4 · Fm−3m",
+        0.36146,
+        null,
+        "25 °C · 1 atm"
+      ]
+    ],
+    "ions": [
+      [
+        "Cu²⁺",
+        6,
+        73,
+        "—"
+      ]
+    ],
+    "redox": [
+      [
+        "Cu²⁺(aq) + 2 e⁻ ⇌ Cu(s)",
+        0.3419
+      ],
+      [
+        "Cu⁺(aq) + e⁻ ⇌ Cu(s)",
+        0.521
+      ]
+    ],
+    "thermal": [
+      [
+        300,
+        401
+      ],
+      [
+        400,
+        393
+      ],
+      [
+        500,
+        386
+      ],
+      [
+        600,
+        379
+      ]
+    ]
+  },
+  "Dy": {
+    "cp": {
+      "value": 0.173,
+      "form": "Dysprosium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Er": {
+    "cp": {
+      "value": 0.168,
+      "form": "Erbium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Eu": {
+    "cp": {
+      "value": 0.182,
+      "form": "Europium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "F": {
+    "cp": {
+      "value": 0.824,
+      "form": "Fluorine (F2)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "¹⁹F",
+        100,
+        "1/2",
+        40.0776
+      ]
+    ]
+  },
+  "Gd": {
+    "cp": {
+      "value": 0.236,
+      "form": "Gadolinium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "structures": [
+      [
+        "α-Gd",
+        "hP2 · P6₃/mmc",
+        0.36336,
+        0.5781,
+        "25 °C · 1 atm"
+      ]
+    ],
+    "transitions": [
+      [
+        "Tc",
+        293
+      ]
+    ],
+    "ions": [
+      [
+        "Gd³⁺",
+        8,
+        105,
+        "—"
+      ]
+    ]
+  },
+  "Ga": {
+    "cp": {
+      "value": 0.373,
+      "form": "Gallium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Ge": {
+    "cp": {
+      "value": 0.32,
+      "form": "Germanium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Au": {
+    "cp": {
+      "value": 0.129,
+      "form": "Gold",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 2.255,
+    "thermal": [
+      [
+        300,
+        317
+      ],
+      [
+        400,
+        311
+      ],
+      [
+        600,
+        298
+      ]
+    ]
+  },
+  "Hf": {
+    "cp": {
+      "value": 0.144,
+      "form": "Hafnium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 33.7
+  },
+  "He": {
+    "cp": {
+      "value": 5.193,
+      "form": "Helium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "³He",
+        0.000134,
+        "1/2",
+        32.438
+      ]
+    ]
+  },
+  "Ho": {
+    "cp": {
+      "value": 0.165,
+      "form": "Holmium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "H": {
+    "cp": {
+      "value": 14.304,
+      "form": "Hydrogen (H2)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "¹H",
+        99.9885,
+        "1/2",
+        42.5775
+      ],
+      [
+        "²H",
+        0.0115,
+        "1",
+        6.5359
+      ]
+    ]
+  },
+  "In": {
+    "cp": {
+      "value": 0.233,
+      "form": "Indium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "I": {
+    "cp": {
+      "value": 0.214,
+      "form": "Iodine (I2)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Ir": {
+    "cp": {
+      "value": 0.131,
+      "form": "Iridium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Fe": {
+    "cp": {
+      "value": 0.449,
+      "form": "Iron",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 9.87,
+    "structures": [
+      [
+        "α-Fe",
+        "cI2 · Im−3m",
+        0.28665,
+        null,
+        "25 °C · 1 atm"
+      ],
+      [
+        "γ-Fe",
+        "cF4 · Fm−3m",
+        0.36467,
+        null,
+        "T > 912 °C · 1 atm"
+      ],
+      [
+        "ε-Fe",
+        "hP2 · P6₃/mmc",
+        0.2468,
+        0.396,
+        "25 °C · P > 13 GPa"
+      ]
+    ],
+    "transitions": [
+      [
+        "Tc",
+        1044
+      ]
+    ],
+    "ions": [
+      [
+        "Fe²⁺",
+        6,
+        78,
+        "HS"
+      ],
+      [
+        "Fe²⁺",
+        6,
+        61,
+        "LS"
+      ],
+      [
+        "Fe³⁺",
+        4,
+        49,
+        "—"
+      ],
+      [
+        "Fe³⁺",
+        6,
+        65,
+        "—"
+      ]
+    ],
+    "redox": [
+      [
+        "Fe²⁺(aq) + 2 e⁻ ⇌ Fe(s)",
+        -0.447
+      ],
+      [
+        "Fe³⁺(aq) + e⁻ ⇌ Fe²⁺(aq)",
+        0.771
+      ]
+    ],
+    "thermal": [
+      [
+        300,
+        80.2
+      ],
+      [
+        400,
+        69.5
+      ],
+      [
+        500,
+        61.3
+      ],
+      [
+        600,
+        54.7
+      ],
+      [
+        800,
+        43.3
+      ],
+      [
+        1000,
+        32.8
+      ]
+    ]
+  },
+  "Kr": {
+    "cp": {
+      "value": 0.248,
+      "form": "Krypton",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "La": {
+    "cp": {
+      "value": 0.195,
+      "form": "Lanthanum",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Pb": {
+    "cp": {
+      "value": 0.13,
+      "form": "Lead",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 21.1
+  },
+  "Li": {
+    "cp": {
+      "value": 3.582,
+      "form": "Lithium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 9.47,
+    "nmr": [
+      [
+        "⁶Li",
+        7.59,
+        "1",
+        6.2661
+      ],
+      [
+        "⁷Li",
+        92.41,
+        "3/2",
+        16.5483
+      ]
+    ]
+  },
+  "Lu": {
+    "cp": {
+      "value": 0.154,
+      "form": "Lutetium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Mg": {
+    "cp": {
+      "value": 1.023,
+      "form": "Magnesium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 4.48,
+    "structures": [
+      [
+        "Mg",
+        "hP2 · P6₃/mmc",
+        0.32094,
+        0.52107,
+        "25 °C · 1 atm"
+      ]
+    ],
+    "ions": [
+      [
+        "Mg²⁺",
+        4,
+        57,
+        "—"
+      ]
+    ],
+    "nmr": [
+      [
+        "²⁵Mg",
+        10,
+        "5/2",
+        2.6083
+      ]
+    ]
+  },
+  "Mn": {
+    "cp": {
+      "value": 0.479,
+      "form": "Manganese",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 144,
+    "transitions": [
+      [
+        "TN",
+        95
+      ]
+    ],
+    "ions": [
+      [
+        "Mn²⁺",
+        6,
+        83,
+        "—"
+      ],
+      [
+        "Mn³⁺",
+        6,
+        65,
+        "—"
+      ],
+      [
+        "Mn⁴⁺",
+        6,
+        53,
+        "—"
+      ]
+    ]
+  },
+  "Hg": {
+    "cp": {
+      "value": 0.14,
+      "form": "Mercury",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Mo": {
+    "cp": {
+      "value": 0.251,
+      "form": "Molybdenum",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 5.47,
+    "structures": [
+      [
+        "Mo",
+        "cI2 · Im−3m",
+        0.3147,
+        null,
+        "25 °C · 1 atm"
+      ]
+    ]
+  },
+  "Nd": {
+    "cp": {
+      "value": 0.19,
+      "form": "Neodymium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Ne": {
+    "cp": {
+      "value": 1.03,
+      "form": "Neon",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Ni": {
+    "cp": {
+      "value": 0.444,
+      "form": "Nickel",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 7.12,
+    "structures": [
+      [
+        "Ni",
+        "cF4 · Fm−3m",
+        0.3524,
+        null,
+        "25 °C · 1 atm"
+      ]
+    ],
+    "transitions": [
+      [
+        "Tc",
+        628
+      ]
+    ],
+    "ions": [
+      [
+        "Ni²⁺",
+        6,
+        69,
+        "—"
+      ],
+      [
+        "Ni³⁺",
+        6,
+        60,
+        "HS"
+      ],
+      [
+        "Ni³⁺",
+        6,
+        56,
+        "LS"
+      ]
+    ],
+    "thermal": [
+      [
+        300,
+        90.7
+      ],
+      [
+        400,
+        80.2
+      ],
+      [
+        500,
+        72.2
+      ],
+      [
+        600,
+        62.7
+      ]
+    ]
+  },
+  "Nb": {
+    "cp": {
+      "value": 0.265,
+      "form": "Niobium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "N": {
+    "cp": {
+      "value": 1.04,
+      "form": "Nitrogen (N2)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "¹⁴N",
+        99.636,
+        "1",
+        3.0777
+      ],
+      [
+        "¹⁵N",
+        0.364,
+        "1/2",
+        4.3173
+      ]
+    ]
+  },
+  "Os": {
+    "cp": {
+      "value": 0.13,
+      "form": "Osmium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "O": {
+    "cp": {
+      "value": 0.918,
+      "form": "Oxygen (O2)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "¹⁷O",
+        0.038,
+        "5/2",
+        5.7742
+      ]
+    ]
+  },
+  "Pd": {
+    "cp": {
+      "value": 0.246,
+      "form": "Palladium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 10.73
+  },
+  "P": {
+    "cp": {
+      "value": 0.769,
+      "form": "Phosphorus (white)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "³¹P",
+        100,
+        "1/2",
+        17.2515
+      ]
+    ]
+  },
+  "Pt": {
+    "cp": {
+      "value": 0.133,
+      "form": "Platinum",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 10.7,
+    "structures": [
+      [
+        "Pt",
+        "cF4 · Fm−3m",
+        0.39236,
+        null,
+        "25 °C · 1 atm"
+      ]
+    ],
+    "thermal": [
+      [
+        300,
+        71.6
+      ],
+      [
+        400,
+        71.8
+      ],
+      [
+        600,
+        73.2
+      ]
+    ]
+  },
+  "K": {
+    "cp": {
+      "value": 0.757,
+      "form": "Potassium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 7.39
+  },
+  "Pr": {
+    "cp": {
+      "value": 0.193,
+      "form": "Praseodymium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Rn": {
+    "cp": {
+      "value": 0.094,
+      "form": "Radon",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Re": {
+    "cp": {
+      "value": 0.137,
+      "form": "Rhenium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Rh": {
+    "cp": {
+      "value": 0.243,
+      "form": "Rhodium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Rb": {
+    "cp": {
+      "value": 0.363,
+      "form": "Rubidium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 13.1
+  },
+  "Ru": {
+    "cp": {
+      "value": 0.238,
+      "form": "Ruthenium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Sm": {
+    "cp": {
+      "value": 0.197,
+      "form": "Samarium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Sc": {
+    "cp": {
+      "value": 0.568,
+      "form": "Scandium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Se": {
+    "cp": {
+      "value": 0.321,
+      "form": "Selenium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Si": {
+    "cp": {
+      "value": 0.712,
+      "form": "Silicon",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "²⁹Si",
+        4.685,
+        "1/2",
+        8.4655
+      ]
+    ]
+  },
+  "Ag": {
+    "cp": {
+      "value": 0.235,
+      "form": "Silver",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 1.617,
+    "redox": [
+      [
+        "Ag⁺(aq) + e⁻ ⇌ Ag(s)",
+        0.7996
+      ]
+    ]
+  },
+  "Na": {
+    "cp": {
+      "value": 1.228,
+      "form": "Sodium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 4.88,
+    "nmr": [
+      [
+        "²³Na",
+        100,
+        "3/2",
+        11.2688
+      ]
+    ]
+  },
+  "Sr": {
+    "cp": {
+      "value": 0.306,
+      "form": "Strontium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 13.4
+  },
+  "S": {
+    "cp": {
+      "value": 0.708,
+      "form": "Sulfur (rhombic)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "nmr": [
+      [
+        "³³S",
+        0.75,
+        "3/2",
+        3.2717
+      ]
+    ]
+  },
+  "Ta": {
+    "cp": {
+      "value": 0.14,
+      "form": "Tantalum",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 13.4
+  },
+  "Te": {
+    "cp": {
+      "value": 0.202,
+      "form": "Tellurium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Tb": {
+    "cp": {
+      "value": 0.182,
+      "form": "Terbium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Tl": {
+    "cp": {
+      "value": 0.129,
+      "form": "Thallium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Th": {
+    "cp": {
+      "value": 0.118,
+      "form": "Thorium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Tm": {
+    "cp": {
+      "value": 0.16,
+      "form": "Thulium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Sn": {
+    "cp": {
+      "value": 0.227,
+      "form": "Tin (white)",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Ti": {
+    "cp": {
+      "value": 0.523,
+      "form": "Titanium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "thermal": [
+      [
+        300,
+        21.9
+      ],
+      [
+        400,
+        20.4
+      ],
+      [
+        600,
+        19.4
+      ]
+    ]
+  },
+  "W": {
+    "cp": {
+      "value": 0.132,
+      "form": "Tungsten",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 5.39,
+    "thermal": [
+      [
+        300,
+        174
+      ],
+      [
+        400,
+        159
+      ],
+      [
+        600,
+        137
+      ]
+    ]
+  },
+  "U": {
+    "cp": {
+      "value": 0.116,
+      "form": "Uranium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "V": {
+    "cp": {
+      "value": 0.489,
+      "form": "Vanadium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 20.1
+  },
+  "Xe": {
+    "cp": {
+      "value": 0.158,
+      "form": "Xenon",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Yb": {
+    "cp": {
+      "value": 0.155,
+      "form": "Ytterbium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Y": {
+    "cp": {
+      "value": 0.298,
+      "form": "Yttrium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    }
+  },
+  "Zn": {
+    "cp": {
+      "value": 0.388,
+      "form": "Zinc",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 6.01,
+    "ions": [
+      [
+        "Zn²⁺",
+        4,
+        74,
+        "—"
+      ]
+    ]
+  },
+  "Zr": {
+    "cp": {
+      "value": 0.278,
+      "form": "Zirconium",
+      "source": "CRC 90, Heat Capacity of the Elements at 25 °C, p. 4-135 (PDF 759).",
+      "condition": "25 °C · 100 kPa"
+    },
+    "resistivity": 42.9
+  }
+}

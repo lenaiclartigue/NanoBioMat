@@ -1,0 +1,42 @@
+/* Stable two-column layout: the navigation is one grid item. */
+main{max-width:1440px}
+.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:28px;align-items:start}
+#moduleNavigation476{margin:0;padding:12px;border:1px solid #d9e4e7;border-radius:8px;background:#fff;min-width:0;position:sticky;top:16px}
+#moduleNavigation476>summary{font-size:14px;padding:8px 4px;line-height:1.5}
+#moduleNavigation476 #modules{height:auto!important;max-height:none!important;overflow:visible!important;scrollbar-gutter:auto!important;display:flex;flex-direction:column;padding:8px 0 0;gap:4px}
+#modules button{width:100%;max-width:none;white-space:normal;overflow-wrap:break-word;line-height:1.5}
+#content{grid-column:2;min-width:0;padding:28px 32px}
+#content p,#content li{line-height:1.7}
+#content h2,#content h3,#content h4{overflow-wrap:break-word}
+#content .study-content{min-width:0}
+#heading>p:last-child{max-width:78ch}
+#controls{gap:12px;align-items:stretch}
+#controls label{min-width:0;flex:1 1 180px}
+#content input,#content select{max-width:100%}
+#content .module-pager{display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap}
+#content .module-pager button{white-space:normal;max-width:100%}
+@media(max-width:1000px){.layout{grid-template-columns:205px minmax(0,1fr);gap:18px}#content{padding:22px}}
+@media(max-width:850px){
+ main{padding:12px}.layout{display:block}
+ #moduleNavigation476{position:static;margin-bottom:16px;padding:8px 12px}
+ #moduleNavigation476 #modules{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));height:auto!important;max-height:none!important;overflow:visible!important}
+ #content{padding:20px;grid-column:auto}
+ header{gap:8px}header a{font-size:18px}
+}
+@media(max-width:520px){
+ #moduleNavigation476 #modules{grid-template-columns:1fr}
+ #content{padding:16px 12px}#axes{gap:6px!important}
+ #axes button{flex-direction:row!important;min-height:48px!important;padding:8px 12px!important}
+ #heading h2{font-size:23px}#controls{padding:8px}
+ #content .review-section454{padding:12px}
+}
+
+.source-note476{border-left:3px solid var(--axis-color);margin:22px 0;padding:4px 16px;background:#f7f9fa}.source-note476 h3{font-size:17px}.source-note476 .source-citation476{font-size:13px;color:#526873}.reading-detail476{border:1px solid #cbd8de;border-radius:8px;padding:8px 16px;background:#fafcfc}.reading-detail476>summary{padding:10px 0;font-size:15px}.reading-detail476>section{margin-top:8px!important;border-top:0!important}.table-scroll476{max-width:100%;overflow-x:auto}.table-scroll476:focus-visible{outline:3px solid #a26400;outline-offset:3px}#moduleNavigation476{position:static}footer{position:static!important}body{padding-bottom:0!important}
+
+.mobile-module-picker{display:none!important}#moduleNavigation476 #modules{position:static}
+
+@media(max-width:600px){.site-footer{display:flex!important;flex-wrap:wrap!important;gap:12px!important;height:auto!important;padding:14px!important}.site-footer .footer-left,.site-footer .footer-right{min-width:0!important;max-width:100%!important;flex-wrap:wrap!important}.site-footer .footer-right{flex-basis:100%!important}.site-footer summary{white-space:normal!important}.site-footer .footer-inner{display:flex!important;flex-wrap:wrap!important;gap:12px!important;width:100%!important}}
+
+#content .relax-layout464>*{min-width:0;max-width:100%}#content .figure-scroll463{max-width:100%;overflow-x:auto}#content .relax-layout464{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}@media(max-width:1000px){#content .relax-layout464{grid-template-columns:minmax(0,1fr)}}
+
+#toolsPanel476{border:0;margin:0;padding:0;flex:1}#toolsPanel476>summary{font-size:14px;font-weight:600;padding:10px 14px;border:1px solid #b6c9cc;border-radius:7px;min-height:44px;display:list-item;list-style-position:inside;width:fit-content;margin-left:auto}#toolsPanel476 #theoryTools{margin:10px 0;display:flex;flex-wrap:wrap;gap:6px}header #backResearch{margin-left:0}@media(max-width:850px){#toolsPanel476{order:4;flex-basis:100%}#toolsPanel476>summary{margin-left:0}#toolsPanel476 #theoryTools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
