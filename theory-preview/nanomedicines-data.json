@@ -810,7 +810,17 @@
     "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219868s000lbl.pdf",
     "sourceName": "FDA · Ferabright · 2025",
     "commercial": "",
-    "checked": "2026-10-29"
+    "checked": "2026-10-29",
+    "detail": [
+      "Ferabright contient du ferumoxytol, comme Feraheme. Cette fiche concerne son indication en contraste IRM.",
+      "Ferabright contains ferumoxytol, as does Feraheme. This entry covers its MRI contrast indication."
+    ],
+    "extraSources": [
+      {
+        "url": "https://precision.fda.gov/uniisearch/srs/unii/R8DG7T2D3A",
+        "name": "FDA GSRS — Ferumoxytol: Ferabright, Feraheme, Rienso"
+      }
+    ]
   },
   {
     "id": "IONP-1",
@@ -832,7 +842,7 @@
   },
   {
     "id": "IONP-2",
-    "name": "Ferumoxytol · Feraheme",
+    "name": "Ferumoxytol — Feraheme / Rienso",
     "family": "inorganic",
     "description": [
       "Formulation intraveineuse destinée au traitement de certaines anémies ferriprives. Cette indication diffère de celle de Ferabright.",
@@ -846,7 +856,21 @@
     "source": "https://www.feraheme.com/",
     "sourceName": "Feraheme · prescribing information",
     "commercial": "https://www.feraheme.com/",
-    "checked": "2026-10-29"
+    "checked": "2026-10-29",
+    "stages": [
+      "clinical",
+      "historical"
+    ],
+    "detail": [
+      "Feraheme : supplémentation en fer aux États-Unis. Rienso : ancien nom européen. Son autorisation européenne a été retirée en 2015 à la demande du titulaire, pour des raisons commerciales.",
+      "Feraheme: iron replacement in the United States. Rienso: former European brand. Its European authorisation was withdrawn in 2015 at the holder’s request for commercial reasons."
+    ],
+    "extraSources": [
+      {
+        "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/rienso",
+        "name": "EMA — Rienso: ferumoxytol, withdrawal 2015"
+      }
+    ]
   },
   {
     "id": "IONP-3",
@@ -884,7 +908,17 @@
     "source": "https://splmed.com/english/",
     "sourceName": "SPL Medical · 2026",
     "commercial": "https://splmed.com/english/",
-    "checked": "2026-10-29"
+    "checked": "2026-10-29",
+    "detail": [
+      "Le ferumoxtran-10 a aussi été développé sous les noms Combidex et Sinerem. Les fiches distinguent les programmes de développement et leurs statuts.",
+      "Ferumoxtran-10 was also developed as Combidex and Sinerem. The entries distinguish development programmes and their status."
+    ],
+    "extraSources": [
+      {
+        "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/ferumoxtran-10",
+        "name": "NCI — Ferumoxtran-10: Combidex / Sinerem"
+      }
+    ]
   },
   {
     "id": "IONP-8",
@@ -905,24 +939,6 @@
     "checked": "2026-10-29"
   },
   {
-    "id": "IONP-14",
-    "name": "Rienso",
-    "family": "inorganic",
-    "description": [
-      "Ferumoxytol. Autorisation européenne retirée en 2015 à la demande du titulaire, pour raisons commerciales.",
-      "Ferumoxytol. EU authorization withdrawn in 2015 at the holder’s request for commercial reasons."
-    ],
-    "context": [
-      "human"
-    ],
-    "stage": "historical",
-    "phase": [],
-    "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/rienso",
-    "sourceName": "EMA · Rienso · 2015",
-    "commercial": "",
-    "checked": "2026-10-29"
-  },
-  {
     "id": "IONP-15",
     "name": "Sinerem",
     "family": "inorganic",
@@ -938,7 +954,17 @@
     "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/sinerem",
     "sourceName": "EMA · Sinerem · 2007",
     "commercial": "",
-    "checked": "2026-10-29"
+    "checked": "2026-10-29",
+    "detail": [
+      "Le ferumoxtran-10 a aussi été développé sous les noms Combidex et Sinerem. Les fiches distinguent les programmes de développement et leurs statuts.",
+      "Ferumoxtran-10 was also developed as Combidex and Sinerem. The entries distinguish development programmes and their status."
+    ],
+    "extraSources": [
+      {
+        "url": "https://www.cancer.gov/publications/dictionaries/cancer-drug/def/ferumoxtran-10",
+        "name": "NCI — Ferumoxtran-10: Combidex / Sinerem"
+      }
+    ]
   },
   {
     "id": "IONP-16",

@@ -34,3 +34,6 @@ body table[data-wide="true"]{min-width:620px!important}
 .reference-table-wrap,.study-table-scroll{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;margin:18px 0}
 body table td p:first-child{margin-top:0}body table td p:last-child{margin-bottom:0}
 @media(max-width:600px){body table{font-size:13px!important}body table th,body table td{padding:9px 10px!important}}
+
+/* V4.74 shared bibliography contract */
+body .ref-heading,body #references h3,body #moduleReferences467 h3,body .references h3{font:600 14px/1.45 Arial,sans-serif!important;margin:18px 0 8px!important;color:#405b64!important}body .source,body #references li,body #moduleReferences467 li{font-size:13px!important;color:#59656b!important}body .source a,body #references a,body #moduleReferences467 a{color:#1769aa!important;text-decoration:underline!important}

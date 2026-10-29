@@ -4,7 +4,7 @@ Site de recherche de l’équipe NanoBioMat : nanoparticules magnétiques, nanoa
 
 - Site : https://lenaiclartigue.github.io/NanoBioMat/
 - Français : https://lenaiclartigue.github.io/NanoBioMat/fr/
-- Version : V4.73 — 29 octobre 2026.
+- Version : V4.75 — 29 octobre 2026.
 
 ## Structure technique
 
@@ -15,3 +15,5 @@ Conserver les chemins relatifs et la casse des noms de fichiers. Aucun serveur d
 ## Crédits et réutilisation
 
 Consulter la rubrique « Réutilisation et citation » du site et `IMAGE-CREDITS.txt`. Les ressources de tiers conservent leurs attributions et conditions propres.
+
+Dans les bases théoriques uniquement, les outils μ (unités), tableau périodique et η (solvants) s’ouvrent dans des panneaux locaux. Leurs données sont sourcées dans chaque panneau.
