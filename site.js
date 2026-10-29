@@ -275,3 +275,8 @@ document.querySelectorAll('.language-switch a').forEach(link => {
  const schedule=()=>{if(!pending){pending=true;requestAnimationFrame(align)}};
  new ResizeObserver(schedule).observe(header);window.addEventListener('resize',schedule);document.fonts.ready.then(schedule);schedule();
 })();
+
+// Shared footer resources (V4.71).
+(()=>{const s=document.createElement('script');s.src=new URL('footer-resources471.js?v=471',document.currentScript.src).href;document.body.append(s);})();
+
+(()=>{function design473(){document.querySelectorAll('a[href="https://www.w3.org/WAI/fundamentals/accessibility-principles/"]').forEach(a=>{const list=a.closest('ul');if(!list||list.querySelector('[data-design473]'))return;const li=document.createElement('li');li.dataset.design473='1';li.innerHTML='<a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color" target="_blank" rel="noopener noreferrer">W3C WAI — WCAG 2.2 · Use of Color</a>';list.appendChild(li);});}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',design473);else design473();window.addEventListener('hashchange',()=>requestAnimationFrame(design473));})();

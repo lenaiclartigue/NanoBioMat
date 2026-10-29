@@ -9,7 +9,12 @@
     ],
     "source": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/219868s000lbl.pdf",
     "sourceName": "FDA · Ferabright · 2025",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": []
   },
   {
     "name": "Resotran · Sanochemia",
@@ -21,7 +26,12 @@
     ],
     "source": "https://www.sanochemia.com/en/medical-imaging/",
     "sourceName": "Sanochemia · Medical imaging",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": []
   },
   {
     "name": "Ferumoxytol · Feraheme",
@@ -33,7 +43,12 @@
     ],
     "source": "https://www.feraheme.com/",
     "sourceName": "Feraheme · prescribing information",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": []
   },
   {
     "name": "Magtrace / Sentimag · Endomag",
@@ -45,7 +60,12 @@
     ],
     "source": "https://www.fda.gov/medical-devices/recently-approved-devices/magtrace-and-sentimag-magnetic-localization-system-p160053s002",
     "sourceName": "FDA · P160053/S002 · 2022",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "clinical",
+    "phase": []
   },
   {
     "name": "CliniMACS CD34 · Miltenyi Biotec",
@@ -53,35 +73,53 @@
     "technology": "Séparation / Separation",
     "description": [
       "Sélection ex vivo de cellules CD34⁺. L’exemption humanitaire FDA BH110018 concerne un protocole précis de greffe dans la leucémie aiguë myéloïde. Elle ne couvre pas tous les usages MACS.",
-      "Ex vivo CD34⁺ cell selection. FDA humanitarian exemption BH110018 concerns a specific transplant protocol in acute myeloid leukaemia. It does not cover all MACS uses."
+      "Ex vivo CD34⁺ cell selection. FDA humanitarian exemption BH110018 concerns a specific transplant protocol in acute myeloid leukaemia."
     ],
     "source": "https://www.fda.gov/vaccines-blood-biologics/approved-blood-products/clinimacs-cd34-reagent-system",
     "sourceName": "FDA · BH110018",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human",
+      "cell"
+    ],
+    "stage": "clinical",
+    "phase": []
   },
   {
     "name": "Ferrotran · SPL Medical",
     "group": "development",
     "technology": "IRM / MRI",
     "description": [
-      "Ferumoxtran pour l’imagerie ganglionnaire. Le fabricant annonce des résultats de phase III et une demande d’autorisation en 2026. Une demande ne constitue pas une autorisation.",
-      "Ferumoxtran for lymph-node imaging. The manufacturer reports phase III results and a marketing authorization application in 2026. An application is not an authorization."
+      "Ferumoxtran pour l’imagerie ganglionnaire. Le fabricant annonce des résultats de phase III et une demande d’autorisation en 2026.",
+      "Ferumoxtran for lymph-node imaging. The manufacturer reports phase III results and a marketing authorization application in 2026."
     ],
     "source": "https://splmed.com/english/",
     "sourceName": "SPL Medical · 2026",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "trial",
+    "phase": [
+      "III"
+    ]
   },
   {
     "name": "MPB-1523 · MegaPro",
     "group": "development",
     "technology": "IRM / MRI",
     "description": [
-      "Agent à oxyde de fer pour l’IRM hépatique. Le fabricant décrit la préparation d’un programme de phase III. Les échanges réglementaires ne constituent pas une autorisation de mise sur le marché.",
-      "Iron oxide agent for liver MRI. The manufacturer describes preparation of a phase III programme. Regulatory discussions are not marketing authorization."
+      "Agent à oxyde de fer pour l’IRM hépatique. Le fabricant décrit la préparation d’un programme de phase III.",
+      "Iron oxide agent for liver MRI. The manufacturer describes preparation of a phase III programme."
     ],
     "source": "https://www.megaprobio.com/en/news.html",
     "sourceName": "MegaPro Biomedical · 2026",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "trial",
+    "phase": []
   },
   {
     "name": "FerroTrace · Ferronova",
@@ -93,19 +131,29 @@
     ],
     "source": "https://www.ferronova.com.au/wp-content/uploads/2024/09/64f7b010df4652b1bc04bc8f_SAGES-2023-Ferronova-Poster-v1.0.pdf",
     "sourceName": "Ferronova · MAGICSENT · SAGES 2023",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "trial",
+    "phase": []
   },
   {
     "name": "Nanotherm AS1 / NanoActivator",
     "group": "development",
     "technology": "Hyperthermie / Hyperthermia",
     "description": [
-      "Nanoparticules injectées dans la tumeur et activation par champ alternatif. Le fabricant indique un dispositif expérimental. Il précise que l’ancien marquage CE ne constitue pas une autorisation actuelle.",
-      "Intratumoral nanoparticles activated by an alternating field. The manufacturer identifies an investigational device. It states that the former CE marking does not establish current authorization."
+      "Nanoparticules injectées dans la tumeur et activation par champ alternatif. Le fabricant indique un dispositif expérimental.",
+      "Intratumoral nanoparticles activated by an alternating field. The manufacturer identifies an investigational device."
     ],
     "source": "https://www.nanothermtx.com/",
     "sourceName": "Nanotherm Therapeutics",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "trial",
+    "phase": []
   },
   {
     "name": "RCL-01 · Resonant Circuits",
@@ -117,7 +165,12 @@
     ],
     "source": "https://www.resonantcircuits.com/news/rcl-amp-vall-dhebron-enrolls-first-patient-for-treatment-of-pancreatic-cancer",
     "sourceName": "Resonant Circuits · NoCanTher · 2022",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "trial",
+    "phase": []
   },
   {
     "name": "MPI · Magnetic Insight",
@@ -129,7 +182,12 @@
     ],
     "source": "https://www.magneticinsight.com/",
     "sourceName": "Magnetic Insight",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "animal"
+    ],
+    "stage": "research",
+    "phase": []
   },
   {
     "name": "synomag / perimag / BNF · micromod",
@@ -137,11 +195,17 @@
     "technology": "Traceurs / Tracers",
     "description": [
       "Particules de recherche pour l’imagerie, le chauffage et la séparation. Le catalogue distingue les tailles et les revêtements. Un diamètre de formulation ne décrit pas nécessairement le diamètre du cœur.",
-      "Research particles for imaging, heating and separation. The catalogue distinguishes sizes and coatings. Formulation diameter does not necessarily describe core diameter."
+      "Research particles for imaging, heating and separation. The catalogue distinguishes sizes and coatings. The reported diameter concerns the formulation."
     ],
     "source": "https://micromod.de/en/products/magnetic-particles/",
     "sourceName": "micromod · Magnetic particles",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "animal",
+      "cell"
+    ],
+    "stage": "research",
+    "phase": []
   },
   {
     "name": "MACS · Miltenyi Biotec",
@@ -153,7 +217,12 @@
     ],
     "source": "https://www.miltenyibiotec.com/",
     "sourceName": "Miltenyi Biotec · MACS",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "cell"
+    ],
+    "stage": "research",
+    "phase": []
   },
   {
     "name": "Dynabeads · Thermo Fisher",
@@ -165,7 +234,12 @@
     ],
     "source": "https://www.thermofisher.com/order/catalog/product/38005D/faqs",
     "sourceName": "Thermo Fisher · Dynabeads technical FAQ",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "cell"
+    ],
+    "stage": "research",
+    "phase": []
   },
   {
     "name": "Rienso",
@@ -177,7 +251,12 @@
     ],
     "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/rienso",
     "sourceName": "EMA · Rienso · 2015",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": []
   },
   {
     "name": "Sinerem",
@@ -189,7 +268,12 @@
     ],
     "source": "https://www.ema.europa.eu/en/medicines/human/EPAR/sinerem",
     "sourceName": "EMA · Sinerem · 2007",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": []
   },
   {
     "name": "Feridex / Endorem",
@@ -201,18 +285,28 @@
     ],
     "source": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2018/208078Orig1s000NameR.pdf",
     "sourceName": "FDA · discontinued names · 2018",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": []
   },
   {
     "name": "GastroMARK / Lumirem",
     "group": "historical",
     "technology": "IRM / MRI",
     "description": [
-      "Ferumoxsil. Exemple historique de suspension orale pour le contraste digestif. La source historique ne démontre pas une disponibilité actuelle.",
-      "Ferumoxsil. Historical oral suspension for gastrointestinal contrast. The historical source does not establish current availability."
+      "Ferumoxsil. Exemple historique de suspension orale pour le contraste digestif.",
+      "Ferumoxsil. Historical oral suspension for gastrointestinal contrast."
     ],
     "source": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/20937_OptiMark_admindocs_P2.pdf",
     "sourceName": "FDA · historical record · 1999",
-    "date": "2026-10-29"
+    "date": "2026-10-29",
+    "context": [
+      "human"
+    ],
+    "stage": "historical",
+    "phase": []
   }
 ]
