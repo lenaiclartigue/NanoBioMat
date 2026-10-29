@@ -24,3 +24,5 @@ Creative Commons BY-NC-ND badge: official vector artwork (unmodified).
 https://creativecommons.org/mission/downloads/
 https://github.com/creativecommons/cc-assets/blob/main/license_badges/big/by_nc_nd.svg
 CC trademark policy: https://creativecommons.org/policies/
+
+V4.67 — industry-images/dynabeads-kunnskap.jpg: Kunnskap, SEM Dynabeads, 1986; Wikimedia Commons; CC BY 3.0; unmodified. Source: https://commons.wikimedia.org/wiki/File:Dynabeads_are_a_magnetic_type_of_microbeads.jpg ; licence https://creativecommons.org/licenses/by/3.0/ . This image is excluded from the site CC BY-NC-ND licence.
