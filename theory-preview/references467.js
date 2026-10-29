@@ -6,7 +6,7 @@ const isRef=e=>/^(reference publications?|publications? de référence|référen
 function group(title,nodes){if(!nodes.length)return;let html=nodes.map(n=>n.outerHTML).join('');if(!html.trim())return;groups.push({title,html});nodes.forEach(n=>n.remove());}
 function collect(root,defaultTitle){
  const heads=[...root.querySelectorAll('h2,h3,h4,strong')].filter(isRef);
- for(const h of heads){if(!h.isConnected||h.closest('#moduleReferences467')||h.closest('[hidden]'))continue;
+ for(const h of heads){if(!h.isConnected||h.closest('#moduleReferences467')||h.closest('[hidden]')||h.closest('[data-inline-references]'))continue;
  const section=h.closest('.source465,.ref-block,.study-references,.refs464');
  let title=h.closest('.card')?.querySelector('h2')?.textContent||section?.parentElement?.querySelector('h3,h4')?.textContent;
  if(section?.id==='references')title=T('Mécanismes et données de référence','Mechanisms and reference data');else if(section?.classList.contains('source465'))title=T('Schéma','Diagram');else if(!title||isRef({textContent:title}))title=defaultTitle;
@@ -26,7 +26,7 @@ function finish(){
  box.querySelectorAll('a').forEach(a=>{if(a.href.includes('doi.org/')&&!/^doi\s*:/i.test(a.textContent)&&a.textContent.length>50){const cite=document.createElement('span');cite.innerHTML=a.innerHTML;a.before(cite,document.createTextNode(' '));a.textContent='doi: '+a.href.split('doi.org/')[1];}});
  if(merged.length>1){const sub=document.createElement('h4');sub.textContent=g.title;out.append(sub)}out.append(box);
  }
- const pager=$('content').querySelector('.module-pager');if(pager)pager.before(out);else $('content').append(out);
+ out.hidden=out.children.length<=1;const pager=$('content').querySelector('.module-pager');if(pager)pager.before(out);else $('content').append(out);
 }
 const before=render;render=function(){serial++;groups=[];$('moduleReferences467')?.remove();if(!$('references')){const r=document.createElement('div');r.id='references';$('content').querySelector('.module-pager').before(r)}$('references').replaceChildren();before();if(current==='interactions')$('heading').querySelector('h2').textContent=T('Comment la distance modifie-t-elle les interactions magnétiques ?','How does distance change magnetic interactions?');const id=serial;finish();$('content').querySelectorAll('iframe').forEach(f=>f.addEventListener('load',()=>{if(serial===id){finish();setTimeout(()=>{if(serial===id)finish()},250)}}));[150,600,1600].forEach(ms=>setTimeout(()=>{if(serial===id)finish()},ms));};render();
 })();

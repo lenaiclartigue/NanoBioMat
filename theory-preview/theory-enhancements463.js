@@ -76,7 +76,7 @@
   if(['mechanics','separation','distribution','delivery'].includes(current)){box.innerHTML=diagram(current);$('heading').after(box);}
   if(current==='relax'){$('stage').after(box);relaxation(box);}
   if(current==='industry'){
-   $('stage').innerHTML=`<iframe id="industryFrame463" class="industry463" title="${tr('Formulations et technologies commerciales','Commercial formulations and technologies')}" src="industrial-applications.html?embed=1&lang=${lang}"></iframe>`;
+   $('stage').innerHTML=`<iframe id="industryFrame463" class="industry463" title="${tr('Formulations et technologies commerciales','Commercial formulations and technologies')}" src="industrial-applications.html?v=470&embed=1&lang=${lang}"></iframe>`;
    ['transport','steps','explain','math','references','enlarge'].forEach(id=>$(id).hidden=true);
   }
   $('backResearch').textContent=tr('Retour à l’accueil','Back to main');$('backResearch').href='../'+(lang==='fr'?'fr/':'')+'index.html';
