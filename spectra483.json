@@ -1,0 +1,472 @@
+{
+  "Fe": {
+    "source": "https://physics.nist.gov/PhysRefData/Handbook/Tables/irontable3.htm",
+    "aas_nm": 248.3,
+    "lines": [
+      {
+        "nm": 248.32708,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 40257.311,
+        "A_s1": 481000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 248.81426,
+        "stage": "I",
+        "lower_cm1": 415.933,
+        "upper_cm1": 40594.429,
+        "A_s1": 420000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 252.28494,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 39625.801,
+        "A_s1": 213000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 271.90273,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 36766.964,
+        "A_s1": 142000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 371.99348,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 26874.548,
+        "A_s1": 16200000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 385.99114,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 25899.987,
+        "A_s1": 9690000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 404.58125,
+        "stage": "I",
+        "lower_cm1": 11976.238,
+        "upper_cm1": 36686.174,
+        "A_s1": 86300000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 438.35449,
+        "stage": "I",
+        "lower_cm1": 11976.238,
+        "upper_cm1": 34782.419,
+        "A_s1": 50000000.0,
+        "medium": "air"
+      }
+    ]
+  },
+  "Cu": {
+    "source": "https://physics.nist.gov/PhysRefData/Handbook/Tables/coppertable3.htm",
+    "aas_nm": 324.7,
+    "lines": [
+      {
+        "nm": 216.509,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 46172.842,
+        "A_s1": 54700000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 324.754,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 30783.686,
+        "A_s1": 137000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 327.396,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 30535.302,
+        "A_s1": 136000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 510.554,
+        "stage": "I",
+        "lower_cm1": 11202.565,
+        "upper_cm1": 30783.686,
+        "A_s1": 2000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 521.82,
+        "stage": "I",
+        "lower_cm1": 30783.686,
+        "upper_cm1": 49942.057,
+        "A_s1": 75000000.0,
+        "medium": "air"
+      }
+    ]
+  },
+  "Zn": {
+    "source": "https://physics.nist.gov/PhysRefData/Handbook/Tables/zinctable3.htm",
+    "aas_nm": 213.9,
+    "lines": [
+      {
+        "nm": 213.85735,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 46745.404,
+        "A_s1": 714000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 307.58971,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 32501.399,
+        "A_s1": 37500.0,
+        "medium": "air"
+      },
+      {
+        "nm": 468.01359,
+        "stage": "I",
+        "lower_cm1": 32311.319,
+        "upper_cm1": 53672.24,
+        "A_s1": null,
+        "medium": "air"
+      },
+      {
+        "nm": 472.21569,
+        "stage": "I",
+        "lower_cm1": 32501.399,
+        "upper_cm1": 53672.24,
+        "A_s1": null,
+        "medium": "air"
+      },
+      {
+        "nm": 481.05321,
+        "stage": "I",
+        "lower_cm1": 32890.327,
+        "upper_cm1": 53672.24,
+        "A_s1": null,
+        "medium": "air"
+      },
+      {
+        "nm": 636.23458,
+        "stage": "I",
+        "lower_cm1": 46745.404,
+        "upper_cm1": 62458.533,
+        "A_s1": 47400000.0,
+        "medium": "air"
+      }
+    ]
+  },
+  "Na": {
+    "source": "https://physics.nist.gov/PhysRefData/Handbook/Tables/sodiumtable3.htm",
+    "aas_nm": 589.6,
+    "lines": [
+      {
+        "nm": 330.237,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 30272.58,
+        "A_s1": 2810000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 330.298,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 30266.99,
+        "A_s1": 2810000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 588.995,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 16973.368,
+        "A_s1": 61600000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 589.5924,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 16956.172,
+        "A_s1": 61400000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 818.3256,
+        "stage": "I",
+        "lower_cm1": 16956.172,
+        "upper_cm1": 29172.889,
+        "A_s1": 45300000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 819.4824,
+        "stage": "I",
+        "lower_cm1": 16973.368,
+        "upper_cm1": 29172.839,
+        "A_s1": 54000000.0,
+        "medium": "air"
+      }
+    ]
+  },
+  "Mg": {
+    "source": "https://physics.nist.gov/PhysRefData/Handbook/Tables/magnesiumtable3.htm",
+    "aas_nm": 285.2,
+    "lines": [
+      {
+        "nm": 202.5824,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 49346.729,
+        "A_s1": 61200000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 285.21251,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 35051.264,
+        "A_s1": 500000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 382.9355,
+        "stage": "I",
+        "lower_cm1": 21850.405,
+        "upper_cm1": 47957.058,
+        "A_s1": 94000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 516.7322,
+        "stage": "I",
+        "lower_cm1": 21850.405,
+        "upper_cm1": 41197.403,
+        "A_s1": 11600000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 517.2684,
+        "stage": "I",
+        "lower_cm1": 21870.464,
+        "upper_cm1": 41197.403,
+        "A_s1": 34600000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 518.3604,
+        "stage": "I",
+        "lower_cm1": 21911.178,
+        "upper_cm1": 41197.403,
+        "A_s1": 57500000.0,
+        "medium": "air"
+      }
+    ]
+  },
+  "Ca": {
+    "source": "https://physics.nist.gov/PhysRefData/Handbook/Tables/calciumtable3.htm",
+    "aas_nm": 422.7,
+    "lines": [
+      {
+        "nm": 272.1645,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 36731.615,
+        "A_s1": 270000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 422.6727,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 23652.304,
+        "A_s1": 220000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 442.5441,
+        "stage": "I",
+        "lower_cm1": 15157.901,
+        "upper_cm1": 37748.197,
+        "A_s1": 49800000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 610.2722,
+        "stage": "I",
+        "lower_cm1": 15157.901,
+        "upper_cm1": 31539.495,
+        "A_s1": 9600000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 612.2219,
+        "stage": "I",
+        "lower_cm1": 15210.063,
+        "upper_cm1": 31539.495,
+        "A_s1": 28700000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 616.2172,
+        "stage": "I",
+        "lower_cm1": 15315.943,
+        "upper_cm1": 31539.495,
+        "A_s1": 35400000.0,
+        "medium": "air"
+      }
+    ]
+  },
+  "Mn": {
+    "source": "https://physics.nist.gov/PhysRefData/Handbook/Tables/manganesetable3.htm",
+    "aas_nm": 279.5,
+    "lines": [
+      {
+        "nm": 279.4817,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 35769.97,
+        "A_s1": 370000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 279.827,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 35725.85,
+        "A_s1": 360000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 280.1084,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 35689.98,
+        "A_s1": 370000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 403.0755,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 24802.25,
+        "A_s1": 17000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 403.3068,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 24788.05,
+        "A_s1": 16500000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 403.4485,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 24779.32,
+        "A_s1": 15800000.0,
+        "medium": "air"
+      }
+    ]
+  },
+  "Co": {
+    "source": "https://physics.nist.gov/PhysRefData/Handbook/Tables/cobalttable3.htm",
+    "aas_nm": 240.7,
+    "lines": [
+      {
+        "nm": 240.7256,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 41528.455,
+        "A_s1": 360000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 242.4935,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 41225.71,
+        "A_s1": 320000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 252.1365,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 39649.124,
+        "A_s1": 300000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 340.5118,
+        "stage": "I",
+        "lower_cm1": 3482.78,
+        "upper_cm1": 32841.916,
+        "A_s1": 100000000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 345.351,
+        "stage": "I",
+        "lower_cm1": 3482.78,
+        "upper_cm1": 32430.535,
+        "A_s1": 110000000.0,
+        "medium": "air"
+      }
+    ]
+  },
+  "K": {
+    "source": "https://physics.nist.gov/PhysRefData/Handbook/Tables/potassiumtable3.htm",
+    "aas_nm": 766.5,
+    "lines": [
+      {
+        "nm": 404.414,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 24720.139,
+        "A_s1": 1160000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 404.721,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 24701.382,
+        "A_s1": 1070000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 766.48991,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 13042.876,
+        "A_s1": 37900000.0,
+        "medium": "air"
+      },
+      {
+        "nm": 769.89645,
+        "stage": "I",
+        "lower_cm1": 0,
+        "upper_cm1": 12985.17,
+        "A_s1": 37400000.0,
+        "medium": "air"
+      }
+    ]
+  }
+}

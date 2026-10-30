@@ -1,0 +1,26 @@
+/* Two independently scrollable panes, between the header and fixed footer. */
+html,body{height:100%;overflow:hidden}
+body{padding-bottom:0!important}
+body>header{position:fixed;inset:0 0 auto 0;z-index:30;box-sizing:border-box}
+body>main{position:fixed;top:var(--theory-header466,125px);bottom:var(--theory-footer466,100px);left:0;right:0;width:100%;max-width:1600px;margin:0 auto;padding:12px 20px;box-sizing:border-box;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+body .mobile-module-picker{display:none!important}
+#axes{flex:0 0 auto;margin:0 0 12px!important}
+.layout{display:grid!important;grid-template-columns:240px minmax(0,1fr)!important;gap:20px!important;flex:1;min-height:0;overflow:hidden;align-items:stretch!important}
+#moduleNavigation476{display:flex!important;flex-direction:column;position:static!important;min-height:0;max-height:none;overflow:hidden;margin:0!important;padding:10px!important;box-sizing:border-box}
+#moduleNavigation476>summary{display:none}
+#moduleNavigation476 #modules{display:flex!important;flex-direction:column!important;position:static!important;height:100%!important;min-height:0!important;max-height:none!important;overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain;scrollbar-gutter:stable;padding:0 6px 0 0!important;gap:5px}
+#modules button{flex-shrink:0;text-align:left}
+#content{grid-column:2;width:100%;min-height:0;height:100%;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-gutter:stable;box-sizing:border-box;padding:24px!important;scroll-padding:20px}
+#content:focus-visible,#modules:focus-visible{outline:2px solid #315b78;outline-offset:-2px}
+@media(max-width:850px){body>main{padding:8px}.layout{grid-template-columns:185px minmax(0,1fr)!important;gap:10px!important}#content{padding:16px!important}#axes button{min-height:42px!important;padding:7px!important}}
+@media(max-width:600px){
+ .layout{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:110px minmax(0,1fr);gap:8px!important}
+ #moduleNavigation476{grid-row:1;padding:5px!important}#content{grid-row:2;grid-column:1;padding:12px!important}
+ #moduleNavigation476 #modules{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;align-content:start}
+ #modules button{font-size:12px!important;padding:8px!important}
+ #axes{display:flex!important;gap:4px!important;margin-bottom:8px!important}#axes button{flex:1;min-width:0;min-height:42px!important;font-size:11px!important;padding:5px!important}
+}
+#moduleNavigation476 #modules{flex:1 1 0!important;height:auto!important;min-height:0!important}
+#moduleNavigation476{height:100%!important}
+#moduleNavigation476 #modules{height:100%!important;max-height:100%!important;box-sizing:border-box}
+@media(max-width:600px){#axes button,#axes button span{overflow-wrap:anywhere;white-space:normal;min-width:0;font-size:11px!important}}
